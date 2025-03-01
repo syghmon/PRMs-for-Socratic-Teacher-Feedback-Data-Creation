@@ -29,5 +29,3 @@ Further details on running experiments and evaluations will be provided in subse
 - Jakub Macina (jakub.macina@ai.ethz.ch)  
 - Kumar Shridhar (shkumar@ethz.ch)  
 - Shehzaad Dhuliawala (sdhuliawala@ethz.ch)
-
-
