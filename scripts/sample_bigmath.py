@@ -1,14 +1,41 @@
 import json
 import random
+import os
+import pathlib
 from datasets import load_dataset
+from dotenv import load_dotenv
+from huggingface_hub import login
 
-def sample_problems(output_file="samples.json", seed=None):
+# Get the project root directory (parent of scripts)
+PROJECT_ROOT = pathlib.Path(__file__).parent.parent.absolute()
+
+# Load environment variables from .env file
+load_dotenv(os.path.join(PROJECT_ROOT, ".env"))
+
+def sample_problems(output_file="data/samples.json", seed=None):
+    # Authenticate with Hugging Face
+    hf_token = os.getenv("HUGGINGFACE_TOKEN")
+    if hf_token:
+        print("Authenticating with Hugging Face...")
+        login(token=hf_token)
+    else:
+        print("Warning: No Hugging Face token found in environment variables.")
+    
+    # Ensure output_file path is handled properly
+    if not os.path.isabs(output_file):
+        output_file = os.path.join(PROJECT_ROOT, output_file)
+    
+    # Create the output directory if it doesn't exist
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    
     # Optionally set a random seed for reproducibility
     if seed is not None:
         random.seed(seed)
     
     # Load the Big-Math-RL-Verified dataset (ensure you have access to it)
+    print("Loading dataset...")
     dataset = load_dataset("SynthLabsAI/Big-Math-RL-Verified", split="train")
+    print(f"Dataset loaded successfully with {len(dataset)} items")
     
     # Define the solve rate buckets (percent ranges)
     buckets = [(0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5),

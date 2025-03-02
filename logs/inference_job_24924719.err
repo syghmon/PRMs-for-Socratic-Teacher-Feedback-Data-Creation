@@ -1,0 +1,127 @@
+Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/11.7"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/11.7"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x14da8f099490>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/tree/main?recursive=True&expand=False (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x14da8f099490>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/scripts/inference.py", line 90, in <module>
+    main()
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/scripts/inference.py", line 53, in main
+    llm = LLM(model=args.model, trust_remote_code=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 486, in from_engine_args
+    engine_config = engine_args.create_engine_config(usage_context)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 1127, in create_engine_config
+    model_config = self.create_model_config()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 1047, in create_model_config
+    return ModelConfig(
+           ^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/config.py", line 304, in __init__
+    hf_config = get_config(self.model, trust_remote_code, revision,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 256, in get_config
+    if is_gguf or file_or_path_exists(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 179, in file_or_path_exists
+    return file_exists(str(model),
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 154, in file_exists
+    file_list = list_repo_files(repo_id,
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 143, in list_repo_files
+    return with_retry(lookup_files, "Error retrieving file list")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 97, in with_retry
+    return func()
+           ^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 133, in lookup_files
+    return hf_list_repo_files(repo_id,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 2923, in list_repo_files
+    for f in self.list_repo_tree(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 3058, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/huggingface_hub/utils/_pagination.py", line 36, in paginate
+    r = session.get(path, params=params, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/sstorf/PRMs-for-Socratic-Teacher-Feedback-Data-Creation/socratic-env/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/tree/main?recursive=True&expand=False (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x14da8f099490>: Failed to establish a new connection: [Errno 111] Connection refused'))"), '(Request ID: e84a9479-412a-4876-87a6-5c91a542943c)')
