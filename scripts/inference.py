@@ -10,7 +10,7 @@ from vllm import LLM, SamplingParams
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent.absolute()
 
 def main():
-    parser = argparse.ArgumentParser(description="Run Qwen Distill (R1) inference on sampled math problems.")
+    parser = argparse.ArgumentParser(description="Run model inference on sampled math problems.")
     parser.add_argument("--input", "-i", type=str, default="data/samples.json",
                         help="Path to the JSON file of sampled problems (output of sampling script).")
     parser.add_argument("--output", "-o", type=str, default="data/predictions.json",
@@ -19,12 +19,16 @@ def main():
                         help="Hugging Face model name or local path for the model.")
     parser.add_argument("--local_model", action="store_true",
                         help="If set, treats the model argument as a local path instead of a HuggingFace model ID.")
-    parser.add_argument("--max_tokens", type=int, default=512,
+    parser.add_argument("--max_tokens", type=int, default=1024,
                         help="Maximum number of tokens to generate for each answer.")
     parser.add_argument("--temperature", type=float, default=0.6,
                         help="Sampling temperature for generation (0.6 is recommended).")
     parser.add_argument("--top_p", type=float, default=0.95,
                         help="Top-p (nucleus) sampling parameter.")
+    parser.add_argument("--num_samples", type=int, default=1,
+                        help="Number of samples to generate for each problem.")
+    parser.add_argument("--format_for_hf", action="store_true",
+                        help="Format output for HuggingFace datasets upload.")
     args = parser.parse_args()
     
     # Ensure input and output file paths are handled properly
@@ -45,12 +49,19 @@ def main():
     
     # Prepare prompts for the model
     prompts = []
-    for item in samples:
+    prompt_id_map = {}  # To track which problem each prompt belongs to
+    
+    for idx, item in enumerate(samples):
         problem_text = item["problem"]
         # Construct the prompt with instructions for reasoning and answer format
         prompt = (f"{problem_text}\n\n"
-                  "Please reason step by step, and put your final answer in \\boxed{}.")
-        prompts.append(prompt)
+                "<think>\n"
+                "Please reason step by step, and put your final answer in \\boxed{}.")
+        
+        # For each problem, add it to prompts num_samples times
+        for _ in range(args.num_samples):
+            prompts.append(prompt)
+            prompt_id_map[len(prompts) - 1] = idx  # Map this prompt to the original problem index
     
     # Initialize the model with vLLM
     print(f"Loading model '{args.model}'... (This may take a while for large models)")
@@ -61,7 +72,6 @@ def main():
             sys.exit(1)
             
         llm = LLM(model=args.model, trust_remote_code=True)
-
         
         # Set up sampling/generation parameters
         sampling_params = SamplingParams(
@@ -70,27 +80,58 @@ def main():
             max_tokens=args.max_tokens
         )
         
-        # Run inference in batches if needed
-        print(f"Generating answers for {len(prompts)} problems...")
-        # You can split prompts into chunks if memory is a concern. Here we do it in one batch.
+        # Run inference
+        print(f"Generating {args.num_samples} samples for each of {len(samples)} problems...")
         outputs = llm.generate(prompts, sampling_params)
         
-        # Collect results
-        results = []
-        for item, output in zip(samples, outputs):
-            # Each output corresponds to one prompt
-            generated_text = output.outputs[0].text  # the model's full response
-            result_entry = {
-                "problem": item.get("problem"),
-                "ground_truth": item.get("answer"),
-                "model_answer": generated_text
-            }
-            # Include any metadata for reference (optional)
-            if "difficulty_bin" in item:
-                result_entry["difficulty_bin"] = item["difficulty_bin"]
-            if "llama8b_solve_rate" in item:
-                result_entry["llama8b_solve_rate"] = item["llama8b_solve_rate"]
-            results.append(result_entry)
+        if args.format_for_hf:
+            # Format for HuggingFace datasets
+            results = []
+            
+            for i, item in enumerate(samples):
+                # Collect all responses for this problem
+                problem_responses = []
+                for j in range(args.num_samples):
+                    output_idx = i * args.num_samples + j
+                    if output_idx < len(outputs):
+                        problem_responses.append(outputs[output_idx].outputs[0].text)
+                
+                result_entry = {
+                    "problem": item.get("problem"),
+                    "final_answer": item.get("answer"),  # Renamed to match evaluation script expectation
+                    "responses": problem_responses  # List of all responses for this problem
+                }
+                
+                # Include any metadata
+                if "difficulty_bin" in item:
+                    result_entry["difficulty_bin"] = item["difficulty_bin"]
+                if "llama8b_solve_rate" in item:
+                    result_entry["llama8b_solve_rate"] = item["llama8b_solve_rate"]
+                
+                results.append(result_entry)
+        else:
+            # Original format with multiple samples
+            results = []
+            for prompt_idx, output in enumerate(outputs):
+                sample_idx = prompt_id_map[prompt_idx]
+                item = samples[sample_idx]
+                
+                # Each output corresponds to one prompt
+                generated_text = output.outputs[0].text  # the model's full response
+                result_entry = {
+                    "problem": item.get("problem"),
+                    "ground_truth": item.get("answer"),
+                    "model_answer": generated_text,
+                    "sample_id": prompt_idx % args.num_samples  # Which sample this is for the problem
+                }
+                
+                # Include any metadata
+                if "difficulty_bin" in item:
+                    result_entry["difficulty_bin"] = item["difficulty_bin"]
+                if "llama8b_solve_rate" in item:
+                    result_entry["llama8b_solve_rate"] = item["llama8b_solve_rate"]
+                
+                results.append(result_entry)
         
         # Save results to output file
         with open(output_file, "w") as f:

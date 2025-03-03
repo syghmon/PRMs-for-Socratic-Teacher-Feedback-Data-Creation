@@ -75,3 +75,7 @@ venv.bak/
 
 # Dataset files
 # samples.json, let's keep it consistent in the repo for now
+
+
+# Logs
+logs/

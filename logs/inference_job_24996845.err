@@ -1,8 +1,0 @@
-Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
-Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
-Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:09<00:09,  9.34s/it]
-Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:25<00:00, 13.26s/it]
-Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:25<00:00, 12.67s/it]
-
-/var/spool/slurm/slurmd/state/job24996845/slurm_script: line 20: 3268603 Killed                  python scripts/inference.py --input data/samples.json --output data/predictions.json --model /cluster/scratch/sstorf/DeepSeek-R1-Distill-Qwen-7B --local_model
-slurmstepd: error: Detected 1 oom_kill event in StepId=24996845.batch. Some of the step tasks have been OOM Killed.
