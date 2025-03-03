@@ -1,0 +1,1639 @@
+{
+  "samples": [
+    {
+      "sample_id": 72,
+      "responses": [
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = a^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = a^{x - 1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x - 1}}",
+          "extracted_answer": "2^{x - 1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x-1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x-1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x - 1}}",
+          "extracted_answer": "2^{x - 1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x - 1}}",
+          "extracted_answer": "2^{x - 1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{f^{-1}(x) = 2^{x - 1}}",
+          "extracted_answer": "f^{-1}(x) = 2^{x - 1}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{2^{x-1}}",
+          "extracted_answer": "2^{x-1}",
+          "is_correct": false
+        }
+      ],
+      "ground_truth_answer": "f^{-1}(x)=2^{x-1}",
+      "problem": "If the point $(8,4)$ is on the graph of the function $f(x)=1+\\log_{a}x$, then the inverse function of $f(x)$ is"
+    },
+    {
+      "sample_id": 2,
+      "responses": [
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5 \\text{ hours}}",
+          "extracted_answer": "5 \\text{ hours}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "**Answer:** Ryan takes 5 hours to dig the hole alone.",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{4\\text{ hours}}",
+          "extracted_answer": "4\\text{ hours}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5.09}",
+          "extracted_answer": "5.09",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5\\ \\text{hours and}\\ 5\\ \\text{minutes}}",
+          "extracted_answer": "5\\ \\text{hours and}\\ 5\\ \\text{minutes}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But, as before, that leads to 100/R = 11/30 - 100/6 \u2248 negative number,",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\frac{114}{23} \\text{ hours}}",
+          "extracted_answer": "\\frac{114}{23} \\text{ hours}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5 \\text{ hours}}",
+          "extracted_answer": "5 \\text{ hours}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5.0833333333 \\text{ hours}}",
+          "extracted_answer": "5.0833333333 \\text{ hours}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5 \\text{ hours}}",
+          "extracted_answer": "5 \\text{ hours}",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5.077\\ \\text{hours}}",
+          "extracted_answer": "5.077\\ \\text{hours}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{\\frac{150}{29}\\ \\text{hours} \\approx 5.172\\ \\text{hours}}",
+          "extracted_answer": "\\frac{150}{29}\\ \\text{hours} \\approx 5.172\\ \\text{hours}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "It takes Ryan approximately **5.0833 hours** to dig the hole alone.",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5.08}",
+          "extracted_answer": "5.08",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{5.08 \\text{ hours}}",
+          "extracted_answer": "5.08 \\text{ hours}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{5}",
+          "extracted_answer": "5",
+          "is_correct": true
+        }
+      ],
+      "ground_truth_answer": "5",
+      "problem": "Working alone, Ryan can dig a 10 ft by 10 ft hole in a certain amount of time. Castel can dig the same hole in six hours. It would take them 2.72727272727 hours if they worked together. How many hours does it take for Ryan to dig the hole alone?"
+    },
+    {
+      "sample_id": 47,
+      "responses": [
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{a = \\dfrac{5}{2},\\ b = \\dfrac{1}{2},\\ c = -5}",
+          "extracted_answer": "a = \\dfrac{5}{2},\\ b = \\dfrac{1}{2},\\ c = -5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{-5}",
+          "extracted_answer": "-5",
+          "is_correct": false
+        }
+      ],
+      "ground_truth_answer": "\\begin{cases}a= \\frac{5}{2} \\\\ b= \\frac{1}{2} \\\\ c=-5\\end{cases}",
+      "problem": "Jia and Yi are solving the system of equations simultaneously:\n$$\n\\begin{cases}\n& ax+by=2, \\\\\n& cx-3y=-2.\n\\end{cases}\n$$\nJia correctly solves to get\n$$\n\\begin{cases}\n& x=1, \\\\\n& y=-1;\n\\end{cases}\n$$\nYi, due to copying the value of $c$ incorrectly, gets the wrong solution\n$$\n\\begin{cases}\n& x=2, \\\\\n& y=-6.\n\\end{cases}\n$$\nFind the values of $a$, $b$, and $c$."
+    },
+    {
+      "sample_id": 30,
+      "responses": [
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\frac{1}{4}, \\frac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "\\boxed{\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]}",
+          "extracted_answer": "\\left[ \\dfrac{1}{4}, \\dfrac{1}{2} \\right]",
+          "is_correct": true
+        }
+      ],
+      "ground_truth_answer": "\\left[\\frac{1}{4}, \\frac{1}{2}\\right]",
+      "problem": "Let the function $f(x) = \\log_{\\frac{1}{2}}x$ have an inverse function denoted by $g(x)$. Then find the range of the function $y = g(x)$ on the interval $[1, 2]$."
+    },
+    {
+      "sample_id": 10,
+      "responses": [
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, when \\( x \\) is positive and large, \\( y \\) is approximately \\( -x \\), so \\( x + y \\) is approximately 0. But",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, the product becomes \\( \\frac{1}{a + \\sqrt{a^2 + 1}}",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "1. \\(1 + \\lambda \\left",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, is 0 the minimal value? Because when \\( a b = 1 \\), \\( x + y = 0 \\), and when \\( a b > 1 \\), \\( x + y \\) is positive, and when \\(",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But when \\( a b = 1 \\), \\( x + y = 0 \\). So, maybe \\( x + y \\geq 0 \\). So, the minimum is 0? But wait, when \\( a = 1 \\), \\( b = 1 \\), \\( x + y = 0 \\). But earlier, when I thought of \\( x \\) and \\( y \\) as both being negative",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, for each \\( s \\geq 0 \\",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But \\( A = x + \\sqrt{x^2 + 1} \\), so \\( x = \\frac{",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, \\( x + y \\approx \\epsilon - \\epsilon = 0 \\). Therefore",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, if \\( \\sin",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, let me try with \\( x = -1 \\), \\( y = ",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, but let me take \\( x = 1 \\), \\( y = -0.5 \\). Then",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, it's impossible to have \\( x + y \\) negative. Therefore, the minimum value of \\( x +",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But \\( x + y \\approx -0.001 \\), which is slightly negative. So, that suggests that the minimal value is less than 0? But earlier, using hyperbolic substitutions, I thought it was 0. So, there",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "\\( A = -0.5 + \\sqrt{0.25 + 1} = -0.5 + \\sqrt{1.25} \\approx -0.5 + 1.",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, the product is approximately \\( 0.6180 \\times 1 = 0.6180",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Alternatively, \\( x = -0.1 \\), \\( y = 0.1 \\). Then, \\( (-0.1 + \\sqrt{0.01 + 1})(0.1 + \\sqrt{0.0",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But is there a case where \\( x + y \\) is less than 0? For example, if \\( u \\) is large and \\( v \\) is large, but \\( uv \\geq 1 \\). Wait, but \\( x + y \\",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But wait, let me check for \\( k = 0 \\). If \\( k = 0 \\), then \\( x = 0 \\), \\( y = 0 \\). Then, \\( a = 0 + \\sqrt{0 + ",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, let me recall that \\( \\sinh t = \\frac{e^t - e^{-t}}{2} \\), and \\( \\cosh t",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, but in Lagrangian multipliers",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "\\( m'(c) = (1) \\cdot (1 + c",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{0}",
+          "extracted_answer": "0",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, \\( x + y \\) cannot be less than 0, because if \\( x \\) is negative, \\( y \\) must be sufficiently positive to make \\( ab \\geq 1 \\), which seems to require \\( x + y \\geq ",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, \\( y + \\sqrt{y^2 + 1} \\geq 1/f(a) \\). So, \\( y + \\sqrt{y^2 + 1} \\geq 1/f(a) \\). Let me denote \\( z = 1/f(a) \\), so \\( z = ",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{0}",
+          "extracted_answer": "0",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "\\( x + y = \\frac{e^a - e^{-a}}{2} + \\frac{1}{2}e^{-a} -",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, if one is negative and the other is positive, the product is still greater than or equal to 1, but \\( x + y \\) can be 0 or even positive. But since we can get \\( x + y = 0 \\), which is the minimal possible, 0",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, but in our problem, \\( t \\cdot s \\geq 1 \\). Since \\( t = 1 \\), \\( s \\geq 1 \\). Wait, no, \\( t = 1 \\), \\( s \\geq 1 \\)",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, even if I try to set \\( x + y \\) slightly negative, the product doesn",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, in this case, x = -1000, y \u2248 1000",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "We can use the method of Lagrange",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Then, the product is \\( 0.4142 * 1.6180 \\approx 0.67 \\), which",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, but let me think again. Suppose \\( x \\) is positive and \\( y \\) is positive, then \\( x + y \\) is positive. If \\( x \\) is negative and \\( y \\) is positive, but \\( x + y \\geq 0 \\), as shown earlier. Similarly, if \\( x \\) is positive and \\( y \\) is negative, \\( x + y \\geq 0 \\). The only",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But let me try to see if \\( x + y \\) can be",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Similarly, \\( -b + \\sqrt{b^2 + 1} = \\frac{1}{",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But hold on, I thought earlier that when \\( z < 0 \\), except \\( z = 0 \\), the inequality doesn't hold. But in this case, when \\( y = -x \\), the product is always 1, regardless of \\( x \\). So, even though individually \\( x + \\sqrt{x^2 +",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "\\( \\sqrt{x^",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, no, if \\( x = 1 \\), \\( y = -1 \\), then \\( x + y = 0 \\), not -1. So, my mistake earlier was incorrect",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, but hold on. Let",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Hmm, that seems a bit complicated. Maybe I can consider substituting \\( uv = k \\geq 1 \\), and then express \\( v = k/u \\), and plug into",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, let me test \\( x = -1 \\), \\( y = -1 \\). As before, it doesn't satisfy the inequality. What about \\( x = -2 \\), \\( y = -1 \\). Then, \\( f(x) \u2248 -2 + \\sqrt{5} \u2248 0.236 \\), \\( f(y) \u2248 -1 + \\sqrt{2} \u2248 0.414 \\). So, product \u2248 0.23",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Earlier, we set \\( x = \\sinh t \\) and \\( y = \\sinh s \\), and the constraint became \\( t + s \\geq 0 \\). So, \\( x + y = \\sinh t + \\sinh s \\). To",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Thus, \\( x + y = -1.5 + 1.504 \\approx 0.004 \\), which is approximately 0",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But perhaps I made",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Compute \\( y \\) such that \\( b",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, another case: \\( u = 4 \\), \\( v = 1/4 \\). Then, \\( x = \\frac{16 - 1}{8} = 15/8 \\), \\( y = \\frac{1/16 - 1}{2 \\times 1/4} = (-15/16)/(1/2) = (-15/16) \\times 2 = -15/8 \\). So, \\( x + y = 1",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "If I take \\( A = 1 - \\epsilon \\) (but \\( A \\) must be greater than 0, so \\( \\epsilon < 1 \\)), then \\( x = \\frac{1 - \\epsilon}{2} - \\frac{1}{2(1 - \\epsilon)} \\approx \\frac{1 - \\epsilon}{2} - \\frac{1 + \\epsilon}{2} = \\frac{1 - \\epsilon - 1 - \\epsilon}{2} = \\frac{-2\\epsilon}{2} = -\\epsilon \\). Then, \\( B \\geq \\frac{1}{A} = \\frac{1}{1 - \\epsilon} \\approx 1 + \\epsilon \\). So, \\(",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Since \\( a + b \\geq 0 \\), let \\( s = a + b \\geq 0 \\), and \\( d = a - b \\). Then, \\( x + y",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{0}",
+          "extracted_answer": "0",
+          "is_correct": true
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But wait, if \\( x \\) is positive and \\( y = -x \\), then \\( y = -x \\) is negative. But earlier, when \\( x = 0 \\), \\( y \\) had to be non-negative. So, perhaps the case when \\( x = a \\) and \\( y = -a \\) is possible only when both \\( a + \\sqrt{a^2 + 1} \\) and \\( -a + \\sqrt{a^2 + 1} \\",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Suppose \\( A \\cdot B > 1 \\), then would \\( x + y \\) be less than 0? Wait, no, because from the earlier analysis, \\( x + y = \\frac{A + B - 1/A - 1/B}{2} \\). If \\( A \\cdot B",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But let me try another test case to be thorough. Suppose \\( x = 2 \\), then \\( x + \\sqrt{x^2 +1} = 2 +",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, when \\( \\sinh\\left( \\frac{a + b}{2} \\right) = 0 \\), which occurs when \\( \\frac{a + b}{2} = 0 \\), i.e., \\( a + b = 0 \\). So, \\(",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "But without knowing \\( k \\), it's hard to tell. Maybe we can test \\( k \\) approaching infinity. If \\( k \\) is very large, then \\( y = -x - k \\) is a large negative number. Then, \\( y + \\sqrt{",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, let me think again. If \\(x\\) is positive, say \\(x = 1\\), then \\(x + \\sqrt{x",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Wait, suppose \\( x = -a \\), \\( y = a \\), where \\( a > 0 \\). Then, \\( x + y = 0 \\), and the product is \\( (-a + \\sqrt{",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "\\( f(a, 1/a) = \\frac{a}{2} - \\frac{1}{2a} + \\frac{1/(2a)} - \\frac{1}{",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Therefore, \\( x + y",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "(x + \\sqrt{x^2 + 1}) \\times (y + \\sqrt{y^2 + 1}) = (\\epsilon + \\sqrt{\\epsilon",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "Which is an identity. So, the equation holds when \\( u = -v \\). Therefore, the condition is satisfied when \\( u = -v \\), meaning \\( \\sinh^{-1",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, no matter what \\( t \\) is, as long as \\( x = -t \\) and \\( y = t \\), \\( ab = 1 \\) and \\( x + y = 0 \\). So, 0 is",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "No boxed answer found",
+          "extracted_answer": "So, \\( y + \\sqrt{y",
+          "is_correct": false
+        },
+        {
+          "boxed_answer": "\\boxed{0}",
+          "extracted_answer": "0",
+          "is_correct": true
+        }
+      ],
+      "ground_truth_answer": "0",
+      "problem": "Given that the real numbers \\( x \\) and \\( y \\) satisfy the inequality \\(\\left(x+\\sqrt{x^{2}+1}\\right)\\left(y+\\sqrt{y^{2}+1}\\right) \\geqslant 1\\), find the minimum value of \\( x + y \\)."
+    }
+  ]
+}

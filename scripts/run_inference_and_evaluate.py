@@ -117,6 +117,8 @@ def main():
             "python", "scripts/evaluate_responses.py",
             "--predictions_dataset_name", args.hf_dataset_name,
             "--response_column_name", args.response_column_name,
+            "--inspect_samples",
+            "--output_file", "data/answer_samples.json",
             "--ground_truth_answer_column_name", args.ground_truth_answer_column_name,
             "--semaphore_limit", str(args.semaphore_limit)
         ]

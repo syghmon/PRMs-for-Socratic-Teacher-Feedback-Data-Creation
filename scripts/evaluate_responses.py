@@ -8,7 +8,7 @@ from functools import partial
 from tqdm.asyncio import tqdm_asyncio
 from typing import Union
 
-from math_eval import MathEvaluator, is_correct_no_judge, get_answer_expr
+from math_eval import MathEvaluator, is_correct_no_judge, get_answer_expr, last_boxed_only_string, remove_boxed
 
 async def rate_limit_is_correct(evaluator: MathEvaluator, answer: str, pred: str, sem: asyncio.Semaphore):
     """
@@ -77,20 +77,97 @@ def inspect_sample_answers(dataset, response_column_name, predicted_answer_colum
         output_file: Path to the output JSON file.
         num_samples: Number of samples to save. Default is 5.
     """
+    
     dataset_size = len(dataset)
-    if dataset_size <= num_samples:
-        indices = list(range(dataset_size))
+    
+    # Group samples by problem to ensure diversity
+    problem_indices = {}
+    for idx in range(dataset_size):
+        if 'problem' in dataset[idx]:
+            problem_key = dataset[idx]['problem'][:100]  # Use first 100 chars as key
+            if problem_key not in problem_indices:
+                problem_indices[problem_key] = []
+            problem_indices[problem_key].append(idx)
+    
+    # If we have problem groupings, sample from different problems
+    if problem_indices and len(problem_indices) >= num_samples:
+        # Pick one sample from each problem, up to num_samples
+        problems = list(problem_indices.keys())
+        selected_problems = random.sample(problems, num_samples)
+        indices = [random.choice(problem_indices[problem]) for problem in selected_problems]
     else:
-        indices = random.sample(range(dataset_size), num_samples)
+        # Fall back to random sampling if we can't ensure problem diversity
+        if dataset_size <= num_samples:
+            indices = list(range(dataset_size))
+        else:
+            indices = random.sample(range(dataset_size), num_samples)
     
     samples = []
     for idx in indices:
-        sample = {
-            "sample_id": idx,
-            "original_response": dataset[idx][response_column_name],
-            "extracted_answer": dataset[idx][predicted_answer_column_name],
-            "ground_truth_answer": dataset[idx][ground_truth_answer_column_name]
-        }
+        # Extract the boxed part from the original response
+        original_response = dataset[idx][response_column_name]
+        extracted_answer = dataset[idx][predicted_answer_column_name]
+        ground_truth = dataset[idx][ground_truth_answer_column_name]
+        
+        # For multiple responses (e.g., in a list)
+        if isinstance(original_response, list):
+            boxed_answers = []
+            for resp in original_response:
+                try:
+                    boxed = last_boxed_only_string(resp)
+                    if boxed:
+                        boxed_answers.append(boxed)
+                    else:
+                        boxed_answers.append("No boxed answer found")
+                except Exception:
+                    boxed_answers.append("Error extracting boxed answer")
+            
+            # Check correctness of each answer
+            correctness = []
+            if isinstance(extracted_answer, list):
+                for ans in extracted_answer:
+                    correctness.append(is_correct_no_judge(ground_truth, ans))
+            else:
+                correctness = [False] * len(boxed_answers)
+                
+            sample = {
+                "sample_id": idx,
+                "responses": [
+                    {
+                        "boxed_answer": box,
+                        "extracted_answer": ext if isinstance(extracted_answer, list) and i < len(extracted_answer) else "Error",
+                        "is_correct": cor if i < len(correctness) else False
+                    }
+                    for i, (box, ext, cor) in enumerate(zip(
+                        boxed_answers, 
+                        extracted_answer if isinstance(extracted_answer, list) else [None] * len(boxed_answers), 
+                        correctness
+                    ))
+                ],
+                "ground_truth_answer": ground_truth,
+                "problem": dataset[idx].get('problem', 'Problem not available')
+            }
+        else:
+            # Single response
+            try:
+                boxed = last_boxed_only_string(original_response)
+                if not boxed:
+                    boxed = "No boxed answer found"
+            except Exception:
+                boxed = "Error extracting boxed answer"
+            
+            # Check correctness
+            is_correct = is_correct_no_judge(ground_truth, extracted_answer)
+            
+            sample = {
+                "sample_id": idx,
+                "boxed_answer": boxed,
+                "extracted_answer": extracted_answer,
+                "ground_truth_answer": ground_truth,
+                "is_correct": is_correct,
+                "problem": dataset[idx].get('problem', 'Problem not available')
+            }
+        
         samples.append(sample)
     
     # Create directory if it doesn't exist
@@ -101,6 +178,7 @@ def inspect_sample_answers(dataset, response_column_name, predicted_answer_colum
         json.dump({"samples": samples}, f, indent=2)
     
     print(f"\nSaved {len(samples)} sample answers to {output_file}")
+    print("Format: Each sample shows the boxed answer (final answer), the extracted answer after processing, and the ground truth for comparison.")
 
 async def async_main(args):
     # define the column names
@@ -169,6 +247,7 @@ async def async_main(args):
 
     # Inspect a sample of answers if requested
     if args.inspect_samples:
+        
         inspect_sample_answers(
             preds_dataset, 
             response_column_name, 
@@ -212,6 +291,7 @@ def main(args):
 
     # Inspect a sample of answers if requested
     if args.inspect_samples:
+        
         inspect_sample_answers(
             preds_dataset, 
             response_column_name, 
