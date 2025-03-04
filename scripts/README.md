@@ -74,21 +74,6 @@ Key parameters:
 - `--push_to_hub`: Whether to push the predictions to HuggingFace Hub.
 - `--evaluate`: Whether to run evaluation after inference.
 
-### 4. `run_math_eval.sh`
-
-A convenience shell script that wraps `run_inference_and_evaluate.py` with simpler command-line arguments.
-
-```bash
-./run_math_eval.sh -d username/math-dataset -m your-model-name -n 64
-```
-
-Key parameters:
-- `-d, --dataset`: HuggingFace dataset name (required)
-- `-m, --model`: Model name or path
-- `-n, --num-samples`: Number of samples per problem
-- `-l, --llm-judge`: Use LLM judge as backup for evaluation
-- Run with `--help` to see all options
-
 ## Running on Slurm
 
 For running on a Slurm cluster, we provide Slurm job scripts in the `slurm_jobs` directory:
@@ -109,50 +94,11 @@ Runs the complete workflow (inference + evaluation) on Slurm with predefined par
 sbatch slurm_jobs/run_inference_and_evaluate.sbatch
 ```
 
-### 3. `run_math_eval.sbatch`
-
-A more flexible Slurm script that passes arguments to `run_math_eval.sh`:
-
-```bash
-sbatch slurm_jobs/run_math_eval.sbatch -d username/math-dataset -m /path/to/model -n 64
-```
-
-This allows you to customize all parameters directly from the sbatch command.
-
-## Data Format
-
-### Input Format (samples.json)
-
-```json
-[
-  {
-    "problem": "What is the value of x in the equation 2x + 3 = 7?",
-    "answer": "2"
-  },
-  ...
-]
-```
-
-### Output Format (predictions.json)
-
-With `--format_for_hf`:
-
-```json
-[
-  {
-    "problem": "What is the value of x in the equation 2x + 3 = 7?",
-    "final_answer": "2",
-    "responses": ["I need to solve 2x + 3 = 7...", "Let's solve for x..."]
-  },
-  ...
-]
-```
-
 ## Evaluation
 
 The evaluation process extracts final answers from model responses by looking for expressions in `\boxed{}` notation. It then compares these answers with ground truth answers using symbolic math equivalence checking.
 
-When using `--use_llm_judge_backup`, if the direct symbolic comparison fails, an LLM judge is used as a backup to determine if the answers are equivalent.
+When using `--use_llm_judge_backup`, if the direct symbolic comparison fails, an LLM judge is used as a backup to determine if the answers are equivalent. (TODO?)
 
 ## Results
 
