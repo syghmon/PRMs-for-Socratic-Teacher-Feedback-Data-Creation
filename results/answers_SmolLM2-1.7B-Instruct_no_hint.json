@@ -1,0 +1,2002 @@
+[
+  {
+    "problem": "A line parallel to the bases of a given right trapezoid splits it into two smaller trapezoids, each of which can have a circle inscribed in it. Find the bases of the original trapezoid if its lateral sides are equal to $c$ and $d$, where $c<d$.",
+    "final_answer": "\\frac{(\\sqrt{d+c} \\pm \\sqrt{d-c})^2}{4}",
+    "responses": [
+      "",
+      "\n\n</think>",
+      "\n\nThe answer is: \\boxed{10}",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "An open organ pipe has its first overtone at \\( N_{1} = 512 \\) Hz when it is blown with air (speed of sound \\( V = 340 \\frac{\\mathrm{m}}{\\mathrm{sec}} \\)). What will be the fundamental frequency of this pipe when it is blown with hydrogen, in which the speed of sound is \\( V' = 1200 \\frac{\\mathrm{m}}{\\mathrm{sec}} \\)?",
+    "final_answer": "904 \\, Hz",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Working alone, Ryan can dig a 10 ft by 10 ft hole in a certain amount of time. Castel can dig the same hole in six hours. It would take them 2.72727272727 hours if they worked together. How many hours does it take for Ryan to dig the hole alone?",
+    "final_answer": "5",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.09375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the quadratic function y = -x^2 + 2x + m^2, find the value of m if the maximum value of the function is 3. Express your answer in the form \u00b1\u221avalue.",
+    "final_answer": "\u00b1\u221a2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.0,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given a triangle $\\triangle ABC$ with $BC=3$, $AC=4$, $AB=5$, let $P$ be any point on its sides. The minimum value of $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ is $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_(.\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_)$.",
+    "final_answer": "\\frac{25}{64}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A store sells pencils and erasers. It has a rule that for every pencil you buy, you must buy 2 erasers which cost 1/2 the price of the pencils. They sold 20 pencils and the erasers cost $1 each. How much did the store earn from selling pencils and erasers?",
+    "final_answer": "\\$120",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.078125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the sequence $\\{a\\_n\\}$: $2$, $-6$, $12$, $-20$, $30$, $-42$, $...$ Write a general term formula for this sequence: $\\_\\_\\_\\_\\_\\_\\_\\_$.",
+    "final_answer": "a_n = (-1)^{n+1} \\times n \\cdot (n+1)",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.03125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Find the natural number  $A$  such that there are  $A$  integer solutions to  $x+y\\geq A$  where  $0\\leq x \\leq 6$  and  $0\\leq y \\leq 7$ .",
+    "final_answer": "10",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If there exists a real number $x \\in [2, 4]$ such that the inequality $x^2 - 2x - 2 - m < 0$ holds, then the range of values for $m$ is.",
+    "final_answer": "(-2, +\\infty)",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.0625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that the solution set of the inequality $\\frac{x-a}{x-b} > 0$ ($a,b \\in \\mathbb{R}$) with respect to $x$ is $(-\\infty, 1) \\cup (4, +\\infty)$, find the value of $a + b$.",
+    "final_answer": "a + b = 5",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.03125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that the real numbers \\( x \\) and \\( y \\) satisfy the inequality \\(\\left(x+\\sqrt{x^{2}+1}\\right)\\left(y+\\sqrt{y^{2}+1}\\right) \\geqslant 1\\), find the minimum value of \\( x + y \\).",
+    "final_answer": "0",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "In the right triangle \\(ABC\\), the altitude \\(BD\\) from vertex \\(B\\) of the right angle is dropped onto the hypotenuse \\(AC\\). It is known that \\(AB = 13\\) and \\(BD = 12\\).\n\nFind the area of triangle \\(ABC\\).",
+    "final_answer": "202.8",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.109375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Determine the smallest natural number $n$ for which the inequality $\\left(x^{2} + y^{2} + z^{2}\\right)^{2} \\leq n\\left(x^{4} + y^{4} + z^{4}\\right)$ holds for all real values of $x, y, z$.",
+    "final_answer": "3",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.15625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "In $\\triangle ABC$, if $a=9$, $b=10$, $c=12$, then the shape of $\\triangle ABC$ is $\\_\\_\\_\\_\\_\\_$.",
+    "final_answer": "Acute triangle",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Find the coefficient of $x^3y^3$ in the expansion of $(x+2y)(2x-y)^5$.",
+    "final_answer": "120",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.1875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that \\\\(\\alpha\\\\) is an angle in the second quadrant, and \\\\(\\sin \\alpha= \\frac { \\sqrt {15}}{4}\\\\), find the value of \\\\( \\frac {\\sin (\\alpha+ \\frac {\\pi}{4})}{\\sin 2\\alpha+\\cos 2\\alpha+1}\\\\).",
+    "final_answer": "- \\sqrt {2}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.109375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "The sum of the house numbers on one side of a street from corner to corner is 117. What is the house number of the fifth house from the beginning of this section?",
+    "final_answer": "13",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.15625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Let $a, b \\in \\mathbb{R}$, and $9a^{2}+b^{2}-6a-2b=0$. The maximum value of $3a+b$ is ______.",
+    "final_answer": "4",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.109375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that $\\sin 2\\theta = \\frac{2}{3}$, calculate the value of $\\tan \\theta + \\frac{1}{\\tan \\theta}$. Express your answer as a single number.",
+    "final_answer": "3",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.171875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Determine the number of solutions to the equation 2^x - 2[x] - 1 = 0, where [x] denotes the greatest integer less than or equal to the real number x. Express your answer as a single integer.",
+    "final_answer": "3",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A leak in the bottom of a tank can empty the full tank in 3 hours. There are two inlet pipes which can fill the tank. Inlet Pipe A fills water at the rate of 6 litres a minute, while Inlet Pipe B fills the tank at a rate of 4 litres a minute. Both inlet pipes are opened simultaneously when the tank is full, and due to the leak, the tank is empty in 12 hours. How many litres does the cistern hold?",
+    "final_answer": "1440",
+    "responses": [
+      "",
+      "\n</think>",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.203125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given an equilateral triangle $ABC$ with side length $a$, calculate the value of $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} + \\overrightarrow{AC} \\cdot \\overrightarrow{BC}$. Express your answer as a single algebraic expression in terms of $a$.",
+    "final_answer": "a^2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.296875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Determine the constant term in the expansion of $\\left(2 \\sqrt {x}- \\frac{1}{ \\sqrt[4]{x}}\\right)^{6}$. (Answer with a number)",
+    "final_answer": "60",
+    "responses": [
+      "",
+      "",
+      "\n\nThe general term formula of the binomial expansion is: $T_{r+1}= C_{6}^{r} \\cdot (2 \\sqrt {x})^{6-r} \\cdot (- \\frac{1}{ \\sqrt[4]{x}})^{r} = C_{6}^{r} \\cdot (-1)^{r} \\cdot 2^{6-r} \\cdot x^{3- \\frac{r}{2}}$.\n\nLet $3- \\frac{r}{2}=0$, solve for $r$ to find $r=6$.\n\nTherefore, the constant term is $C_{6}^{6} = 1$.\n\nSo, the answer is $\\boxed{1}$.\n\nFirst, write out the general term formula of the binomial expansion, and then set the exponent of $x$ to 0 to find the constant term. This problem tests the application of the binomial theorem, which is a basic topic.",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.265625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given a sequence $\\{a_{n}\\}$ with the sum of its first $n$ terms denoted as $S_{n}$, where $a_{1}=1$ and $a_{n+1}=S_{n}$, find $\\sum_{i=1}^{n}\\frac{1}{{a}_{i}}$.",
+    "final_answer": "3-\\frac{1}{{2}^{n-2}}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.203125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that the line $x+y-m=0$ is perpendicular to the line $x+(3-2m)y=0$, find the value of the real number $m$.",
+    "final_answer": "1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.25,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Let \\( x \\) and \\( y \\) be positive real numbers. What is the smallest possible value of \\( \\frac{16}{x} + \\frac{108}{y} + xy \\)? Express your answer as a single number.",
+    "final_answer": "36",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.265625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "There is a bag that is 5 meters (m) long and weighs 29/8 kilograms (kg) and a chair that is 4 meters (m) long and weighs 2.8 kilograms (kg). How many kilograms (kg) are the bag and chair if they are cut into 2 meters (m) and weighed together?",
+    "final_answer": "2.85",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.203125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Taylor's house guests have different preferences for coffee in the morning. Half of them like weak coffee and the other half like strong coffee. Taylor uses 1 tablespoon of coffee per cup of water to make it weak and he changes the amount for strong coffee. If he makes 12 cups of both weak and strong coffee and needs 36 tablespoons of coffee, what is the ratio of the amount of coffee used for strong coffee to the amount used for weak coffee?",
+    "final_answer": "2:1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.234375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Three students each choose one day from Saturday or Sunday to participate in a charity event. Calculate the probability that there will be students participating on both Saturday and Sunday. Express your answer as a simplified fraction.",
+    "final_answer": "\\frac{3}{4}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.234375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A tiger is chasing its prey at a constant speed. Its entire body passes a blade of grass in 1 second. It then runs above a fallen tree trunk of a certain length in 5 seconds. The length of the tiger is 5 meters. How long is the fallen tree trunk?",
+    "final_answer": "25",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.28125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Let the function $f(x) = \\log_{\\frac{1}{2}}x$ have an inverse function denoted by $g(x)$. Then find the range of the function $y = g(x)$ on the interval $[1, 2]$.",
+    "final_answer": "\\left[\\frac{1}{4}, \\frac{1}{2}\\right]",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "final_answer": "100",
+    "responses": [
+      "",
+      "",
+      "\n\n</think>",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "In a parallelogram, the length of one diagonal is 30 meters and the perpendicular dropped on that diagonal is 20 meters. What is the area of the parallelogram?",
+    "final_answer": "600",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the lines $y=x+1$, $y=-x+1$, $y=-2x+1$, their angles of inclination are $\\alpha_1$, $\\alpha_2$, $\\alpha_3$ respectively. Arrange $\\alpha_1$, $\\alpha_2$, $\\alpha_3$ in ascending order.",
+    "final_answer": "\\alpha_1<\\alpha_3<\\alpha_2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.3125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A trader bought a car at a certain discount on its original price. He sold it at a 100% increase on the price he bought it. He made a profit of 60.00000000000001% on the original price. What was the discount percentage on the original price when he bought the car?",
+    "final_answer": "20\\%",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the function f(x) = sin(2x - \u03c0/4), find the value of a \u2208 (0, \u03c0) such that f(x+a) = f(x+3a) always holds true. Express your answer in radians as a fraction of \u03c0.",
+    "final_answer": "\\frac{\\pi}{2}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "The analytical expression of the parabola $y=-2x^{2}$ after shifting down $1$ unit and then shifting right $3$ units is ____.",
+    "final_answer": "y = -2(x - 3)^2 - 1",
+    "responses": [
+      "\n\nThe analytical expression of the parabola $y=-2x^{2}$ after shifting down $1$ unit is $y=-2x^{2}-1$, and after shifting right $3$ units is $y=-2(x-3)^{2}-1=y=-2x^{2}+12-1=y=-2x^{2}+11$.\n\nTherefore, the analytical expression of the parabola $y=-2x^{2}$ after shifting down $1$ unit and then shifting right $3$ units is $\\boxed{y=-2x^{2}+11}$.",
+      "",
+      "\n\n<steps>\n1. First, shift the parabola $y=-2x^{2}$ down by $1$ unit to obtain the equation $y=-2(x+1)^{2}$.\n2. Then, shift the parabola $y=-2(x+1)^{2}$ right by $3$ units to obtain the equation $y=-2(x-3)^{2}$.\n3. Therefore, the analytical expression of the parabola after the given transformations is $\\boxed{y=-2(x-3)^{2}}$.",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.390625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that one asymptote of the hyperbola $\\frac{y^{2}}{a^{2}} - \\frac{x^{2}}{b^{2}} = 1$ ($a, b > 0$) is $y = -2x$, and one focus of the hyperbola coincides with the focus of the parabola $x^2 = 4\\sqrt{10}y$, find the standard equation of the hyperbola.",
+    "final_answer": "\\frac{y^{2}}{8} - \\frac{x^{2}}{2} = 1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      "\n\n<step-by-step>\n1. Let the equation of the hyperbola be $\\frac{y^{2}}{a^{2}} - \\frac{x^{2}}{b^{2}} = 1$.\n2. Given that one asymptote of the hyperbola is $y = -2x$, we can set the equation of the asymptote as $y = -2x$.\n3. Substituting $y = -2x$ into the hyperbola's equation, we get $\\frac{x^{2}}{a^{2}} - \\frac{x^{2}}{b^{2}} = 1$.\n4. Simplifying, we have $\\frac{a^{2} - b^{2}}{a^{2}} = 1$.\n5. Given that one focus of the hyperbola coincides with the focus of the parabola $x^2 = 4\\sqrt{10}y$, we can set the equation of the parabola as $x^2 = 4\\sqrt{10}y$.\n6. Substituting $x^2 = 4\\sqrt{10}y$ into the hyperbola's equation, we get $\\frac{y^{2}}{a^{2}} - \\frac{x^{2}}{b^{2}} = 1$.\n7. Substituting $x^2 = 4\\sqrt{10}y$ into the equation $\\frac{a^{2} - b^{2}}{a^{2}} = 1$, we get $a^{2} - b^{2} = a^{2}$.\n8. Solving for $b^{2}$, we have $b^{2} = a^{2}$.\n9. Therefore, the equation of the hyperbola is $\\boxed{\\frac{y^{2}}{a^{2}} - \\frac{x^{2}}{a^{2}} = 1}$."
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.390625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that the distance from point P on the ellipse $\\frac{x^{2}}{25}$+ $\\frac{y^{2}}{16}$\\=1 to one focus is 3, find the distance from point P to the other focus.",
+    "final_answer": "7",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.328125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A point $M$ is randomly chosen within a parallelogram $ABCD$ with an area of $S$. Calculate the probability that the area of $\\triangle MCD$ is less than $\\frac{S}{3}$. Express your answer as a simplified fraction.",
+    "final_answer": "\\frac{2}{3}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If $n < m < 0$, simplify the expression $$\\sqrt {m^{2}+2mn+n^{2}} - \\sqrt {m^{2}-2mn+n^{2}}.$$ Express your answer as a simple algebraic expression.",
+    "final_answer": "-2m",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.421875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "In triangle $\\triangle ABC$, given that $a=4$, $b=3$, and $c=2$, the smallest angle of $\\triangle ABC$ is represented by which inverse trigonometric function?",
+    "final_answer": "C = \\arccos \\left( \\frac{7}{8} \\right)",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.484375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Roy bought a new battery-gasoline hybrid car. On a trip the car ran exclusively on its battery for the first 40 miles, then ran exclusively on gasoline for the rest of the trip, using gasoline at a rate of 0.02 gallons per mile. If the average mileage for the entire trip was 55 miles per gallon, what was the total length of the trip in miles? Express your answer as a whole number.",
+    "final_answer": "440",
+    "responses": [
+      "",
+      "\n</think>",
+      "\n\n\\[ \\textbf{(A)}\\ 40 \\qquad \\textbf{(B)}\\ 45 \\qquad \\textbf{(C)}\\ 50 \\qquad \\textbf{(D)}\\ 55 \\qquad \\textbf{(E)}\\ 60 \\]",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A train that is 360 meters long is running at a speed of 50 km/hour. It passes a bridge of certain length in 36 seconds. What is the length of the bridge?",
+    "final_answer": "140",
+    "responses": [
+      "",
+      "",
+      "\n\n<steps>\n1. First, convert the speed of the train from km/hour to m/second. We know that 1 km = 1000 meters and 1 hour = 3600 seconds.\n\\[ \\text{Speed in m/s} = \\frac{50 \\text{ km/hour} \\times 1000 \\text{ meters/km}}{3600 \\text{ seconds/hour}} = \\frac{50000}{3600} \\text{ m/s} \\]\n\\[ \\text{Speed in m/s} = \\frac{500}{36} \\text{ m/s} \\approx 13.89 \\text{ m/s} \\]\n\n2. Next, we need to calculate the total distance covered by the train while passing the bridge. This distance is the sum of the length of the train and the length of the bridge.\n\\[ \\text{Total distance} = \\text{Length of train} + \\text{Length of bridge} \\]\n\\[ \\text{Total distance} = 360 \\text{ meters} + \\text{Length of bridge} \\]\n\n3. The time taken to pass the bridge is given as 36 seconds. We can use the formula \\( \\text{Distance} = \\text{Speed} \\times \\text{Time} \\) to find the length of the bridge.\n\\[ \\text{Length of bridge} = \\frac{\\text{Total distance}}{\\text{Speed}} \\]\n\\[ \\text{Length of bridge} = \\frac{360 \\text{ meters} + \\text{Length of bridge}}{13.89 \\text{ m/s}} \\]\n\n4. Solving for the length of the bridge, we get:\n\\[ 360 \\text{ meters} + \\text{Length of bridge} = 13.89 \\text{ m/s} \\times 36 \\text{ seconds} \\]\n\\[ 360 \\text{ meters} + \\text{Length of bridge} = 529.24 \\text{ meters} \\]\n\\[ \\text{Length of bridge} = 529.24 \\text{ meters} - 360 \\text{ meters} \\]\n\\[ \\text{Length of bridge} = 169.24 \\text{ meters} \\]\n\n\\[ \\boxed{169.24 \\text{ meters}} \\]",
+      "",
+      "\n\nStep 1: Convert the speed of the train from km/hour to m/second.\nStep 2: Calculate the distance covered by the train while passing the bridge.\nStep 3: Calculate the length of the bridge using the distance covered and the time taken.\n\nThe length of the bridge is \\boxed{240} meters."
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.46875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Three trains A, B, and C are running on parallel tracks. Train A is running at a speed of 60 km/hr and crosses a pole in 5 seconds. Train B is running at a speed of 80 km/hr and crosses a pole in 7 seconds. Train C is running at a speed of 50 km/hr and crosses a pole in 9 seconds. Which train has the longest length, and what is its length?",
+    "final_answer": "155.54",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.453125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that the function $f(x)$ is an odd function defined on the domain $\\mathbb{R}$, and when $x > 0$, $f(x)=2^x-3$, calculate the value of $f(-2)+f(0)$.",
+    "final_answer": "-1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.484375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Aziz's parents moved to America in 1982. The year is 2021 and Aziz just celebrated a birthday. His parents had been living in America for 3 years before Aziz was born. How old is Aziz now?",
+    "final_answer": "36",
+    "responses": [
+      "",
+      "",
+      "",
+      "\n\n\\(\\text{Aziz's parents moved to America in 1982}\\)\n\\(\\text{Aziz just celebrated a birthday in 2021}\\)\n\\(\\text{Aziz's parents had been living in America for 3 years before Aziz was born}\\)\n\\(\\text{Aziz's age in 1982} = \\text{Aziz's age in 2021} - 3\\)\n\\(\\text{Aziz's age in 1982} = 2021 - 3 = 2018\\)\n\\(\\text{Aziz's age in 2021} = 2021 - 3 = 2018 + 1 = 2019\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019\\)\n\\(\\text{Aziz's age} = 2019 - 2018 = 1\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age in 1982} = 2019 - 3 = 2016\\)\n\\(\\text{Aziz's age} = 2016 - 1 = 2015}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} = 2016 - 1 = 2015}\\)\n\\(\\text{Aziz's age} = 2015 - 1 = 2014}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\)\n\\(\\text{Aziz's age in 1982} + 3 = 2019}\\)\n\\(\\text{Aziz's age} = 2019 - 3 = 2016}\\",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.46875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Jia and Yi are solving the system of equations simultaneously:\n$$\n\\begin{cases}\n& ax+by=2, \\\\\n& cx-3y=-2.\n\\end{cases}\n$$\nJia correctly solves to get\n$$\n\\begin{cases}\n& x=1, \\\\\n& y=-1;\n\\end{cases}\n$$\nYi, due to copying the value of $c$ incorrectly, gets the wrong solution\n$$\n\\begin{cases}\n& x=2, \\\\\n& y=-6.\n\\end{cases}\n$$\nFind the values of $a$, $b$, and $c$.",
+    "final_answer": "\\begin{cases}a= \\frac{5}{2} \\\\ b= \\frac{1}{2} \\\\ c=-5\\end{cases}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given an arithmetic sequence $\\{a_{n}\\}$ with a non-zero common difference $d$, and the terms $a_1$, $a_3$, and $a_9$ form a geometric sequence, find the value of $\\frac{a_1 + a_3 + a_9}{a_2 + a_4 + a_{10}}$.",
+    "final_answer": "\\frac{13}{16}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.421875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Shawn invested one half of his savings in a bond that paid simple interest for 2 years and received $550 as interest. He invested the remaining in a bond that paid compound interest, interest being compounded annually, for the same 2 years at the same rate of interest. The value of his total savings before investing in these two bonds was $2750. How much interest did Shawn receive from the compound interest bond?",
+    "final_answer": "$605",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If a car travels 5 kilometers to the east, it is recorded as 5 kilometers. How would traveling 5 kilometers to the west be recorded? Express your answer in kilometers.",
+    "final_answer": "-5",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      "\n</think>"
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$? Express your answer as a whole number.",
+    "final_answer": "2",
+    "responses": [
+      "\n</think>",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If the price of gasoline increases by a certain percentage and a driver intends to spend only 10% more on gasoline, the driver should reduce the quantity of gasoline that he buys by 12%. What is the percentage increase in the price of gasoline?",
+    "final_answer": "25\\%",
+    "responses": [
+      "\n\nA: 50%\nB: 100%\nC: 120%\nD: 150%",
+      "",
+      "",
+      "",
+      "\n</think>"
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.546875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "James can make a beret from 3 spools of yarn. If he has 12 spools of red yarn, 15 spools of black yarn, and 6 spools of blue yarn, how many berets can he make?",
+    "final_answer": "11",
+    "responses": [
+      "\n\n<steps>\n\nStep 1: Determine the total number of spools of yarn James has.\n\nStep 2: Calculate the total number of berets he can make.\n\n</steps>\n\nThe final answer is \\boxed{}.",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.59375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "In a class of 48 students, the scores of a mathematics test follow a normal distribution $N(80, 100)$. Theoretically, the number of students who scored between 80 and 90 points is approximately _.",
+    "final_answer": "16",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.578125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Megan had 256 files on her computer. She deleted 67 of them and put the rest into folders with 12 files in each. Megan ended up with _____ folders.",
+    "final_answer": "15",
+    "responses": [
+      "",
+      "\n\n<process>\n1. First, we need to find out how many files were left after Megan deleted some of them. To do this, we subtract the number of files deleted from the total number of files:\n\\[256 - 67 = 189\\]\n2. Next, we need to find out how many folders Megan ended up with after dividing the remaining files into folders with 12 files each. To do this, we divide the number of remaining files by the number of files in each folder:\n\\[189 \\div 12 = 16\\text{ remainder } 3\\]\n3. Since we cannot have a remainder when counting whole numbers, we need to round up to the nearest whole number. In this case, rounding up 3 folders will give us:\n\\[16 + 1 = 17\\]\n4. Therefore, Megan ended up with \\boxed{17} folders.",
+      "",
+      "\n\nStep 1: Calculate the number of files that Megan still has on her computer after deleting some.\n\\[256 - 67 = 189 \\text{ files}\\]\n\nStep 2: Divide the number of files in each folder by the number of files per folder to find the number of folders.\n\\[189 \\div 12 = 15.75 \\text{ folders}\\]\n\nStep 3: Since Megan cannot have a fraction of a folder, round up to the nearest whole number.\n\\[15.75 \\approx 16 \\text{ folders}\\]\n\nFinal Answer:\n\\[\\boxed{16}\\]",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.578125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given $F(x) = ax^7 + bx^5 + cx^3 + dx - 6$, and it is known that $F(-2) = 10$, find the value of $F(2)$.",
+    "final_answer": "-22",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.546875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the function $f(x)=\\ln ( \\sqrt {1+9x^{2}}-3x)+1$, find the value of $f(\\lg 2)+f(\\lg \\dfrac {1}{2})$ .",
+    "final_answer": "2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Antonieta wants to ride the Ferris wheel, the roller coaster, and the log ride. The Ferris wheel costs 6 tickets, the roller coaster costs 5 tickets, and the log ride costs 7 tickets. She needs to buy 16 more tickets to ride all the attractions. How many tickets does Antonieta have initially?",
+    "final_answer": "2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.59375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given $z_{1}$, $z_{2} \\in \\mathbb{C}$, where $|z_{1}|=|z_{2}|=1$ and $|z_{1}+z_{2}|=\\sqrt{3}$, calculate the value of $|z_{1}-z_{2}|$. Express your answer as a single number.",
+    "final_answer": "1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given a quadratic equation $x^{2}-2x+m=0$, after completing the square, we get $\\left(x-1\\right)^{2}=n$. Find the value of $m+n$.",
+    "final_answer": "1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.6875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the equation |x-20| + |x+20| = 2020, find the sum of the two solutions x1 and x2.",
+    "final_answer": "0",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$), find the value of $a^{2m+n}$ = $\\_\\_\\_\\_\\_\\_$.",
+    "final_answer": "12",
+    "responses": [
+      "",
+      "",
+      "",
+      "\n\n<Solution>\n\nGiven $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$),\n\nTherefore, $a^{m}=2$, $a^{n}=3$.\n\nTherefore, $a^{2m+n}=a^{2m} \\cdot a^{n}=a^{2m+n}$.\n\nTherefore, the answer is $\\boxed{a^{2m+n}}$.",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.6875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the complex number $z= \\\\dfrac {2}{-1-i}$, let $\\\\overset{.}{z}$ be the conjugate of $z$. Calculate the coordinates of the point corresponding to $i \\\\overset{.}{z}$ in the complex plane. Express your answer as coordinates (a, b).",
+    "final_answer": "(1, -1)",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.6875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Calculate the value of $\\sin 810^{\\circ}+\\cos (-60^{\\circ})$. Express your answer as a fraction.",
+    "final_answer": "\\dfrac{3}{2}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.65625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "In the school election, Eliot got some votes, Shaun got 5 times as many votes as Randy, and Randy got 16 votes. Eliot got 160 votes. What is the ratio of the number of votes Eliot got to the number of votes Shaun got?",
+    "final_answer": "2:1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.609375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Logan makes $65,000 a year. He spends $20,000 on rent every year, $5000 on groceries every year, and $8000 on gas every year. If he needs to make $10,000 more each year, how much money does he want to have left each year?",
+    "final_answer": "\\$42,000",
+    "responses": [
+      "",
+      "\n\n<response>\nStep 1: First, we need to calculate the total amount of money Logan spends on rent, groceries, and gas in a year.\n\nTotal expenses = Rent + Groceries + Gas\nTotal expenses = $20,000 + $5,000 + $8,000\nTotal expenses = $33,000\n\nStep 2: Next, we need to find out how much money Logan needs to make each year to meet his goal of having $10,000 more than he spends.\n\nTotal expenses + Additional amount needed = Total earnings\n$33,000 + $10,000 = Total earnings\nTotal earnings = $43,000\n\nStep 3: Finally, we need to calculate how much money Logan wants to have left each year.\n\nMoney left = Total earnings - Total expenses\nMoney left = $43,000 - $33,000\nMoney left = $10,000\n\n<final answer>\n\\boxed{10,000}",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.65625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Consider a sequence formed by all powers of 3, or the sum of several distinct powers of 3, arranged in ascending order. The sequence starts as 1, 3, 4, 9, 10, 12, 13, \u2026 What is the 100th term of this sequence?",
+    "final_answer": "981",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.640625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given that the imaginary unit $i$ is a root of the equation $x^2+ax+b=0$, where $a, b \\in \\mathbb{R}$, calculate the value of $a+b$. Express your answer as a single integer.",
+    "final_answer": "1",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.65625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A tradesman sold an article at a certain loss percentage. If the selling price had been increased by $500, there would have been a gain of 15%. The cost price of the article was $1250. What was the loss percentage when the article was initially sold?",
+    "final_answer": "25\\%",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.609375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A track and field team has 64 male athletes and 56 female athletes. Using the stratified sampling method, several people are drawn. If 8 of the drawn athletes are male, find the number of female athletes drawn. Express your answer as a whole number.",
+    "final_answer": "7",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.78125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Set X consists of the integers from 1 to 12, inclusive, while set Y consists of the integers from 0 to some number, inclusive. There are 12 distinct integers that belong to both sets at the same time. What is the ending number of set Y?",
+    "final_answer": "12",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.78125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If the point $(8,4)$ is on the graph of the function $f(x)=1+\\log_{a}x$, then the inverse function of $f(x)$ is",
+    "final_answer": "f^{-1}(x)=2^{x-1}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.734375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Chuck rides 3 hours total on a bicycle trip into the country and back. He rode out at a certain rate and returned at the rate of 24 mph. Chuck rode 28.8 miles into the country (rounded to the nearest hundredth). What was his speed when he rode out?",
+    "final_answer": "16",
+    "responses": [
+      "\n\n\\textbf{(A)}\\ 12.5 mph \\qquad \\textbf{(B)}\\ 13.5 mph \\qquad \\textbf{(C)}\\ 14.5 mph \\qquad \\textbf{(D)}\\ 15.5 mph \\qquad \\textbf{(E)}\\ 16.5 mph",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.78125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
+    "final_answer": "6",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.734375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "There exist vectors $\\mathbf{a}$ and $\\mathbf{b}$ such that\n\\[\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -3 \\\\ -6 \\end{pmatrix},\\]where $\\mathbf{a}$ is parallel to $\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ and $\\mathbf{b}$ is orthogonal to $\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}.$  Find $\\mathbf{b}.$",
+    "final_answer": "\\begin{pmatrix} 7 \\\\ -2 \\\\ -5 \\end{pmatrix}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.703125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Mary is baking a cake. The recipe calls for 12 cups of flour, 14 cups of sugar, and 7 cups of salt. She already put in some cups of flour. She needs to add 3 more cups of flour than cups of salt now. How many cups of flour has she already put in?",
+    "final_answer": "2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.703125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the universal set $U=\\mathbb{R}$, let the set $P$ be defined as $P=\\{x \\mid x^2 - 5x - 6 \\geq 0\\}$. Find the complement of $P$ in $U$, $\\complement_U P$.",
+    "final_answer": "\\complement_U P = (-1, 6)",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.78125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given a complex number $z=2-i$, calculate the magnitude of $z^{2}$, denoted as $|z^{2}|$. Express your answer as a single number.",
+    "final_answer": "5",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.75,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "What is the smallest number which, when increased by some number, is divisible by 8, 11, and 24? The answer is 255.",
+    "final_answer": "255",
+    "responses": [
+      "",
+      "",
+      "",
+      "\n\nWhat is the value of unknown variable X?",
+      ""
+    ],
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.75,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If the algebraic expression $x^2-6x+b$ can be transformed into $(x-a)^2-1$, then the value of $b-a$ is.",
+    "final_answer": "5",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "John goes to the store and pays with a 20 dollar bill. He buys 3 sodas, each costing $2. How much change did John get?",
+    "final_answer": "\\$14",
+    "responses": [
+      "\n\nA: 14\nB: 16\nC: 18\nD: 20",
+      "\n",
+      "",
+      "\n",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "If x is 20 percent more than y and y is some percent less than z, then x is 48 percent of z. What is the percentage decrease of y compared to z?",
+    "final_answer": "60",
+    "responses": [
+      "",
+      "",
+      "\n</think>",
+      "",
+      "\n\n<step>\nStep 1: Given that x is 20 percent more than y, we can express this relationship as x = y + 0.2y = 1.2y.\n\nStep 2: Similarly, given that x is 48 percent of z, we can express this relationship as x = 0.48z.\n\nStep 3: Since x = 1.2y, we can set the two expressions for x equal to each other and solve for y: 1.2y = 0.48z.\n\nStep 4: Solving for y in terms of z, we get y = (0.48z)/1.2 = 0.4z.\n\nStep 5: To find the percentage decrease of y compared to z, we need to determine the difference between y and z, divide it by z, and multiply by 100.\n\nStep 6: The difference between y and z is y - z = 0.4z - z = -0.6z.\n\nStep 7: To find the percentage decrease, we divide -0.6z by z and multiply by 100: (-0.6z/z) * 100 = -60%.\n\nStep 8: Therefore, y is 60 percent less than z.\n\nThe final answer is \\boxed{60}"
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.828125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "problem": "on a purchase of $ 110 , a store offered a payment plan consisting of a $ 10 down payment and 12 monthly payments of $ 10 each . what percent of the purchase price , to the nearest tenth of a percent , did the customer pay in interest by using this plan ?",
+    "final_answer": "18.2\\%",
+    "responses": [
+      "",
+      "",
+      "\nThe answer is: 13.5",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.890625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "On an algebra test, there were $5x$ problems. Lucky Lacy missed $x$ of them. What percent of the problems did she get correct?",
+    "final_answer": "80",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      "\n\n<steps>\n1. Find the number of problems Lacy got correct by subtracting the number of problems she missed from the total number of problems: \n   \\[\n   5x - x = 4x\n   \\]\n2. Calculate the percentage of problems she got correct by dividing the number of correct problems by the total number of problems and multiplying by 100:\n   \\[\n   \\frac{4x}{5x} \\times 100 = \\frac{4}{5} \\times 100 = 80\\%\n   \\]\n3. Therefore, Lacy got \\(\\boxed{80\\%}\\) of the problems correct."
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "problem": "To strengthen environmental awareness, the Environmental Protection Bureau randomly selects 3 out of 5 local chemical plants (A, B, C, D, E) for wastewater compliance testing each week. The probability that both plant A and plant B are selected for testing in a week is $\\_\\_\\_\\_\\_\\_$.",
+    "final_answer": "\\frac{3}{10}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.859375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Given the function $f(x) = \\ln(ax-1)$, its derivative is $f'(x)$, and $f'(2) = 2$, find the value of the real number $a$. Express your answer as a fraction or decimal.",
+    "final_answer": "\\frac{2}{3}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.890625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Noah is asked to report the number of insects in the laboratory based on the total number of insect legs. There are some insect legs, and Noah calculates that there are 6 insects. How many insect legs are there in the laboratory?",
+    "final_answer": "36",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.8125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A 10 m long rectangular floor is to be covered with a square carpet with 4 m sides. 64 square meters of the floor are uncovered. What is the width of the floor?",
+    "final_answer": "8",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "A research group is monitoring the air quality in a city, dividing $24$ cities into three groups: A, B, and C, with $4$, $12$, and $8$ cities in each group, respectively. If a stratified sampling method is used to select $6$ cities, then the number of cities to be selected from group B is _______.",
+    "final_answer": "3",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.828125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "The height of a rectangle is 36 centimeters (cm) and the length of its width is 64 centimeters (cm). There is a square with a perimeter equal to the perimeter of this rectangle. Find the value of dividing the perimeter of this square into 4 equal parts.",
+    "final_answer": "50",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 1.0,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Adam has 18 magnets. He gave away a third of the magnets, and he still had some magnets left. Peter has 24 magnets. What is the ratio of the number of magnets Adam has to the number of magnets Peter has?",
+    "final_answer": "1:2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.984375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Fred has 38 red marbles, half as many green ones, and the rest are dark blue. If he has a certain number of marbles and 6 of them are dark blue, how many marbles does Fred have in total?",
+    "final_answer": "63",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.96875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Nell collects baseball cards. She had some cards while Jeff had 11 cards. She gave 276 of her cards to Jeff and now has 252 cards left. How many cards did Nell have initially?",
+    "final_answer": "528",
+    "responses": [
+      "",
+      "",
+      "",
+      "\n\n<steps>\nNell had some cards initially.\nJeff had 11 cards initially.\nShe gave 276 cards to Jeff.\nNow Nell has 252 cards left.\nWe can find out how many cards Nell had initially by adding the cards she gave to Jeff and the cards she has now.\nThe total number of cards Nell had initially is 11 + 252 = 263.\n\n</steps>\nThe final answer is \\boxed{263}.",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.921875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Oli's banana split has some scoops of ice cream while Victoria has twice more scoops of ice cream than Oli's. Victoria has 4 more scoops of ice cream than Oli. How many scoops of ice cream does Oli's banana split have?",
+    "final_answer": "4",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.90625,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Jasmine wants to organize her books in order of most number of pages to least number of pages. Jasmine's longest book has 396 pages. The book in the middle of her shelf has 297 pages, which is three times the number of pages of the shortest book. What is the ratio of the number of pages in the shortest book to the longest book?",
+    "final_answer": "1:4",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.953125,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "After moving the line $y=2x+3$ down $5$ units, the resulting equation of the line is ______.",
+    "final_answer": "y = 2x - 2",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.96875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "The sum of two numbers is 20, and their difference is some value. The difference of their squares is 200. What is the difference between the two numbers?",
+    "final_answer": "10",
+    "responses": [
+      "",
+      "\n</think>",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.96875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "Evaluate the expression $sin(\\\\frac{\u03c0}{2}-\\\\frac{\u03c0}{6})$. Express your answer as a fraction or a simplified radical, if necessary.",
+    "final_answer": "\\\\frac{\\\\sqrt{3}}{2}",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.9375,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "problem": "It takes Matt 2 minutes per problem to do his math homework with a calculator and a certain amount of time per problem without a calculator. If Matt's assignment has 20 problems, using a calculator will save him 60 minutes. How many minutes does it take Matt to do a problem without a calculator?",
+    "final_answer": "5",
+    "responses": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.921875,
+    "correctness": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  }
+]

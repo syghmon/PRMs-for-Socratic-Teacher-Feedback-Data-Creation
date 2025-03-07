@@ -7,7 +7,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.015625,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 149674
   },
   {
@@ -18,7 +18,7 @@
       "Mathematics -> Applied Mathematics -> Other"
     ],
     "llama8b_solve_rate": 0.015625,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 154384
   },
   {
@@ -29,7 +29,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.09375,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 139522
   },
   {
@@ -40,7 +40,7 @@
       "Mathematics -> Algebra -> Intermediate Algebra -> Quadratic Functions"
     ],
     "llama8b_solve_rate": 0.0,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 235487
   },
   {
@@ -51,7 +51,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.015625,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 4527
   },
   {
@@ -62,7 +62,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.078125,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 130378
   },
   {
@@ -73,7 +73,7 @@
       "Mathematics -> Algebra -> Sequences and Series -> Other"
     ],
     "llama8b_solve_rate": 0.03125,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 28034
   },
   {
@@ -84,7 +84,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.015625,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 185087
   },
   {
@@ -95,7 +95,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.0625,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 34337
   },
   {
@@ -106,7 +106,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.03125,
-    "difficulty_bin": "0-0.1%",
+    "difficulty_bin": "0-0.1",
     "dataset_index": 28922
   },
   {
@@ -117,7 +117,7 @@
       "Mathematics -> Applied Mathematics -> Other"
     ],
     "llama8b_solve_rate": 0.140625,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 150362
   },
   {
@@ -128,7 +128,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Area"
     ],
     "llama8b_solve_rate": 0.109375,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 178650
   },
   {
@@ -139,7 +139,7 @@
       "Mathematics -> Algebra -> Other"
     ],
     "llama8b_solve_rate": 0.15625,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 176143
   },
   {
@@ -150,7 +150,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Triangles"
     ],
     "llama8b_solve_rate": 0.140625,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 35550
   },
   {
@@ -161,7 +161,7 @@
       "Mathematics -> Algebra -> Algebraic Expressions -> Other"
     ],
     "llama8b_solve_rate": 0.1875,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 41991
   },
   {
@@ -172,7 +172,7 @@
       "Mathematics -> Precalculus -> Trigonometric Functions"
     ],
     "llama8b_solve_rate": 0.109375,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 47927
   },
   {
@@ -183,7 +183,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.15625,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 147079
   },
   {
@@ -196,7 +196,7 @@
       "Mathematics -> Calculus -> Other"
     ],
     "llama8b_solve_rate": 0.109375,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 17896
   },
   {
@@ -207,7 +207,7 @@
       "Mathematics -> Precalculus -> Trigonometric Functions"
     ],
     "llama8b_solve_rate": 0.171875,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 232740
   },
   {
@@ -218,7 +218,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.140625,
-    "difficulty_bin": "0.1-0.2%",
+    "difficulty_bin": "0.1-0.2",
     "dataset_index": 243961
   },
   {
@@ -229,7 +229,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.203125,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 139040
   },
   {
@@ -240,7 +240,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.296875,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 211758
   },
   {
@@ -251,7 +251,7 @@
       "Mathematics -> Algebra -> Polynomial Operations"
     ],
     "llama8b_solve_rate": 0.265625,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 5966
   },
   {
@@ -262,7 +262,7 @@
       "Mathematics -> Algebra -> Sequences and Series"
     ],
     "llama8b_solve_rate": 0.203125,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 61961
   },
   {
@@ -273,7 +273,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.25,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 7969
   },
   {
@@ -284,7 +284,7 @@
       "Mathematics -> Calculus -> Other"
     ],
     "llama8b_solve_rate": 0.265625,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 246432
   },
   {
@@ -295,7 +295,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.203125,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 134798
   },
   {
@@ -306,7 +306,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.234375,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 73671
   },
   {
@@ -317,7 +317,7 @@
       "Mathematics -> Applied Mathematics -> Probability -> Other"
     ],
     "llama8b_solve_rate": 0.234375,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 236961
   },
   {
@@ -328,7 +328,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.28125,
-    "difficulty_bin": "0.2-0.3%",
+    "difficulty_bin": "0.2-0.3",
     "dataset_index": 83870
   },
   {
@@ -339,7 +339,7 @@
       "Mathematics -> Precalculus -> Functions"
     ],
     "llama8b_solve_rate": 0.359375,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 33342
   },
   {
@@ -350,7 +350,7 @@
       "Mathematics -> Geometry -> Solid Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.359375,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 184958
   },
   {
@@ -361,7 +361,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.34375,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 81085
   },
   {
@@ -372,7 +372,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Angles"
     ],
     "llama8b_solve_rate": 0.3125,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 59232
   },
   {
@@ -383,7 +383,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.34375,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 73808
   },
   {
@@ -394,7 +394,7 @@
       "Mathematics -> Precalculus -> Trigonometric Functions"
     ],
     "llama8b_solve_rate": 0.34375,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 218567
   },
   {
@@ -405,7 +405,7 @@
       "Mathematics -> Algebra -> Intermediate Algebra -> Quadratic Functions"
     ],
     "llama8b_solve_rate": 0.390625,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 558
   },
   {
@@ -416,7 +416,7 @@
       "Mathematics -> Geometry -> Non-Euclidean Geometry -> Hyperbolic Geometry"
     ],
     "llama8b_solve_rate": 0.390625,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 33597
   },
   {
@@ -427,7 +427,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.328125,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 59210
   },
   {
@@ -438,7 +438,7 @@
       "Mathematics -> Applied Mathematics -> Probability -> Other"
     ],
     "llama8b_solve_rate": 0.34375,
-    "difficulty_bin": "0.3-0.4%",
+    "difficulty_bin": "0.3-0.4",
     "dataset_index": 236439
   },
   {
@@ -449,7 +449,7 @@
       "Mathematics -> Algebra -> Algebraic Expressions"
     ],
     "llama8b_solve_rate": 0.421875,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 210622
   },
   {
@@ -460,7 +460,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.484375,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 7824
   },
   {
@@ -471,7 +471,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.4375,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 243184
   },
   {
@@ -482,7 +482,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.46875,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 89119
   },
   {
@@ -493,7 +493,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.453125,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 94937
   },
   {
@@ -504,7 +504,7 @@
       "Mathematics -> Algebra -> Other"
     ],
     "llama8b_solve_rate": 0.484375,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 32467
   },
   {
@@ -515,7 +515,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.46875,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 114993
   },
   {
@@ -526,7 +526,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Systems of Equations"
     ],
     "llama8b_solve_rate": 0.4375,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 29618
   },
   {
@@ -537,7 +537,7 @@
       "Mathematics -> Algebra -> Sequences and Series"
     ],
     "llama8b_solve_rate": 0.421875,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 149928
   },
   {
@@ -548,7 +548,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.4375,
-    "difficulty_bin": "0.4-0.5%",
+    "difficulty_bin": "0.4-0.5",
     "dataset_index": 128377
   },
   {
@@ -559,7 +559,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.5625,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 204704
   },
   {
@@ -570,7 +570,7 @@
       "Mathematics -> Precalculus -> Trigonometric Functions"
     ],
     "llama8b_solve_rate": 0.5,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 247282
   },
   {
@@ -581,7 +581,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.546875,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 115937
   },
   {
@@ -592,7 +592,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.59375,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 72085
   },
   {
@@ -603,7 +603,7 @@
       "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Other"
     ],
     "llama8b_solve_rate": 0.578125,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 30300
   },
   {
@@ -614,7 +614,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.578125,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 123857
   },
   {
@@ -625,7 +625,7 @@
       "Mathematics -> Algebra -> Algebraic Expressions"
     ],
     "llama8b_solve_rate": 0.546875,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 3076
   },
   {
@@ -636,7 +636,7 @@
       "Mathematics -> Algebra -> Intermediate Algebra -> Logarithmic Functions"
     ],
     "llama8b_solve_rate": 0.5,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 54200
   },
   {
@@ -647,7 +647,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.59375,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 142823
   },
   {
@@ -658,7 +658,7 @@
       "Mathematics -> Geometry -> Other"
     ],
     "llama8b_solve_rate": 0.5,
-    "difficulty_bin": "0.5-0.6%",
+    "difficulty_bin": "0.5-0.6",
     "dataset_index": 217898
   },
   {
@@ -669,7 +669,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Quadratic Functions"
     ],
     "llama8b_solve_rate": 0.6875,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 32307
   },
   {
@@ -680,7 +680,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.625,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 246207
   },
   {
@@ -691,7 +691,7 @@
       "Mathematics -> Algebra -> Intermediate Algebra -> Logarithmic Functions"
     ],
     "llama8b_solve_rate": 0.6875,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 30160
   },
   {
@@ -702,7 +702,7 @@
       "Mathematics -> Algebra -> Complex Numbers"
     ],
     "llama8b_solve_rate": 0.6875,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 238085
   },
   {
@@ -713,7 +713,7 @@
       "Mathematics -> Precalculus -> Trigonometric Functions"
     ],
     "llama8b_solve_rate": 0.65625,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 212841
   },
   {
@@ -724,7 +724,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.609375,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 66173
   },
   {
@@ -735,7 +735,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.65625,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 101985
   },
   {
@@ -746,7 +746,7 @@
       "Mathematics -> Discrete Mathematics -> Combinatorics"
     ],
     "llama8b_solve_rate": 0.640625,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 61336
   },
   {
@@ -757,7 +757,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.65625,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 209111
   },
   {
@@ -768,7 +768,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.609375,
-    "difficulty_bin": "0.6-0.7%",
+    "difficulty_bin": "0.6-0.7",
     "dataset_index": 133726
   },
   {
@@ -779,7 +779,7 @@
       "Mathematics -> Applied Mathematics -> Statistics -> Probability"
     ],
     "llama8b_solve_rate": 0.78125,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 212840
   },
   {
@@ -790,7 +790,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.78125,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 83313
   },
   {
@@ -801,7 +801,7 @@
       "Mathematics -> Algebra -> Other"
     ],
     "llama8b_solve_rate": 0.734375,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 10749
   },
   {
@@ -812,7 +812,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.78125,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 133298
   },
   {
@@ -823,7 +823,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.734375,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 194319
   },
   {
@@ -834,7 +834,7 @@
       "Mathematics -> Algebra -> Linear Algebra -> Vectors"
     ],
     "llama8b_solve_rate": 0.703125,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 189589
   },
   {
@@ -845,7 +845,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.703125,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 100966
   },
   {
@@ -856,7 +856,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities"
     ],
     "llama8b_solve_rate": 0.78125,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 36460
   },
   {
@@ -867,7 +867,7 @@
       "Mathematics -> Algebra -> Intermediate Algebra -> Complex Numbers"
     ],
     "llama8b_solve_rate": 0.75,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 220762
   },
   {
@@ -878,7 +878,7 @@
       "Mathematics -> Number Theory -> Least Common Multiples (LCM)"
     ],
     "llama8b_solve_rate": 0.75,
-    "difficulty_bin": "0.7-0.8%",
+    "difficulty_bin": "0.7-0.8",
     "dataset_index": 101578
   },
   {
@@ -889,7 +889,7 @@
       "Mathematics -> Algebra -> Algebraic Expressions -> Other"
     ],
     "llama8b_solve_rate": 0.875,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 37972
   },
   {
@@ -900,7 +900,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.875,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 139158
   },
   {
@@ -911,7 +911,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.828125,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 139405
   },
   {
@@ -922,7 +922,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.890625,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 72555
   },
   {
@@ -933,7 +933,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.875,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 199614
   },
   {
@@ -944,7 +944,7 @@
       "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Combinations"
     ],
     "llama8b_solve_rate": 0.859375,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 28700
   },
   {
@@ -955,7 +955,7 @@
       "Mathematics -> Calculus -> Differential Calculus -> Derivatives"
     ],
     "llama8b_solve_rate": 0.890625,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 233235
   },
   {
@@ -966,7 +966,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.8125,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 133570
   },
   {
@@ -977,7 +977,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.875,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 117597
   },
   {
@@ -988,7 +988,7 @@
       "Mathematics -> Applied Mathematics -> Statistics -> Probability"
     ],
     "llama8b_solve_rate": 0.828125,
-    "difficulty_bin": "0.8-0.9%",
+    "difficulty_bin": "0.8-0.9",
     "dataset_index": 18225
   },
   {
@@ -999,7 +999,7 @@
       "Mathematics -> Geometry -> Plane Geometry -> Other"
     ],
     "llama8b_solve_rate": 1.0,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 117912
   },
   {
@@ -1010,7 +1010,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.984375,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 86257
   },
   {
@@ -1021,7 +1021,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.96875,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 123645
   },
   {
@@ -1032,7 +1032,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities"
     ],
     "llama8b_solve_rate": 0.921875,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 144835
   },
   {
@@ -1043,7 +1043,7 @@
       "Mathematics -> Algebra -> Simple Equations"
     ],
     "llama8b_solve_rate": 0.90625,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 122408
   },
   {
@@ -1054,7 +1054,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.953125,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 116547
   },
   {
@@ -1065,7 +1065,7 @@
       "Mathematics -> Algebra -> Linear Algebra -> Other"
     ],
     "llama8b_solve_rate": 0.96875,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 6556
   },
   {
@@ -1076,7 +1076,7 @@
       "Mathematics -> Algebra -> Equations and Inequalities -> Other"
     ],
     "llama8b_solve_rate": 0.96875,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 139030
   },
   {
@@ -1087,7 +1087,7 @@
       "Mathematics -> Precalculus -> Trigonometric Functions"
     ],
     "llama8b_solve_rate": 0.9375,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 221202
   },
   {
@@ -1098,7 +1098,7 @@
       "Mathematics -> Applied Mathematics -> Math Word Problems"
     ],
     "llama8b_solve_rate": 0.921875,
-    "difficulty_bin": "0.9-1%",
+    "difficulty_bin": "0.9-1",
     "dataset_index": 115839
   }
 ]

@@ -1,0 +1,31 @@
+{
+    "teacher_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "teacher_hint_prompt": "Please provide the solution to the problem.",
+    "teacher_temperature": 0.6,
+    "teacher_top_p": 0.95,
+    "teacher_max_tokens": 4096,
+  
+    "num_samples": 5,
+  
+    "student_models": [
+      {
+        "model_name": "huggingfaceTB/SmolLM2-135M-Instruct",
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "max_tokens": 1024
+      },
+      {
+        "model_name": "huggingfaceTB/SmolLM2-360M-Instruct",
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "max_tokens": 1024
+      },
+      {
+        "model_name": "huggingfaceTB/SmolLM2-1.7B-Instruct",
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "max_tokens": 1024
+      }
+    ]
+  }
+  

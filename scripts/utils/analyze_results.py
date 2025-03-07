@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 from datasets import load_dataset
 from collections import defaultdict
+from math_eval import MathEvaluator
+from evaluation_utils import evaluate_predictions
 
 # Hugging Face dataset name
 HF_DATASET_NAME = "Syghmon/math-inference-results"

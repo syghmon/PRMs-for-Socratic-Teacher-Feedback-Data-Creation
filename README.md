@@ -2,26 +2,6 @@
 
 This repository contains code for generating training data for PRMs in a Socratic teaching context.
 
-## Project Structure
-
-The repository is organized as follows:
-
-```
-PRMs-for-Socratic-Teacher-Feedback-Data-Creation/
-├── scripts/            # Python scripts for data processing
-│   ├── sample_bigmath.py  # Script for sampling math problems
-│   └── inference.py      # Script for running model inference
-├── slurm_jobs/         # SLURM batch scripts for running on the cluster
-│   ├── run_sample.sbatch  # Batch script for sampling
-│   └── run_inference.sbatch # Batch script for inference
-├── data/               # Directory for input and output data
-│   ├── samples.json    # Sampled data
-│   └── predictions.json # Model predictions (generated)
-├── logs/               # Output and error logs from SLURM jobs
-├── socratic-env/       # Python virtual environment
-├── .env                # Environment variables (contains HuggingFace token)
-└── requirements.txt    # Python dependencies
-```
 
 **Notes:**
 
