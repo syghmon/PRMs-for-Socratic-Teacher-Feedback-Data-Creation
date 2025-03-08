@@ -18,10 +18,6 @@ PROJECT_ROOT = pathlib.Path(__file__).parent.parent.absolute()
 # -------------------------------------------------------------------------
 # System prompts for teacher and student (SmolLM2 chat style)
 # -------------------------------------------------------------------------
-TEACHER_SYSTEM_PROMPT = (
-    "You are an expert math teacher. Provide a short, helpful hint to guide the user "
-    "towards the solution. Do not reveal the final answer."
-)
 
 STUDENT_SYSTEM_PROMPT = (
     "You are a helpful and accurate math assistant. You explain your reasoning step by step "
@@ -173,14 +169,22 @@ def main():
     
     for item in samples:
         problem_text = item["problem"]
-        # Combine teacher_hint_prompt with the problem
-        user_content = f"{teacher_hint_prompt}\n\nProblem:\n{problem_text}"
+        solution_text = item.get("answer", "")  # Get the solution from the "answer" field
         
+        # Combine teacher_hint_prompt with the problem and solution
+        user_content = f"Problem:\n{problem_text}"
+        
+        # Add solution if available
+        if solution_text:
+            user_content += f"\n\nSolution:\n{solution_text}"
+
+        user_content += f"\n\n{teacher_hint_prompt}\n\n<think>\n"
+
+        print(user_content)
         # Apply chat template to create tokenized prompt
         token_ids = teacher_tokenizer.apply_chat_template(
             [
-                {"role": "system", "content": TEACHER_SYSTEM_PROMPT},
-                {"role": "user",   "content": user_content}
+                {"role": "user", "content": user_content}
             ],
             add_bos=True,
             add_generation_prompt=True,
@@ -206,6 +210,7 @@ def main():
     hints = []
     for output_obj in teacher_outputs:
         hint_text = output_obj.outputs[0].text.strip()
+        print("\n\nHint:\n", hint_text)
         hints.append(hint_text)
 
     # Free up teacher model memory
@@ -227,7 +232,10 @@ def main():
 
     for idx, item in enumerate(samples):
         problem_text = item["problem"]
-        user_content = f"{problem_text}\n\nPlease reason step by step, and put your final answer in \\boxed{{}}."
+        user_content = (
+            f"{problem_text}\n\n"
+            "Please reason step by step, and put your final answer in \\boxed{}."
+        )
         # For each problem, create num_samples identical prompts (for sampling diversity)
         for _ in range(num_samples):
             no_hint_prompts.append(user_content)
@@ -244,8 +252,7 @@ def main():
         user_content = (
             f"{problem_text}\n\n"
             f"**HINT**:\n{hint_text}\n\n"
-            "Please reason step by step, taking into account the hint, "
-            "and put your final answer in \\boxed{{}}."
+            "Please reason step by step, taking into account the hint and put your final answer in \\boxed{}."
         )
         # For each problem, create num_samples identical prompts (for sampling diversity)
         for _ in range(num_samples):
