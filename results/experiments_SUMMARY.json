@@ -1,0 +1,66 @@
+{
+  "teacher_parse_stats": {
+    "NoHint": {
+      "fail_count": 0,
+      "total": 100,
+      "fail_ratio": 0.0
+    },
+    "Blockquote-Socratic": {
+      "fail_count": 6,
+      "total": 100,
+      "fail_ratio": 0.06
+    }
+  },
+  "student_parse_stats": {
+    "NoHint | AnswerColon": {
+      "fail_count": 77,
+      "total": 100,
+      "fail_ratio": 0.77
+    },
+    "NoHint | JsonOutput": {
+      "fail_count": 98,
+      "total": 100,
+      "fail_ratio": 0.98
+    },
+    "NoHint | UniqueToken": {
+      "fail_count": 94,
+      "total": 100,
+      "fail_ratio": 0.94
+    },
+    "NoHint | NumberedSteps": {
+      "fail_count": 23,
+      "total": 100,
+      "fail_ratio": 0.23
+    },
+    "NoHint | TaggedAnswer": {
+      "fail_count": 100,
+      "total": 100,
+      "fail_ratio": 1.0
+    },
+    "Blockquote-Socratic | AnswerColon": {
+      "fail_count": 81,
+      "total": 100,
+      "fail_ratio": 0.81
+    },
+    "Blockquote-Socratic | JsonOutput": {
+      "fail_count": 99,
+      "total": 100,
+      "fail_ratio": 0.99
+    },
+    "Blockquote-Socratic | UniqueToken": {
+      "fail_count": 98,
+      "total": 100,
+      "fail_ratio": 0.98
+    },
+    "Blockquote-Socratic | NumberedSteps": {
+      "fail_count": 29,
+      "total": 100,
+      "fail_ratio": 0.29
+    },
+    "Blockquote-Socratic | TaggedAnswer": {
+      "fail_count": 100,
+      "total": 100,
+      "fail_ratio": 1.0
+    }
+  }
+}

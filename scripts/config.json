@@ -1,11 +1,11 @@
 {
-    "teacher_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-    "teacher_hint_prompt": "Please give a short hint to the student to guide them towards the solution. Solve it yourself first and put your hint after '**HINT**: [your hint here]'. Do NOT reveal the final solution.",
+    "teacher_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "teacher_hint_prompt": "Provide a single hint enclosed in <hint> and </hint> tags.",
     "teacher_temperature": 0.6, 
     "teacher_top_p": 0.95,
     "teacher_max_tokens": 4096,
   
-    "num_samples": 5,
+    "num_samples": 12,
   
     "student_models": [
       {

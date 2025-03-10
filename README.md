@@ -81,3 +81,9 @@ Effective teaching should guide students without directly providing solutions, a
 - Jakub Macina (jakub.macina@ai.ethz.ch)  
 - Kumar Shridhar (shkumar@ethz.ch)  
 - Shehzaad Dhuliawala (sdhuliawala@ethz.ch)
+
+
+
+```bash
+python analysis.py --samples data/samples.json --results_dir results --output_dir analysis_outputs --model_tags "SmolLM2-135M-Instruct,SmolLM2-360M-Instruct,SmolLM2-1.7B-Instruct" --bins "0-10%,10-20%,20-30%,30-40%,40-50%,50-60%,60-70%,70-80%,80-90%,90-100%"
+```

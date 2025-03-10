@@ -1,0 +1,52 @@
+{
+  "teacher_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "teacher_temperature": 0.6,
+  "teacher_top_p": 0.95,
+  "teacher_max_tokens": 512,
+
+  "teacher_approaches": [
+    {
+      "name": "NoHint",
+      "prompt": "NO_HINT_PLACEHOLDER",  
+      "parse_mode": "none"
+    },
+    {
+      "name": "Blockquote-Socratic",
+      "prompt": "In a markdown blockquote, ask a Socratic question (start with '> **Hint**:'). Do not provide the full solution.",
+      "parse_mode": "blockquote"
+    }
+  ],
+
+  "student_model": "huggingfaceTB/SmolLM2-360M-Instruct",
+  "student_temperature": 0.6,
+  "student_top_p": 0.95,
+  "student_max_tokens": 1024,
+
+  "student_approaches": [
+    {
+      "name": "AnswerColon",
+      "system_prompt": "You are a helpful math tutor. Explain your reasoning, then write the final result on its own line starting with 'Answer:'.",
+      "parse_mode": "answer_colon"
+    },
+    {
+      "name": "JsonOutput",
+      "system_prompt": "You are a helpful math tutor. Please return JSON of the form { \"steps\": [...], \"final_answer\": \"...\" }. Do not include any text outside JSON.",
+      "parse_mode": "json"
+    },
+    {
+      "name": "UniqueToken",
+      "system_prompt": "You are a helpful math tutor. After each step, and after your final answer, insert <unqd> on a new line.",
+      "parse_mode": "unique_token"
+    },
+    {
+      "name": "NumberedSteps",
+      "system_prompt": "Explain your reasoning in numbered steps (Step 1, Step 2, etc.) then end with 'Answer:' on its own line.",
+      "parse_mode": "answer_colon"
+    },
+    {
+      "name": "TaggedAnswer",
+      "system_prompt": "Explain your reasoning. Then put the final answer in <final_answer>...<\\final_answer> tags.",
+      "parse_mode": "tagged_answer"
+    }
+  ]
+}

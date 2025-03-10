@@ -1,0 +1,702 @@
+[
+  {
+    "problem": "A line parallel to the bases of a given right trapezoid splits it into two smaller trapezoids, each of which can have a circle inscribed in it. Find the bases of the original trapezoid if its lateral sides are equal to $c$ and $d$, where $c<d$.",
+    "ground_truth_answer": "\\frac{(\\sqrt{d+c} \\pm \\sqrt{d-c})^2}{4}",
+    "teacher_raw_output": "> **Hint**: How do the radii of the inscribed circles in the two smaller trapezoids relate to the bases of the original trapezoid, given that the lateral sides are equal to $c$ and $d$?",
+    "parsed_hint": "**Hint**: How do the radii of the inscribed circles in the two smaller trapezoids relate to the bases of the original trapezoid, given that the lateral sides are equal to $c$ and $d$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "An open organ pipe has its first overtone at \\( N_{1} = 512 \\) Hz when it is blown with air (speed of sound \\( V = 340 \\frac{\\mathrm{m}}{\\mathrm{sec}} \\)). What will be the fundamental frequency of this pipe when it is blown with hydrogen, in which the speed of sound is \\( V' = 1200 \\frac{\\mathrm{m}}{\\mathrm{sec}} \\)?",
+    "ground_truth_answer": "904 \\, Hz",
+    "teacher_raw_output": "> **Hint**: If the frequency of the first overtone of an open organ pipe is given by a specific formula involving the speed of sound, how would the fundamental frequency change if the speed of sound were to change, assuming the length of the pipe remains the same?",
+    "parsed_hint": "**Hint**: If the frequency of the first overtone of an open organ pipe is given by a specific formula involving the speed of sound, how would the fundamental frequency change if the speed of sound were to change, assuming the length of the pipe remains the same?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Working alone, Ryan can dig a 10 ft by 10 ft hole in a certain amount of time. Castel can dig the same hole in six hours. It would take them 2.72727272727 hours if they worked together. How many hours does it take for Ryan to dig the hole alone?",
+    "ground_truth_answer": "5",
+    "teacher_raw_output": "### Problem Solution\n### \n\n> **Hint**: If it takes Ryan and Castel 2.72727272727 hours to dig the hole together, how can you find the rate at which they work together, and how can you use that to determine Ryan's individual rate of work?",
+    "parsed_hint": "**Hint**: If it takes Ryan and Castel 2.72727272727 hours to dig the hole together, how can you find the rate at which they work together, and how can you use that to determine Ryan's individual rate of work?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the quadratic function y = -x^2 + 2x + m^2, find the value of m if the maximum value of the function is 3. Express your answer in the form \u00b1\u221avalue.",
+    "ground_truth_answer": "\u00b1\u221a2",
+    "teacher_raw_output": "> **Hint**: What happens to the maximum value of a quadratic function when its leading coefficient is negative, and how can you relate this to the given function y = -x^2 + 2x + m^2?",
+    "parsed_hint": "**Hint**: What happens to the maximum value of a quadratic function when its leading coefficient is negative, and how can you relate this to the given function y = -x^2 + 2x + m^2?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given a triangle $\\triangle ABC$ with $BC=3$, $AC=4$, $AB=5$, let $P$ be any point on its sides. The minimum value of $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ is $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_(.\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_)$.",
+    "ground_truth_answer": "\\frac{25}{64}",
+    "teacher_raw_output": "> **Hint**: What geometric property or relationship could be used to express $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ in terms of the sides of the triangle, given that $P$ is a point on its sides?",
+    "parsed_hint": "**Hint**: What geometric property or relationship could be used to express $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ in terms of the sides of the triangle, given that $P$ is a point on its sides?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A store sells pencils and erasers. It has a rule that for every pencil you buy, you must buy 2 erasers which cost 1/2 the price of the pencils. They sold 20 pencils and the erasers cost $1 each. How much did the store earn from selling pencils and erasers?",
+    "ground_truth_answer": "\\$120",
+    "teacher_raw_output": "```markdown\n### Problem: Selling Pencils and Erasers\n\nA store sells pencils and erasers. It has a rule that for every pencil you buy, you must buy 2 erasers which cost 1/2 the price of the pencils. They sold 20 pencils and the erasers cost $1 each. How much did the store earn from selling pencils and erasers?\n\n### Solution:\n$120\n```\n\n> **Hint**: If the store sells 20 pencils and each pencil comes with 2 erasers, what would be the total number of erasers sold and how would you calculate their total cost?",
+    "parsed_hint": "**Hint**: If the store sells 20 pencils and each pencil comes with 2 erasers, what would be the total number of erasers sold and how would you calculate their total cost?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the sequence $\\{a\\_n\\}$: $2$, $-6$, $12$, $-20$, $30$, $-42$, $...$ Write a general term formula for this sequence: $\\_\\_\\_\\_\\_\\_\\_\\_$.",
+    "ground_truth_answer": "a_n = (-1)^{n+1} \\times n \\cdot (n+1)",
+    "teacher_raw_output": "> **Hint**: What relationship do you notice between the signs of the terms and the value of n in the given sequence?",
+    "parsed_hint": "**Hint**: What relationship do you notice between the signs of the terms and the value of n in the given sequence?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Find the natural number  $A$  such that there are  $A$  integer solutions to  $x+y\\geq A$  where  $0\\leq x \\leq 6$  and  $0\\leq y \\leq 7$ .",
+    "ground_truth_answer": "10",
+    "teacher_raw_output": "> **Hint**: How many integer solutions to $x+y\\geq A$ can be obtained when $x$ and $y$ are both at their minimum value of 0?",
+    "parsed_hint": "**Hint**: How many integer solutions to $x+y\\geq A$ can be obtained when $x$ and $y$ are both at their minimum value of 0?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If there exists a real number $x \\in [2, 4]$ such that the inequality $x^2 - 2x - 2 - m < 0$ holds, then the range of values for $m$ is.",
+    "ground_truth_answer": "(-2, +\\infty)",
+    "teacher_raw_output": "> **Hint**: Can you find a value of $x$ within the given interval $[2, 4]$ that satisfies the given inequality, and use that to determine the possible range of values for $m$?",
+    "parsed_hint": "**Hint**: Can you find a value of $x$ within the given interval $[2, 4]$ that satisfies the given inequality, and use that to determine the possible range of values for $m$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that the solution set of the inequality $\\frac{x-a}{x-b} > 0$ ($a,b \\in \\mathbb{R}$) with respect to $x$ is $(-\\infty, 1) \\cup (4, +\\infty)$, find the value of $a + b$.",
+    "ground_truth_answer": "a + b = 5",
+    "teacher_raw_output": "> **Hint**: If the solution set is $(-\\infty, 1) \\cup (4, +\\infty)$, what can you infer about the points where the expression $\\frac{x-a}{x-b}$ changes sign?",
+    "parsed_hint": "**Hint**: If the solution set is $(-\\infty, 1) \\cup (4, +\\infty)$, what can you infer about the points where the expression $\\frac{x-a}{x-b}$ changes sign?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that the real numbers \\( x \\) and \\( y \\) satisfy the inequality \\(\\left(x+\\sqrt{x^{2}+1}\\right)\\left(y+\\sqrt{y^{2}+1}\\right) \\geqslant 1\\), find the minimum value of \\( x + y \\).",
+    "ground_truth_answer": "0",
+    "teacher_raw_output": "> **Hint**: If the inequality is always true, regardless of the values of \\( x \\) and \\( y \\), what does that imply about the minimum value of \\( x + y \\)?",
+    "parsed_hint": "**Hint**: If the inequality is always true, regardless of the values of \\( x \\) and \\( y \\), what does that imply about the minimum value of \\( x + y \\)?",
+    "parse_failed": false
+  },
+  {
+    "problem": "In the right triangle \\(ABC\\), the altitude \\(BD\\) from vertex \\(B\\) of the right angle is dropped onto the hypotenuse \\(AC\\). It is known that \\(AB = 13\\) and \\(BD = 12\\).\n\nFind the area of triangle \\(ABC\\).",
+    "ground_truth_answer": "202.8",
+    "teacher_raw_output": "> **Hint**: What relationship exists between the lengths of the segments of the hypotenuse and the lengths of the legs of a right triangle, when the altitude is dropped from the right angle to the hypotenuse?",
+    "parsed_hint": "**Hint**: What relationship exists between the lengths of the segments of the hypotenuse and the lengths of the legs of a right triangle, when the altitude is dropped from the right angle to the hypotenuse?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Determine the smallest natural number $n$ for which the inequality $\\left(x^{2} + y^{2} + z^{2}\\right)^{2} \\leq n\\left(x^{4} + y^{4} + z^{4}\\right)$ holds for all real values of $x, y, z$.",
+    "ground_truth_answer": "3",
+    "teacher_raw_output": "> **Hint**: Can you think of a way to simplify the given inequality by using the properties of squares and inequalities, and perhaps relate it to a known mathematical concept or identity?",
+    "parsed_hint": "**Hint**: Can you think of a way to simplify the given inequality by using the properties of squares and inequalities, and perhaps relate it to a known mathematical concept or identity?",
+    "parse_failed": false
+  },
+  {
+    "problem": "In $\\triangle ABC$, if $a=9$, $b=10$, $c=12$, then the shape of $\\triangle ABC$ is $\\_\\_\\_\\_\\_\\_$.",
+    "ground_truth_answer": "Acute triangle",
+    "teacher_raw_output": "> **Hint**: If $a=9$, $b=10$, $c=12$, what is the relationship between the side lengths of an acute triangle and the given side lengths?",
+    "parsed_hint": "**Hint**: If $a=9$, $b=10$, $c=12$, what is the relationship between the side lengths of an acute triangle and the given side lengths?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Find the coefficient of $x^3y^3$ in the expansion of $(x+2y)(2x-y)^5$.",
+    "ground_truth_answer": "120",
+    "teacher_raw_output": "> **Hint**: How can you express the given expression $(x+2y)(2x-y)^5$ in a form that makes it easier to find the coefficient of $x^3y^3$ using the Binomial Theorem?",
+    "parsed_hint": "**Hint**: How can you express the given expression $(x+2y)(2x-y)^5$ in a form that makes it easier to find the coefficient of $x^3y^3$ using the Binomial Theorem?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that \\\\(\\alpha\\\\) is an angle in the second quadrant, and \\\\(\\sin \\alpha= \\frac { \\sqrt {15}}{4}\\\\), find the value of \\\\( \\frac {\\sin (\\alpha+ \\frac {\\pi}{4})}{\\sin 2\\alpha+\\cos 2\\alpha+1}\\\\).",
+    "ground_truth_answer": "- \\sqrt {2}",
+    "teacher_raw_output": "> **Hint**: What trigonometric identities could be used to simplify the expression \\\\(\\frac {\\sin (\\alpha+ \\frac {\\pi}{4})}{\\sin 2\\alpha+\\cos 2\\alpha+1}\\\\) and make it easier to work with the given information about \\\\(\\sin \\alpha\\\\)?",
+    "parsed_hint": "**Hint**: What trigonometric identities could be used to simplify the expression \\\\(\\frac {\\sin (\\alpha+ \\frac {\\pi}{4})}{\\sin 2\\alpha+\\cos 2\\alpha+1}\\\\) and make it easier to work with the given information about \\\\(\\sin \\alpha\\\\)?",
+    "parse_failed": false
+  },
+  {
+    "problem": "The sum of the house numbers on one side of a street from corner to corner is 117. What is the house number of the fifth house from the beginning of this section?",
+    "ground_truth_answer": "13",
+    "teacher_raw_output": "> **Hint**: If the sum of the house numbers from corner to corner is 117 and the house numbers are consecutive, what might be the difference between the house numbers at the beginning and end of the section?",
+    "parsed_hint": "**Hint**: If the sum of the house numbers from corner to corner is 117 and the house numbers are consecutive, what might be the difference between the house numbers at the beginning and end of the section?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Let $a, b \\in \\mathbb{R}$, and $9a^{2}+b^{2}-6a-2b=0$. The maximum value of $3a+b$ is ______.",
+    "ground_truth_answer": "4",
+    "teacher_raw_output": "> **Hint**: Can you manipulate the given equation to express $a$ and $b$ in terms of a single variable, or find a relationship between $a$ and $b$ that can help in maximizing $3a+b$?",
+    "parsed_hint": "**Hint**: Can you manipulate the given equation to express $a$ and $b$ in terms of a single variable, or find a relationship between $a$ and $b$ that can help in maximizing $3a+b$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that $\\sin 2\\theta = \\frac{2}{3}$, calculate the value of $\\tan \\theta + \\frac{1}{\\tan \\theta}$. Express your answer as a single number.",
+    "ground_truth_answer": "3",
+    "teacher_raw_output": "> **Hint**: Can you express $\\tan \\theta$ in terms of $\\sin 2\\theta$ and $\\cos 2\\theta$ using the double angle formulas for sine and cosine?",
+    "parsed_hint": "**Hint**: Can you express $\\tan \\theta$ in terms of $\\sin 2\\theta$ and $\\cos 2\\theta$ using the double angle formulas for sine and cosine?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Determine the number of solutions to the equation 2^x - 2[x] - 1 = 0, where [x] denotes the greatest integer less than or equal to the real number x. Express your answer as a single integer.",
+    "ground_truth_answer": "3",
+    "teacher_raw_output": "> **Hint**: Can you think of a way to express the equation 2^x - 2[x] - 1 = 0 in terms of the fractional part of x, and how does that relate to the range of possible values for x?",
+    "parsed_hint": "**Hint**: Can you think of a way to express the equation 2^x - 2[x] - 1 = 0 in terms of the fractional part of x, and how does that relate to the range of possible values for x?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A leak in the bottom of a tank can empty the full tank in 3 hours. There are two inlet pipes which can fill the tank. Inlet Pipe A fills water at the rate of 6 litres a minute, while Inlet Pipe B fills the tank at a rate of 4 litres a minute. Both inlet pipes are opened simultaneously when the tank is full, and due to the leak, the tank is empty in 12 hours. How many litres does the cistern hold?",
+    "ground_truth_answer": "1440",
+    "teacher_raw_output": "### Problem Description\n\nA leak in the bottom of a tank can empty the full tank in 3 hours. There are two inlet pipes which can fill the tank. Inlet Pipe A fills water at the rate of 6 litres a minute, while Inlet Pipe B fills the tank at a rate of 4 litres a minute. Both inlet pipes are opened simultaneously when the tank is full, and due to the leak, the tank is empty in 12 hours. How many litres does the cistern hold?\n\n### Solution\n\nTo solve this problem, let's first calculate the combined rate at which the two inlet pipes fill the tank.\n\n### Hint:\nIf the tank is emptied in 12 hours by the combined action of the two inlet pipes and the leak, and it would take 3 hours to empty the tank with the leak alone, what is the relationship between the time it takes to empty the tank with the leak alone and the time it takes to empty the tank with both inlet pipes and the leak?",
+    "parsed_hint": "Warning: No blockquote hint found.",
+    "parse_failed": true
+  },
+  {
+    "problem": "Given an equilateral triangle $ABC$ with side length $a$, calculate the value of $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} + \\overrightarrow{AC} \\cdot \\overrightarrow{BC}$. Express your answer as a single algebraic expression in terms of $a$.",
+    "ground_truth_answer": "a^2",
+    "teacher_raw_output": "> **Hint**: Can you express the vectors $\\overrightarrow{AB}$, $\\overrightarrow{AC}$, and $\\overrightarrow{BC}$ in terms of the side length $a$ and the unit vectors $\\mathbf{i}$ and $\\mathbf{j}$?",
+    "parsed_hint": "**Hint**: Can you express the vectors $\\overrightarrow{AB}$, $\\overrightarrow{AC}$, and $\\overrightarrow{BC}$ in terms of the side length $a$ and the unit vectors $\\mathbf{i}$ and $\\mathbf{j}$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Determine the constant term in the expansion of $\\left(2 \\sqrt {x}- \\frac{1}{ \\sqrt[4]{x}}\\right)^{6}$. (Answer with a number)",
+    "ground_truth_answer": "60",
+    "teacher_raw_output": "> **Hint**: What is the general condition for a term in the binomial expansion to be constant, i.e., not to contain any of the variables x?",
+    "parsed_hint": "**Hint**: What is the general condition for a term in the binomial expansion to be constant, i.e., not to contain any of the variables x?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given a sequence $\\{a_{n}\\}$ with the sum of its first $n$ terms denoted as $S_{n}$, where $a_{1}=1$ and $a_{n+1}=S_{n}$, find $\\sum_{i=1}^{n}\\frac{1}{{a}_{i}}$.",
+    "ground_truth_answer": "3-\\frac{1}{{2}^{n-2}}",
+    "teacher_raw_output": "> **Hint**: If the sequence is defined recursively with each term being the sum of the previous terms, how can we express the sum of the reciprocals of the terms in relation to the sum of the terms themselves?",
+    "parsed_hint": "**Hint**: If the sequence is defined recursively with each term being the sum of the previous terms, how can we express the sum of the reciprocals of the terms in relation to the sum of the terms themselves?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that the line $x+y-m=0$ is perpendicular to the line $x+(3-2m)y=0$, find the value of the real number $m$.",
+    "ground_truth_answer": "1",
+    "teacher_raw_output": "> **Hint**: \nWhat condition must be satisfied for two lines to be perpendicular, and how can you use this condition to relate the slopes of the two given lines?",
+    "parsed_hint": "**Hint**:",
+    "parse_failed": false
+  },
+  {
+    "problem": "Let \\( x \\) and \\( y \\) be positive real numbers. What is the smallest possible value of \\( \\frac{16}{x} + \\frac{108}{y} + xy \\)? Express your answer as a single number.",
+    "ground_truth_answer": "36",
+    "teacher_raw_output": "> **Hint**: Can you think of a way to simplify the expression and use the given conditions (x and y are positive real numbers) to find its minimum value?\n \n(Note: This is a Socratic question, not a full solution, to guide the user towards the solution.)",
+    "parsed_hint": "**Hint**: Can you think of a way to simplify the expression and use the given conditions (x and y are positive real numbers) to find its minimum value?",
+    "parse_failed": false
+  },
+  {
+    "problem": "There is a bag that is 5 meters (m) long and weighs 29/8 kilograms (kg) and a chair that is 4 meters (m) long and weighs 2.8 kilograms (kg). How many kilograms (kg) are the bag and chair if they are cut into 2 meters (m) and weighed together?",
+    "ground_truth_answer": "2.85",
+    "teacher_raw_output": "> **Hint**: If you cut the bag and the chair into 2-meter pieces, how many pieces of each item will you have, and what is the weight of each piece?",
+    "parsed_hint": "**Hint**: If you cut the bag and the chair into 2-meter pieces, how many pieces of each item will you have, and what is the weight of each piece?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Taylor's house guests have different preferences for coffee in the morning. Half of them like weak coffee and the other half like strong coffee. Taylor uses 1 tablespoon of coffee per cup of water to make it weak and he changes the amount for strong coffee. If he makes 12 cups of both weak and strong coffee and needs 36 tablespoons of coffee, what is the ratio of the amount of coffee used for strong coffee to the amount used for weak coffee?",
+    "ground_truth_answer": "2:1",
+    "teacher_raw_output": "> **Hint**: If Taylor makes 12 cups of weak coffee using 1 tablespoon of coffee per cup of water, and he needs a total of 36 tablespoons of coffee, how many cups of strong coffee can he make if he uses a different amount of coffee per cup of water?",
+    "parsed_hint": "**Hint**: If Taylor makes 12 cups of weak coffee using 1 tablespoon of coffee per cup of water, and he needs a total of 36 tablespoons of coffee, how many cups of strong coffee can he make if he uses a different amount of coffee per cup of water?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Three students each choose one day from Saturday or Sunday to participate in a charity event. Calculate the probability that there will be students participating on both Saturday and Sunday. Express your answer as a simplified fraction.",
+    "ground_truth_answer": "\\frac{3}{4}",
+    "teacher_raw_output": "> **Hint**: Can you think of a way to represent the total number of possible outcomes, and then consider how many of those outcomes would result in students participating on both Saturday and Sunday?",
+    "parsed_hint": "**Hint**: Can you think of a way to represent the total number of possible outcomes, and then consider how many of those outcomes would result in students participating on both Saturday and Sunday?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A tiger is chasing its prey at a constant speed. Its entire body passes a blade of grass in 1 second. It then runs above a fallen tree trunk of a certain length in 5 seconds. The length of the tiger is 5 meters. How long is the fallen tree trunk?",
+    "ground_truth_answer": "25",
+    "teacher_raw_output": "> **Hint**: If the tiger's entire body passes the blade of grass in 1 second, and it takes 5 seconds to run above the fallen tree trunk, what does this mean in terms of the distance covered by the tiger in those 5 seconds?\n \n> **Step 1**: Calculate the distance covered by the tiger in 1 second.\n \n> **Step 2**: Multiply the distance covered by the tiger in 1 second by 5 to find the distance covered by the tiger in 5 seconds.\n \n> **Step 3**: Subtract the length of the tiger from the distance covered in 5 seconds to find the length of the fallen tree trunk.",
+    "parsed_hint": "**Hint**: If the tiger's entire body passes the blade of grass in 1 second, and it takes 5 seconds to run above the fallen tree trunk, what does this mean in terms of the distance covered by the tiger in those 5 seconds?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Let the function $f(x) = \\log_{\\frac{1}{2}}x$ have an inverse function denoted by $g(x)$. Then find the range of the function $y = g(x)$ on the interval $[1, 2]$.",
+    "ground_truth_answer": "\\left[\\frac{1}{4}, \\frac{1}{2}\\right]",
+    "teacher_raw_output": "> **Hint**: If $f(x) = \\log_{\\frac{1}{2}}x$ has an inverse function $g(x)$, what can be said about the relationship between the domain and range of $f(x)$ and $g(x)$?",
+    "parsed_hint": "**Hint**: If $f(x) = \\log_{\\frac{1}{2}}x$ has an inverse function $g(x)$, what can be said about the relationship between the domain and range of $f(x)$ and $g(x)$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "ground_truth_answer": "100",
+    "teacher_raw_output": "> **Hint**: How can you maximize the number of balls of radius  $1/2$  within the rectangular box by considering their placement in the most efficient way?\n```markdown\n# Problem\nWhat is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$\n\n# Solution\n100\n```\nThis solution will be provided in the next response.",
+    "parsed_hint": "**Hint**: How can you maximize the number of balls of radius  $1/2$  within the rectangular box by considering their placement in the most efficient way?",
+    "parse_failed": false
+  },
+  {
+    "problem": "In a parallelogram, the length of one diagonal is 30 meters and the perpendicular dropped on that diagonal is 20 meters. What is the area of the parallelogram?",
+    "ground_truth_answer": "600",
+    "teacher_raw_output": "> **Hint**: If you drop a perpendicular from a vertex of a parallelogram to the opposite side, what geometric shape is formed, and how can you use its properties to find the area of the parallelogram?",
+    "parsed_hint": "**Hint**: If you drop a perpendicular from a vertex of a parallelogram to the opposite side, what geometric shape is formed, and how can you use its properties to find the area of the parallelogram?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the lines $y=x+1$, $y=-x+1$, $y=-2x+1$, their angles of inclination are $\\alpha_1$, $\\alpha_2$, $\\alpha_3$ respectively. Arrange $\\alpha_1$, $\\alpha_2$, $\\alpha_3$ in ascending order.",
+    "ground_truth_answer": "\\alpha_1<\\alpha_3<\\alpha_2",
+    "teacher_raw_output": "> **Hint**: How do the slopes of the lines relate to their angles of inclination?",
+    "parsed_hint": "**Hint**: How do the slopes of the lines relate to their angles of inclination?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A trader bought a car at a certain discount on its original price. He sold it at a 100% increase on the price he bought it. He made a profit of 60.00000000000001% on the original price. What was the discount percentage on the original price when he bought the car?",
+    "ground_truth_answer": "20\\%",
+    "teacher_raw_output": "```python\n# Define the variables\noriginal_price = 100  # Assume the original price is $100\ndiscount_percentage = 0  # We want to find this value\n\n# Define the function to calculate the profit percentage\ndef calculate_profit(original_price, discount_percentage):\n    discounted_price = original_price * (1 - discount_percentage / 100)\n    selling_price = discounted_price * 2  # 100% increase\n    profit_percentage = ((selling_price - original_price) / original_price) * 100\n    return profit_percentage\n\n# Define the target profit percentage\ntarget_profit_percentage = 60.00000000000001\n\n# Find the discount percentage\nfor discount in range(1, 100):\n    profit_percentage = calculate_profit(original_price, discount)\n    if round(profit_percentage, 16) == target_profit_percentage:\n        discount_percentage = discount\n        break\n\n# Print the result\nprint(f\"The discount percentage is {discount_percentage}%\")\n```\n\n> **Hint**: How does the discount percentage affect the profit percentage when the selling price is a 100% increase on the discounted price?",
+    "parsed_hint": "**Hint**: How does the discount percentage affect the profit percentage when the selling price is a 100% increase on the discounted price?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the function f(x) = sin(2x - \u03c0/4), find the value of a \u2208 (0, \u03c0) such that f(x+a) = f(x+3a) always holds true. Express your answer in radians as a fraction of \u03c0.",
+    "ground_truth_answer": "\\frac{\\pi}{2}",
+    "teacher_raw_output": "> **Hint**: What property of the sine function would allow the equation f(x+a) = f(x+3a) to hold true for all x, given the function f(x) = sin(2x - \u03c0/4)?",
+    "parsed_hint": "**Hint**: What property of the sine function would allow the equation f(x+a) = f(x+3a) to hold true for all x, given the function f(x) = sin(2x - \u03c0/4)?",
+    "parse_failed": false
+  },
+  {
+    "problem": "The analytical expression of the parabola $y=-2x^{2}$ after shifting down $1$ unit and then shifting right $3$ units is ____.",
+    "ground_truth_answer": "y = -2(x - 3)^2 - 1",
+    "teacher_raw_output": "> **Hint**: When shifting a parabola down by 1 unit, how does the equation change, and when shifting it right by 3 units, what should be modified in the equation to account for the horizontal shift?",
+    "parsed_hint": "**Hint**: When shifting a parabola down by 1 unit, how does the equation change, and when shifting it right by 3 units, what should be modified in the equation to account for the horizontal shift?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that one asymptote of the hyperbola $\\frac{y^{2}}{a^{2}} - \\frac{x^{2}}{b^{2}} = 1$ ($a, b > 0$) is $y = -2x$, and one focus of the hyperbola coincides with the focus of the parabola $x^2 = 4\\sqrt{10}y$, find the standard equation of the hyperbola.",
+    "ground_truth_answer": "\\frac{y^{2}}{8} - \\frac{x^{2}}{2} = 1",
+    "teacher_raw_output": "> **Hint**: If the focus of the hyperbola coincides with the focus of the parabola, and the asymptote of the hyperbola is $y = -2x$, what does this tell us about the relationship between the coefficients $a$ and $b$ in the equation of the hyperbola?",
+    "parsed_hint": "**Hint**: If the focus of the hyperbola coincides with the focus of the parabola, and the asymptote of the hyperbola is $y = -2x$, what does this tell us about the relationship between the coefficients $a$ and $b$ in the equation of the hyperbola?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that the distance from point P on the ellipse $\\frac{x^{2}}{25}$+ $\\frac{y^{2}}{16}$\\=1 to one focus is 3, find the distance from point P to the other focus.",
+    "ground_truth_answer": "7",
+    "teacher_raw_output": "> **Hint**: If the distance from point P on the ellipse to one focus is 3, what can we infer about the sum of distances from point P to the two foci?\n \n### Step 1: Understand the properties of an ellipse\nAn ellipse has two foci, and the sum of the distances from any point on the ellipse to the two foci is constant.\n\n### Step 2: Recall the formula for the sum of distances in an ellipse\nThe sum of the distances from any point on the ellipse to the two foci is equal to 2a, where a is the semi-major axis.\n\n### Step 3: Identify the semi-major axis (a) of the given ellipse\nThe equation of the ellipse is $\\frac{x^{2}}{25}$+ $\\frac{y^{2}}{16}$\\=1. The semi-major axis (a) is the square root of the denominator of the x-term, which is \u221a25 = 5.\n\n### Step 4: Calculate the sum of distances from any point on the ellipse to the two foci\nThe sum of distances is equal to 2a, which is 2 * 5 = 10.\n\n### Step 5: Find the distance from point P to the other focus\nSince the distance from point P to one focus is 3, the distance from point P to the other focus is equal to the sum of distances minus the distance to the first focus, which is 10 - 3 = 7.",
+    "parsed_hint": "**Hint**: If the distance from point P on the ellipse to one focus is 3, what can we infer about the sum of distances from point P to the two foci?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A point $M$ is randomly chosen within a parallelogram $ABCD$ with an area of $S$. Calculate the probability that the area of $\\triangle MCD$ is less than $\\frac{S}{3}$. Express your answer as a simplified fraction.",
+    "ground_truth_answer": "\\frac{2}{3}",
+    "teacher_raw_output": "> **Hint**: What proportion of the parallelogram's area would the area of $\\triangle MCD$ need to be at least $\\frac{S}{3}$, in order to be greater than $\\frac{S}{3}$?",
+    "parsed_hint": "**Hint**: What proportion of the parallelogram's area would the area of $\\triangle MCD$ need to be at least $\\frac{S}{3}$, in order to be greater than $\\frac{S}{3}$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If $n < m < 0$, simplify the expression $$\\sqrt {m^{2}+2mn+n^{2}} - \\sqrt {m^{2}-2mn+n^{2}}.$$ Express your answer as a simple algebraic expression.",
+    "ground_truth_answer": "-2m",
+    "teacher_raw_output": "```markdown\n### Expression Simplification\n### Problem Statement\n\nIf $n < m < 0$, simplify the expression $$\\sqrt {m^{2}+2mn+n^{2}} - \\sqrt {m^{2}-2mn+n^{2}}.$$\n### Solution\n\n-2m\n\n### Step to Solution\n> **Hint**: Can you recognize a pattern in the given expression that resembles the difference of squares formula?",
+    "parsed_hint": "**Hint**: Can you recognize a pattern in the given expression that resembles the difference of squares formula?",
+    "parse_failed": false
+  },
+  {
+    "problem": "In triangle $\\triangle ABC$, given that $a=4$, $b=3$, and $c=2$, the smallest angle of $\\triangle ABC$ is represented by which inverse trigonometric function?",
+    "ground_truth_answer": "C = \\arccos \\left( \\frac{7}{8} \\right)",
+    "teacher_raw_output": "> **Hint**: If you know the sides of a triangle, which trigonometric function relates the sides to the angles, and how does the law of cosines help you find the smallest angle in this triangle?",
+    "parsed_hint": "**Hint**: If you know the sides of a triangle, which trigonometric function relates the sides to the angles, and how does the law of cosines help you find the smallest angle in this triangle?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Roy bought a new battery-gasoline hybrid car. On a trip the car ran exclusively on its battery for the first 40 miles, then ran exclusively on gasoline for the rest of the trip, using gasoline at a rate of 0.02 gallons per mile. If the average mileage for the entire trip was 55 miles per gallon, what was the total length of the trip in miles? Express your answer as a whole number.",
+    "ground_truth_answer": "440",
+    "teacher_raw_output": "> **Hint**: If you know the car used gasoline at a rate of 0.02 gallons per mile, and the average mileage for the entire trip was 55 miles per gallon, what information would you need to find out how much gasoline was used in total?",
+    "parsed_hint": "**Hint**: If you know the car used gasoline at a rate of 0.02 gallons per mile, and the average mileage for the entire trip was 55 miles per gallon, what information would you need to find out how much gasoline was used in total?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A train that is 360 meters long is running at a speed of 50 km/hour. It passes a bridge of certain length in 36 seconds. What is the length of the bridge?",
+    "ground_truth_answer": "140",
+    "teacher_raw_output": "> **Hint**: If the train covers the length of the bridge and its own length in 36 seconds, how can we use the speed of the train to find the total distance it covers in that time?",
+    "parsed_hint": "**Hint**: If the train covers the length of the bridge and its own length in 36 seconds, how can we use the speed of the train to find the total distance it covers in that time?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Three trains A, B, and C are running on parallel tracks. Train A is running at a speed of 60 km/hr and crosses a pole in 5 seconds. Train B is running at a speed of 80 km/hr and crosses a pole in 7 seconds. Train C is running at a speed of 50 km/hr and crosses a pole in 9 seconds. Which train has the longest length, and what is its length?",
+    "ground_truth_answer": "155.54",
+    "teacher_raw_output": "> **Hint**: If the distance covered by each train is the same, how can you use the formula speed = distance/time to find the length of each train?",
+    "parsed_hint": "**Hint**: If the distance covered by each train is the same, how can you use the formula speed = distance/time to find the length of each train?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that the function $f(x)$ is an odd function defined on the domain $\\mathbb{R}$, and when $x > 0$, $f(x)=2^x-3$, calculate the value of $f(-2)+f(0)$.",
+    "ground_truth_answer": "-1",
+    "teacher_raw_output": "> **Hint**: If $f(x)$ is an odd function, what does that imply about the relationship between $f(x)$ and $f(-x)$ for any real number $x$?\n> Consider how this property can be used to simplify the expression $f(-2)+f(0)$.",
+    "parsed_hint": "**Hint**: If $f(x)$ is an odd function, what does that imply about the relationship between $f(x)$ and $f(-x)$ for any real number $x$?\nConsider how this property can be used to simplify the expression $f(-2)+f(0)$.",
+    "parse_failed": false
+  },
+  {
+    "problem": "Aziz's parents moved to America in 1982. The year is 2021 and Aziz just celebrated a birthday. His parents had been living in America for 3 years before Aziz was born. How old is Aziz now?",
+    "ground_truth_answer": "36",
+    "teacher_raw_output": "> **Hint**: If Aziz's parents had been living in America for 3 years before he was born, and they moved to America in 1982, when exactly would Aziz have been born?",
+    "parsed_hint": "**Hint**: If Aziz's parents had been living in America for 3 years before he was born, and they moved to America in 1982, when exactly would Aziz have been born?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Jia and Yi are solving the system of equations simultaneously:\n$$\n\\begin{cases}\n& ax+by=2, \\\\\n& cx-3y=-2.\n\\end{cases}\n$$\nJia correctly solves to get\n$$\n\\begin{cases}\n& x=1, \\\\\n& y=-1;\n\\end{cases}\n$$\nYi, due to copying the value of $c$ incorrectly, gets the wrong solution\n$$\n\\begin{cases}\n& x=2, \\\\\n& y=-6.\n\\end{cases}\n$$\nFind the values of $a$, $b$, and $c$.",
+    "ground_truth_answer": "\\begin{cases}a= \\frac{5}{2} \\\\ b= \\frac{1}{2} \\\\ c=-5\\end{cases}",
+    "teacher_raw_output": "> **Hint**: If Jia and Yi have the same system of equations, but they end up with different solutions, what could be the difference between their approaches that led to this discrepancy?",
+    "parsed_hint": "**Hint**: If Jia and Yi have the same system of equations, but they end up with different solutions, what could be the difference between their approaches that led to this discrepancy?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given an arithmetic sequence $\\{a_{n}\\}$ with a non-zero common difference $d$, and the terms $a_1$, $a_3$, and $a_9$ form a geometric sequence, find the value of $\\frac{a_1 + a_3 + a_9}{a_2 + a_4 + a_{10}}$.",
+    "ground_truth_answer": "\\frac{13}{16}",
+    "teacher_raw_output": "> **Hint**: What property of an arithmetic sequence and a geometric sequence might be useful in solving this problem, given that the terms $a_1$, $a_3$, and $a_9$ form a geometric sequence?",
+    "parsed_hint": "**Hint**: What property of an arithmetic sequence and a geometric sequence might be useful in solving this problem, given that the terms $a_1$, $a_3$, and $a_9$ form a geometric sequence?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Shawn invested one half of his savings in a bond that paid simple interest for 2 years and received $550 as interest. He invested the remaining in a bond that paid compound interest, interest being compounded annually, for the same 2 years at the same rate of interest. The value of his total savings before investing in these two bonds was $2750. How much interest did Shawn receive from the compound interest bond?",
+    "ground_truth_answer": "$605",
+    "teacher_raw_output": "### Step 1: Calculate the amount invested in the simple interest bond\n\nWe know that Shawn invested half of his savings in the simple interest bond. Let's denote his total savings as `S`. Then, the amount invested in the simple interest bond is `S / 2`.\n\n### Step 2: Calculate the interest rate\n\nWe know that the simple interest bond paid $550 as interest over 2 years. We can use the formula for simple interest to find the interest rate.\n\n### Step 3: Calculate the amount invested in the compound interest bond\n\nWe know that Shawn invested the remaining amount in the compound interest bond. This amount is also `S / 2`.\n\n### Step 4: Calculate the compound interest\n\nWe know that the compound interest is compounded annually over 2 years. We can use the formula for compound interest to find the amount at the end of 2 years.\n\n### Step 5: Calculate the total interest earned\n\nWe know that the total interest earned is the sum of the interest earned from the simple interest bond and the compound interest bond.\n\n### Step 6: Calculate the interest earned from the compound interest bond\n\nWe know that the total interest earned is $605. We can subtract the interest earned from the simple interest bond to find the interest earned from the compound interest bond.\n\n> **Hint**: Can you use the formula for compound interest to find the amount at the end of 2 years, given the principal, rate, and time?",
+    "parsed_hint": "**Hint**: Can you use the formula for compound interest to find the amount at the end of 2 years, given the principal, rate, and time?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If a car travels 5 kilometers to the east, it is recorded as 5 kilometers. How would traveling 5 kilometers to the west be recorded? Express your answer in kilometers.",
+    "ground_truth_answer": "-5",
+    "teacher_raw_output": "> **Hint**: If traveling to the east is recorded as a positive distance, how would traveling in the opposite direction (to the west) be recorded?",
+    "parsed_hint": "**Hint**: If traveling to the east is recorded as a positive distance, how would traveling in the opposite direction (to the west) be recorded?",
+    "parse_failed": false
+  },
+  {
+    "problem": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$? Express your answer as a whole number.",
+    "ground_truth_answer": "2",
+    "teacher_raw_output": "> **Hint**: How do the ranges of the sine and cosine functions within the closed interval $[0,\\pi]$ influence the number of solutions to the given equation?",
+    "parsed_hint": "**Hint**: How do the ranges of the sine and cosine functions within the closed interval $[0,\\pi]$ influence the number of solutions to the given equation?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If the price of gasoline increases by a certain percentage and a driver intends to spend only 10% more on gasoline, the driver should reduce the quantity of gasoline that he buys by 12%. What is the percentage increase in the price of gasoline?",
+    "ground_truth_answer": "25\\%",
+    "teacher_raw_output": "### Problem Description\n\nIf the price of gasoline increases by a certain percentage and a driver intends to spend only 10% more on gasoline, the driver should reduce the quantity of gasoline that he buys by 12%. What is the percentage increase in the price of gasoline?\n\n### Solution Approach\n\nTo solve this problem, we need to consider the relationship between the price increase, the reduced quantity of gasoline, and the constant total expenditure. Let's assume the original price per unit of gasoline is $p$ and the original quantity is $q$. After the price increase, the new price becomes $p'$ and the reduced quantity is $q'$.\n\n### Hint\n\nWhat happens to the total expenditure when the price increases and the quantity decreases? How can we relate the percentage increase in price to the percentage decrease in quantity?",
+    "parsed_hint": "Warning: No blockquote hint found.",
+    "parse_failed": true
+  },
+  {
+    "problem": "James can make a beret from 3 spools of yarn. If he has 12 spools of red yarn, 15 spools of black yarn, and 6 spools of blue yarn, how many berets can he make?",
+    "ground_truth_answer": "11",
+    "teacher_raw_output": "> **Hint**: Can you calculate the total number of berets James can make if he combines all the spools of yarn, considering that the color of the yarn doesn't affect the number of berets he can make?",
+    "parsed_hint": "**Hint**: Can you calculate the total number of berets James can make if he combines all the spools of yarn, considering that the color of the yarn doesn't affect the number of berets he can make?",
+    "parse_failed": false
+  },
+  {
+    "problem": "In a class of 48 students, the scores of a mathematics test follow a normal distribution $N(80, 100)$. Theoretically, the number of students who scored between 80 and 90 points is approximately _.",
+    "ground_truth_answer": "16",
+    "teacher_raw_output": "> **Hint**: How can we use the properties of a normal distribution to find the proportion of students who scored between 80 and 90 points, and then multiply this proportion by the total number of students to get an approximate count?",
+    "parsed_hint": "**Hint**: How can we use the properties of a normal distribution to find the proportion of students who scored between 80 and 90 points, and then multiply this proportion by the total number of students to get an approximate count?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Megan had 256 files on her computer. She deleted 67 of them and put the rest into folders with 12 files in each. Megan ended up with _____ folders.",
+    "ground_truth_answer": "15",
+    "teacher_raw_output": "> **Hint**: If Megan had 256 files initially and deleted 67 of them, how many files were left for her to put into folders?",
+    "parsed_hint": "**Hint**: If Megan had 256 files initially and deleted 67 of them, how many files were left for her to put into folders?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given $F(x) = ax^7 + bx^5 + cx^3 + dx - 6$, and it is known that $F(-2) = 10$, find the value of $F(2)$.",
+    "ground_truth_answer": "-22",
+    "teacher_raw_output": "### Problem: Finding the Value of F(2)\n\n> **Hint**: What relationship can you use to connect the values of F(x) and F(-x) in the given function F(x) = ax^7 + bx^5 + cx^3 + dx - 6?",
+    "parsed_hint": "**Hint**: What relationship can you use to connect the values of F(x) and F(-x) in the given function F(x) = ax^7 + bx^5 + cx^3 + dx - 6?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the function $f(x)=\\ln ( \\sqrt {1+9x^{2}}-3x)+1$, find the value of $f(\\lg 2)+f(\\lg \\dfrac {1}{2})$ .",
+    "ground_truth_answer": "2",
+    "teacher_raw_output": "> **Hint**: Can you simplify the expression $f(x)=\\ln ( \\sqrt {1+9x^{2}}-3x)+1$ by using properties of logarithms and trigonometric identities, and then apply this simplification to find the value of $f(\\lg 2)+f(\\lg \\dfrac {1}{2})$?",
+    "parsed_hint": "**Hint**: Can you simplify the expression $f(x)=\\ln ( \\sqrt {1+9x^{2}}-3x)+1$ by using properties of logarithms and trigonometric identities, and then apply this simplification to find the value of $f(\\lg 2)+f(\\lg \\dfrac {1}{2})$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Antonieta wants to ride the Ferris wheel, the roller coaster, and the log ride. The Ferris wheel costs 6 tickets, the roller coaster costs 5 tickets, and the log ride costs 7 tickets. She needs to buy 16 more tickets to ride all the attractions. How many tickets does Antonieta have initially?",
+    "ground_truth_answer": "2",
+    "teacher_raw_output": "> **Hint**: If Antonieta needs to buy 16 more tickets to ride all the attractions, and the total cost of all the rides is 6 + 5 + 7 = 18 tickets, then what does this mean in terms of the number of tickets she already has?",
+    "parsed_hint": "**Hint**: If Antonieta needs to buy 16 more tickets to ride all the attractions, and the total cost of all the rides is 6 + 5 + 7 = 18 tickets, then what does this mean in terms of the number of tickets she already has?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given $z_{1}$, $z_{2} \\in \\mathbb{C}$, where $|z_{1}|=|z_{2}|=1$ and $|z_{1}+z_{2}|=\\sqrt{3}$, calculate the value of $|z_{1}-z_{2}|$. Express your answer as a single number.",
+    "ground_truth_answer": "1",
+    "teacher_raw_output": "> **Hint**: Given that the magnitudes of two complex numbers $z_{1}$ and $z_{2}$ are both 1, what does this imply about the relationship between their magnitudes and the magnitude of their sum or difference?",
+    "parsed_hint": "**Hint**: Given that the magnitudes of two complex numbers $z_{1}$ and $z_{2}$ are both 1, what does this imply about the relationship between their magnitudes and the magnitude of their sum or difference?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given a quadratic equation $x^{2}-2x+m=0$, after completing the square, we get $\\left(x-1\\right)^{2}=n$. Find the value of $m+n$.",
+    "ground_truth_answer": "1",
+    "teacher_raw_output": "> **Hint**: What is the relationship between the coefficients of a quadratic equation and the values obtained after completing the square?\n \n**Your turn to solve it!**",
+    "parsed_hint": "**Hint**: What is the relationship between the coefficients of a quadratic equation and the values obtained after completing the square?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the equation |x-20| + |x+20| = 2020, find the sum of the two solutions x1 and x2.",
+    "ground_truth_answer": "0",
+    "teacher_raw_output": "### Problem: Find the Sum of Solutions to the Equation |x-20| + |x+20| = 2020\n### Solution: 0\n\n> **Hint**: What happens when the absolute value expressions have the same sign?",
+    "parsed_hint": "**Hint**: What happens when the absolute value expressions have the same sign?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$), find the value of $a^{2m+n}$ = $\\_\\_\\_\\_\\_\\_$.",
+    "ground_truth_answer": "12",
+    "teacher_raw_output": "> **Hint**: Can you express $a^{2m+n}$ in terms of the given logarithms, and then simplify it using the properties of logarithms?",
+    "parsed_hint": "**Hint**: Can you express $a^{2m+n}$ in terms of the given logarithms, and then simplify it using the properties of logarithms?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the complex number $z= \\\\dfrac {2}{-1-i}$, let $\\\\overset{.}{z}$ be the conjugate of $z$. Calculate the coordinates of the point corresponding to $i \\\\overset{.}{z}$ in the complex plane. Express your answer as coordinates (a, b).",
+    "ground_truth_answer": "(1, -1)",
+    "teacher_raw_output": "> **Hint**: To find the conjugate of the complex number $z=\\dfrac{2}{-1-i}$, what operation do you need to perform on the denominator, $-1-i$, to get its conjugate?",
+    "parsed_hint": "**Hint**: To find the conjugate of the complex number $z=\\dfrac{2}{-1-i}$, what operation do you need to perform on the denominator, $-1-i$, to get its conjugate?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Calculate the value of $\\sin 810^{\\circ}+\\cos (-60^{\\circ})$. Express your answer as a fraction.",
+    "ground_truth_answer": "\\dfrac{3}{2}",
+    "teacher_raw_output": "> **Hint**: What are the key angles whose sine and cosine values are well-known, and can be used to simplify the given expression?",
+    "parsed_hint": "**Hint**: What are the key angles whose sine and cosine values are well-known, and can be used to simplify the given expression?",
+    "parse_failed": false
+  },
+  {
+    "problem": "In the school election, Eliot got some votes, Shaun got 5 times as many votes as Randy, and Randy got 16 votes. Eliot got 160 votes. What is the ratio of the number of votes Eliot got to the number of votes Shaun got?",
+    "ground_truth_answer": "2:1",
+    "teacher_raw_output": "### Problem\nIn the school election, Eliot got some votes, Shaun got 5 times as many votes as Randy, and Randy got 16 votes. Eliot got 160 votes. What is the ratio of the number of votes Eliot got to the number of votes Shaun got?\n\n### Solution\n2:1\n\n### Step-by-Step Solution\n#### Step 1: Calculate the number of votes Shaun got\nShaun got 5 times as many votes as Randy. Randy got 16 votes. So, the number of votes Shaun got is 5 * 16 = 80.\n\n#### Step 2: Calculate the ratio of the number of votes Eliot got to the number of votes Shaun got\nEliot got 160 votes and Shaun got 80 votes. The ratio of the number of votes Eliot got to the number of votes Shaun got is 160 : 80, which simplifies to 2 : 1.\n\n### Hint: \nIf Randy got 16 votes and Shaun got 5 times as many votes as Randy, what is the relationship between the number of votes Randy got and the number of votes Shaun got?",
+    "parsed_hint": "Warning: No blockquote hint found.",
+    "parse_failed": true
+  },
+  {
+    "problem": "Logan makes $65,000 a year. He spends $20,000 on rent every year, $5000 on groceries every year, and $8000 on gas every year. If he needs to make $10,000 more each year, how much money does he want to have left each year?",
+    "ground_truth_answer": "\\$42,000",
+    "teacher_raw_output": "### Solution to Problem\n\nTo find out how much money Logan wants to have left each year, we need to calculate his total annual expenses and subtract them from his annual income.\n\n### Step 1: Calculate Total Annual Expenses\nAnnual income: $65,000\nAnnual rent: $20,000\nAnnual groceries: $5,000\nAnnual gas: $8,000\nTotal annual expenses = $20,000 + $5,000 + $8,000 = $33,000\n\n### Step 2: Calculate Annual Income After Additional Savings\nAdditional savings needed: $10,000\nAnnual income after savings = $65,000 + $10,000 = $75,000\nAnnual income after expenses = $75,000 - $33,000 = $42,000\n\n### Hint:\n> **Hint**: What if Logan's expenses increase by a certain percentage each year, how would this affect his desired annual savings?",
+    "parsed_hint": "**Hint**: What if Logan's expenses increase by a certain percentage each year, how would this affect his desired annual savings?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Consider a sequence formed by all powers of 3, or the sum of several distinct powers of 3, arranged in ascending order. The sequence starts as 1, 3, 4, 9, 10, 12, 13, \u2026 What is the 100th term of this sequence?",
+    "ground_truth_answer": "981",
+    "teacher_raw_output": "> **Hint**: Can you express each number in the sequence as a binary number, where each digit in the binary representation corresponds to a power of 3 being included or excluded in the sum? How can this help you find the 100th term?",
+    "parsed_hint": "**Hint**: Can you express each number in the sequence as a binary number, where each digit in the binary representation corresponds to a power of 3 being included or excluded in the sum? How can this help you find the 100th term?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given that the imaginary unit $i$ is a root of the equation $x^2+ax+b=0$, where $a, b \\in \\mathbb{R}$, calculate the value of $a+b$. Express your answer as a single integer.",
+    "ground_truth_answer": "1",
+    "teacher_raw_output": "> **Hint**: Since $i$ is a root of the equation $x^2+ax+b=0$, does this mean that the conjugate of $i$, which is $-i$, must also be a root of this equation?",
+    "parsed_hint": "**Hint**: Since $i$ is a root of the equation $x^2+ax+b=0$, does this mean that the conjugate of $i$, which is $-i$, must also be a root of this equation?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A tradesman sold an article at a certain loss percentage. If the selling price had been increased by $500, there would have been a gain of 15%. The cost price of the article was $1250. What was the loss percentage when the article was initially sold?",
+    "ground_truth_answer": "25\\%",
+    "teacher_raw_output": "### Problem\nA tradesman sold an article at a certain loss percentage. If the selling price had been increased by $500, there would have been a gain of 15%. The cost price of the article was $1250. What was the loss percentage when the article was initially sold?\n\n### Step 1: Define the Cost Price and the Relationship Between the Selling Price and Gain Percentage\nLet's assume the selling price is 'x'. We know that if the selling price had been increased by $500, there would have been a gain of 15%. This can be expressed as (x + 500) = 1.15x.\n\n### Step 2: Find the Selling Price Using the Relationship Between the Selling Price and Gain Percentage\nWe can now solve the equation (x + 500) = 1.15x to find the value of 'x'. Subtracting 'x' from both sides gives us 500 = 0.15x. Dividing both sides by 0.15, we get x = (500 / 0.15).\n\n### Step 3: Calculate the Selling Price\nx = (500 / 0.15) = 3333.33\n\n### Step 4: Find the Loss Percentage\nTo find the loss percentage, we need to subtract the selling price from the cost price, then divide by the cost price and multiply by 100.\n\nLoss Percentage = ((1250 - 3333.33) / 1250) * 100\n\n### Step 5: Calculate the Loss Percentage\nLoss Percentage = ((1250 - 3333.33) / 1250) * 100 = -166.66%\n\nHowever, loss percentage cannot be negative. Since the tradesman initially sold the article at a loss, the selling price must be less than the cost price. Therefore, we can conclude that the loss percentage is 25%.",
+    "parsed_hint": "Warning: No blockquote hint found.",
+    "parse_failed": true
+  },
+  {
+    "problem": "A track and field team has 64 male athletes and 56 female athletes. Using the stratified sampling method, several people are drawn. If 8 of the drawn athletes are male, find the number of female athletes drawn. Express your answer as a whole number.",
+    "ground_truth_answer": "7",
+    "teacher_raw_output": "### Problem Solution\n\n#### Step 1: Determine the proportion of male athletes in the total population.\nTo find the proportion of male athletes, we divide the number of male athletes by the total number of athletes. \nTotal athletes = 64 (male) + 56 (female) = 120\nProportion of male athletes = 64 / 120 = 0.5333\n\n#### Step 2: Use the proportion of male athletes to find the number of female athletes drawn.\nWe know that 8 of the drawn athletes are male. Since the proportion of male athletes is 0.5333, we can set up a proportion to find the total number of athletes drawn.\n0.5333 = 8 / x\nx = 8 / 0.5333\nx = 15\n\n#### Step 3: Find the number of female athletes drawn.\nSince we know that the total number of athletes drawn is 15, and 8 are male, we can find the number of female athletes drawn by subtracting the number of male athletes from the total.\nNumber of female athletes drawn = Total athletes drawn - Number of male athletes drawn\n= 15 - 8\n= 7\n\n### Socratic Question\n> **Hint**: If the proportion of male athletes in the team is not the same as the proportion of male athletes in the drawn sample, how would you adjust your calculation to account for this discrepancy?",
+    "parsed_hint": "**Hint**: If the proportion of male athletes in the team is not the same as the proportion of male athletes in the drawn sample, how would you adjust your calculation to account for this discrepancy?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Set X consists of the integers from 1 to 12, inclusive, while set Y consists of the integers from 0 to some number, inclusive. There are 12 distinct integers that belong to both sets at the same time. What is the ending number of set Y?",
+    "ground_truth_answer": "12",
+    "teacher_raw_output": "> **Hint**: If set X consists of integers from 1 to 12, and there are 12 distinct integers that belong to both sets, what does this imply about the range of set Y?",
+    "parsed_hint": "**Hint**: If set X consists of integers from 1 to 12, and there are 12 distinct integers that belong to both sets, what does this imply about the range of set Y?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If the point $(8,4)$ is on the graph of the function $f(x)=1+\\log_{a}x$, then the inverse function of $f(x)$ is",
+    "ground_truth_answer": "f^{-1}(x)=2^{x-1}",
+    "teacher_raw_output": "> **Hint**: Since the point $(8,4)$ is on the graph of $f(x)=1+\\log_{a}x$, what does this tell us about the relationship between $x$ and $\\log_{a}x$ at $x=8$?",
+    "parsed_hint": "**Hint**: Since the point $(8,4)$ is on the graph of $f(x)=1+\\log_{a}x$, what does this tell us about the relationship between $x$ and $\\log_{a}x$ at $x=8$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Chuck rides 3 hours total on a bicycle trip into the country and back. He rode out at a certain rate and returned at the rate of 24 mph. Chuck rode 28.8 miles into the country (rounded to the nearest hundredth). What was his speed when he rode out?",
+    "ground_truth_answer": "16",
+    "teacher_raw_output": "> **Hint**: If Chuck rode for 3 hours total and rode back at a speed of 24 mph, what can we infer about the time it took him to ride into the country?\n```python\n# Given values\ntotal_time = 3  # hours\nspeed_return = 24  # mph\ndistance_into_country = 28.8  # miles\n\n# Calculate time to ride back\ntime_return = total_time - (distance_into_country / speed_return)\n\n# Calculate speed into country\nspeed_into_country = distance_into_country / (total_time - time_return)\n\n# Print result\nprint(speed_into_country)\n```",
+    "parsed_hint": "**Hint**: If Chuck rode for 3 hours total and rode back at a speed of 24 mph, what can we infer about the time it took him to ride into the country?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
+    "ground_truth_answer": "6",
+    "teacher_raw_output": "> **Hint**: If a polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$, what can we infer about the degree of $d(x)$ based on the division algorithm?",
+    "parsed_hint": "**Hint**: If a polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$, what can we infer about the degree of $d(x)$ based on the division algorithm?",
+    "parse_failed": false
+  },
+  {
+    "problem": "There exist vectors $\\mathbf{a}$ and $\\mathbf{b}$ such that\n\\[\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -3 \\\\ -6 \\end{pmatrix},\\]where $\\mathbf{a}$ is parallel to $\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ and $\\mathbf{b}$ is orthogonal to $\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}.$  Find $\\mathbf{b}.$",
+    "ground_truth_answer": "\\begin{pmatrix} 7 \\\\ -2 \\\\ -5 \\end{pmatrix}",
+    "teacher_raw_output": "> **Hint**: What does it mean for a vector to be parallel to another vector, and how can this information be used to find vector $\\mathbf{a}$?",
+    "parsed_hint": "**Hint**: What does it mean for a vector to be parallel to another vector, and how can this information be used to find vector $\\mathbf{a}$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Mary is baking a cake. The recipe calls for 12 cups of flour, 14 cups of sugar, and 7 cups of salt. She already put in some cups of flour. She needs to add 3 more cups of flour than cups of salt now. How many cups of flour has she already put in?",
+    "ground_truth_answer": "2",
+    "teacher_raw_output": "### Problem and Solution\nMary is baking a cake. The recipe calls for 12 cups of flour, 14 cups of sugar, and 7 cups of salt. She already put in some cups of flour. She needs to add 3 more cups of flour than cups of salt now. How many cups of flour has she already put in?\n\nSolution:\n2\n\n### Socratic Question\n> **Hint**: If Mary needs to add 3 more cups of flour than cups of salt now, and she still needs 12 cups of flour in total, how much flour will she have in total after adding the required amount of flour to the amount she already has, and what does this tell us about the amount of flour she has already put in?",
+    "parsed_hint": "**Hint**: If Mary needs to add 3 more cups of flour than cups of salt now, and she still needs 12 cups of flour in total, how much flour will she have in total after adding the required amount of flour to the amount she already has, and what does this tell us about the amount of flour she has already put in?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the universal set $U=\\mathbb{R}$, let the set $P$ be defined as $P=\\{x \\mid x^2 - 5x - 6 \\geq 0\\}$. Find the complement of $P$ in $U$, $\\complement_U P$.",
+    "ground_truth_answer": "\\complement_U P = (-1, 6)",
+    "teacher_raw_output": "> **Hint**: What are the critical points of the quadratic function $x^2 - 5x - 6$ that will help you determine the intervals where the inequality $x^2 - 5x - 6 \\geq 0$ holds true?",
+    "parsed_hint": "**Hint**: What are the critical points of the quadratic function $x^2 - 5x - 6$ that will help you determine the intervals where the inequality $x^2 - 5x - 6 \\geq 0$ holds true?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given a complex number $z=2-i$, calculate the magnitude of $z^{2}$, denoted as $|z^{2}|$. Express your answer as a single number.",
+    "ground_truth_answer": "5",
+    "teacher_raw_output": "> **Hint**: What is the relationship between the magnitude of a complex number and its square? Can you use this relationship to find the magnitude of $z^{2}$ without explicitly calculating $z^{2}$?",
+    "parsed_hint": "**Hint**: What is the relationship between the magnitude of a complex number and its square? Can you use this relationship to find the magnitude of $z^{2}$ without explicitly calculating $z^{2}$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "What is the smallest number which, when increased by some number, is divisible by 8, 11, and 24? The answer is 255.",
+    "ground_truth_answer": "255",
+    "teacher_raw_output": "> **Hint**: What are the least common multiples (LCM) of 8, 11, and 24, and how can we use this information to find the smallest number that satisfies the given condition?",
+    "parsed_hint": "**Hint**: What are the least common multiples (LCM) of 8, 11, and 24, and how can we use this information to find the smallest number that satisfies the given condition?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If the algebraic expression $x^2-6x+b$ can be transformed into $(x-a)^2-1$, then the value of $b-a$ is.",
+    "ground_truth_answer": "5",
+    "teacher_raw_output": "> **Hint**: If the expression $x^2-6x+b$ can be transformed into $(x-a)^2-1$, what are the coefficients of the $x$ term in both expressions and how can they be related to each other?\n> Can you use this information to find the value of $a$ and then determine the value of $b-a$?",
+    "parsed_hint": "**Hint**: If the expression $x^2-6x+b$ can be transformed into $(x-a)^2-1$, what are the coefficients of the $x$ term in both expressions and how can they be related to each other?\nCan you use this information to find the value of $a$ and then determine the value of $b-a$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "John goes to the store and pays with a 20 dollar bill. He buys 3 sodas, each costing $2. How much change did John get?",
+    "ground_truth_answer": "\\$14",
+    "teacher_raw_output": "```markdown\n### Problem: Change from a $20 Bill\nJohn goes to the store and pays with a $20 bill. He buys 3 sodas, each costing $2. How much change did John get?\n### Solution:\n$14\n\n> **Hint**: If John pays with a $20 bill and buys 3 sodas for $2 each, how much will he have left after making the purchase?\n```\n\n(Note: The question is designed to guide the reader towards the solution by breaking down the problem into smaller, more manageable parts.)",
+    "parsed_hint": "**Hint**: If John pays with a $20 bill and buys 3 sodas for $2 each, how much will he have left after making the purchase?",
+    "parse_failed": false
+  },
+  {
+    "problem": "If x is 20 percent more than y and y is some percent less than z, then x is 48 percent of z. What is the percentage decrease of y compared to z?",
+    "ground_truth_answer": "60",
+    "teacher_raw_output": "### Problem Explanation\nWe are given that x is 20 percent more than y and y is some percent less than z. We also know that x is 48 percent of z. We need to find the percentage decrease of y compared to z.\n\n### Let's Break Down the Problem\nLet's assume z = 100 for simplicity. Then, x = 48 and y = ?\n\n### **Hint**: What if we express y in terms of z and use the information that x is 20 percent more than y?",
+    "parsed_hint": "Warning: No blockquote hint found.",
+    "parse_failed": true
+  },
+  {
+    "problem": "on a purchase of $ 110 , a store offered a payment plan consisting of a $ 10 down payment and 12 monthly payments of $ 10 each . what percent of the purchase price , to the nearest tenth of a percent , did the customer pay in interest by using this plan ?",
+    "ground_truth_answer": "18.2\\%",
+    "teacher_raw_output": "### Problem Solution\n\n```markdown\n# Problem\nOn a purchase of $110, a store offered a payment plan consisting of a $10 down payment and 12 monthly payments of $10 each. What percent of the purchase price, to the nearest tenth of a percent, did the customer pay in interest by using this plan?\n\n# Solution\n18.2%\n\n### Step-by-Step Solution\n\n#### Step 1: Calculate Total Amount Paid\nThe customer paid $10 down and 12 * $10 = $120 in monthly payments. Total amount paid is $10 + $120 = $130.\n\n#### Step 2: Calculate Interest Paid\nInterest paid is the difference between the total amount paid and the purchase price. Interest paid = $130 - $110 = $20.\n\n#### Step 3: Calculate Percent of Purchase Price Paid in Interest\nPercent of purchase price paid in interest = (Interest paid / Purchase price) * 100 = ($20 / $110) * 100.\n\n### Hint:\nWhat is the relationship between the total amount paid, the down payment, and the monthly payments in this payment plan?\n```\n\n### Solution Continued\n\n```python\n# Calculate percent of purchase price paid in interest\npurchase_price = 110\ninterest_paid = 20\npercent_interest = (interest_paid / purchase_price) * 100\nprint(f\"Percent of purchase price paid in interest: {percent_interest:.1f}%\")\n```\n\n### Final Answer\nThe final answer is 18.2%.",
+    "parsed_hint": "Warning: No blockquote hint found.",
+    "parse_failed": true
+  },
+  {
+    "problem": "On an algebra test, there were $5x$ problems. Lucky Lacy missed $x$ of them. What percent of the problems did she get correct?",
+    "ground_truth_answer": "80",
+    "teacher_raw_output": "> **Hint**: If Lacy missed $x$ problems out of $5x$ total problems, and we know she got 80% of the problems correct, how can we express the number of problems she got correct in terms of $x$?\n \n> **Step 1**: The total number of problems is $5x$, and she missed $x$ of them. So, how many problems did she get correct?\n \n> **Step 2**: We know that she got 80% of the problems correct. Can you express this as an equation using the information from Step 1?",
+    "parsed_hint": "**Hint**: If Lacy missed $x$ problems out of $5x$ total problems, and we know she got 80% of the problems correct, how can we express the number of problems she got correct in terms of $x$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "To strengthen environmental awareness, the Environmental Protection Bureau randomly selects 3 out of 5 local chemical plants (A, B, C, D, E) for wastewater compliance testing each week. The probability that both plant A and plant B are selected for testing in a week is $\\_\\_\\_\\_\\_\\_$.",
+    "ground_truth_answer": "\\frac{3}{10}",
+    "teacher_raw_output": "> **Hint**: If the Environmental Protection Bureau randomly selects 3 out of 5 local chemical plants for testing each week, what is the probability that both plant A and plant B are selected for testing in a week, given that the selection is without replacement?",
+    "parsed_hint": "**Hint**: If the Environmental Protection Bureau randomly selects 3 out of 5 local chemical plants for testing each week, what is the probability that both plant A and plant B are selected for testing in a week, given that the selection is without replacement?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Given the function $f(x) = \\ln(ax-1)$, its derivative is $f'(x)$, and $f'(2) = 2$, find the value of the real number $a$. Express your answer as a fraction or decimal.",
+    "ground_truth_answer": "\\frac{2}{3}",
+    "teacher_raw_output": "> **Hint**: If you know the derivative of the function $f(x) = \\ln(ax-1)$, can you use the given information about $f'(2) = 2$ to set up an equation involving the value of $a$?",
+    "parsed_hint": "**Hint**: If you know the derivative of the function $f(x) = \\ln(ax-1)$, can you use the given information about $f'(2) = 2$ to set up an equation involving the value of $a$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Noah is asked to report the number of insects in the laboratory based on the total number of insect legs. There are some insect legs, and Noah calculates that there are 6 insects. How many insect legs are there in the laboratory?",
+    "ground_truth_answer": "36",
+    "teacher_raw_output": "> **Hint**: If there are 6 insects with a certain number of legs each, and the total number of legs is 36, how many legs does each insect have?",
+    "parsed_hint": "**Hint**: If there are 6 insects with a certain number of legs each, and the total number of legs is 36, how many legs does each insect have?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A 10 m long rectangular floor is to be covered with a square carpet with 4 m sides. 64 square meters of the floor are uncovered. What is the width of the floor?",
+    "ground_truth_answer": "8",
+    "teacher_raw_output": "> **Hint**: If a 4m x 4m square carpet covers 16 square meters of the floor and there are 64 square meters of the floor that are uncovered, what fraction of the floor remains uncovered, and what does this imply about the total area of the floor?",
+    "parsed_hint": "**Hint**: If a 4m x 4m square carpet covers 16 square meters of the floor and there are 64 square meters of the floor that are uncovered, what fraction of the floor remains uncovered, and what does this imply about the total area of the floor?",
+    "parse_failed": false
+  },
+  {
+    "problem": "A research group is monitoring the air quality in a city, dividing $24$ cities into three groups: A, B, and C, with $4$, $12$, and $8$ cities in each group, respectively. If a stratified sampling method is used to select $6$ cities, then the number of cities to be selected from group B is _______.",
+    "ground_truth_answer": "3",
+    "teacher_raw_output": "> **Hint**: What is the most efficient way to sample the cities from group B in order to maintain the proportion of cities in each group in the sample?\n> \n> We know that there are 12 cities in group B, which is the largest group, and we need to select a sample that is representative of the population. What proportion of the sample should be from group B?",
+    "parsed_hint": "**Hint**: What is the most efficient way to sample the cities from group B in order to maintain the proportion of cities in each group in the sample?\n\nWe know that there are 12 cities in group B, which is the largest group, and we need to select a sample that is representative of the population. What proportion of the sample should be from group B?",
+    "parse_failed": false
+  },
+  {
+    "problem": "The height of a rectangle is 36 centimeters (cm) and the length of its width is 64 centimeters (cm). There is a square with a perimeter equal to the perimeter of this rectangle. Find the value of dividing the perimeter of this square into 4 equal parts.",
+    "ground_truth_answer": "50",
+    "teacher_raw_output": "> **Hint**: If the perimeter of the square is equal to the perimeter of the rectangle, what relationship can you establish between the side length of the square and the dimensions of the rectangle?",
+    "parsed_hint": "**Hint**: If the perimeter of the square is equal to the perimeter of the rectangle, what relationship can you establish between the side length of the square and the dimensions of the rectangle?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Adam has 18 magnets. He gave away a third of the magnets, and he still had some magnets left. Peter has 24 magnets. What is the ratio of the number of magnets Adam has to the number of magnets Peter has?",
+    "ground_truth_answer": "1:2",
+    "teacher_raw_output": "> **Hint**: If Adam gave away a third of his magnets and still had some left, what fraction of his original number of magnets does he have now?",
+    "parsed_hint": "**Hint**: If Adam gave away a third of his magnets and still had some left, what fraction of his original number of magnets does he have now?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Fred has 38 red marbles, half as many green ones, and the rest are dark blue. If he has a certain number of marbles and 6 of them are dark blue, how many marbles does Fred have in total?",
+    "ground_truth_answer": "63",
+    "teacher_raw_output": "> **Hint**: If Fred has half as many green marbles as red ones, and he has 38 red marbles, how many green marbles does he have?",
+    "parsed_hint": "**Hint**: If Fred has half as many green marbles as red ones, and he has 38 red marbles, how many green marbles does he have?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Nell collects baseball cards. She had some cards while Jeff had 11 cards. She gave 276 of her cards to Jeff and now has 252 cards left. How many cards did Nell have initially?",
+    "ground_truth_answer": "528",
+    "teacher_raw_output": "> **Hint**: If Nell gave 276 cards to Jeff and now has 252 cards left, what does that mean in terms of the total number of cards she had before giving any to Jeff?",
+    "parsed_hint": "**Hint**: If Nell gave 276 cards to Jeff and now has 252 cards left, what does that mean in terms of the total number of cards she had before giving any to Jeff?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Oli's banana split has some scoops of ice cream while Victoria has twice more scoops of ice cream than Oli's. Victoria has 4 more scoops of ice cream than Oli. How many scoops of ice cream does Oli's banana split have?",
+    "ground_truth_answer": "4",
+    "teacher_raw_output": "> **Hint**: If Victoria has twice more scoops of ice cream than Oli's and 4 more scoops of ice cream than Oli, can we express the number of scoops Victoria has in terms of the number of scoops Oli has?",
+    "parsed_hint": "**Hint**: If Victoria has twice more scoops of ice cream than Oli's and 4 more scoops of ice cream than Oli, can we express the number of scoops Victoria has in terms of the number of scoops Oli has?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Jasmine wants to organize her books in order of most number of pages to least number of pages. Jasmine's longest book has 396 pages. The book in the middle of her shelf has 297 pages, which is three times the number of pages of the shortest book. What is the ratio of the number of pages in the shortest book to the longest book?",
+    "ground_truth_answer": "1:4",
+    "teacher_raw_output": "> **Hint**: If the middle book has 297 pages, which is three times the number of pages of the shortest book, can you find the number of pages in the shortest book by dividing the number of pages in the middle book by 3?",
+    "parsed_hint": "**Hint**: If the middle book has 297 pages, which is three times the number of pages of the shortest book, can you find the number of pages in the shortest book by dividing the number of pages in the middle book by 3?",
+    "parse_failed": false
+  },
+  {
+    "problem": "After moving the line $y=2x+3$ down $5$ units, the resulting equation of the line is ______.",
+    "ground_truth_answer": "y = 2x - 2",
+    "teacher_raw_output": "> **Hint**: If moving a line down by a certain number of units changes the y-intercept, how does that change relate to the value being subtracted from the line's equation?",
+    "parsed_hint": "**Hint**: If moving a line down by a certain number of units changes the y-intercept, how does that change relate to the value being subtracted from the line's equation?",
+    "parse_failed": false
+  },
+  {
+    "problem": "The sum of two numbers is 20, and their difference is some value. The difference of their squares is 200. What is the difference between the two numbers?",
+    "ground_truth_answer": "10",
+    "teacher_raw_output": "> **Hint**: If you square both equations (sum and difference) and subtract one from the other, what can you infer about the relationship between the two equations?",
+    "parsed_hint": "**Hint**: If you square both equations (sum and difference) and subtract one from the other, what can you infer about the relationship between the two equations?",
+    "parse_failed": false
+  },
+  {
+    "problem": "Evaluate the expression $sin(\\\\frac{\u03c0}{2}-\\\\frac{\u03c0}{6})$. Express your answer as a fraction or a simplified radical, if necessary.",
+    "ground_truth_answer": "\\\\frac{\\\\sqrt{3}}{2}",
+    "teacher_raw_output": "> **Hint**: What trigonometric identity can be used to simplify the expression $sin(\\\\frac{\u03c0}{2}-\\\\frac{\u03c0}{6})$?",
+    "parsed_hint": "**Hint**: What trigonometric identity can be used to simplify the expression $sin(\\\\frac{\u03c0}{2}-\\\\frac{\u03c0}{6})$?",
+    "parse_failed": false
+  },
+  {
+    "problem": "It takes Matt 2 minutes per problem to do his math homework with a calculator and a certain amount of time per problem without a calculator. If Matt's assignment has 20 problems, using a calculator will save him 60 minutes. How many minutes does it take Matt to do a problem without a calculator?",
+    "ground_truth_answer": "5",
+    "teacher_raw_output": "> **Hint**: If Matt can complete his 20-problem assignment in 60 minutes faster when using a calculator, how does the time difference between using and not using a calculator for a single problem relate to the total time saved?",
+    "parsed_hint": "**Hint**: If Matt can complete his 20-problem assignment in 60 minutes faster when using a calculator, how does the time difference between using and not using a calculator for a single problem relate to the total time saved?",
+    "parse_failed": false
+  }
+]

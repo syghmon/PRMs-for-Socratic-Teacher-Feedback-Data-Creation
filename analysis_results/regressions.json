@@ -1,0 +1,110 @@
+[
+  {
+    "problem_index": 32,
+    "problem": "In a parallelogram, the length of one diagonal is 30 meters and the perpendicular dropped on that diagonal is 20 meters. What is the area of the parallelogram?",
+    "teacher_hint": "Warning: No properly formatted hint found in the teacher response.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.5833333333333334,
+    "score_with_hint": 0.0,
+    "improvement": -0.5833333333333334,
+    "example_type": "regression",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375
+  },
+  {
+    "problem_index": 65,
+    "problem": "In the school election, Eliot got some votes, Shaun got 5 times as many votes as Randy, and Randy got 16 votes. Eliot got 160 votes. What is the ratio of the number of votes Eliot got to the number of votes Shaun got?",
+    "teacher_hint": "Warning: No properly formatted hint found in the teacher response.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.75,
+    "score_with_hint": 0.25,
+    "improvement": -0.5,
+    "example_type": "regression",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.609375
+  },
+  {
+    "problem_index": 43,
+    "problem": "A train that is 360 meters long is running at a speed of 50 km/hour. It passes a bridge of certain length in 36 seconds. What is the length of the bridge?",
+    "teacher_hint": "Make sure to convert the speed to the same unit as the length and time.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.3333333333333333,
+    "score_with_hint": 0.0,
+    "improvement": -0.3333333333333333,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.46875
+  },
+  {
+    "problem_index": 89,
+    "problem": "A research group is monitoring the air quality in a city, dividing $24$ cities into three groups: A, B, and C, with $4$, $12$, and $8$ cities in each group, respectively. If a stratified sampling method is used to select $6$ cities, then the number of cities to be selected from group B is _______.",
+    "teacher_hint": "The stratified sampling method ensures that the selected sample is representative of the entire population by selecting a fixed proportion of elements from each stratum.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.75,
+    "score_with_hint": 0.4166666666666667,
+    "improvement": -0.3333333333333333,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.828125
+  },
+  {
+    "problem_index": 3,
+    "problem": "Given the quadratic function y = -x^2 + 2x + m^2, find the value of m if the maximum value of the function is 3. Express your answer in the form \u00b1\u221avalue.",
+    "teacher_hint": "The x-coordinate of the vertex of the parabola is given by x = -b / 2a.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.25,
+    "score_with_hint": 0.0,
+    "improvement": -0.25,
+    "example_type": "regression",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.0
+  },
+  {
+    "problem_index": 38,
+    "problem": "Given that the distance from point P on the ellipse $\\frac{x^{2}}{25}$+ $\\frac{y^{2}}{16}$\\=1 to one focus is 3, find the distance from point P to the other focus.",
+    "teacher_hint": "Recall the definition of an ellipse and the relationship between its foci and major axis.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.3333333333333333,
+    "score_with_hint": 0.08333333333333333,
+    "improvement": -0.25,
+    "example_type": "regression",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.328125
+  },
+  {
+    "problem_index": 68,
+    "problem": "Given that the imaginary unit $i$ is a root of the equation $x^2+ax+b=0$, where $a, b \\in \\mathbb{R}$, calculate the value of $a+b$. Express your answer as a single integer.",
+    "teacher_hint": "Warning: No properly formatted hint found in the teacher response.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.3333333333333333,
+    "score_with_hint": 0.08333333333333333,
+    "improvement": -0.25,
+    "example_type": "regression",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.65625
+  },
+  {
+    "problem_index": 87,
+    "problem": "Noah is asked to report the number of insects in the laboratory based on the total number of insect legs. There are some insect legs, and Noah calculates that there are 6 insects. How many insect legs are there in the laboratory?",
+    "teacher_hint": "Insects have 6 legs each.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.25,
+    "score_with_hint": 0.0,
+    "improvement": -0.25,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.8125
+  },
+  {
+    "problem_index": 95,
+    "problem": "Jasmine wants to organize her books in order of most number of pages to least number of pages. Jasmine's longest book has 396 pages. The book in the middle of her shelf has 297 pages, which is three times the number of pages of the shortest book. What is the ratio of the number of pages in the shortest book to the longest book?",
+    "teacher_hint": "Warning: No properly formatted hint found in the teacher response.",
+    "model": "SmolLM2-1.7B-Instruct",
+    "score_no_hint": 0.25,
+    "score_with_hint": 0.0,
+    "improvement": -0.25,
+    "example_type": "regression",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.953125
+  }
+]

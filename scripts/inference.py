@@ -5,12 +5,27 @@ import pathlib
 import sys
 import gc
 import torch  # for torch.cuda.empty_cache(), if you're using CUDA
+import re  # for regex-based hint extraction
 from transformers import AutoTokenizer
 from requests.exceptions import ConnectionError
 from vllm import LLM, SamplingParams
+from dotenv import load_dotenv
 
 from utils.math_eval import MathEvaluator  # optional for LLM-based judge
 from utils.evaluation_utils import evaluate_predictions  # single entry point for scoring
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the Hugging Face token from environment variables and set it for the libraries
+hf_token = os.getenv("HUGGINGFACE_TOKEN")
+if hf_token:
+    # Set the standard environment variables that HF libraries check for authentication
+    os.environ["HUGGING_FACE_HUB_TOKEN"] = hf_token
+    os.environ["HF_TOKEN"] = hf_token
+    print("Hugging Face token loaded from .env file")
+else:
+    print("Warning: HUGGINGFACE_TOKEN not found in .env file")
 
 # Get the project root directory (parent of scripts)
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent.absolute()
@@ -20,9 +35,37 @@ PROJECT_ROOT = pathlib.Path(__file__).parent.parent.absolute()
 # -------------------------------------------------------------------------
 
 STUDENT_SYSTEM_PROMPT = (
-    "You are a helpful and accurate math assistant. You explain your reasoning step by step "
-    "and always give correct answers."
+    "You are a helpful and accurate math assistant. "
+    "You explain your reasoning step by step and always provide your final answer in \\boxed{}."
 )
+
+
+def extract_hint(response_text):
+    """
+    Extract the hint portion from the teacher model's response.
+    
+    This function looks for the <hint>...</hint> tags in the response
+    and extracts only that content. If the structured format isn't found,
+    it falls back to older formats or provides an error message.
+    
+    Args:
+        response_text (str): The full response from the teacher model
+        
+    Returns:
+        str: The extracted hint, or an error message if parsing fails
+    """
+    # Try the new structured format first
+    hint_match = re.search(r'<hint>(.*?)</hint>', response_text, re.DOTALL)
+    if hint_match:
+        return hint_match.group(1).strip()
+    
+    # Fall back to the old format if needed
+    hint_match = re.search(r'\*\*HINT\*\*:(.*?)(?:\*\*Solution\*\*:|$)', response_text, re.DOTALL)
+    if hint_match:
+        return hint_match.group(1).strip()
+    
+    # If we can't find a structured hint, return a warning
+    return "Warning: No properly formatted hint found in the teacher response."
 
 
 def safe_model_id(model_name: str) -> str:
@@ -42,6 +85,8 @@ def load_model(model_name: str) -> LLM:
     """
     print(f"Loading model: {model_name}")
     try:
+        # The HF_TOKEN environment variable should already be set at the top of the script
+        # vLLM will use this automatically for authentication
         llm = LLM(model=model_name, trust_remote_code=True)
         return llm
     except ConnectionError as e:
@@ -56,7 +101,9 @@ def load_tokenizer(model_name: str) -> AutoTokenizer:
     """
     Load the corresponding tokenizer for a given model.
     """
-    return AutoTokenizer.from_pretrained(model_name, use_fast=False, trust_remote_code=True)
+    # The HF_TOKEN environment variable should already be set at the top of the script
+    # Transformers will use HUGGING_FACE_HUB_TOKEN or HF_TOKEN automatically
+    return AutoTokenizer.from_pretrained(model_name, trust_remote_code=True, use_fast=False)
 
 
 def build_hf_results(samples, outputs, prompt_map, hints_list=None, include_hint=False):
@@ -94,6 +141,8 @@ def build_hf_results(samples, outputs, prompt_map, hints_list=None, include_hint
         }
         if include_hint and hints_list is not None:
             entry["teacher_hint"] = hints_list[i]
+            # Optionally, you can keep the full response for debugging
+            # entry["teacher_full_response"] = raw_hint
 
         # Copy over any metadata you want to preserve
         if "difficulty_bin" in item:
@@ -178,7 +227,7 @@ def main():
         if solution_text:
             user_content += f"\n\nSolution:\n{solution_text}"
 
-        user_content += f"\n\n{teacher_hint_prompt}\n\n<think>\n"
+        user_content += f"\n\n{teacher_hint_prompt}\n" #\n<think>\n"
 
         print(user_content)
         # Apply chat template to create tokenized prompt
@@ -209,7 +258,8 @@ def main():
     # Extract hints from model outputs
     hints = []
     for output_obj in teacher_outputs:
-        hint_text = output_obj.outputs[0].text.strip()
+        raw_text = output_obj.outputs[0].text.strip()
+        hint_text = extract_hint(raw_text)
         print("\n\nHint:\n", hint_text)
         hints.append(hint_text)
 
@@ -251,8 +301,7 @@ def main():
         hint_text = hints[idx]
         user_content = (
             f"{problem_text}\n\n"
-            f"**HINT**:\n{hint_text}\n\n"
-            "Please reason step by step, taking into account the hint and put your final answer in \\boxed{}."
+            f"**HINT**:\n{hint_text}"
         )
         # For each problem, create num_samples identical prompts (for sampling diversity)
         for _ in range(num_samples):
