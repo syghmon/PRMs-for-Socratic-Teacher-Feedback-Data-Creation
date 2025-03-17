@@ -1,0 +1,26 @@
+{
+  "model": "Llama-3.1-8B-Instruct",
+  "performance": {
+    "no_hint": {
+      "mean_solve_rate": 0.44166666666666665,
+      "stderr": 0.03538508693085799,
+      "improvement_over_no_hint": null
+    },
+    "socratic_question": {
+      "mean_solve_rate": 0.43333333333333335,
+      "stderr": 0.03594561923360817,
+      "improvement_over_no_hint": -0.008333333333333304
+    },
+    "step_suggestion": {
+      "mean_solve_rate": 0.42583333333333334,
+      "stderr": 0.03553137988073298,
+      "improvement_over_no_hint": -0.01583333333333331
+    },
+    "direct_hint": {
+      "mean_solve_rate": 0.4041666666666666,
+      "stderr": 0.03723720111697191,
+      "improvement_over_no_hint": -0.03750000000000003
+    }
+  },
+  "sample_size": 100
+}

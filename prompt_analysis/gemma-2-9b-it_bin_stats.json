@@ -1,0 +1,245 @@
+{
+  "model": "gemma-2-9b-it",
+  "bin_performance": {
+    "0-0.1": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.008333333333333333,
+        "stderr": 0.008333333333333333
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.06666666666666667,
+          "stderr": 0.05091750772173156,
+          "improvement": 0.058333333333333334
+        },
+        "direct_hint": {
+          "mean": 0.04166666666666667,
+          "stderr": 0.04166666666666667,
+          "improvement": 0.03333333333333334
+        },
+        "step_suggestion": {
+          "mean": 0.10833333333333335,
+          "stderr": 0.06695539329552196,
+          "improvement": 0.10000000000000002
+        }
+      }
+    },
+    "0.1-0.2": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.14166666666666666,
+        "stderr": 0.09217033346131698
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.11666666666666665,
+          "stderr": 0.09229582069908972,
+          "improvement": -0.02500000000000001
+        },
+        "direct_hint": {
+          "mean": 0.225,
+          "stderr": 0.1132093548461935,
+          "improvement": 0.08333333333333334
+        },
+        "step_suggestion": {
+          "mean": 0.14166666666666666,
+          "stderr": 0.058333333333333334,
+          "improvement": 0.0
+        }
+      }
+    },
+    "0.2-0.3": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.30833333333333335,
+        "stderr": 0.1054458494227906
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.3416666666666667,
+          "stderr": 0.12008870178454048,
+          "improvement": 0.033333333333333326
+        },
+        "direct_hint": {
+          "mean": 0.33333333333333337,
+          "stderr": 0.12044157438154889,
+          "improvement": 0.025000000000000022
+        },
+        "step_suggestion": {
+          "mean": 0.4083333333333333,
+          "stderr": 0.11415956993352509,
+          "improvement": 0.09999999999999998
+        }
+      }
+    },
+    "0.3-0.4": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.3083333333333333,
+        "stderr": 0.08700255424092125
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.26666666666666666,
+          "stderr": 0.09686442096757052,
+          "improvement": -0.04166666666666663
+        },
+        "direct_hint": {
+          "mean": 0.25,
+          "stderr": 0.09541980020732038,
+          "improvement": -0.05833333333333329
+        },
+        "step_suggestion": {
+          "mean": 0.3,
+          "stderr": 0.10333930687632374,
+          "improvement": -0.008333333333333304
+        }
+      }
+    },
+    "0.4-0.5": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.36666666666666664,
+        "stderr": 0.1327533682816502
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.35,
+          "stderr": 0.111665284679121,
+          "improvement": -0.016666666666666663
+        },
+        "direct_hint": {
+          "mean": 0.19166666666666668,
+          "stderr": 0.07248882417055494,
+          "improvement": -0.17499999999999996
+        },
+        "step_suggestion": {
+          "mean": 0.39166666666666666,
+          "stderr": 0.11183790077331886,
+          "improvement": 0.025000000000000022
+        }
+      }
+    },
+    "0.5-0.6": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.5583333333333333,
+        "stderr": 0.13891666388944432
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.45,
+          "stderr": 0.11331154474650633,
+          "improvement": -0.10833333333333334
+        },
+        "direct_hint": {
+          "mean": 0.4333333333333333,
+          "stderr": 0.12777777777777777,
+          "improvement": -0.12500000000000006
+        },
+        "step_suggestion": {
+          "mean": 0.45,
+          "stderr": 0.13619611857923625,
+          "improvement": -0.10833333333333334
+        }
+      }
+    },
+    "0.6-0.7": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.6666666666666667,
+        "stderr": 0.12234841969747356
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.6833333333333333,
+          "stderr": 0.15,
+          "improvement": 0.016666666666666607
+        },
+        "direct_hint": {
+          "mean": 0.6083333333333333,
+          "stderr": 0.12853039223621415,
+          "improvement": -0.05833333333333346
+        },
+        "step_suggestion": {
+          "mean": 0.525,
+          "stderr": 0.14542933458564916,
+          "improvement": -0.14166666666666672
+        }
+      }
+    },
+    "0.7-0.8": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.4416666666666667,
+        "stderr": 0.10617508252009107
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.36666666666666664,
+          "stderr": 0.1091493483577139,
+          "improvement": -0.07500000000000007
+        },
+        "direct_hint": {
+          "mean": 0.4916666666666667,
+          "stderr": 0.12263188919246731,
+          "improvement": 0.04999999999999999
+        },
+        "step_suggestion": {
+          "mean": 0.4833333333333333,
+          "stderr": 0.12595315609727373,
+          "improvement": 0.041666666666666574
+        }
+      }
+    },
+    "0.8-0.9": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.75,
+        "stderr": 0.12546210878484684
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.775,
+          "stderr": 0.09706336227586748,
+          "improvement": 0.025000000000000022
+        },
+        "direct_hint": {
+          "mean": 0.7666666666666666,
+          "stderr": 0.10228862577512204,
+          "improvement": 0.016666666666666607
+        },
+        "step_suggestion": {
+          "mean": 0.7416666666666667,
+          "stderr": 0.1269599431336271,
+          "improvement": -0.008333333333333304
+        }
+      }
+    },
+    "0.9-1": {
+      "count": 10,
+      "no_hint": {
+        "mean": 0.9083333333333334,
+        "stderr": 0.08282250842153097
+      },
+      "prompts": {
+        "socratic_question": {
+          "mean": 0.75,
+          "stderr": 0.10467468711898208,
+          "improvement": -0.15833333333333344
+        },
+        "direct_hint": {
+          "mean": 0.775,
+          "stderr": 0.11183790077331886,
+          "improvement": -0.13333333333333341
+        },
+        "step_suggestion": {
+          "mean": 0.7583333333333333,
+          "stderr": 0.1232594874018544,
+          "improvement": -0.15000000000000013
+        }
+      }
+    }
+  }
+}

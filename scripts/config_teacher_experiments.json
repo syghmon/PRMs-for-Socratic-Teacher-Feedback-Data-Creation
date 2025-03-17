@@ -3,11 +3,10 @@
   "teacher_temperature": 0.6,
   "teacher_top_p": 0.95,
   "teacher_max_tokens": 512,
-
   "teacher_approaches": [
     {
       "name": "NoHint",
-      "prompt": "NO_HINT_PLACEHOLDER",  
+      "prompt": "NO_HINT_PLACEHOLDER",
       "parse_mode": "none"
     },
     {
@@ -16,37 +15,20 @@
       "parse_mode": "blockquote"
     }
   ],
-
   "student_model": "huggingfaceTB/SmolLM2-360M-Instruct",
   "student_temperature": 0.6,
   "student_top_p": 0.95,
   "student_max_tokens": 1024,
-
   "student_approaches": [
     {
-      "name": "AnswerColon",
-      "system_prompt": "You are a helpful math tutor. Explain your reasoning, then write the final result on its own line starting with 'Answer:'.",
-      "parse_mode": "answer_colon"
+      "name": "BoxedAnswer2",
+      "parse_mode": "boxed",
+      "system_prompt": "You are a helpful math tutor.\nReason step by step with a numbered list and put your final answer inside a LaTeX boxed environment.\n\n**Example 1**:\nProblem:\nIf the linear function is y=2x-3, and it is shifted 3 units upwards, what is the new equation?\nStep 1: The original function is y=2x-3.\nStep 2: When a function is shifted upwards by 3 units, we add 3 to the right side of the equation.\nStep 3: y=2x-3+3.\nStep 4: Simplifying, y=2x.\n\nThe final answer is \\boxed{y=2x}.\n\nNow use the same style for the new problem:"
     },
     {
-      "name": "JsonOutput",
-      "system_prompt": "You are a helpful math tutor. Please return JSON of the form { \"steps\": [...], \"final_answer\": \"...\" }. Do not include any text outside JSON.",
-      "parse_mode": "json"
-    },
-    {
-      "name": "UniqueToken",
-      "system_prompt": "You are a helpful math tutor. After each step, and after your final answer, insert <unqd> on a new line.",
-      "parse_mode": "unique_token"
-    },
-    {
-      "name": "NumberedSteps",
-      "system_prompt": "Explain your reasoning in numbered steps (Step 1, Step 2, etc.) then end with 'Answer:' on its own line.",
-      "parse_mode": "answer_colon"
-    },
-    {
-      "name": "TaggedAnswer",
-      "system_prompt": "Explain your reasoning. Then put the final answer in <final_answer>...<\\final_answer> tags.",
-      "parse_mode": "tagged_answer"
+      "name": "BoxedAnswer",
+      "parse_mode": "boxed",
+      "system_prompt": "You are a helpful math tutor.\nReason step by step with a numbered list and put your final answer inside a LaTeX boxed environment.\n\n**Example 1**:\nProblem:\nIf the linear function is y=2x-3, and it is shifted 3 units upwards, what is the new equation?\nStep 1: The original function is y=2x-3.\nStep 2: When a function is shifted upwards by 3 units, we add 3 to the right side of the equation.\nStep 3: y=2x-3+3.\nStep 4: Simplifying, y=2x.\n\nThe final answer is \\boxed{y=2x}.\n\nNow use the same style for the new problem:"
     }
   ]
 }

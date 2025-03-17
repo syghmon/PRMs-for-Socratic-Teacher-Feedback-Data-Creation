@@ -81,6 +81,21 @@ def remove_boxed(s: str) -> Optional[str]:
     else:
         return s
 
+def parse_student_answer_answer_colon(response_text: str) -> (str, bool):
+    """
+    Extracts answers formatted as "Answer: <text>" from the response.
+    
+    Args:
+        response_text (str): The response text to parse.
+        
+    Returns:
+        tuple: (extracted_answer, parse_failed_flag)
+    """
+    match = re.search(r"Answer:\s*(.*)", response_text, re.IGNORECASE)
+    if match:
+        return (match.group(1).strip(), False)
+    return ("No 'Answer:' found.", True)
+
 def get_answer_expr(answer: str) -> str:
     """
     Extracts the mathematical expression from the answer.
@@ -91,11 +106,17 @@ def get_answer_expr(answer: str) -> str:
     Returns:
         str: Extracted expression.
     """
+    # First try to extract from "Answer:" format
+    #extracted, failed = parse_student_answer_answer_colon(answer)
+    #if not failed:
+    #    return extracted
+        
     try:
-        answer = remove_boxed(last_boxed_only_string(answer))
+        extracted = remove_boxed(last_boxed_only_string(answer))
+        return extracted
     except Exception:
-        answer = answer.split("\n")[-1]
-    return answer
+        # Fall back to last line if no boxed expression found
+        return answer.split("\n")[-1]
 
 def remove_right_units(string: str) -> str:
     """
@@ -574,11 +595,18 @@ Respond with only "Yes" or "No" (without quotes). Do not include a rationale.
         Returns:
             str: Extracted expression.
         """
+        # First try to extract from "Answer:" format
+        extracted, failed = parse_student_answer_answer_colon(answer)
+        if not failed:
+            return extracted
+            
+        # Fall back to boxed extraction if "Answer:" format not found
         try:
-            answer = MathEvaluator.remove_boxed(MathEvaluator.last_boxed_only_string(answer))
+            extracted = MathEvaluator.remove_boxed(MathEvaluator.last_boxed_only_string(answer))
+            return extracted
         except Exception:
-            answer = answer.split("\n")[-1]
-        return answer
+            # Fall back to last line if no boxed expression found
+            return answer.split("\n")[-1]
 
     @staticmethod
     def extract_boxed_expressions(string: str) -> List[str]:

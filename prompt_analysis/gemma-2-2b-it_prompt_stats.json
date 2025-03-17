@@ -1,0 +1,26 @@
+{
+  "model": "gemma-2-2b-it",
+  "performance": {
+    "direct_hint": {
+      "mean_solve_rate": 0.1625,
+      "stderr": 0.02694132023957629,
+      "improvement_over_no_hint": 0.010000000000000009
+    },
+    "no_hint": {
+      "mean_solve_rate": 0.1525,
+      "stderr": 0.02490315135179242,
+      "improvement_over_no_hint": null
+    },
+    "step_suggestion": {
+      "mean_solve_rate": 0.14583333333333334,
+      "stderr": 0.02390635372860282,
+      "improvement_over_no_hint": -0.006666666666666654
+    },
+    "socratic_question": {
+      "mean_solve_rate": 0.13333333333333333,
+      "stderr": 0.023058749930831356,
+      "improvement_over_no_hint": -0.019166666666666665
+    }
+  },
+  "sample_size": 100
+}

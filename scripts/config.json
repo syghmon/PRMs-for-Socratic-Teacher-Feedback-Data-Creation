@@ -1,31 +1,52 @@
 {
     "teacher_model": "meta-llama/Llama-3.1-8B-Instruct",
-    "teacher_hint_prompt": "Provide a single hint enclosed in <hint> and </hint> tags.",
-    "teacher_temperature": 0.6, 
-    "teacher_top_p": 0.95,
-    "teacher_max_tokens": 4096,
+    "teacher_prompts": [
+        {
+            "name": "socratic_question",
+            "prompt": "Please ask a Socratic question to help the student understand the problem. Use the format:\n\n**HINT**: Your short question here.\n\n**Example**:\nProblem:\nIf x^2 = 9, solve for x.\n\nSolution:\nx = 3 or x = -3\n\nThinking:\nWe can square root both sides to get x = 3 or x = -3.\n\n**HINT**: Remember that squaring and square-rooting are inverse operations. There might be more than one solution.\n\nNow use the same style for the new problem:",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 4096
+        },
+        {
+            "name": "direct_hint",
+            "prompt": "Please provide a direct hint that helps the student solve the problem give away the answer. Use the format:\n\n**HINT**: Your hint here.\n\n**Example**:\nProblem:\nIf x^2 = 9, solve for x.\n\nSolution:\nx = 3 or x = -3\n\nThinking:\nWe can square root both sides to get x = 3 or x = -3.\n\n**HINT**: When you take the square root of an equation, don't forget that there are two possible results: a positive and a negative value.\n\nNow use the same style for the new problem:",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 4096
+        },
+        {
+            "name": "step_suggestion",
+            "prompt": "Please suggest the first step the student should take to solve this problem. Use the format:\n\n**HINT**: Your step suggestion here.\n\n**Example**:\nProblem:\nIf x^2 = 9, solve for x.\n\nSolution:\nx = 3 or x = -3\n\nThinking:\nWe can square root both sides to get x = 3 or x = -3.\n\n**HINT**: Start by taking the square root of both sides of the equation.\n\nNow use the same style for the new problem:",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 4096
+        }
+    ],
   
     "num_samples": 12,
   
     "student_models": [
       {
-        "model_name": "huggingfaceTB/SmolLM2-135M-Instruct",
+        "model_name": "meta-llama/Llama-3.1-8B-Instruct",
         "temperature": 0.6,
         "top_p": 0.95,
-        "max_tokens": 1024
+        "max_tokens": 4096
       },
       {
-        "model_name": "huggingfaceTB/SmolLM2-360M-Instruct",
+        "model_name": "google/gemma-2-2b-it",
         "temperature": 0.6,
         "top_p": 0.95,
-        "max_tokens": 1024
+        "max_tokens": 4096
       },
       {
-        "model_name": "huggingfaceTB/SmolLM2-1.7B-Instruct",
+        "model_name": "google/gemma-2-9b-it",
         "temperature": 0.6,
         "top_p": 0.95,
-        "max_tokens": 1024
+        "max_tokens": 4096
       }
     ]
   }
+  
+
   

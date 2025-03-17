@@ -24,7 +24,7 @@ echo "Job started at $(date)"
 # Run your new teacher-only experiment script
 python scripts/teacher_experiments_scratch.py \
     --input data/samples.json \
-    --output results/experiments.json \
+    --output results/experiments_incontext.json \
     --config scripts/config_teacher_experiments.json
 
 echo "Job completed at $(date)"
