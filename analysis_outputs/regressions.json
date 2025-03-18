@@ -1,0 +1,40 @@
+[
+  {
+    "problem_index": 81,
+    "problem": "John goes to the store and pays with a 20 dollar bill. He buys 3 sodas, each costing $2. How much change did John get?",
+    "teacher_hints": {
+      "socratic_question": "Think about how much money John would have left if he paid for the sodas first.",
+      "direct_hint": "The change is found by subtracting the total cost of the sodas from 20."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "socratic_question",
+    "score_no_hint": 0.75,
+    "score_with_hint": 0.25,
+    "improvement": -0.5,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875
+  },
+  {
+    "problem_index": 46,
+    "problem": "Aziz's parents moved to America in 1982. The year is 2021 and Aziz just celebrated a birthday. His parents had been living in America for 3 years before Aziz was born. How old is Aziz now?",
+    "teacher_hints": {
+      "socratic_question": "If Aziz is currently 36 years old, how many years has he been alive?",
+      "direct_hint": "\\boxed{36}"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "socratic_question",
+    "score_no_hint": 0.4166666666666667,
+    "score_with_hint": 0.16666666666666666,
+    "improvement": -0.25,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": -0.16666666666666663,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.46875
+  }
+]

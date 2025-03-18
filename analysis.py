@@ -32,6 +32,8 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 import warnings
 from typing import List, Optional, Dict
+import matplotlib.colors as mc
+import colorsys
 
 ##############################################################################
 # Answer Extraction Functions
@@ -319,6 +321,15 @@ def set_plot_style():
     plt.rcParams['legend.fontsize'] = 10
     plt.rcParams['figure.titlesize'] = 16
 
+def adjust_color(base_color, amount=0.1):
+    """Adjust a color to create variation for different hint types."""
+    try:
+        c = mc.to_rgb(base_color)
+        h, l, s = colorsys.rgb_to_hls(*c)
+        return colorsys.hls_to_rgb(h, min(1, l * (1 + amount)), s)
+    except:
+        return base_color  # Return original if conversion fails
+
 ##############################################################################
 # Main Analysis Class
 ##############################################################################
@@ -341,27 +352,41 @@ class Analysis:
                  output_dir: str,
                  model_tags: list,
                  bin_labels: list,
+                 hint_types: list = None,
+                 show_combined_hints: bool = False,
                  debug_extraction: bool = False):
         self.samples_file = samples_file
         self.results_dir = results_dir
         self.output_dir = output_dir
         self.model_tags = model_tags
         self.bin_labels = bin_labels
+        self.hint_types = hint_types or ["socratic_question", "direct_hint", "step_suggestion"]
+        self.show_combined_hints = show_combined_hints
         self.debug_extraction = debug_extraction
-
+        
+        # Define debug variables
+        self.debug_problems = list(range(5)) if debug_extraction else []
+        
         # Data structure to hold per-problem info
         # all_results[i] = {
         #    "problem": ...
         #    "final_answer": ...
         #    "difficulty_bin": ...
         #    "llama8b_solve_rate": ...
-        #    "teacher_hint": ...
+        #    "teacher_hints": {hint_type: hint_text, ...}
         #    "models": {
         #       model_tag: {
         #          "no_hint": <float solve rate>,
-        #          "with_hint": <float solve rate>,
+        #          "hint_types": {
+        #             "socratic_question": <float solve rate>,
+        #             "direct_hint": <float solve rate>,
+        #             ...
+        #          },
         #          "has_answer_no_hint": <float extraction rate>,
-        #          "has_answer_with_hint": <float extraction rate>
+        #          "has_answer_hint_types": {
+        #             "socratic_question": <float extraction rate>,
+        #             ...
+        #          }
         #       },
         #       ...
         #    }
@@ -409,190 +434,137 @@ class Analysis:
                 "final_answer": samp.get("answer", ""),
                 "difficulty_bin": samp.get("difficulty_bin", None),
                 "llama8b_solve_rate": samp.get("llama8b_solve_rate", 0.0),
-                "teacher_hint": None,  # to be filled from with-hint files
+                "teacher_hints": {},  # Will store hints by type
                 "models": {}
             }
 
     def load_model_results(self):
         """
-        For each model tag, read the `_no_hint.json` and `_with_hint.json` files in `results_dir`.
-        Then store solve rates, answer extraction success rates, and teacher hints (from with-hint).
+        For each model tag, load no-hint data and separate hint data by hint type.
         """
         models_loaded = 0
         
-        # Add diagnostics to debug answer extraction
-        debug_extraction_issues = self.debug_extraction  # Set to True to see detailed extraction debugging
-        debug_problems = list(range(5))  # Show debug info for these problem indices
-        
         for tag in self.model_tags:
-            no_hint_file = os.path.join(self.results_dir, f"answers_{tag}_no_hint.json")
-
-            # Look for all possible hint files with different prompt patterns
-            hint_patterns = ["socratic_question", "direct_hint", "step_suggestion"]
-            with_hint_files = []
-            
-            for pattern in hint_patterns:
-                pattern_file = os.path.join(self.results_dir, f"answers_{tag}_{pattern}_with_hint.json")
-                if os.path.exists(pattern_file):
-                    with_hint_files.append((pattern, pattern_file))
-            
-            # If no prompt-specific files found, try the generic *_with_hint.json
-            if not with_hint_files:
-                generic_hint_file = os.path.join(self.results_dir, f"answers_{tag}_with_hint.json")
-                if os.path.exists(generic_hint_file):
-                    with_hint_files.append(("generic", generic_hint_file))
-
             print(f"[Analysis] Loading model results for {tag}")
-            print(f"  - Found no-hint file: {os.path.exists(no_hint_file)}")
-            print(f"  - Found {len(with_hint_files)} with-hint files: {[p for p, _ in with_hint_files]}")
             
+            # Load no-hint data
+            no_hint_file = os.path.join(self.results_dir, f"answers_{tag}_no_hint.json")
             no_hint_data = load_json_data(no_hint_file)
             
-            # Collect all with-hint data from different prompt files
-            with_hint_data = []
-            for prompt, hint_file in with_hint_files:
-                prompt_data = load_json_data(hint_file)
-                if prompt_data:
-                    print(f"  - Loaded {len(prompt_data)} entries from {prompt} prompt")
-                    with_hint_data.extend(prompt_data)
-                else:
-                    print(f"  - No data found in {prompt} file")
-
-            # Skip this model if both files are missing
-            if not no_hint_data and not with_hint_data:
-                print(f"[Warning] Skipping model {tag} as no data files were found")
-                continue
-                
-            models_loaded += 1
-
-            # Each data list should have the same length (#problems).
-            if no_hint_data and len(no_hint_data) != len(self.all_results):
-                print(f"[Warning] Number of problems in no-hint file ({len(no_hint_data)}) does not match samples ({len(self.all_results)}).")
-            if with_hint_data and len(with_hint_data) != len(self.all_results):
-                print(f"[Warning] Number of problems in with-hint data ({len(with_hint_data)}) does not match samples ({len(self.all_results)}).")
-
+            # Check if no-hint file exists
+            print(f"  - Found no-hint file: {os.path.exists(no_hint_file)}")
+            
             # Initialize model data for all problems (for this tag)
             for i in range(len(self.all_results)):
                 if tag not in self.all_results[i]["models"]:
                     self.all_results[i]["models"][tag] = {
                         "no_hint": 0.0,
-                        "with_hint": 0.0,
+                        "hint_types": {hint_type: 0.0 for hint_type in self.hint_types},
                         "has_answer_no_hint": 0.0,
-                        "has_answer_with_hint": 0.0
+                        "has_answer_hint_types": {hint_type: 0.0 for hint_type in self.hint_types}
                     }
-
-            # Add no-hint data if available
-            for i, entry in enumerate(no_hint_data):
-                if i >= len(self.all_results):
-                    break
-                sr = get_solve_rate(entry)
-                self.all_results[i]["models"][tag]["no_hint"] = sr
-                
-                # Check if responses have properly formatted answers
-                has_answer_count = 0
-                responses = entry.get("responses", [])
-                
-                if i in debug_problems and debug_extraction_issues:
-                    print(f"\n[Debug] Extraction for {tag}, problem {i}, no hint:")
-                    print(f"  Problem: {self.all_results[i]['problem'][:100]}...")
-                
-                for j, response in enumerate(responses):
-                    extracted = has_formatted_answer(response)
-                    if extracted:
-                        has_answer_count += 1
+            
+            # Process no-hint data if available
+            if no_hint_data:
+                print(f"  - Loaded {len(no_hint_data)} entries from no-hint file")
+                for i, entry in enumerate(no_hint_data):
+                    if i >= len(self.all_results):
+                        break
                         
-                    if i in debug_problems and debug_extraction_issues:
-                        print(f"  Response {j}: has_formatted_answer = {extracted}")
-                        if not extracted and "\\boxed" in response:
-                            print(f"    Contains \\boxed but not detected, trying alternative extraction...")
-                            boxed_exprs = extract_boxed_expressions(response)
-                            print(f"    Found {len(boxed_exprs)} expressions: {boxed_exprs[:2] if boxed_exprs else None}")
-                
-                responses_count = len(responses)
-                extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
-                self.all_results[i]["models"][tag]["has_answer_no_hint"] = extraction_rate
-                
-                if i in debug_problems and debug_extraction_issues:
-                    print(f"  Extraction rate: {has_answer_count}/{responses_count} = {extraction_rate}")
-
-            # Add with-hint data if available - using the first with-hint entry for each problem
-            if with_hint_data:
-                seen_problems = set()
-                
-                for entry in with_hint_data:
-                    problem_id = entry.get("problem_idx", None)
-                    
-                    # If problem_idx field exists, use it
-                    if problem_id is not None and 0 <= problem_id < len(self.all_results):
-                        i = problem_id
-                    else:
-                        # Otherwise, try to find by problem text
-                        problem_text = entry.get("problem", "")
-                        found = False
-                        for j, result in self.all_results.items():
-                            if result["problem"] == problem_text:
-                                i = j
-                                found = True
-                                break
-                        if not found:
-                            continue  # Skip if no matching problem found
-                    
-                    # Skip if we've already seen this problem (take first hint only)
-                    if i in seen_problems:
-                        continue
-                    seen_problems.add(i)
-                    
+                    # Get solve rate
                     sr = get_solve_rate(entry)
-                    self.all_results[i]["models"][tag]["with_hint"] = sr
+                    self.all_results[i]["models"][tag]["no_hint"] = sr
                     
-                    # Check if responses have properly formatted answers
+                    # Check answer extraction rate
                     has_answer_count = 0
                     responses = entry.get("responses", [])
                     
-                    if i in debug_problems and debug_extraction_issues:
-                        print(f"\n[Debug] Extraction for {tag}, problem {i}, with hint:")
-                        print(f"  Problem: {self.all_results[i]['problem'][:100]}...")
-                        print(f"  Hint: {entry.get('teacher_hint', '')[:100]}...")
-                    
-                    for j, response in enumerate(responses):
-                        extracted = has_formatted_answer(response)
-                        if extracted:
+                    for response in responses:
+                        if has_formatted_answer(response):
                             has_answer_count += 1
-                            
-                        if i in debug_problems and debug_extraction_issues:
-                            print(f"  Response {j}: has_formatted_answer = {extracted}")
-                            if not extracted:
-                                # Look for indicators that there might be an answer but not formatted properly
-                                lower_resp = response.lower()
-                                if "boxed" in lower_resp or "answer" in lower_resp or "therefore" in lower_resp:
-                                    print(f"    Contains answer indicators but not detected, trying alternative extraction...")
-                                    boxed_exprs = extract_boxed_expressions(response)
-                                    print(f"    Found {len(boxed_exprs)} expressions: {boxed_exprs[:2] if boxed_exprs else None}")
                     
                     responses_count = len(responses)
                     extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
-                    self.all_results[i]["models"][tag]["has_answer_with_hint"] = extraction_rate
-                    
-                    if i in debug_problems and debug_extraction_issues:
-                        print(f"  Extraction rate: {has_answer_count}/{responses_count} = {extraction_rate}")
-                    
-                    # Also store teacher_hint if available
-                    if "teacher_hint" in entry and entry["teacher_hint"] is not None:
-                        self.all_results[i]["teacher_hint"] = entry["teacher_hint"]
-                    
+                    self.all_results[i]["models"][tag]["has_answer_no_hint"] = extraction_rate
+            
+            # Process each hint type separately
+            for hint_type in self.hint_types:
+                hint_file = os.path.join(self.results_dir, f"answers_{tag}_{hint_type}_with_hint.json")
+                if os.path.exists(hint_file):
+                    hint_data = load_json_data(hint_file)
+                    if hint_data:
+                        print(f"  - Loaded {len(hint_data)} entries for hint type: {hint_type}")
+                        
+                        # Track processed problems to avoid duplicates
+                        processed_problems = set()
+                        
+                        for entry in hint_data:
+                            # Find the correct problem index
+                            problem_id = entry.get("problem_idx", None)
+                            
+                            # If problem_idx field exists, use it
+                            if problem_id is not None and 0 <= problem_id < len(self.all_results):
+                                i = problem_id
+                            else:
+                                # Otherwise, try to find by problem text
+                                problem_text = entry.get("problem", "")
+                                found = False
+                                for j, result in self.all_results.items():
+                                    if result["problem"] == problem_text:
+                                        i = j
+                                        found = True
+                                        break
+                                if not found:
+                                    continue  # Skip if no matching problem found
+                            
+                            # Skip if we've already processed this problem for this hint type
+                            if i in processed_problems:
+                                continue
+                            processed_problems.add(i)
+                            
+                            # Get solve rate for this hint type
+                            sr = get_solve_rate(entry)
+                            self.all_results[i]["models"][tag]["hint_types"][hint_type] = sr
+                            
+                            # Check answer extraction rate
+                            has_answer_count = 0
+                            responses = entry.get("responses", [])
+                            
+                            for response in responses:
+                                if has_formatted_answer(response):
+                                    has_answer_count += 1
+                            
+                            responses_count = len(responses)
+                            extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
+                            self.all_results[i]["models"][tag]["has_answer_hint_types"][hint_type] = extraction_rate
+                            
+                            # Store the teacher hint text
+                            if "teacher_hint" in entry and entry["teacher_hint"]:
+                                self.all_results[i]["teacher_hints"][hint_type] = entry["teacher_hint"]
+            
+            # Skip this model if no data was found
+            if not no_hint_data and not any(
+                os.path.exists(os.path.join(self.results_dir, f"answers_{tag}_{hint_type}_with_hint.json"))
+                for hint_type in self.hint_types
+            ):
+                print(f"[Warning] Skipping model {tag} as no data files were found")
+                continue
+            
+            models_loaded += 1
+        
         print(f"[Analysis] Loaded data for {models_loaded} models")
 
     def plot_bin_based_solve_rates(self):
         """
-        Group problems by difficulty_bin, compute average solve rates for each group,
-        and create a combined plot showing both no-hint and with-hint results.
+        Group problems by difficulty_bin, compute average solve rates for each group and hint type,
+        and create a combined plot showing both no-hint and all hint types.
         """
         print("[Analysis] Plotting bin-based solve rates.")
         
         # Create a map: bin_label -> list of dict
-        #   each dict has: {"llama8b": x, "ModelX_no": x, "ModelX_with": x, ...}
+        #   each dict has: {"llama8b": x, "ModelX_no": x, "ModelX_hint_type1": x, "ModelX_hint_type2": x, ...}
         bin_map = defaultdict(list)
-        # Also track counts per bin for annotation
+        # Track counts per bin for annotation
         bin_counts = defaultdict(int)
         
         for i in range(len(self.all_results)):
@@ -605,8 +577,14 @@ class Analysis:
             }
             for tag in self.model_tags:
                 if tag in self.all_results[i]["models"]:
+                    # Add no-hint solve rate
                     item[f"{tag}_no"] = self.all_results[i]["models"][tag]["no_hint"]
-                    item[f"{tag}_with"] = self.all_results[i]["models"][tag]["with_hint"]
+                    
+                    # Add hint-specific solve rates
+                    for hint_type in self.hint_types:
+                        if hint_type in self.all_results[i]["models"][tag]["hint_types"]:
+                            item[f"{tag}_{hint_type}"] = self.all_results[i]["models"][tag]["hint_types"][hint_type]
+            
             bin_map[b].append(item)
 
         if not bin_map:
@@ -640,11 +618,14 @@ class Analysis:
                 result[f"{tag}_no_mean"] = no_mean
                 result[f"{tag}_no_stderr"] = no_stderr
                 
-                # With hint stats
-                with_vals = [r[f"{tag}_with"] for r in records if f"{tag}_with" in r]
-                with_mean, with_stderr = compute_stats(with_vals)
-                result[f"{tag}_with_mean"] = with_mean
-                result[f"{tag}_with_stderr"] = with_stderr
+                # Stats for each hint type
+                for hint_type in self.hint_types:
+                    hint_key = f"{tag}_{hint_type}"
+                    hint_vals = [r[hint_key] for r in records if hint_key in r]
+                    if hint_vals:
+                        hint_mean, hint_stderr = compute_stats(hint_vals)
+                        result[f"{tag}_{hint_type}_mean"] = hint_mean
+                        result[f"{tag}_{hint_type}_stderr"] = hint_stderr
             
             bin_summary[b] = result
 
@@ -666,30 +647,44 @@ class Analysis:
         
         # Print bin statistics for debug
         print("\n[Analysis] Bin Statistics:")
-        print(f"{'Bin':<10} {'Count':>6} {'LLaMA8B':>10} {'Average':>10}")
-        print("-" * 50)
+        print(f"{'Bin':<10} {'Count':>6} {'LLaMA8B':>10}", end="")
+        for tag in self.model_tags:
+            print(f" {tag+' (no)':>12}", end="")
+            for hint_type in self.hint_types:
+                print(f" {tag+' ('+hint_type+')':>15}", end="")
+        print()
+        print("-" * (10 + 6 + 10 + sum(12 + sum(15 for _ in self.hint_types) for _ in self.model_tags)))
+        
         for b in bins_in_order:
-            model_means = []
+            print(f"{b:<10} {bin_summary[b]['count']:>6} {bin_summary[b]['llama8b_mean']:>10.2f}", end="")
             for tag in self.model_tags:
-                if f"{tag}_no_mean" in bin_summary[b]:
-                    model_means.append(bin_summary[b][f"{tag}_no_mean"])
-            
-            avg_no_hint = sum(model_means) / len(model_means) if model_means else 0.0
-            print(f"{b:<10} {bin_summary[b]['count']:>6} {bin_summary[b]['llama8b_mean']:>10.2f} {avg_no_hint:>10.2f}")
+                no_key = f"{tag}_no_mean"
+                if no_key in bin_summary[b]:
+                    print(f" {bin_summary[b][no_key]:>12.2f}", end="")
+                else:
+                    print(f" {'N/A':>12}", end="")
+                
+                for hint_type in self.hint_types:
+                    hint_key = f"{tag}_{hint_type}_mean"
+                    if hint_key in bin_summary[b]:
+                        print(f" {bin_summary[b][hint_key]:>15.2f}", end="")
+                    else:
+                        print(f" {'N/A':>15}", end="")
+            print()
         
-        # Create a combined visualization showing both no-hint and with-hint results
+        # Create a visualization showing no-hint and all hint types
         self.plot_bin_based_solve_rates_combined(bin_summary, bins_in_order)
-        
+
     def plot_bin_based_solve_rates_combined(self, bin_summary, bins_in_order):
         """
-        Create a combined visualization showing both no-hint and with-hint results
-        in a more compact format, focusing on the improvement from hints.
+        Create a combined visualization showing both no-hint and all hint types
+        in a clearer format, focusing on the comparison between hint types.
         """
         try:
             set_plot_style()
             
-            # Create line plot for all models, showing both no-hint and with-hint
-            fig, ax = plt.subplots(figsize=(10, 6))
+            # Create line plot for all models, showing no-hint and each hint type
+            fig, ax = plt.subplots(figsize=(12, 7))
             x_vals = range(len(bins_in_order))
             
             # Plot LLaMA8B baseline as a grey line
@@ -697,30 +692,50 @@ class Analysis:
             ax.plot(x_vals, llama_means, 'o--', color='grey', linewidth=2, 
                     label="LLaMA8B", alpha=0.7, markersize=8)
             
-            # Plot each model's no-hint and with-hint results
-            colors = plt.cm.tab10.colors
+            # Plot each model's no-hint and all hint types
+            # Use a different color for each model and different markers/line styles for hint types
+            model_colors = plt.cm.tab10.colors
+            hint_markers = ['o', 's', '^', 'D', 'v']  # Different marker for each hint type
+            hint_linestyles = ['-', '--', '-.', ':']  # Different line style for each hint type
             
-            # Plot model results
             for i, tag in enumerate(self.model_tags):
-                color = colors[i % len(colors)]
+                base_color = model_colors[i % len(model_colors)]
                 
-                # Check if we have data for this model
+                # Check if we have no-hint data for this model
                 if not all(f"{tag}_no_mean" in bin_summary[b] for b in bins_in_order):
-                    print(f"[Warning] Skipping model {tag} in plot due to missing data")
+                    print(f"[Warning] Skipping model {tag} in plot due to missing no-hint data")
                     continue
                 
                 # No hint (solid line)
                 no_means = [bin_summary[b][f"{tag}_no_mean"] for b in bins_in_order]
-                ax.plot(x_vals, no_means, 'o-', label=f"{tag} (no hint)", 
-                        color=color, linewidth=2, markersize=8)
+                ax.plot(x_vals, no_means, marker=hint_markers[0], linestyle=hint_linestyles[0],
+                        label=f"{tag} (no hint)", color=base_color, linewidth=2, markersize=8)
                 
-                # With hint (dashed line)
-                with_means = [bin_summary[b][f"{tag}_with_mean"] for b in bins_in_order]
-                ax.plot(x_vals, with_means, 's--', label=f"{tag} (with hint)", 
-                        color=color, linewidth=2, markersize=8)
-                
-                # Fill the area between no-hint and with-hint to highlight improvement
-                ax.fill_between(x_vals, no_means, with_means, color=color, alpha=0.2)
+                # Each hint type (different markers and line styles)
+                for j, hint_type in enumerate(self.hint_types):
+                    # Check if we have data for this hint type
+                    hint_key = f"{tag}_{hint_type}_mean"
+                    if not all(hint_key in bin_summary[b] for b in bins_in_order):
+                        print(f"[Warning] Skipping hint type {hint_type} for model {tag} due to missing data")
+                        continue
+                    
+                    # Get hint means for this type
+                    hint_means = [bin_summary[b][hint_key] for b in bins_in_order]
+                    
+                    # Create slightly different color for each hint type
+                    hint_color = adjust_color(base_color, (j+1)*0.15)
+                    
+                    # Plot this hint type
+                    marker_idx = (j+1) % len(hint_markers)
+                    style_idx = (j+1) % len(hint_linestyles)
+                    ax.plot(x_vals, hint_means, 
+                            marker=hint_markers[marker_idx], 
+                            linestyle=hint_linestyles[style_idx],
+                            label=f"{tag} ({hint_type})", 
+                            color=hint_color, linewidth=2, markersize=8)
+                    
+                    # Fill the area between no-hint and this hint type (light shading)
+                    ax.fill_between(x_vals, no_means, hint_means, color=hint_color, alpha=0.1)
             
             # Improve plot appearance
             ax.set_xticks(list(x_vals))
@@ -728,7 +743,7 @@ class Analysis:
             ax.set_ylabel("Average Solve Rate")
             ax.set_ylim([0, 1])
             ax.set_xlabel("Difficulty Bin (LLaMA8B solve rate)")
-            ax.set_title("Model Performance Comparison With and Without Hints", fontweight='bold')
+            ax.set_title("Model Performance Comparison With Different Hint Types", fontweight='bold')
             
             # Add sample counts as annotations
             for i, b in enumerate(bins_in_order):
@@ -741,11 +756,13 @@ class Analysis:
             ax.grid(True, linestyle='--', alpha=0.7)
             ax.axhline(0.5, color='red', linestyle='--', linewidth=1, alpha=0.5)
             
-            # Better legend
-            ax.legend(fontsize='small', ncol=2, loc='upper right', 
+            # Better legend - place it outside the plot to avoid overcrowding
+            ax.legend(fontsize='small', loc='center left', bbox_to_anchor=(1.02, 0.5),
                      frameon=True, fancybox=True)
             
-            fig.tight_layout()
+            # Adjust layout to make room for the legend
+            plt.tight_layout()
+            plt.subplots_adjust(right=0.75)  # Make more room for the legend
             
             # Save the combined plot
             out_path = os.path.join(self.output_dir, "bin_based_solve_rates_combined.png")
@@ -888,12 +905,12 @@ class Analysis:
     def plot_bin_based_extraction_rates(self):
         """
         Group problems by difficulty_bin, compute average answer extraction success rates for each group,
-        and create a combined plot showing both no-hint and with-hint extraction rates across bins.
+        and create a combined plot showing both no-hint and all hint types across bins.
         """
         print("[Analysis] Plotting bin-based answer extraction success rates.")
         
         # Create a map: bin_label -> list of dict
-        #   each dict has: {"ModelX_no_extract": x, "ModelX_with_extract": x, ...}
+        #   each dict has: {"ModelX_no_extract": x, "ModelX_hint_type1_extract": x, "ModelX_hint_type2_extract": x, ...}
         bin_map = defaultdict(list)
         # Also track counts per bin for annotation
         bin_counts = defaultdict(int)
@@ -906,8 +923,14 @@ class Analysis:
             item = {}
             for tag in self.model_tags:
                 if tag in self.all_results[i]["models"]:
+                    # Add no-hint extraction rate
                     item[f"{tag}_no_extract"] = self.all_results[i]["models"][tag]["has_answer_no_hint"]
-                    item[f"{tag}_with_extract"] = self.all_results[i]["models"][tag]["has_answer_with_hint"]
+                    
+                    # Add extraction rates for each hint type
+                    for hint_type in self.hint_types:
+                        if hint_type in self.all_results[i]["models"][tag]["has_answer_hint_types"]:
+                            item[f"{tag}_{hint_type}_extract"] = self.all_results[i]["models"][tag]["has_answer_hint_types"][hint_type]
+        
             bin_map[b].append(item)
 
         if not bin_map:
@@ -935,11 +958,14 @@ class Analysis:
                 result[f"{tag}_no_extract_mean"] = no_mean
                 result[f"{tag}_no_extract_stderr"] = no_stderr
                 
-                # With hint stats
-                with_vals = [r[f"{tag}_with_extract"] for r in records if f"{tag}_with_extract" in r]
-                with_mean, with_stderr = compute_stats(with_vals)
-                result[f"{tag}_with_extract_mean"] = with_mean
-                result[f"{tag}_with_extract_stderr"] = with_stderr
+                # Stats for each hint type
+                for hint_type in self.hint_types:
+                    extract_key = f"{tag}_{hint_type}_extract"
+                    hint_vals = [r[extract_key] for r in records if extract_key in r]
+                    if hint_vals:
+                        hint_mean, hint_stderr = compute_stats(hint_vals)
+                        result[f"{tag}_{hint_type}_extract_mean"] = hint_mean
+                        result[f"{tag}_{hint_type}_extract_stderr"] = hint_stderr
             
             bin_summary[b] = result
 
@@ -961,53 +987,83 @@ class Analysis:
         
         # Print bin statistics for debug
         print("\n[Analysis] Bin-Based Answer Extraction Rate Statistics:")
-        print(f"{'Bin':<10} {'Count':>6} {'Average No Hint':>18} {'Average With Hint':>18}")
-        print("-" * 65)
-        for b in bins_in_order:
-            no_hint_means = []
-            with_hint_means = []
-            for tag in self.model_tags:
-                if f"{tag}_no_extract_mean" in bin_summary[b]:
-                    no_hint_means.append(bin_summary[b][f"{tag}_no_extract_mean"])
-                if f"{tag}_with_extract_mean" in bin_summary[b]:
-                    with_hint_means.append(bin_summary[b][f"{tag}_with_extract_mean"])
-            
-            avg_no_hint = sum(no_hint_means) / len(no_hint_means) if no_hint_means else 0.0
-            avg_with_hint = sum(with_hint_means) / len(with_hint_means) if with_hint_means else 0.0
-            print(f"{b:<10} {bin_summary[b]['count']:>6} {avg_no_hint:>18.2%} {avg_with_hint:>18.2%}")
+        print(f"{'Bin':<10} {'Count':>6}", end="")
+        for tag in self.model_tags:
+            print(f" {tag+' (no)':>12}", end="")
+            for hint_type in self.hint_types:
+                print(f" {tag+' ('+hint_type+')':>15}", end="")
+        print()
+        print("-" * (10 + 6 + sum(12 + sum(15 for _ in self.hint_types) for _ in self.model_tags)))
         
-        # Create a combined visualization showing both no-hint and with-hint results
+        for b in bins_in_order:
+            print(f"{b:<10} {bin_summary[b]['count']:>6}", end="")
+            for tag in self.model_tags:
+                no_key = f"{tag}_no_extract_mean"
+                if no_key in bin_summary[b]:
+                    print(f" {bin_summary[b][no_key]:>12.2%}", end="")
+                else:
+                    print(f" {'N/A':>12}", end="")
+            
+                for hint_type in self.hint_types:
+                    hint_key = f"{tag}_{hint_type}_extract_mean"
+                    if hint_key in bin_summary[b]:
+                        print(f" {bin_summary[b][hint_key]:>15.2%}", end="")
+                    else:
+                        print(f" {'N/A':>15}", end="")
+            print()
+        
+        # Create a visualization showing both no-hint and all hint types
         try:
             set_plot_style()
             
-            # Create line plot for all models, showing both no-hint and with-hint
-            fig, ax = plt.subplots(figsize=(12, 6))
+            # Create line plot
+            fig, ax = plt.subplots(figsize=(12, 7))
             x_vals = range(len(bins_in_order))
             
-            # Plot each model's no-hint and with-hint extraction results
+            # Plot each model with different hint types
             colors = plt.cm.tab10.colors
+            markers = ['o', 's', '^', 'D', 'v']  # Different marker for each hint type
+            linestyles = ['-', '--', '-.', ':']  # Different line style for each hint type
             
-            # Plot model results
             for i, tag in enumerate(self.model_tags):
-                color = colors[i % len(colors)]
+                base_color = colors[i % len(colors)]
                 
-                # Check if we have data for this model
-                if not all(f"{tag}_no_extract_mean" in bin_summary[b] for b in bins_in_order):
+                # Check if we have no-hint data for this model
+                no_key = f"{tag}_no_extract_mean"
+                if not all(no_key in bin_summary[b] for b in bins_in_order):
                     print(f"[Warning] Skipping model {tag} in extraction rate plot due to missing data")
                     continue
                 
                 # No hint (solid line)
-                no_means = [bin_summary[b][f"{tag}_no_extract_mean"] for b in bins_in_order]
-                ax.plot(x_vals, no_means, 'o-', label=f"{tag} (no hint)", 
-                        color=color, linewidth=2, markersize=8)
+                no_means = [bin_summary[b][no_key] for b in bins_in_order]
+                ax.plot(x_vals, no_means, marker=markers[0], linestyle=linestyles[0],
+                        label=f"{tag} (no hint)", color=base_color, linewidth=2, markersize=8)
                 
-                # With hint (dashed line)
-                with_means = [bin_summary[b][f"{tag}_with_extract_mean"] for b in bins_in_order]
-                ax.plot(x_vals, with_means, 's--', label=f"{tag} (with hint)", 
-                        color=color, linewidth=2, markersize=8)
-                
-                # Fill the area between no-hint and with-hint to highlight improvement
-                ax.fill_between(x_vals, no_means, with_means, color=color, alpha=0.2)
+                # Each hint type (different markers and line styles)
+                for j, hint_type in enumerate(self.hint_types):
+                    # Check if we have data for this hint type
+                    hint_key = f"{tag}_{hint_type}_extract_mean"
+                    if not all(hint_key in bin_summary[b] for b in bins_in_order):
+                        print(f"[Warning] Skipping hint type {hint_type} for model {tag} in extraction plot")
+                        continue
+                    
+                    # Get hint means for this type
+                    hint_means = [bin_summary[b][hint_key] for b in bins_in_order]
+                    
+                    # Create slightly different color for each hint type
+                    hint_color = adjust_color(base_color, (j+1)*0.15)
+                    
+                    # Plot this hint type
+                    marker_idx = (j+1) % len(markers)
+                    style_idx = (j+1) % len(linestyles)
+                    ax.plot(x_vals, hint_means, 
+                            marker=markers[marker_idx], 
+                            linestyle=linestyles[style_idx],
+                            label=f"{tag} ({hint_type})", 
+                            color=hint_color, linewidth=2, markersize=8)
+                    
+                    # Fill the area between no-hint and this hint type (light shading)
+                    ax.fill_between(x_vals, no_means, hint_means, color=hint_color, alpha=0.1)
             
             # Improve plot appearance
             ax.set_xticks(list(x_vals))
@@ -1024,12 +1080,11 @@ class Analysis:
                            textcoords="offset points", ha='center', va='bottom',
                            color='black', fontweight='bold', fontsize=9)
             
-            # Add grid and reference line
+            # Add grid
             ax.grid(True, linestyle='--', alpha=0.7)
             
-            # Better legend - Fix overlap issue
-            # Move legend outside the plot to the right
-            ax.legend(fontsize='small', ncol=1, loc='lower right', 
+            # Better legend - place it outside the plot
+            ax.legend(fontsize='small', loc='center left', 
                      bbox_to_anchor=(1.02, 0.5), frameon=True, fancybox=True)
             
             # Add explanation text
@@ -1037,9 +1092,9 @@ class Analysis:
                    "Answer Extraction Success: Percentage of responses with proper \\boxed{} formatted answers",
                    transform=ax.transAxes, ha='center', fontsize=9, style='italic')
             
-            # Adjust figure size and margins to accommodate legend
-            fig.tight_layout()
-            plt.subplots_adjust(right=0.8)  # Make room for the legend on the right
+            # Adjust layout
+            plt.tight_layout()
+            plt.subplots_adjust(right=0.75)  # Make room for the legend
             
             # Save the combined plot
             out_path = os.path.join(self.output_dir, "bin_based_extraction_rates.png")
@@ -1065,18 +1120,29 @@ class Analysis:
 
         for i, item in self.all_results.items():
             prob_text = item["problem"]
-            teacher_hint = item["teacher_hint"]
+            teacher_hints = item["teacher_hints"]
             for tag in self.model_tags:
                 if tag not in item["models"]:
                     continue
                     
                 no_score = item["models"][tag]["no_hint"]
-                with_score = item["models"][tag]["with_hint"]
+                
+                # Find the best score across all hint types
+                hint_scores = item["models"][tag]["hint_types"]
+                if not hint_scores:
+                    continue
+                    
+                # Fix: incorrect syntax and logic in accessing hint scores
+                # Original line had a syntax error with mismatched quotes and 
+                # was trying to use 'tag' as a hint type
+                with_score = max(hint_scores.values())  # Use the best hint score
+                best_hint_type = max(hint_scores.items(), key=lambda x: x[1])[0] if hint_scores else None
+                
                 improvement = with_score - no_score
                 
                 # Also get answer extraction success rates
-                has_answer_no_hint = item["models"][tag].get("has_answer_no_hint", 0.0)
-                has_answer_with_hint = item["models"][tag].get("has_answer_with_hint", 0.0)
+                has_answer_no_hint = item["models"][tag]["has_answer_no_hint"]
+                has_answer_with_hint = item["models"][tag]["has_answer_hint_types"].get(best_hint_type, 0.0)
                 extraction_improvement = has_answer_with_hint - has_answer_no_hint
                 
                 # Condition: big jump or from 0 to near 1
@@ -1085,8 +1151,9 @@ class Analysis:
                     example = {
                         "problem_index": i,
                         "problem": prob_text,
-                        "teacher_hint": teacher_hint,
+                        "teacher_hints": teacher_hints,
                         "model": tag,
+                        "best_hint_type": best_hint_type,
                         "score_no_hint": no_score,
                         "score_with_hint": with_score,
                         "improvement": improvement,
@@ -1176,6 +1243,10 @@ def parse_args():
                         help="Comma-separated list of model tags (matching what you used in inference).")
     parser.add_argument("--bins", "-b", type=str, default="0-10%,10-20%,20-30%,30-40%,40-50%,50-60%,60-70%,70-80%,80-90%,90-100%",
                         help="Comma-separated list of difficulty bin labels in ascending order.")
+    parser.add_argument("--hint_types", "-ht", type=str, default="socratic_question,direct_hint,step_suggestion",
+                        help="Comma-separated list of hint types to analyze separately.")
+    parser.add_argument("--show_combined_hints", action="store_true",
+                        help="Also show a combined 'with hint' curve (best of all hint types).")
     parser.add_argument("--debug-extraction", "-d", action="store_true",
                         help="Enable detailed debugging for answer extraction issues.")
     return parser.parse_args()
@@ -1184,7 +1255,8 @@ def main():
     args = parse_args()
     model_tags = [x.strip() for x in args.model_tags.split(",")]
     bin_labels = [x.strip() for x in args.bins.split(",")]
-
+    hint_types = [x.strip() for x in args.hint_types.split(",")] if args.hint_types else None
+    
     # Check if results directory exists
     if not os.path.exists(args.results_dir):
         print(f"[Warning] Results directory '{args.results_dir}' does not exist.")
@@ -1198,10 +1270,12 @@ def main():
         sys.exit(1)
     
     # Print expected file pattern
-    print(f"[Analysis] Expecting result files with pattern: ")
+    print(f"[Analysis] Expecting result files with patterns: ")
     for tag in model_tags:
         print(f"  - {args.results_dir}/answers_{tag}_no_hint.json")
-        print(f"  - {args.results_dir}/answers_{tag}_with_hint.json")
+        hint_types_to_show = hint_types or ["socratic_question", "direct_hint", "step_suggestion"]
+        for hint_type in hint_types_to_show:
+            print(f"  - {args.results_dir}/answers_{tag}_{hint_type}_with_hint.json")
 
     analysis = Analysis(
         samples_file=args.samples,
@@ -1209,6 +1283,8 @@ def main():
         output_dir=args.output_dir,
         model_tags=model_tags,
         bin_labels=bin_labels,
+        hint_types=hint_types,
+        show_combined_hints=args.show_combined_hints,
         debug_extraction=args.debug_extraction
     )
     analysis.run()

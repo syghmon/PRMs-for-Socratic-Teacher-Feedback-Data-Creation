@@ -1,0 +1,534 @@
+[
+  {
+    "problem_index": 41,
+    "problem": "In triangle $\\triangle ABC$, given that $a=4$, $b=3$, and $c=2$, the smallest angle of $\\triangle ABC$ is represented by which inverse trigonometric function?",
+    "teacher_hints": {
+      "socratic_question": "Which trigonometric function involves the ratio of the shortest side to the hypotenuse?",
+      "direct_hint": "The solution is \\boxed{\\arccos \\left( \\frac{7}{8} \\right)} just copy it exactly."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.484375
+  },
+  {
+    "problem_index": 4,
+    "problem": "Given a triangle $\\triangle ABC$ with $BC=3$, $AC=4$, $AB=5$, let $P$ be any point on its sides. The minimum value of $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ is $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_(.\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_)$.",
+    "teacher_hints": {
+      "socratic_question": "What is the relationship between the sides of a triangle and the vectors formed by its vertices?",
+      "direct_hint": "The solution is \\boxed{\\frac{25}{64}} just copy it exactly."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.9166666666666666,
+    "improvement": 0.9166666666666666,
+    "has_answer_no_hint": 0.4166666666666667,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": 0.49999999999999994,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625
+  },
+  {
+    "problem_index": 65,
+    "problem": "In the school election, Eliot got some votes, Shaun got 5 times as many votes as Randy, and Randy got 16 votes. Eliot got 160 votes. What is the ratio of the number of votes Eliot got to the number of votes Shaun got?",
+    "teacher_hints": {
+      "socratic_question": "Think about the relationship between the number of votes Randy and Eliot got.",
+      "direct_hint": "The ratio of Eliot's votes to Shaun's votes is \\boxed{2:1}."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 1.0,
+    "improvement": 0.9166666666666666,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.609375
+  },
+  {
+    "problem_index": 47,
+    "problem": "Jia and Yi are solving the system of equations simultaneously:\n$$\n\\begin{cases}\n& ax+by=2, \\\\\n& cx-3y=-2.\n\\end{cases}\n$$\nJia correctly solves to get\n$$\n\\begin{cases}\n& x=1, \\\\\n& y=-1;\n\\end{cases}\n$$\nYi, due to copying the value of $c$ incorrectly, gets the wrong solution\n$$\n\\begin{cases}\n& x=2, \\\\\n& y=-6.\n\\end{cases}\n$$\nFind the values of $a$, $b$, and $c$.",
+    "teacher_hints": {
+      "socratic_question": "Think about how the values of x and y change when you substitute different values of c into the second equation.",
+      "direct_hint": "Plug in the values of x and y into the first equation to get an equation with a, b, and c."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.8333333333333334,
+    "improvement": 0.8333333333333334,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": -0.16666666666666663,
+    "example_type": "improvement",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375
+  },
+  {
+    "problem_index": 12,
+    "problem": "Determine the smallest natural number $n$ for which the inequality $\\left(x^{2} + y^{2} + z^{2}\\right)^{2} \\leq n\\left(x^{4} + y^{4} + z^{4}\\right)$ holds for all real values of $x, y, z$.",
+    "teacher_hints": {
+      "socratic_question": "Try plugging in some specific values for $x, y, z$ to see if it helps you understand the inequality better.",
+      "direct_hint": "Try expanding the inequality with x=y=z=1."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.9166666666666666,
+    "improvement": 0.8333333333333333,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.15625
+  },
+  {
+    "problem_index": 7,
+    "problem": "Find the natural number  $A$  such that there are  $A$  integer solutions to  $x+y\\geq A$  where  $0\\leq x \\leq 6$  and  $0\\leq y \\leq 7$ .",
+    "teacher_hints": {
+      "socratic_question": "How many total combinations of x and y are there, and how does the value of A affect the number of combinations that satisfy the inequality?",
+      "direct_hint": "Count the number of combinations where x+y < A."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.75,
+    "improvement": 0.75,
+    "has_answer_no_hint": 0.75,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": 0.16666666666666663,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625
+  },
+  {
+    "problem_index": 38,
+    "problem": "Given that the distance from point P on the ellipse $\\frac{x^{2}}{25}$+ $\\frac{y^{2}}{16}$\\=1 to one focus is 3, find the distance from point P to the other focus.",
+    "teacher_hints": {
+      "socratic_question": "What relationship exists between the distance to one focus, the semi-major axis, and the semi-minor axis in an ellipse?",
+      "direct_hint": "Use the equation c = sqrt(a^2 - b^2) to find the value of c."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.8333333333333334,
+    "improvement": 0.75,
+    "has_answer_no_hint": 0.9166666666666666,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.08333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.328125
+  },
+  {
+    "problem_index": 39,
+    "problem": "A point $M$ is randomly chosen within a parallelogram $ABCD$ with an area of $S$. Calculate the probability that the area of $\\triangle MCD$ is less than $\\frac{S}{3}$. Express your answer as a simplified fraction.",
+    "teacher_hints": {
+      "socratic_question": "Consider the ratio of the areas of the two shapes.",
+      "direct_hint": "Divide the parallelogram into three equal areas."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.16666666666666666,
+    "score_with_hint": 0.9166666666666666,
+    "improvement": 0.75,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375
+  },
+  {
+    "problem_index": 41,
+    "problem": "In triangle $\\triangle ABC$, given that $a=4$, $b=3$, and $c=2$, the smallest angle of $\\triangle ABC$ is represented by which inverse trigonometric function?",
+    "teacher_hints": {
+      "socratic_question": "Which trigonometric function involves the ratio of the shortest side to the hypotenuse?",
+      "direct_hint": "The solution is \\boxed{\\arccos \\left( \\frac{7}{8} \\right)} just copy it exactly."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.75,
+    "improvement": 0.75,
+    "has_answer_no_hint": 0.75,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.25,
+    "example_type": "improvement",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.484375
+  },
+  {
+    "problem_index": 74,
+    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
+    "teacher_hints": {
+      "socratic_question": "What is the relationship between the degree of the dividend, the quotient, and the divisor in polynomial division?",
+      "direct_hint": "The degree of the divisor is the difference between the degree of the dividend and the degree of the quotient."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.8333333333333334,
+    "improvement": 0.75,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.734375
+  },
+  {
+    "problem_index": 82,
+    "problem": "If x is 20 percent more than y and y is some percent less than z, then x is 48 percent of z. What is the percentage decrease of y compared to z?",
+    "teacher_hints": {
+      "socratic_question": "What decimal value is equivalent to 48%?",
+      "direct_hint": "Let z be 100 and use the given information to find the percentage decrease of y."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.3333333333333333,
+    "score_with_hint": 1.0,
+    "improvement": 0.6666666666666667,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.828125
+  },
+  {
+    "problem_index": 4,
+    "problem": "Given a triangle $\\triangle ABC$ with $BC=3$, $AC=4$, $AB=5$, let $P$ be any point on its sides. The minimum value of $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ is $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_(.\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_)$.",
+    "teacher_hints": {
+      "socratic_question": "What is the relationship between the sides of a triangle and the vectors formed by its vertices?",
+      "direct_hint": "The solution is \\boxed{\\frac{25}{64}} just copy it exactly."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6666666666666666,
+    "improvement": 0.6666666666666666,
+    "has_answer_no_hint": 0.9166666666666666,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": -0.08333333333333326,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625
+  },
+  {
+    "problem_index": 5,
+    "problem": "A store sells pencils and erasers. It has a rule that for every pencil you buy, you must buy 2 erasers which cost 1/2 the price of the pencils. They sold 20 pencils and the erasers cost $1 each. How much did the store earn from selling pencils and erasers?",
+    "teacher_hints": {
+      "socratic_question": "How can you express the total revenue from selling pencils in terms of p?",
+      "direct_hint": "Warning: No recognized bold-colon hint found."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6666666666666666,
+    "improvement": 0.6666666666666666,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": -0.16666666666666663,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.078125
+  },
+  {
+    "problem_index": 11,
+    "problem": "In the right triangle \\(ABC\\), the altitude \\(BD\\) from vertex \\(B\\) of the right angle is dropped onto the hypotenuse \\(AC\\). It is known that \\(AB = 13\\) and \\(BD = 12\\).\n\nFind the area of triangle \\(ABC\\).",
+    "teacher_hints": {
+      "socratic_question": "Consider using the Pythagorean Theorem on the smaller triangles formed by the altitude.",
+      "direct_hint": "Use the formula for the area of a triangle, which is \\(\\frac{1}{2} * base * height\\), and recognize that the area of triangle ABC can be found by using the base and height of triangle ABD."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6666666666666666,
+    "improvement": 0.6666666666666666,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": -0.16666666666666663,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.109375
+  },
+  {
+    "problem_index": 19,
+    "problem": "Determine the number of solutions to the equation 2^x - 2[x] - 1 = 0, where [x] denotes the greatest integer less than or equal to the real number x. Express your answer as a single integer.",
+    "teacher_hints": {
+      "socratic_question": "Think about the intervals between integers.",
+      "direct_hint": "For each value of [x], determine the range of x for which the equation holds true."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.75,
+    "improvement": 0.6666666666666666,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": -0.08333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625
+  },
+  {
+    "problem_index": 95,
+    "problem": "Jasmine wants to organize her books in order of most number of pages to least number of pages. Jasmine's longest book has 396 pages. The book in the middle of her shelf has 297 pages, which is three times the number of pages of the shortest book. What is the ratio of the number of pages in the shortest book to the longest book?",
+    "teacher_hints": {
+      "socratic_question": "If 297 is three times the number of pages in the shortest book, what is the number of pages in the shortest book?",
+      "direct_hint": "\\boxed{1:4}"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.75,
+    "improvement": 0.6666666666666666,
+    "has_answer_no_hint": 0.75,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": 0.16666666666666663,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.953125
+  },
+  {
+    "problem_index": 13,
+    "problem": "In $\\triangle ABC$, if $a=9$, $b=10$, $c=12$, then the shape of $\\triangle ABC$ is $\\_\\_\\_\\_\\_\\_$.",
+    "teacher_hints": {
+      "socratic_question": "What is the relationship between the side lengths of a triangle and its angles?",
+      "direct_hint": "Check if a + b > c, a + c > b, and b + c > a."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.5833333333333334,
+    "improvement": 0.5833333333333334,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625
+  },
+  {
+    "problem_index": 51,
+    "problem": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$? Express your answer as a whole number.",
+    "teacher_hints": {
+      "socratic_question": "What are the values of x that would make the expressions inside the sine and cosine functions equal to \u03c0/2 or -\u03c0/2?",
+      "direct_hint": "The simplified equation will involve only $\\sin x$ and $\\cos x$."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.25,
+    "score_with_hint": 0.8333333333333334,
+    "improvement": 0.5833333333333334,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": -0.08333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5
+  },
+  {
+    "problem_index": 87,
+    "problem": "Noah is asked to report the number of insects in the laboratory based on the total number of insect legs. There are some insect legs, and Noah calculates that there are 6 insects. How many insect legs are there in the laboratory?",
+    "teacher_hints": {
+      "socratic_question": "What if each insect had the same number of legs?",
+      "direct_hint": "If there are 6 insects, each with 6 legs, how many legs are there in total?"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.5833333333333334,
+    "improvement": 0.5833333333333334,
+    "has_answer_no_hint": 0.16666666666666666,
+    "has_answer_with_hint": 0.5833333333333334,
+    "extraction_improvement": 0.41666666666666674,
+    "example_type": "improvement",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.8125
+  },
+  {
+    "problem_index": 10,
+    "problem": "Given that the real numbers \\( x \\) and \\( y \\) satisfy the inequality \\(\\left(x+\\sqrt{x^{2}+1}\\right)\\left(y+\\sqrt{y^{2}+1}\\right) \\geqslant 1\\), find the minimum value of \\( x + y \\).",
+    "teacher_hints": {
+      "socratic_question": "Think about the conditions under which the product of two numbers is at least 1.",
+      "direct_hint": "Try to expand the product on the left-hand side of the inequality and look for a way to express it in terms of x and y."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4166666666666667,
+    "score_with_hint": 1.0,
+    "improvement": 0.5833333333333333,
+    "has_answer_no_hint": 0.75,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.25,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625
+  },
+  {
+    "problem_index": 54,
+    "problem": "In a class of 48 students, the scores of a mathematics test follow a normal distribution $N(80, 100)$. Theoretically, the number of students who scored between 80 and 90 points is approximately _.",
+    "teacher_hints": {
+      "socratic_question": "What does it mean for a distribution to be \"standard\"?",
+      "direct_hint": "The solution is \\boxed{16}."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4166666666666667,
+    "score_with_hint": 1.0,
+    "improvement": 0.5833333333333333,
+    "has_answer_no_hint": 0.9166666666666666,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.08333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.578125
+  },
+  {
+    "problem_index": 64,
+    "problem": "Calculate the value of $\\sin 810^{\\circ}+\\cos (-60^{\\circ})$. Express your answer as a fraction.",
+    "teacher_hints": {
+      "socratic_question": "What are the equivalent angles for 810\u00b0 and -60\u00b0 in the context of the sine and cosine functions?",
+      "direct_hint": "The solution is \\boxed{\\dfrac{3}{2}}."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.6666666666666666,
+    "improvement": 0.5833333333333333,
+    "has_answer_no_hint": 0.5,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": 0.33333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.65625
+  },
+  {
+    "problem_index": 12,
+    "problem": "Determine the smallest natural number $n$ for which the inequality $\\left(x^{2} + y^{2} + z^{2}\\right)^{2} \\leq n\\left(x^{4} + y^{4} + z^{4}\\right)$ holds for all real values of $x, y, z$.",
+    "teacher_hints": {
+      "socratic_question": "Try plugging in some specific values for $x, y, z$ to see if it helps you understand the inequality better.",
+      "direct_hint": "Try expanding the inequality with x=y=z=1."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.5,
+    "improvement": 0.5,
+    "has_answer_no_hint": 0.08333333333333333,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": 0.75,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.15625
+  },
+  {
+    "problem_index": 25,
+    "problem": "Let \\( x \\) and \\( y \\) be positive real numbers. What is the smallest possible value of \\( \\frac{16}{x} + \\frac{108}{y} + xy \\)? Express your answer as a single number.",
+    "teacher_hints": {
+      "socratic_question": "Can you think of a way to combine the terms \\( \\frac{16}{x} \\) and \\( xy \\), and also the terms \\( \\frac{108}{y} \\) and \\( xy \\)?",
+      "direct_hint": "Apply AM-GM to the first two terms of the expression, and see if you can find a way to relate them to the last term."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.3333333333333333,
+    "score_with_hint": 0.8333333333333334,
+    "improvement": 0.5,
+    "has_answer_no_hint": 0.9166666666666666,
+    "has_answer_with_hint": 0.8333333333333334,
+    "extraction_improvement": -0.08333333333333326,
+    "example_type": "improvement",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.265625
+  },
+  {
+    "problem_index": 31,
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "teacher_hints": {
+      "socratic_question": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
+      "direct_hint": "Think about the layers of balls."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.5,
+    "score_with_hint": 1.0,
+    "improvement": 0.5,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375
+  },
+  {
+    "problem_index": 31,
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "teacher_hints": {
+      "socratic_question": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
+      "direct_hint": "Think about the layers of balls."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "socratic_question",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.5833333333333334,
+    "improvement": 0.5,
+    "has_answer_no_hint": 0.16666666666666666,
+    "has_answer_with_hint": 0.6666666666666666,
+    "extraction_improvement": 0.5,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375
+  },
+  {
+    "problem_index": 36,
+    "problem": "The analytical expression of the parabola $y=-2x^{2}$ after shifting down $1$ unit and then shifting right $3$ units is ____.",
+    "teacher_hints": {
+      "socratic_question": "What would happen if you first shifted the parabola down $1$ unit, and then shifted the new parabola right $3$ units?",
+      "direct_hint": "The solution is \\boxed{-2(x - 3)^2 - 1}."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.5,
+    "improvement": 0.5,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": -0.08333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.390625
+  },
+  {
+    "problem_index": 50,
+    "problem": "If a car travels 5 kilometers to the east, it is recorded as 5 kilometers. How would traveling 5 kilometers to the west be recorded? Express your answer in kilometers.",
+    "teacher_hints": {
+      "socratic_question": "Does the magnitude of the distance change when you travel in the opposite direction?",
+      "direct_hint": "The solution is \\boxed{-5}."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.5,
+    "score_with_hint": 1.0,
+    "improvement": 0.5,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": -0.08333333333333337,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5625
+  }
+]
