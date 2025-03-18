@@ -1,0 +1,62 @@
+[
+  {
+    "problem_index": 88,
+    "problem": "A 10 m long rectangular floor is to be covered with a square carpet with 4 m sides. 64 square meters of the floor are uncovered. What is the width of the floor?",
+    "teacher_hint": "What is the area of the uncovered part of the floor, and how can you use that to find the total area of the floor?",
+    "model": "gemma-2-9b-it",
+    "score_no_hint": 0.25,
+    "score_with_hint": 0.9166666666666666,
+    "improvement": 0.6666666666666666,
+    "has_answer_no_hint": 0.75,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.25,
+    "example_type": "improvement",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875
+  },
+  {
+    "problem_index": 31,
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "teacher_hint": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
+    "model": "gemma-2-2b-it",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.5833333333333334,
+    "improvement": 0.5,
+    "has_answer_no_hint": 0.16666666666666666,
+    "has_answer_with_hint": 0.6666666666666666,
+    "extraction_improvement": 0.5,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375
+  },
+  {
+    "problem_index": 39,
+    "problem": "A point $M$ is randomly chosen within a parallelogram $ABCD$ with an area of $S$. Calculate the probability that the area of $\\triangle MCD$ is less than $\\frac{S}{3}$. Express your answer as a simplified fraction.",
+    "teacher_hint": "Consider the ratio of the areas of the two shapes.",
+    "model": "Llama-3.1-8B-Instruct",
+    "score_no_hint": 0.08333333333333333,
+    "score_with_hint": 0.5833333333333334,
+    "improvement": 0.5,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375
+  },
+  {
+    "problem_index": 97,
+    "problem": "The sum of two numbers is 20, and their difference is some value. The difference of their squares is 200. What is the difference between the two numbers?",
+    "teacher_hint": "Can you factor the equation x^2 - y^2 = 200 to simplify the problem?",
+    "model": "gemma-2-2b-it",
+    "score_no_hint": 0.16666666666666666,
+    "score_with_hint": 0.6666666666666666,
+    "improvement": 0.5,
+    "has_answer_no_hint": 0.3333333333333333,
+    "has_answer_with_hint": 0.9166666666666666,
+    "extraction_improvement": 0.5833333333333333,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.96875
+  }
+]

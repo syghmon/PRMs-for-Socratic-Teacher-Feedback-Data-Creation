@@ -47,9 +47,37 @@ def last_boxed_only_string(string: str) -> Optional[str]:
     Returns:
         Optional[str]: The last boxed expression or None.
     """
+    # Check for null input
+    if string is None:
+        return None
+    
+    # Handle various boxed formats
+    boxed_formats = [
+        # Standard \boxed{...} format
+        (r"\\boxed\s*\{([^}]*)\}", lambda m: f"\\boxed{{{m.group(1)}}}"),
+        # \boxed ... format (no braces)
+        (r"\\boxed\s+([^\s$]+)", lambda m: f"\\boxed{{{m.group(1)}}}"),
+        # \fbox{...} format
+        (r"\\fbox\s*\{([^}]*)\}", lambda m: f"\\fbox{{{m.group(1)}}}"),
+        # $\boxed{...}$ format with math delimiters
+        (r"\$\\boxed\s*\{([^}]*)\}\$", lambda m: f"\\boxed{{{m.group(1)}}}"),
+        # Plain "boxed answer: ..." format
+        (r"boxed\s+answer\s*:\s*([^\.]+)", lambda m: f"\\boxed{{{m.group(1)}}}"),
+        # The answer is: ...
+        (r"the answer is\s*:\s*([^\.]+)", lambda m: f"\\boxed{{{m.group(1)}}}"),
+        # "Therefore, ... " format - more aggressive matching
+        (r"therefore[,:]?\s+([^\.]+)", lambda m: f"\\boxed{{{m.group(1)}}}")
+    ]
+    
+    # Try each format, prioritizing standard formats first
+    for pattern, formatter in boxed_formats:
+        matches = re.findall(pattern, string, re.IGNORECASE)
+        if matches:
+            # Return the last match formatted properly
+            return formatter(re.search(pattern, string, re.IGNORECASE))
+    
+    # Legacy approach as fallback
     idx = string.rfind("\\boxed")
-    if "\\boxed " in string:
-        return "\\boxed " + string.split("\\boxed ")[-1].split("$")[0]
     if idx < 0:
         idx = string.rfind("\\fbox")
         if idx < 0:
@@ -83,22 +111,47 @@ def remove_boxed(s: str) -> Optional[str]:
     if s is None:
         return None
         
+    # Handle various formats
     if "\\boxed " in s:
         left = "\\boxed "
-        assert s[: len(left)] == left
-        return s[len(left) :]
+        return s[len(left):]
     elif "\\boxed{" in s:
         left = "\\boxed{"
-        assert s[: len(left)] == left
-        assert s[-1] == "}"
-        return s[len(left) : -1]
+        if s[-1] == "}":
+            return s[len(left):-1]
+        else:
+            # Handle malformed boxed expressions
+            end_idx = s.find("}", len(left))
+            if end_idx != -1:
+                return s[len(left):end_idx]
+            return s[len(left):]
     elif "\\fbox{" in s:
         left = "\\fbox{"
-        assert s[: len(left)] == left
-        assert s[-1] == "}"
-        return s[len(left) : -1]
-    else:
-        return s
+        if s[-1] == "}":
+            return s[len(left):-1]
+        else:
+            # Handle malformed fbox expressions
+            end_idx = s.find("}", len(left))
+            if end_idx != -1:
+                return s[len(left):end_idx]
+            return s[len(left):]
+    elif "boxed answer:" in s.lower():
+        # Extract from "boxed answer: X" format
+        matched = re.search(r"boxed\s+answer\s*:\s*([^\.]+)", s, re.IGNORECASE)
+        if matched:
+            return matched.group(1).strip()
+    elif "the answer is:" in s.lower():
+        # Extract from "the answer is: X" format
+        matched = re.search(r"the answer is\s*:\s*([^\.]+)", s, re.IGNORECASE)
+        if matched:
+            return matched.group(1).strip()
+    elif "therefore" in s.lower():
+        # Try to extract from "Therefore, X" pattern - more aggressive
+        matched = re.search(r"therefore[,:]?\s+([^\.]+)", s, re.IGNORECASE)
+        if matched:
+            return matched.group(1).strip()
+    
+    return s
 
 def has_formatted_answer(answer: str) -> bool:
     """
@@ -111,8 +164,21 @@ def has_formatted_answer(answer: str) -> bool:
         bool: True if formatted answer exists, False otherwise.
     """
     try:
-        if remove_boxed(last_boxed_only_string(answer)):
+        # Check for various boxed formats
+        if "\\boxed" in answer or "\\fbox" in answer:
+            boxed = last_boxed_only_string(answer)
+            if boxed and remove_boxed(boxed):
+                return True
+        
+        # Check for other answer formats
+        lower_answer = answer.lower()
+        if "boxed answer:" in lower_answer or "the answer is:" in lower_answer:
             return True
+            
+        # More aggressive detection for final answers
+        if "therefore" in lower_answer and "." in answer:
+            return True
+            
         return False
     except Exception:
         return False
@@ -120,16 +186,42 @@ def has_formatted_answer(answer: str) -> bool:
 def extract_boxed_expressions(string: str) -> List[str]:
     """
     Extracts all \boxed{...} and \boxed ... expressions from the string.
+    More lenient than the original version to catch various formats.
     """
+    if string is None:
+        return []
+        
     boxed_expressions = []
 
+    # Standard \boxed{...} pattern
     pattern_braces = r"\\boxed\s*\{([^}]*)\}"
     boxed_expressions += re.findall(pattern_braces, string)
 
+    # \boxed ... pattern (no braces)
     pattern_space = r"\\boxed\s+([^\s\$]+)"
     boxed_expressions += re.findall(pattern_space, string)
+    
+    # \fbox{...} pattern
+    pattern_fbox = r"\\fbox\s*\{([^}]*)\}"
+    boxed_expressions += re.findall(pattern_fbox, string)
+    
+    # $\boxed{...}$ with math delimiters
+    pattern_math_delim = r"\$\\boxed\s*\{([^}]*)\}\$"
+    boxed_expressions += re.findall(pattern_math_delim, string)
+    
+    # "Boxed answer: X" pattern
+    pattern_boxed_answer = r"boxed\s+answer\s*:\s*([^\.]+)"
+    boxed_expressions += re.findall(pattern_boxed_answer, string, re.IGNORECASE)
+    
+    # "The answer is: X" pattern
+    pattern_answer_is = r"the answer is\s*:\s*([^\.]+)"
+    boxed_expressions += re.findall(pattern_answer_is, string, re.IGNORECASE)
+    
+    # "Therefore, X" pattern - more aggressive
+    pattern_therefore = r"therefore[,:]?\s+([^\.]+)"
+    boxed_expressions += re.findall(pattern_therefore, string, re.IGNORECASE)
 
-    return ["\\boxed{" + expr + "}" for expr in boxed_expressions]
+    return ["\\boxed{" + expr.strip() + "}" for expr in boxed_expressions]
 
 ##############################################################################
 # Utility Functions
@@ -162,7 +254,27 @@ def get_solve_rate(entry):
     correctness = entry.get("correctness", [])
     if not correctness:
         return 0.0
-    return sum(correctness) / len(correctness)
+    
+    # Ensure correctness values are booleans
+    try:
+        # Convert any non-boolean values (like strings) to booleans if possible
+        parsed_correctness = []
+        for val in correctness:
+            if isinstance(val, bool):
+                parsed_correctness.append(val)
+            elif isinstance(val, str):
+                parsed_correctness.append(val.lower() == "true")
+            elif isinstance(val, (int, float)):
+                parsed_correctness.append(bool(val))
+            else:
+                parsed_correctness.append(False)
+        
+        if parsed_correctness:
+            return sum(parsed_correctness) / len(parsed_correctness)
+        return 0.0
+    except Exception as e:
+        print(f"[Warning] Error parsing correctness values: {e}")
+        return 0.0
 
 def compute_stats(values):
     """Calculate mean and standard error for a list of values."""
@@ -228,12 +340,14 @@ class Analysis:
                  results_dir: str,
                  output_dir: str,
                  model_tags: list,
-                 bin_labels: list):
+                 bin_labels: list,
+                 debug_extraction: bool = False):
         self.samples_file = samples_file
         self.results_dir = results_dir
         self.output_dir = output_dir
         self.model_tags = model_tags
         self.bin_labels = bin_labels
+        self.debug_extraction = debug_extraction
 
         # Data structure to hold per-problem info
         # all_results[i] = {
@@ -275,6 +389,10 @@ class Analysis:
         if not has_model_data:
             print("[Error] No model results loaded. Exiting.")
             return
+        
+        # Print extraction rate summary for debugging
+        if self.debug_extraction:
+            self.print_extraction_summary()
             
         self.plot_bin_based_solve_rates()
         self.plot_bin_based_extraction_rates()
@@ -301,13 +419,44 @@ class Analysis:
         Then store solve rates, answer extraction success rates, and teacher hints (from with-hint).
         """
         models_loaded = 0
+        
+        # Add diagnostics to debug answer extraction
+        debug_extraction_issues = self.debug_extraction  # Set to True to see detailed extraction debugging
+        debug_problems = list(range(5))  # Show debug info for these problem indices
+        
         for tag in self.model_tags:
             no_hint_file = os.path.join(self.results_dir, f"answers_{tag}_no_hint.json")
-            with_hint_file = os.path.join(self.results_dir, f"answers_{tag}_with_hint.json")
+
+            # Look for all possible hint files with different prompt patterns
+            hint_patterns = ["socratic_question", "direct_hint", "step_suggestion"]
+            with_hint_files = []
+            
+            for pattern in hint_patterns:
+                pattern_file = os.path.join(self.results_dir, f"answers_{tag}_{pattern}_with_hint.json")
+                if os.path.exists(pattern_file):
+                    with_hint_files.append((pattern, pattern_file))
+            
+            # If no prompt-specific files found, try the generic *_with_hint.json
+            if not with_hint_files:
+                generic_hint_file = os.path.join(self.results_dir, f"answers_{tag}_with_hint.json")
+                if os.path.exists(generic_hint_file):
+                    with_hint_files.append(("generic", generic_hint_file))
 
             print(f"[Analysis] Loading model results for {tag}")
+            print(f"  - Found no-hint file: {os.path.exists(no_hint_file)}")
+            print(f"  - Found {len(with_hint_files)} with-hint files: {[p for p, _ in with_hint_files]}")
+            
             no_hint_data = load_json_data(no_hint_file)
-            with_hint_data = load_json_data(with_hint_file)
+            
+            # Collect all with-hint data from different prompt files
+            with_hint_data = []
+            for prompt, hint_file in with_hint_files:
+                prompt_data = load_json_data(hint_file)
+                if prompt_data:
+                    print(f"  - Loaded {len(prompt_data)} entries from {prompt} prompt")
+                    with_hint_data.extend(prompt_data)
+                else:
+                    print(f"  - No data found in {prompt} file")
 
             # Skip this model if both files are missing
             if not no_hint_data and not with_hint_data:
@@ -318,9 +467,9 @@ class Analysis:
 
             # Each data list should have the same length (#problems).
             if no_hint_data and len(no_hint_data) != len(self.all_results):
-                print(f"[Warning] Number of problems in {no_hint_file} ({len(no_hint_data)}) does not match samples ({len(self.all_results)}).")
+                print(f"[Warning] Number of problems in no-hint file ({len(no_hint_data)}) does not match samples ({len(self.all_results)}).")
             if with_hint_data and len(with_hint_data) != len(self.all_results):
-                print(f"[Warning] Number of problems in {with_hint_file} ({len(with_hint_data)}) does not match samples ({len(self.all_results)}).")
+                print(f"[Warning] Number of problems in with-hint data ({len(with_hint_data)}) does not match samples ({len(self.all_results)}).")
 
             # Initialize model data for all problems (for this tag)
             for i in range(len(self.all_results)):
@@ -341,34 +490,95 @@ class Analysis:
                 
                 # Check if responses have properly formatted answers
                 has_answer_count = 0
-                for response in entry.get("responses", []):
-                    if has_formatted_answer(response):
-                        has_answer_count += 1
+                responses = entry.get("responses", [])
                 
-                responses_count = len(entry.get("responses", []))
+                if i in debug_problems and debug_extraction_issues:
+                    print(f"\n[Debug] Extraction for {tag}, problem {i}, no hint:")
+                    print(f"  Problem: {self.all_results[i]['problem'][:100]}...")
+                
+                for j, response in enumerate(responses):
+                    extracted = has_formatted_answer(response)
+                    if extracted:
+                        has_answer_count += 1
+                        
+                    if i in debug_problems and debug_extraction_issues:
+                        print(f"  Response {j}: has_formatted_answer = {extracted}")
+                        if not extracted and "\\boxed" in response:
+                            print(f"    Contains \\boxed but not detected, trying alternative extraction...")
+                            boxed_exprs = extract_boxed_expressions(response)
+                            print(f"    Found {len(boxed_exprs)} expressions: {boxed_exprs[:2] if boxed_exprs else None}")
+                
+                responses_count = len(responses)
                 extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
                 self.all_results[i]["models"][tag]["has_answer_no_hint"] = extraction_rate
+                
+                if i in debug_problems and debug_extraction_issues:
+                    print(f"  Extraction rate: {has_answer_count}/{responses_count} = {extraction_rate}")
 
-            # Add with-hint data if available
-            for i, entry in enumerate(with_hint_data):
-                if i >= len(self.all_results):
-                    break
-                sr = get_solve_rate(entry)
-                self.all_results[i]["models"][tag]["with_hint"] = sr
+            # Add with-hint data if available - using the first with-hint entry for each problem
+            if with_hint_data:
+                seen_problems = set()
                 
-                # Check if responses have properly formatted answers
-                has_answer_count = 0
-                for response in entry.get("responses", []):
-                    if has_formatted_answer(response):
-                        has_answer_count += 1
-                
-                responses_count = len(entry.get("responses", []))
-                extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
-                self.all_results[i]["models"][tag]["has_answer_with_hint"] = extraction_rate
-                
-                # Also store teacher_hint if available
-                if "teacher_hint" in entry and entry["teacher_hint"] is not None:
-                    self.all_results[i]["teacher_hint"] = entry["teacher_hint"]
+                for entry in with_hint_data:
+                    problem_id = entry.get("problem_idx", None)
+                    
+                    # If problem_idx field exists, use it
+                    if problem_id is not None and 0 <= problem_id < len(self.all_results):
+                        i = problem_id
+                    else:
+                        # Otherwise, try to find by problem text
+                        problem_text = entry.get("problem", "")
+                        found = False
+                        for j, result in self.all_results.items():
+                            if result["problem"] == problem_text:
+                                i = j
+                                found = True
+                                break
+                        if not found:
+                            continue  # Skip if no matching problem found
+                    
+                    # Skip if we've already seen this problem (take first hint only)
+                    if i in seen_problems:
+                        continue
+                    seen_problems.add(i)
+                    
+                    sr = get_solve_rate(entry)
+                    self.all_results[i]["models"][tag]["with_hint"] = sr
+                    
+                    # Check if responses have properly formatted answers
+                    has_answer_count = 0
+                    responses = entry.get("responses", [])
+                    
+                    if i in debug_problems and debug_extraction_issues:
+                        print(f"\n[Debug] Extraction for {tag}, problem {i}, with hint:")
+                        print(f"  Problem: {self.all_results[i]['problem'][:100]}...")
+                        print(f"  Hint: {entry.get('teacher_hint', '')[:100]}...")
+                    
+                    for j, response in enumerate(responses):
+                        extracted = has_formatted_answer(response)
+                        if extracted:
+                            has_answer_count += 1
+                            
+                        if i in debug_problems and debug_extraction_issues:
+                            print(f"  Response {j}: has_formatted_answer = {extracted}")
+                            if not extracted:
+                                # Look for indicators that there might be an answer but not formatted properly
+                                lower_resp = response.lower()
+                                if "boxed" in lower_resp or "answer" in lower_resp or "therefore" in lower_resp:
+                                    print(f"    Contains answer indicators but not detected, trying alternative extraction...")
+                                    boxed_exprs = extract_boxed_expressions(response)
+                                    print(f"    Found {len(boxed_exprs)} expressions: {boxed_exprs[:2] if boxed_exprs else None}")
+                    
+                    responses_count = len(responses)
+                    extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
+                    self.all_results[i]["models"][tag]["has_answer_with_hint"] = extraction_rate
+                    
+                    if i in debug_problems and debug_extraction_issues:
+                        print(f"  Extraction rate: {has_answer_count}/{responses_count} = {extraction_rate}")
+                    
+                    # Also store teacher_hint if available
+                    if "teacher_hint" in entry and entry["teacher_hint"] is not None:
+                        self.all_results[i]["teacher_hint"] = entry["teacher_hint"]
                     
         print(f"[Analysis] Loaded data for {models_loaded} models")
 
@@ -920,22 +1130,54 @@ class Analysis:
         except Exception as e:
             print(f"[Error] Failed to save interesting examples: {e}")
 
+    def print_extraction_summary(self):
+        """Print a summary of answer extraction success rates for debugging."""
+        print("\n[Analysis] Answer Extraction Rate Summary:")
+        print(f"{'Model':<20} {'No Hint':>15} {'With Hint':>15} {'Diff':>10}")
+        print("-" * 65)
+        
+        for tag in self.model_tags:
+            no_hint_total = 0
+            no_hint_success = 0
+            with_hint_total = 0
+            with_hint_success = 0
+            
+            for i in self.all_results:
+                if tag in self.all_results[i]["models"]:
+                    no_hint_rate = self.all_results[i]["models"][tag]["has_answer_no_hint"]
+                    with_hint_rate = self.all_results[i]["models"][tag]["has_answer_with_hint"]
+                    
+                    no_hint_total += 1
+                    no_hint_success += no_hint_rate
+                    
+                    with_hint_total += 1
+                    with_hint_success += with_hint_rate
+            
+            no_hint_avg = no_hint_success / no_hint_total if no_hint_total > 0 else 0.0
+            with_hint_avg = with_hint_success / with_hint_total if with_hint_total > 0 else 0.0
+            diff = with_hint_avg - no_hint_avg
+            
+            print(f"{tag:<20} {no_hint_avg:>15.2%} {with_hint_avg:>15.2%} {diff:>+10.2%}")
+
 ##############################################################################
 # Command-Line Interface
 ##############################################################################
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Analysis of teacher-student inference results.")
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(description="Analyze inference results for multiple models.")
     parser.add_argument("--samples", "-s", type=str, required=True,
-                        help="Path to the original samples.json (with difficulty bins, etc.).")
+                        help="Path to original input problems (contains final_answer, difficulty_bin, llama8b_solve_rate).")
     parser.add_argument("--results_dir", "-r", type=str, default="results",
-                        help="Directory containing the model results JSON files.")
+                        help="Directory where the *_no_hint.json and *_with_hint.json are located.")
     parser.add_argument("--output_dir", "-o", type=str, default="analysis_outputs",
-                        help="Where to save the plots and interesting examples.")
+                        help="Directory to save the plots and interesting examples.")
     parser.add_argument("--model_tags", "-m", type=str, required=True,
-                        help="Comma-separated list of model tags, e.g. 'SmolLM,BigLM'")
+                        help="Comma-separated list of model tags (matching what you used in inference).")
     parser.add_argument("--bins", "-b", type=str, default="0-10%,10-20%,20-30%,30-40%,40-50%,50-60%,60-70%,70-80%,80-90%,90-100%",
                         help="Comma-separated list of difficulty bin labels in ascending order.")
+    parser.add_argument("--debug-extraction", "-d", action="store_true",
+                        help="Enable detailed debugging for answer extraction issues.")
     return parser.parse_args()
 
 def main():
@@ -966,7 +1208,8 @@ def main():
         results_dir=args.results_dir,
         output_dir=args.output_dir,
         model_tags=model_tags,
-        bin_labels=bin_labels
+        bin_labels=bin_labels,
+        debug_extraction=args.debug_extraction
     )
     analysis.run()
 

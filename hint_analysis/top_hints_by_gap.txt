@@ -1,0 +1,103 @@
+Top 10 Hints by Improvement Gap (Smart - Weak)
+==================================================
+
+Hint 1:
+  Problem: Fred has 38 red marbles, half as many green ones, and the rest are dark blue. If he has a certain nu...
+  Hint: Let's represent the total number of marbles as a variable, and then set up an equation that accounts for the number of each color of marble.
+  Smart Model: gemma-2-9b-it, Improvement: -0.083
+  Weak Model: gemma-2-2b-it, Improvement: -0.833
+  Gap: 0.750
+  Created by prompt: direct_hint
+
+--------------------------------------------------
+
+Hint 2:
+  Problem: Let \( x \) and \( y \) be positive real numbers. What is the smallest possible value of \( \frac{16...
+  Hint: Apply the AM-GM inequality to the terms \(\frac{16}{x}\), \(\frac{108}{y}\), and \(xy\).
+  Smart Model: Llama-3.1-8B-Instruct, Improvement: 0.500
+  Weak Model: gemma-2-2b-it, Improvement: -0.083
+  Gap: 0.583
+  Created by prompt: step_suggestion
+
+--------------------------------------------------
+
+Hint 3:
+  Problem: If x is 20 percent more than y and y is some percent less than z, then x is 48 percent of z. What is...
+  Hint: Express x as a percentage of z and set up an equation to relate y to z.
+  Smart Model: gemma-2-9b-it, Improvement: 0.583
+  Weak Model: gemma-2-2b-it, Improvement: 0.000
+  Gap: 0.583
+  Created by prompt: step_suggestion
+
+--------------------------------------------------
+
+Hint 4:
+  Problem: Given an equilateral triangle $ABC$ with side length $a$, calculate the value of $\overrightarrow{AB...
+  Hint: Since the triangle is equilateral, what is the measure of the angle between any two of its sides?
+  Smart Model: gemma-2-9b-it, Improvement: 0.417
+  Weak Model: gemma-2-2b-it, Improvement: -0.083
+  Gap: 0.500
+  Created by prompt: direct_hint
+
+--------------------------------------------------
+
+Hint 5:
+  Problem: Shawn invested one half of his savings in a bond that paid simple interest for 2 years and received ...
+  Hint: Calculate the rate of interest using the simple interest formula and then apply it to the compound interest formula.
+  Smart Model: gemma-2-9b-it, Improvement: 0.500
+  Weak Model: gemma-2-2b-it, Improvement: 0.000
+  Gap: 0.500
+  Created by prompt: step_suggestion
+
+--------------------------------------------------
+
+Hint 6:
+  Problem: A tradesman sold an article at a certain loss percentage. If the selling price had been increased by...
+  Hint: Set up an equation using the fact that the new selling price is equal to the original selling price plus $500, and also equal to 115% of the cost price.
+  Smart Model: gemma-2-9b-it, Improvement: 0.500
+  Weak Model: gemma-2-2b-it, Improvement: 0.000
+  Gap: 0.500
+  Created by prompt: direct_hint
+
+--------------------------------------------------
+
+Hint 7:
+  Problem: A tradesman sold an article at a certain loss percentage. If the selling price had been increased by...
+  Hint: Set up an equation using the cost price, the increased selling price, and the gain percentage to find the initial selling price.
+  Smart Model: gemma-2-9b-it, Improvement: 0.500
+  Weak Model: gemma-2-2b-it, Improvement: 0.000
+  Gap: 0.500
+  Created by prompt: step_suggestion
+
+--------------------------------------------------
+
+Hint 8:
+  Problem: Let \( x \) and \( y \) be positive real numbers. What is the smallest possible value of \( \frac{16...
+  Hint: Try applying the AM-GM inequality to the three terms \( \frac{16}{x} \), \( \frac{108}{y} \), and \( xy \).
+  Smart Model: Llama-3.1-8B-Instruct, Improvement: 0.417
+  Weak Model: gemma-2-2b-it, Improvement: -0.083
+  Gap: 0.500
+  Created by prompt: direct_hint
+
+--------------------------------------------------
+
+Hint 9:
+  Problem: Consider a sequence formed by all powers of 3, or the sum of several distinct powers of 3, arranged ...
+  Hint: Convert the term numbers into binary and analyze the pattern formed by the resulting sequence.
+  Smart Model: Llama-3.1-8B-Instruct, Improvement: 0.417
+  Weak Model: gemma-2-9b-it, Improvement: 0.000
+  Gap: 0.417
+  Created by prompt: step_suggestion
+
+--------------------------------------------------
+
+Hint 10:
+  Problem: Given an equilateral triangle $ABC$ with side length $a$, calculate the value of $\overrightarrow{AB...
+  Hint: Consider using the properties of the dot product to simplify the given expression.
+  Smart Model: gemma-2-9b-it, Improvement: 0.250
+  Weak Model: gemma-2-2b-it, Improvement: -0.167
+  Gap: 0.417
+  Created by prompt: socratic_question
+
+--------------------------------------------------
+

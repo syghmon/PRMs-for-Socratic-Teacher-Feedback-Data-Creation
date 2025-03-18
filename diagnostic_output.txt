@@ -1,0 +1,182 @@
+[Hint Analysis] Expecting result files with patterns: 
+  - results/answers_Llama-3.1-8B-Instruct_no_hint.json
+  - results/answers_Llama-3.1-8B-Instruct_socratic_question_with_hint.json
+  - results/answers_Llama-3.1-8B-Instruct_direct_hint_with_hint.json
+  - results/answers_Llama-3.1-8B-Instruct_step_suggestion_with_hint.json
+  - results/answers_gemma-2-2b-it_no_hint.json
+  - results/answers_gemma-2-2b-it_socratic_question_with_hint.json
+  - results/answers_gemma-2-2b-it_direct_hint_with_hint.json
+  - results/answers_gemma-2-2b-it_step_suggestion_with_hint.json
+  - results/answers_gemma-2-9b-it_no_hint.json
+  - results/answers_gemma-2-9b-it_socratic_question_with_hint.json
+  - results/answers_gemma-2-9b-it_direct_hint_with_hint.json
+  - results/answers_gemma-2-9b-it_step_suggestion_with_hint.json
+[Hint Analysis] Creating output directory: hint_analysis
+[Hint Analysis] Loading samples from data/samples.json
+[Hint Analysis] Loading results from results
+
+[Diagnostic] Correctness check for Llama-3.1-8B-Instruct no-hint results:
+  Problem 0: correctness field exists: True
+    correctness array: [False, False, False, False, False, False, False, False, False, False, False, False]
+    solve_rate: 0/12 = 0.0
+  Problem 1: correctness field exists: True
+    correctness array: [False, False, False, False, False, False, False, False, False, False, False, False]
+    solve_rate: 0/12 = 0.0
+
+[Diagnostic] Correctness check for Llama-3.1-8B-Instruct with socratic_question hint:
+  Problem 0: correctness field exists: True
+    correctness array: [False, False, False, False, False, False, False, False, False, False, False, False]
+    solve_rate: 0/12 = 0.0
+  Problem 1: correctness field exists: True
+    correctness array: [False, False, False, False, False, False, False, False, False, False, False, False]
+    solve_rate: 0/12 = 0.0
+
+[Hint Analysis] Data Loading Summary:
+Problems with baseline data: 100
+Problems with hint data: 100
+Average hints per problem: 3.00
+[Hint Analysis] Loaded data for 100 problems
+[Hint Analysis] Found 300 unique hints across all problems
+
+[Diagnostic] Raw Model Performance Statistics:
+
+Baseline (No-Hint) Performance:
+  Llama-3.1-8B-Instruct: 79/100 problems with non-zero solve rate (0.7900 or 79.0%)
+  gemma-2-2b-it: 41/100 problems with non-zero solve rate (0.4100 or 41.0%)
+  gemma-2-9b-it: 72/100 problems with non-zero solve rate (0.7200 or 72.0%)
+
+With-Hint Performance (by model):
+  Llama-3.1-8B-Instruct: 228/300 hints with non-zero solve rate (0.7600 or 76.0%)
+    Solve rate distribution:
+      0.0: 72 hints (24.0%)
+      0.01-0.25: 67 hints (22.3%)
+      0.26-0.5: 49 hints (16.3%)
+      0.51-0.75: 46 hints (15.3%)
+      0.76-1.0: 66 hints (22.0%)
+  gemma-2-2b-it: 126/300 hints with non-zero solve rate (0.4200 or 42.0%)
+    Solve rate distribution:
+      0.0: 174 hints (58.0%)
+      0.01-0.25: 61 hints (20.3%)
+      0.26-0.5: 27 hints (9.0%)
+      0.51-0.75: 22 hints (7.3%)
+      0.76-1.0: 16 hints (5.3%)
+  gemma-2-9b-it: 217/300 hints with non-zero solve rate (0.7233 or 72.3%)
+    Solve rate distribution:
+      0.0: 83 hints (27.7%)
+      0.01-0.25: 57 hints (19.0%)
+      0.26-0.5: 49 hints (16.3%)
+      0.51-0.75: 25 hints (8.3%)
+      0.76-1.0: 86 hints (28.7%)
+
+Sample Hint Performance (first 5 problems):
+
+Problem 0: A line parallel to the bases of a given right trap...
+  Hint 1: What do the radii of the inscribed circles have to...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0000
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.0000
+  Hint 2: Think about what happens when you draw a line from...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0000
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.0000
+
+Problem 1: An open organ pipe has its first overtone at \( N_...
+  Hint 1: How does the frequency of an overtone relate to th...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0000
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.0000
+  Hint 2: The speed of sound is directly proportional to the...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0000
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.0000
+
+Problem 2: Working alone, Ryan can dig a 10 ft by 10 ft hole ...
+  Hint 1: How does the combined rate of Ryan and Castel rela...
+    Llama-3.1-8B-Instruct: solve_rate = 0.1667
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.1667
+  Hint 2: Set up the equation 1/r + 1/6 = 1/2.72727272727 an...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0833
+    gemma-2-2b-it: solve_rate = 0.0833
+    gemma-2-9b-it: solve_rate = 0.5833
+
+Problem 3: Given the quadratic function y = -x^2 + 2x + m^2, ...
+  Hint 1: What is the formula for the x-coordinate of the ve...
+    Llama-3.1-8B-Instruct: solve_rate = 0.9167
+    gemma-2-2b-it: solve_rate = 0.5833
+    gemma-2-9b-it: solve_rate = 0.1667
+  Hint 2: The maximum value of the function is given by plug...
+    Llama-3.1-8B-Instruct: solve_rate = 1.0000
+    gemma-2-2b-it: solve_rate = 0.4167
+    gemma-2-9b-it: solve_rate = 0.0833
+
+Problem 4: Given a triangle $\triangle ABC$ with $BC=3$, $AC=...
+  Hint 1: What is the relationship between the sides of a tr...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0000
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.0000
+  Hint 2: Consider expressing the vectors $\overset{→}{PA}$ ...
+    Llama-3.1-8B-Instruct: solve_rate = 0.0000
+    gemma-2-2b-it: solve_rate = 0.0000
+    gemma-2-9b-it: solve_rate = 0.0000
+[Hint Analysis] Evaluating hint effectiveness...
+Average improvement gap (smart - weak): -0.0950
+Max improvement gap: 0.7500
+Min improvement gap: -1.0833
+
+[Diagnostic] Gemma Model Improvement Statistics:
+  total_hints: 600
+  positive_improvement: 149 (24.8%)
+  negative_improvement: 151 (25.2%)
+  zero_improvement: 300 (50.0%)
+  positive_baseline: 339 (56.5%)
+  zero_baseline: 261 (43.5%)
+
+[Diagnostic] Sample of cases where Gemma is ranked as weakest model:
+
+Problem 0: A line parallel to the bases of a given right trap...
+  Hint: What do the radii of the inscribed circles have to...
+  Smart model: Llama-3.1-8B-Instruct, baseline: 0.0000
+  Weak model: gemma-2-9b-it, baseline: 0.0000
+  Smart improvement: 0.0000
+  Weak improvement: 0.0000
+  Gap: 0.0000
+
+Problem 0: A line parallel to the bases of a given right trap...
+  Hint: Think about what happens when you draw a line from...
+  Smart model: Llama-3.1-8B-Instruct, baseline: 0.0000
+  Weak model: gemma-2-9b-it, baseline: 0.0000
+  Smart improvement: 0.0000
+  Weak improvement: 0.0000
+  Gap: 0.0000
+
+Problem 0: A line parallel to the bases of a given right trap...
+  Hint: Consider the properties of similar triangles forme...
+  Smart model: Llama-3.1-8B-Instruct, baseline: 0.0000
+  Weak model: gemma-2-9b-it, baseline: 0.0000
+  Smart improvement: 0.0000
+  Weak improvement: 0.0000
+  Gap: 0.0000
+
+Problem 1: An open organ pipe has its first overtone at \( N_...
+  Hint: How does the frequency of an overtone relate to th...
+  Smart model: Llama-3.1-8B-Instruct, baseline: 0.0000
+  Weak model: gemma-2-9b-it, baseline: 0.0000
+  Smart improvement: 0.0000
+  Weak improvement: 0.0000
+  Gap: 0.0000
+
+Problem 1: An open organ pipe has its first overtone at \( N_...
+  Hint: The speed of sound is directly proportional to the...
+  Smart model: Llama-3.1-8B-Instruct, baseline: 0.0000
+  Weak model: gemma-2-9b-it, baseline: 0.0000
+  Smart improvement: 0.0000
+  Weak improvement: 0.0000
+  Gap: 0.0000
+Total cases where Gemma is ranked as weakest model: 288
+[Hint Analysis] Ranking hints...
+[Hint Analysis] Saved hint rankings to hint_analysis/hint_rankings.csv
+[Hint Analysis] Creating visualizations...
+  -> Saved scatterplot to hint_analysis/smart_vs_weak_improvement.png
+  -> Saved top hints plot to hint_analysis/top_hints_by_gap.png
+  -> Saved top hints details to hint_analysis/top_hints_by_gap.txt

@@ -1,25 +1,25 @@
 {
   "model": "gemma-2-9b-it",
   "performance": {
+    "direct_hint": {
+      "mean_solve_rate": 0.47,
+      "stderr": 0.04095383511406403,
+      "improvement_over_no_hint": 0.016666666666666607
+    },
     "no_hint": {
-      "mean_solve_rate": 0.44583333333333336,
-      "stderr": 0.04159716425519983,
+      "mean_solve_rate": 0.45333333333333337,
+      "stderr": 0.04017218831237245,
       "improvement_over_no_hint": null
     },
     "step_suggestion": {
-      "mean_solve_rate": 0.43083333333333335,
-      "stderr": 0.04021991664244256,
-      "improvement_over_no_hint": -0.015000000000000013
+      "mean_solve_rate": 0.4108333333333334,
+      "stderr": 0.03900155037351205,
+      "improvement_over_no_hint": -0.04249999999999998
     },
     "socratic_question": {
-      "mean_solve_rate": 0.41666666666666663,
-      "stderr": 0.04013165762690693,
-      "improvement_over_no_hint": -0.02916666666666673
-    },
-    "direct_hint": {
-      "mean_solve_rate": 0.4116666666666666,
-      "stderr": 0.04000596195748402,
-      "improvement_over_no_hint": -0.034166666666666734
+      "mean_solve_rate": 0.4016666666666666,
+      "stderr": 0.03891377270258401,
+      "improvement_over_no_hint": -0.05166666666666675
     }
   },
   "sample_size": 100

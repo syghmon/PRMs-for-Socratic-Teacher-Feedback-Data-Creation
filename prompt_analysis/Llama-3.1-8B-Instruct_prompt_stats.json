@@ -2,24 +2,24 @@
   "model": "Llama-3.1-8B-Instruct",
   "performance": {
     "no_hint": {
-      "mean_solve_rate": 0.44166666666666665,
-      "stderr": 0.03538508693085799,
+      "mean_solve_rate": 0.44416666666666665,
+      "stderr": 0.03635417420383316,
       "improvement_over_no_hint": null
     },
-    "socratic_question": {
-      "mean_solve_rate": 0.43333333333333335,
-      "stderr": 0.03594561923360817,
-      "improvement_over_no_hint": -0.008333333333333304
+    "direct_hint": {
+      "mean_solve_rate": 0.44,
+      "stderr": 0.03753187945345453,
+      "improvement_over_no_hint": -0.004166666666666652
     },
     "step_suggestion": {
       "mean_solve_rate": 0.42583333333333334,
-      "stderr": 0.03553137988073298,
-      "improvement_over_no_hint": -0.01583333333333331
+      "stderr": 0.03547210456147481,
+      "improvement_over_no_hint": -0.018333333333333313
     },
-    "direct_hint": {
-      "mean_solve_rate": 0.4041666666666666,
-      "stderr": 0.03723720111697191,
-      "improvement_over_no_hint": -0.03750000000000003
+    "socratic_question": {
+      "mean_solve_rate": 0.39916666666666667,
+      "stderr": 0.035912331681177426,
+      "improvement_over_no_hint": -0.044999999999999984
     }
   },
   "sample_size": 100

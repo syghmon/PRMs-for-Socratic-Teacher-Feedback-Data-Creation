@@ -1,235 +1,32 @@
 [
   {
-    "problem_index": 46,
-    "problem": "Aziz's parents moved to America in 1982. The year is 2021 and Aziz just celebrated a birthday. His parents had been living in America for 3 years before Aziz was born. How old is Aziz now?",
+    "problem_index": 25,
+    "problem": "Let \\( x \\) and \\( y \\) be positive real numbers. What is the smallest possible value of \\( \\frac{16}{x} + \\frac{108}{y} + xy \\)? Express your answer as a single number.",
     "final_answer": "36",
-    "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.46875,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 1.0,
-    "prompts": {
-      "socratic_question": {
-        "hint": "What year was Aziz born, and how can we find his age in 2021?",
-        "solve_rate": 1.0,
-        "improvement": 0.0
-      },
-      "direct_hint": {
-        "hint": "To find Aziz's age, consider how many years have passed since he was born, but don't forget that he just celebrated a birthday, which means we need to subtract 1 from the total number of years.",
-        "solve_rate": 0.08333333333333333,
-        "improvement": -0.9166666666666666
-      },
-      "step_suggestion": {
-        "hint": "Subtract the year Aziz's parents moved to America from the current year to find the number of years that have passed.",
-        "solve_rate": 0.9166666666666666,
-        "improvement": -0.08333333333333337
-      }
-    },
-    "best_prompt": "socratic_question",
-    "worst_prompt": "direct_hint",
-    "performance_range": 0.9166666666666666
-  },
-  {
-    "problem_index": 60,
-    "problem": "Given a quadratic equation $x^{2}-2x+m=0$, after completing the square, we get $\\left(x-1\\right)^{2}=n$. Find the value of $m+n$.",
-    "final_answer": "1",
-    "difficulty_bin": "0.6-0.7",
-    "llama8b_solve_rate": 0.6875,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 1.0,
-    "prompts": {
-      "socratic_question": {
-        "hint": "Think about what happens when you expand a perfect square trinomial.",
-        "solve_rate": 1.0,
-        "improvement": 0.0
-      },
-      "direct_hint": {
-        "hint": "What is the relationship between the expressions $(x-1)^2 = m-1$ and $(x-1)^2 = n$?",
-        "solve_rate": 1.0,
-        "improvement": 0.0
-      },
-      "step_suggestion": {
-        "hint": "Compare the constant terms of the original equation and the perfect square trinomial to find the values of $m$ and $n$.",
-        "solve_rate": 0.08333333333333333,
-        "improvement": -0.9166666666666666
-      }
-    },
-    "best_prompt": "socratic_question",
-    "worst_prompt": "step_suggestion",
-    "performance_range": 0.9166666666666666
-  },
-  {
-    "problem_index": 62,
-    "problem": "Given that $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$), find the value of $a^{2m+n}$ = $\\_\\_\\_\\_\\_\\_$.",
-    "final_answer": "12",
-    "difficulty_bin": "0.6-0.7",
-    "llama8b_solve_rate": 0.6875,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.8333333333333334,
-    "prompts": {
-      "socratic_question": {
-        "hint": "Consider the relationship between logarithms and exponents.",
-        "solve_rate": 1.0,
-        "improvement": 0.16666666666666663
-      },
-      "direct_hint": {
-        "hint": "Rewrite the expression $a^{2m+n}$ in terms of the logarithmic properties and see if you can simplify it using the given information.",
-        "solve_rate": 0.4166666666666667,
-        "improvement": -0.4166666666666667
-      },
-      "step_suggestion": {
-        "hint": "Use the logarithmic identity to express $a^{2m+n}$ as $a^m \\cdot a^n$.",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.6666666666666667
-      }
-    },
-    "best_prompt": "socratic_question",
-    "worst_prompt": "step_suggestion",
-    "performance_range": 0.8333333333333334
-  },
-  {
-    "problem_index": 62,
-    "problem": "Given that $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$), find the value of $a^{2m+n}$ = $\\_\\_\\_\\_\\_\\_$.",
-    "final_answer": "12",
-    "difficulty_bin": "0.6-0.7",
-    "llama8b_solve_rate": 0.6875,
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.265625,
     "student_model": "Llama-3.1-8B-Instruct",
-    "no_hint_solve_rate": 0.5833333333333334,
+    "no_hint_solve_rate": 0.5,
     "prompts": {
       "socratic_question": {
-        "hint": "Consider the relationship between logarithms and exponents.",
-        "solve_rate": 1.0,
+        "hint": "Can you think of a way to combine the terms \\( \\frac{16}{x} \\) and \\( xy \\), and also the terms \\( \\frac{108}{y} \\) and \\( xy \\)?",
+        "solve_rate": 0.0,
+        "improvement": -0.5
+      },
+      "direct_hint": {
+        "hint": "Try applying the AM-GM inequality to the three terms \\( \\frac{16}{x} \\), \\( \\frac{108}{y} \\), and \\( xy \\).",
+        "solve_rate": 0.9166666666666666,
         "improvement": 0.41666666666666663
       },
-      "direct_hint": {
-        "hint": "Rewrite the expression $a^{2m+n}$ in terms of the logarithmic properties and see if you can simplify it using the given information.",
-        "solve_rate": 0.8333333333333334,
-        "improvement": 0.25
-      },
       "step_suggestion": {
-        "hint": "Use the logarithmic identity to express $a^{2m+n}$ as $a^m \\cdot a^n$.",
-        "solve_rate": 0.25,
-        "improvement": -0.33333333333333337
-      }
-    },
-    "best_prompt": "socratic_question",
-    "worst_prompt": "step_suggestion",
-    "performance_range": 0.75
-  },
-  {
-    "problem_index": 76,
-    "problem": "Mary is baking a cake. The recipe calls for 12 cups of flour, 14 cups of sugar, and 7 cups of salt. She already put in some cups of flour. She needs to add 3 more cups of flour than cups of salt now. How many cups of flour has she already put in?",
-    "final_answer": "2",
-    "difficulty_bin": "0.7-0.8",
-    "llama8b_solve_rate": 0.703125,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.8333333333333334,
-    "prompts": {
-      "socratic_question": {
-        "hint": "Consider how the amounts of flour and salt she's added so far relate to the total amounts in the recipe.",
-        "solve_rate": 0.4166666666666667,
-        "improvement": -0.4166666666666667
-      },
-      "direct_hint": {
-        "hint": "Think about the total amount of flour Mary needs to add, and use the information about the remaining cups of flour to find the amount she has already put in.",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.6666666666666667
-      },
-      "step_suggestion": {
-        "hint": "Set up an equation using the total amount of flour required in the recipe and the expression for the amount of flour Mary needs to add.",
-        "solve_rate": 0.9166666666666666,
-        "improvement": 0.08333333333333326
-      }
-    },
-    "best_prompt": "step_suggestion",
-    "worst_prompt": "direct_hint",
-    "performance_range": 0.75
-  },
-  {
-    "problem_index": 59,
-    "problem": "Given $z_{1}$, $z_{2} \\in \\mathbb{C}$, where $|z_{1}|=|z_{2}|=1$ and $|z_{1}+z_{2}|=\\sqrt{3}$, calculate the value of $|z_{1}-z_{2}|$. Express your answer as a single number.",
-    "final_answer": "1",
-    "difficulty_bin": "0.5-0.6",
-    "llama8b_solve_rate": 0.5,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.5833333333333334,
-    "prompts": {
-      "socratic_question": {
-        "hint": "How is the magnitude of the product related to the magnitudes of the factors?",
-        "solve_rate": 0.3333333333333333,
-        "improvement": -0.25000000000000006
-      },
-      "direct_hint": {
-        "hint": "Recall the relationship between the magnitude of a complex number and its real and imaginary parts, and see if you can express $|z_{1}+z_{2}|$ and $|z_{1}-z_{2}|$ in terms of these parts.",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.41666666666666674
-      },
-      "step_suggestion": {
-        "hint": "Recall the relationship between the magnitude of a complex number and the magnitude of its sum or difference.",
-        "solve_rate": 0.8333333333333334,
-        "improvement": 0.25
-      }
-    },
-    "best_prompt": "step_suggestion",
-    "worst_prompt": "direct_hint",
-    "performance_range": 0.6666666666666667
-  },
-  {
-    "problem_index": 74,
-    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
-    "final_answer": "6",
-    "difficulty_bin": "0.7-0.8",
-    "llama8b_solve_rate": 0.734375,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.25,
-    "prompts": {
-      "socratic_question": {
-        "hint": "Consider the relationship between the degrees of the dividend, quotient, and divisor in polynomial division.",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.08333333333333334
-      },
-      "direct_hint": {
-        "hint": "Subtract the degree of the quotient from the degree of the dividend to find the degree of the divisor.",
-        "solve_rate": 0.8333333333333334,
-        "improvement": 0.5833333333333334
-      },
-      "step_suggestion": {
-        "hint": "Subtract the degree of the remainder from the degree of the dividend.",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.08333333333333334
-      }
-    },
-    "best_prompt": "direct_hint",
-    "worst_prompt": "socratic_question",
-    "performance_range": 0.6666666666666667
-  },
-  {
-    "problem_index": 92,
-    "problem": "Fred has 38 red marbles, half as many green ones, and the rest are dark blue. If he has a certain number of marbles and 6 of them are dark blue, how many marbles does Fred have in total?",
-    "final_answer": "63",
-    "difficulty_bin": "0.9-1",
-    "llama8b_solve_rate": 0.96875,
-    "student_model": "gemma-2-2b-it",
-    "no_hint_solve_rate": 0.8333333333333334,
-    "prompts": {
-      "socratic_question": {
-        "hint": "If 6 marbles are dark blue, what does this tell us about the number of blue marbles compared to the other two colors combined?",
-        "solve_rate": 0.9166666666666666,
-        "improvement": 0.08333333333333326
-      },
-      "direct_hint": {
-        "hint": "Think about how the number of dark blue marbles relates to the total number of marbles.",
+        "hint": "Apply the AM-GM inequality to the terms \\(\\frac{16}{x}\\), \\(\\frac{108}{y}\\), and \\(xy\\).",
         "solve_rate": 1.0,
-        "improvement": 0.16666666666666663
-      },
-      "step_suggestion": {
-        "hint": "Set up an equation to represent the relationship between the total number of marbles and the number of dark blue marbles.",
-        "solve_rate": 0.3333333333333333,
-        "improvement": -0.5
+        "improvement": 0.5
       }
     },
-    "best_prompt": "direct_hint",
-    "worst_prompt": "step_suggestion",
-    "performance_range": 0.6666666666666667
+    "best_prompt": "step_suggestion",
+    "worst_prompt": "socratic_question",
+    "performance_range": 1.0
   },
   {
     "problem_index": 29,
@@ -238,27 +35,27 @@
     "difficulty_bin": "0.2-0.3",
     "llama8b_solve_rate": 0.28125,
     "student_model": "Llama-3.1-8B-Instruct",
-    "no_hint_solve_rate": 0.4166666666666667,
+    "no_hint_solve_rate": 0.9166666666666666,
     "prompts": {
       "socratic_question": {
-        "hint": "What is the relationship between the distance covered by the tiger in 5 seconds and its own length?",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.25
+        "hint": "Think about how many times the tiger's length fits into the length of the fallen tree trunk in the given time.",
+        "solve_rate": 1.0,
+        "improvement": 0.08333333333333337
       },
       "direct_hint": {
-        "hint": "Consider the distance the tiger travels above the tree trunk as the sum of its own length and the length of the tree trunk.",
+        "hint": "If you know the speed of the tiger, you can use it to find the distance it covers in 5 seconds, and then subtract its length to find the length of the fallen tree trunk.",
         "solve_rate": 0.0,
-        "improvement": -0.4166666666666667
+        "improvement": -0.9166666666666666
       },
       "step_suggestion": {
-        "hint": "Use the formula distance = speed * time to find the distance covered by the tiger in 5 seconds.",
-        "solve_rate": 0.6666666666666666,
-        "improvement": 0.24999999999999994
+        "hint": "First, find the speed of the tiger by determining how much distance it covers in one second.",
+        "solve_rate": 0.5,
+        "improvement": -0.41666666666666663
       }
     },
-    "best_prompt": "step_suggestion",
+    "best_prompt": "socratic_question",
     "worst_prompt": "direct_hint",
-    "performance_range": 0.6666666666666666
+    "performance_range": 1.0
   },
   {
     "problem_index": 50,
@@ -270,47 +67,482 @@
     "no_hint_solve_rate": 0.5,
     "prompts": {
       "socratic_question": {
-        "hint": "Does the sign of the distance traveled change when the direction is reversed?",
-        "solve_rate": 0.08333333333333333,
-        "improvement": -0.4166666666666667
+        "hint": "Does the magnitude of the distance change when you travel in the opposite direction?",
+        "solve_rate": 0.0,
+        "improvement": -0.5
       },
       "direct_hint": {
-        "hint": "Think about what happens when you change the direction of a movement from positive to negative.",
-        "solve_rate": 0.75,
-        "improvement": 0.25
+        "hint": "When you travel in the opposite direction, the sign of the distance traveled changes.",
+        "solve_rate": 1.0,
+        "improvement": 0.5
       },
       "step_suggestion": {
-        "hint": "Consider the opposite direction of travel.",
-        "solve_rate": 0.5833333333333334,
-        "improvement": 0.08333333333333337
+        "hint": "Consider how the direction of travel affects the sign of the distance.",
+        "solve_rate": 1.0,
+        "improvement": 0.5
       }
     },
     "best_prompt": "direct_hint",
     "worst_prompt": "socratic_question",
+    "performance_range": 1.0
+  },
+  {
+    "problem_index": 59,
+    "problem": "Given $z_{1}$, $z_{2} \\in \\mathbb{C}$, where $|z_{1}|=|z_{2}|=1$ and $|z_{1}+z_{2}|=\\sqrt{3}$, calculate the value of $|z_{1}-z_{2}|$. Express your answer as a single number.",
+    "final_answer": "1",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.4166666666666667,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Recall the triangle inequality.",
+        "solve_rate": 0.0,
+        "improvement": -0.4166666666666667
+      },
+      "direct_hint": {
+        "hint": "Recall that $|z_{1}+z_{2}|^2 + |z_{1}-z_{2}|^2 = 2|z_{1}|^2 + 2|z_{2}|^2$.",
+        "solve_rate": 1.0,
+        "improvement": 0.5833333333333333
+      },
+      "step_suggestion": {
+        "hint": "Use the property of absolute values that $|z_{1}-z_{2}|^{2}=|z_{1}|^{2}+|z_{2}|^{2}-2\\text{Re}(z_{1}\\overline{z_{2}})$, where $\\text{Re}(z)$ denotes the real part of $z$.",
+        "solve_rate": 0.5,
+        "improvement": 0.08333333333333331
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 1.0
+  },
+  {
+    "problem_index": 92,
+    "problem": "Fred has 38 red marbles, half as many green ones, and the rest are dark blue. If he has a certain number of marbles and 6 of them are dark blue, how many marbles does Fred have in total?",
+    "final_answer": "63",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.96875,
+    "student_model": "gemma-2-2b-it",
+    "no_hint_solve_rate": 0.8333333333333334,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Try to find the relationship between the number of green marbles and the total number of marbles.",
+        "solve_rate": 0.75,
+        "improvement": -0.08333333333333337
+      },
+      "direct_hint": {
+        "hint": "Let's represent the total number of marbles as a variable, and then set up an equation that accounts for the number of each color of marble.",
+        "solve_rate": 0.0,
+        "improvement": -0.8333333333333334
+      },
+      "step_suggestion": {
+        "hint": "First, determine the total number of marbles that are either red or green.",
+        "solve_rate": 1.0,
+        "improvement": 0.16666666666666663
+      }
+    },
+    "best_prompt": "step_suggestion",
+    "worst_prompt": "direct_hint",
+    "performance_range": 1.0
+  },
+  {
+    "problem_index": 68,
+    "problem": "Given that the imaginary unit $i$ is a root of the equation $x^2+ax+b=0$, where $a, b \\in \\mathbb{R}$, calculate the value of $a+b$. Express your answer as a single integer.",
+    "final_answer": "1",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.65625,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.6666666666666666,
+    "prompts": {
+      "socratic_question": {
+        "hint": "What is the sum and product of the roots of a quadratic equation, and how can you use this information to find $a$ and $b$?",
+        "solve_rate": 0.08333333333333333,
+        "improvement": -0.5833333333333333
+      },
+      "direct_hint": {
+        "hint": "The sum of the roots is equal to the negation of the coefficient of the linear term ($-a$), and the product of the roots is equal to the constant term ($b$).",
+        "solve_rate": 1.0,
+        "improvement": 0.33333333333333337
+      },
+      "step_suggestion": {
+        "hint": "Recall the relationship between the coefficients of a quadratic equation and its roots.",
+        "solve_rate": 0.8333333333333334,
+        "improvement": 0.16666666666666674
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.9166666666666666
+  },
+  {
+    "problem_index": 50,
+    "problem": "If a car travels 5 kilometers to the east, it is recorded as 5 kilometers. How would traveling 5 kilometers to the west be recorded? Express your answer in kilometers.",
+    "final_answer": "-5",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5625,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 1.0,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Does the magnitude of the distance change when you travel in the opposite direction?",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.8333333333333334
+      },
+      "direct_hint": {
+        "hint": "When you travel in the opposite direction, the sign of the distance traveled changes.",
+        "solve_rate": 1.0,
+        "improvement": 0.0
+      },
+      "step_suggestion": {
+        "hint": "Consider how the direction of travel affects the sign of the distance.",
+        "solve_rate": 0.9166666666666666,
+        "improvement": -0.08333333333333337
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.8333333333333334
+  },
+  {
+    "problem_index": 62,
+    "problem": "Given that $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$), find the value of $a^{2m+n}$ = $\\_\\_\\_\\_\\_\\_$.",
+    "final_answer": "12",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.6875,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.75,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Can you express $\\log_{a}(2*3)$ in terms of $m$ and $n$?",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.5833333333333334
+      },
+      "direct_hint": {
+        "hint": "Rewrite the given logarithmic equations in exponential form to get expressions involving $a$ and the given numbers.",
+        "solve_rate": 1.0,
+        "improvement": 0.25
+      },
+      "step_suggestion": {
+        "hint": "Use the property that $\\log_{a}b^c=c\\log_{a}b$ to rewrite the expression.",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.5833333333333334
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.8333333333333334
+  },
+  {
+    "problem_index": 25,
+    "problem": "Let \\( x \\) and \\( y \\) be positive real numbers. What is the smallest possible value of \\( \\frac{16}{x} + \\frac{108}{y} + xy \\)? Express your answer as a single number.",
+    "final_answer": "36",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.265625,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.25,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Can you think of a way to combine the terms \\( \\frac{16}{x} \\) and \\( xy \\), and also the terms \\( \\frac{108}{y} \\) and \\( xy \\)?",
+        "solve_rate": 0.0,
+        "improvement": -0.25
+      },
+      "direct_hint": {
+        "hint": "Try applying the AM-GM inequality to the three terms \\( \\frac{16}{x} \\), \\( \\frac{108}{y} \\), and \\( xy \\).",
+        "solve_rate": 0.75,
+        "improvement": 0.5
+      },
+      "step_suggestion": {
+        "hint": "Apply the AM-GM inequality to the terms \\(\\frac{16}{x}\\), \\(\\frac{108}{y}\\), and \\(xy\\).",
+        "solve_rate": 0.6666666666666666,
+        "improvement": 0.41666666666666663
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 30,
+    "problem": "Let the function $f(x) = \\log_{\\frac{1}{2}}x$ have an inverse function denoted by $g(x)$. Then find the range of the function $y = g(x)$ on the interval $[1, 2]$.",
+    "final_answer": "\\left[\\frac{1}{4}, \\frac{1}{2}\\right]",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.08333333333333333,
+    "prompts": {
+      "socratic_question": {
+        "hint": "What happens when we take the logarithm of a number with base $\\frac{1}{2}$?",
+        "solve_rate": 0.0,
+        "improvement": -0.08333333333333333
+      },
+      "direct_hint": {
+        "hint": "The inverse of a logarithmic function with base b is an exponential function with base b, so try switching the roles of x and y in the original function and then applying the properties of exponential functions.",
+        "solve_rate": 0.75,
+        "improvement": 0.6666666666666666
+      },
+      "step_suggestion": {
+        "hint": "Rewrite f(x) in terms of common logarithms to simplify the calculation.",
+        "solve_rate": 0.0,
+        "improvement": -0.08333333333333333
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 32,
+    "problem": "In a parallelogram, the length of one diagonal is 30 meters and the perpendicular dropped on that diagonal is 20 meters. What is the area of the parallelogram?",
+    "final_answer": "600",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.34375,
+    "student_model": "Llama-3.1-8B-Instruct",
+    "no_hint_solve_rate": 0.3333333333333333,
+    "prompts": {
+      "socratic_question": {
+        "hint": "What is the formula for the area of a parallelogram, and how does the given information relate to this formula?",
+        "solve_rate": 0.25,
+        "improvement": -0.08333333333333331
+      },
+      "direct_hint": {
+        "hint": "The base of the parallelogram is the length of the diagonal, and the height is the length of the perpendicular dropped on that diagonal.",
+        "solve_rate": 1.0,
+        "improvement": 0.6666666666666667
+      },
+      "step_suggestion": {
+        "hint": "Calculate the area of one of the triangles formed by the diagonal and the perpendicular.",
+        "solve_rate": 0.6666666666666666,
+        "improvement": 0.3333333333333333
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 46,
+    "problem": "Aziz's parents moved to America in 1982. The year is 2021 and Aziz just celebrated a birthday. His parents had been living in America for 3 years before Aziz was born. How old is Aziz now?",
+    "final_answer": "36",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.46875,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.9166666666666666,
+    "prompts": {
+      "socratic_question": {
+        "hint": "If Aziz is currently 36 years old, how many years has he been alive?",
+        "solve_rate": 0.9166666666666666,
+        "improvement": 0.0
+      },
+      "direct_hint": {
+        "hint": "When solving a problem with a time difference, consider the years before and after a certain event to find the age or number of years.",
+        "solve_rate": 0.9166666666666666,
+        "improvement": 0.0
+      },
+      "step_suggestion": {
+        "hint": "Determine the year Aziz was born.",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.75
+      }
+    },
+    "best_prompt": "socratic_question",
+    "worst_prompt": "step_suggestion",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 52,
+    "problem": "If the price of gasoline increases by a certain percentage and a driver intends to spend only 10% more on gasoline, the driver should reduce the quantity of gasoline that he buys by 12%. What is the percentage increase in the price of gasoline?",
+    "final_answer": "25\\%",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.546875,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.6666666666666666,
+    "prompts": {
+      "socratic_question": {
+        "hint": "What happens to the price of gasoline when the quantity is reduced, and the total cost remains the same?",
+        "solve_rate": 0.25,
+        "improvement": -0.41666666666666663
+      },
+      "direct_hint": {
+        "hint": "If the new price is 88% of the original price, what percentage increase is there from the original price to 88% of the original price?",
+        "solve_rate": 0.75,
+        "improvement": 0.08333333333333337
+      },
+      "step_suggestion": {
+        "hint": "Set up the equation 1.1 = (1 + x) * 0.88.",
+        "solve_rate": 1.0,
+        "improvement": 0.33333333333333337
+      }
+    },
+    "best_prompt": "step_suggestion",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 60,
+    "problem": "Given a quadratic equation $x^{2}-2x+m=0$, after completing the square, we get $\\left(x-1\\right)^{2}=n$. Find the value of $m+n$.",
+    "final_answer": "1",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.6875,
+    "student_model": "gemma-2-2b-it",
+    "no_hint_solve_rate": 0.4166666666666667,
+    "prompts": {
+      "socratic_question": {
+        "hint": "What is the value of $\\left(x-1\\right)^{2}$ when the given equation is expanded?",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.25
+      },
+      "direct_hint": {
+        "hint": "Compare the two equations to find the relationship between n and m.",
+        "solve_rate": 0.75,
+        "improvement": 0.3333333333333333
+      },
+      "step_suggestion": {
+        "hint": "Expand the left side of the equation $\\left(x-1\\right)^{2}=m$ to compare it with the original equation.",
+        "solve_rate": 0.0,
+        "improvement": -0.4166666666666667
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "step_suggestion",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 62,
+    "problem": "Given that $\\log_{a}2=m$, $\\log_{a}3=n$, ($a > 0$ and $a\\neq 1$), find the value of $a^{2m+n}$ = $\\_\\_\\_\\_\\_\\_$.",
+    "final_answer": "12",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.6875,
+    "student_model": "Llama-3.1-8B-Instruct",
+    "no_hint_solve_rate": 0.5833333333333334,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Can you express $\\log_{a}(2*3)$ in terms of $m$ and $n$?",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.41666666666666674
+      },
+      "direct_hint": {
+        "hint": "Rewrite the given logarithmic equations in exponential form to get expressions involving $a$ and the given numbers.",
+        "solve_rate": 0.9166666666666666,
+        "improvement": 0.33333333333333326
+      },
+      "step_suggestion": {
+        "hint": "Use the property that $\\log_{a}b^c=c\\log_{a}b$ to rewrite the expression.",
+        "solve_rate": 0.4166666666666667,
+        "improvement": -0.16666666666666669
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 72,
+    "problem": "If the point $(8,4)$ is on the graph of the function $f(x)=1+\\log_{a}x$, then the inverse function of $f(x)$ is",
+    "final_answer": "f^{-1}(x)=2^{x-1}",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.734375,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.08333333333333333,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Think about how you can use this information to find the inverse function.",
+        "solve_rate": 0.0,
+        "improvement": -0.08333333333333333
+      },
+      "direct_hint": {
+        "hint": "Use the property of logarithms that $\\log_{a} x = y$ is equivalent to $a^y = x$.",
+        "solve_rate": 0.75,
+        "improvement": 0.6666666666666666
+      },
+      "step_suggestion": {
+        "hint": "Recall that if (x, y) is on the graph of f(x), then (y, x) is on the graph of f^{-1}(x).",
+        "solve_rate": 0.08333333333333333,
+        "improvement": 0.0
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.75
+  },
+  {
+    "problem_index": 58,
+    "problem": "Antonieta wants to ride the Ferris wheel, the roller coaster, and the log ride. The Ferris wheel costs 6 tickets, the roller coaster costs 5 tickets, and the log ride costs 7 tickets. She needs to buy 16 more tickets to ride all the attractions. How many tickets does Antonieta have initially?",
+    "final_answer": "2",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.59375,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.8333333333333334,
+    "prompts": {
+      "socratic_question": {
+        "hint": "If the total tickets needed is 16 more than what she already has, what is the equation representing the situation?",
+        "solve_rate": 0.4166666666666667,
+        "improvement": -0.4166666666666667
+      },
+      "direct_hint": {
+        "hint": "To find the initial number of tickets Antonieta has, subtract the number of tickets she still needs from the total number of tickets required for all the rides.",
+        "solve_rate": 1.0,
+        "improvement": 0.16666666666666663
+      },
+      "step_suggestion": {
+        "hint": "Write an equation to represent the situation, where x is the number of tickets Antonieta has initially.",
+        "solve_rate": 0.3333333333333333,
+        "improvement": -0.5
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "step_suggestion",
+    "performance_range": 0.6666666666666667
+  },
+  {
+    "problem_index": 31,
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "final_answer": "100",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375,
+    "student_model": "Llama-3.1-8B-Instruct",
+    "no_hint_solve_rate": 0.3333333333333333,
+    "prompts": {
+      "socratic_question": {
+        "hint": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
+        "solve_rate": 0.5,
+        "improvement": 0.16666666666666669
+      },
+      "direct_hint": {
+        "hint": "The diameter of a ball with radius $1/2$ is equal to 1, so divide each dimension of the box by 1.",
+        "solve_rate": 0.75,
+        "improvement": 0.4166666666666667
+      },
+      "step_suggestion": {
+        "hint": "Calculate the area of the base of the box.",
+        "solve_rate": 0.08333333333333333,
+        "improvement": -0.25
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "step_suggestion",
     "performance_range": 0.6666666666666666
   },
   {
-    "problem_index": 56,
-    "problem": "Given $F(x) = ax^7 + bx^5 + cx^3 + dx - 6$, and it is known that $F(-2) = 10$, find the value of $F(2)$.",
-    "final_answer": "-22",
-    "difficulty_bin": "0.5-0.6",
-    "llama8b_solve_rate": 0.546875,
+    "problem_index": 48,
+    "problem": "Given an arithmetic sequence $\\{a_{n}\\}$ with a non-zero common difference $d$, and the terms $a_1$, $a_3$, and $a_9$ form a geometric sequence, find the value of $\\frac{a_1 + a_3 + a_9}{a_2 + a_4 + a_{10}}$.",
+    "final_answer": "\\frac{13}{16}",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.421875,
     "student_model": "Llama-3.1-8B-Instruct",
-    "no_hint_solve_rate": 0.5,
+    "no_hint_solve_rate": 0.25,
     "prompts": {
       "socratic_question": {
-        "hint": "Think about the relationship between the coefficients of the function at x = 2 and x = -2.",
-        "solve_rate": 0.3333333333333333,
-        "improvement": -0.16666666666666669
+        "hint": "What are the relationships between the terms in an arithmetic sequence and a geometric sequence?",
+        "solve_rate": 0.25,
+        "improvement": 0.0
       },
       "direct_hint": {
-        "hint": "Use the property of odd functions to relate F(-2) and F(2) to find the value of F(2).",
-        "solve_rate": 0.25,
+        "hint": "To find the value of the expression, first express $a_1$, $a_3$, and $a_9$ in terms of $r$ and $a_1$, then substitute these expressions into the given expression.",
+        "solve_rate": 0.0,
         "improvement": -0.25
       },
       "step_suggestion": {
-        "hint": "Explore the relationship between F(x) and F(-x) by replacing x with -x in the given equation.",
-        "solve_rate": 0.9166666666666666,
+        "hint": "Write expressions for $a_3$ and $a_9$ in terms of $a_1$ and $d$.",
+        "solve_rate": 0.6666666666666666,
         "improvement": 0.41666666666666663
       }
     },
@@ -319,57 +551,86 @@
     "performance_range": 0.6666666666666666
   },
   {
-    "problem_index": 28,
-    "problem": "Three students each choose one day from Saturday or Sunday to participate in a charity event. Calculate the probability that there will be students participating on both Saturday and Sunday. Express your answer as a simplified fraction.",
-    "final_answer": "\\frac{3}{4}",
-    "difficulty_bin": "0.2-0.3",
-    "llama8b_solve_rate": 0.234375,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.08333333333333333,
-    "prompts": {
-      "socratic_question": {
-        "hint": "How many total combinations are there for three students choosing one day from two options?",
-        "solve_rate": 0.16666666666666666,
-        "improvement": 0.08333333333333333
-      },
-      "direct_hint": {
-        "hint": "Start by calculating the total number of possible combinations of days that the three students can choose from.",
-        "solve_rate": 0.25,
-        "improvement": 0.16666666666666669
-      },
-      "step_suggestion": {
-        "hint": "Count the number of combinations where at least one student is participating on both Saturday and Sunday.",
-        "solve_rate": 0.75,
-        "improvement": 0.6666666666666666
-      }
-    },
-    "best_prompt": "step_suggestion",
-    "worst_prompt": "socratic_question",
-    "performance_range": 0.5833333333333334
-  },
-  {
-    "problem_index": 44,
-    "problem": "Three trains A, B, and C are running on parallel tracks. Train A is running at a speed of 60 km/hr and crosses a pole in 5 seconds. Train B is running at a speed of 80 km/hr and crosses a pole in 7 seconds. Train C is running at a speed of 50 km/hr and crosses a pole in 9 seconds. Which train has the longest length, and what is its length?",
-    "final_answer": "155.54",
+    "problem_index": 49,
+    "problem": "Shawn invested one half of his savings in a bond that paid simple interest for 2 years and received $550 as interest. He invested the remaining in a bond that paid compound interest, interest being compounded annually, for the same 2 years at the same rate of interest. The value of his total savings before investing in these two bonds was $2750. How much interest did Shawn receive from the compound interest bond?",
+    "final_answer": "$605",
     "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.453125,
-    "student_model": "Llama-3.1-8B-Instruct",
+    "llama8b_solve_rate": 0.4375,
+    "student_model": "gemma-2-9b-it",
     "no_hint_solve_rate": 0.25,
     "prompts": {
       "socratic_question": {
-        "hint": "What type of unit should you use for the time in order to get the length in the same unit as the speed (km/hr)?",
-        "solve_rate": 0.0,
-        "improvement": -0.25
+        "hint": "Think about the fraction of his savings that Shawn invested in the simple interest bond.",
+        "solve_rate": 0.3333333333333333,
+        "improvement": 0.08333333333333331
       },
       "direct_hint": {
-        "hint": "To convert from km/hr to m/s, remember that there are 1000 meters in a kilometer and 3600 seconds in an hour.",
-        "solve_rate": 0.5833333333333334,
-        "improvement": 0.33333333333333337
+        "hint": "The total interest Shawn would have received from a simple interest bond is $1100.",
+        "solve_rate": 0.08333333333333333,
+        "improvement": -0.16666666666666669
       },
       "step_suggestion": {
-        "hint": "Find the distance each train travels in one second.",
+        "hint": "Calculate the rate of interest using the simple interest formula and then apply it to the compound interest formula.",
+        "solve_rate": 0.75,
+        "improvement": 0.5
+      }
+    },
+    "best_prompt": "step_suggestion",
+    "worst_prompt": "direct_hint",
+    "performance_range": 0.6666666666666666
+  },
+  {
+    "problem_index": 70,
+    "problem": "A track and field team has 64 male athletes and 56 female athletes. Using the stratified sampling method, several people are drawn. If 8 of the drawn athletes are male, find the number of female athletes drawn. Express your answer as a whole number.",
+    "final_answer": "7",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.78125,
+    "student_model": "Llama-3.1-8B-Instruct",
+    "no_hint_solve_rate": 0.9166666666666666,
+    "prompts": {
+      "socratic_question": {
+        "hint": "If 8 out of 64 male athletes are drawn, what fraction of the male athletes are represented in the sample?",
+        "solve_rate": 0.25,
+        "improvement": -0.6666666666666666
+      },
+      "direct_hint": {
+        "hint": "If 8 out of 64 male athletes were drawn, what fraction of the total number of athletes are male?",
+        "solve_rate": 0.5,
+        "improvement": -0.41666666666666663
+      },
+      "step_suggestion": {
+        "hint": "Determine the ratio of male to total athletes.",
+        "solve_rate": 0.9166666666666666,
+        "improvement": 0.0
+      }
+    },
+    "best_prompt": "step_suggestion",
+    "worst_prompt": "socratic_question",
+    "performance_range": 0.6666666666666666
+  },
+  {
+    "problem_index": 45,
+    "problem": "Given that the function $f(x)$ is an odd function defined on the domain $\\mathbb{R}$, and when $x > 0$, $f(x)=2^x-3$, calculate the value of $f(-2)+f(0)$.",
+    "final_answer": "-1",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.484375,
+    "student_model": "Llama-3.1-8B-Instruct",
+    "no_hint_solve_rate": 0.3333333333333333,
+    "prompts": {
+      "socratic_question": {
+        "hint": "Can you express $f(-x)$ using the given expression for $f(x)$ when $x > 0$?",
         "solve_rate": 0.16666666666666666,
-        "improvement": -0.08333333333333334
+        "improvement": -0.16666666666666666
+      },
+      "direct_hint": {
+        "hint": "Use this property to express $f(-2)$ and $f(0)$ in terms of $f(2)$ and $f(0)$ respectively.",
+        "solve_rate": 0.75,
+        "improvement": 0.4166666666666667
+      },
+      "step_suggestion": {
+        "hint": "Use the property of odd functions to express f(-2) and f(0) in terms of f(2) and f(0).",
+        "solve_rate": 0.4166666666666667,
+        "improvement": 0.08333333333333337
       }
     },
     "best_prompt": "direct_hint",
@@ -377,264 +638,206 @@
     "performance_range": 0.5833333333333334
   },
   {
-    "problem_index": 54,
-    "problem": "In a class of 48 students, the scores of a mathematics test follow a normal distribution $N(80, 100)$. Theoretically, the number of students who scored between 80 and 90 points is approximately _.",
+    "problem_index": 73,
+    "problem": "Chuck rides 3 hours total on a bicycle trip into the country and back. He rode out at a certain rate and returned at the rate of 24 mph. Chuck rode 28.8 miles into the country (rounded to the nearest hundredth). What was his speed when he rode out?",
     "final_answer": "16",
-    "difficulty_bin": "0.5-0.6",
-    "llama8b_solve_rate": 0.578125,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.9166666666666666,
-    "prompts": {
-      "socratic_question": {
-        "hint": "What does it mean for a distribution to be normal, and how can we use this information to find the proportion of students who scored within a certain range?",
-        "solve_rate": 0.5833333333333334,
-        "improvement": -0.33333333333333326
-      },
-      "direct_hint": {
-        "hint": "To apply the 68-95-99.7 rule, first calculate how many standard deviations away from the mean the upper bound of the range (90 points) is.",
-        "solve_rate": 0.0,
-        "improvement": -0.9166666666666666
-      },
-      "step_suggestion": {
-        "hint": "Recall that about 95% of the data falls within 2 standard deviations of the mean.",
-        "solve_rate": 0.0,
-        "improvement": -0.9166666666666666
-      }
-    },
-    "best_prompt": "socratic_question",
-    "worst_prompt": "direct_hint",
-    "performance_range": 0.5833333333333334
-  },
-  {
-    "problem_index": 79,
-    "problem": "What is the smallest number which, when increased by some number, is divisible by 8, 11, and 24? The answer is 255.",
-    "final_answer": "255",
     "difficulty_bin": "0.7-0.8",
-    "llama8b_solve_rate": 0.75,
-    "student_model": "Llama-3.1-8B-Instruct",
-    "no_hint_solve_rate": 0.6666666666666666,
-    "prompts": {
-      "socratic_question": {
-        "hint": "What do you get when you multiply the given numbers together?",
-        "solve_rate": 0.5833333333333334,
-        "improvement": -0.08333333333333326
-      },
-      "direct_hint": {
-        "hint": "To find the number that needs to be added, think about what the LCM represents in terms of divisibility.",
-        "solve_rate": 0.25,
-        "improvement": -0.41666666666666663
-      },
-      "step_suggestion": {
-        "hint": "Find the prime factorization of the numbers 8, 11, and 24.",
-        "solve_rate": 0.8333333333333334,
-        "improvement": 0.16666666666666674
-      }
-    },
-    "best_prompt": "step_suggestion",
-    "worst_prompt": "direct_hint",
-    "performance_range": 0.5833333333333334
-  },
-  {
-    "problem_index": 85,
-    "problem": "To strengthen environmental awareness, the Environmental Protection Bureau randomly selects 3 out of 5 local chemical plants (A, B, C, D, E) for wastewater compliance testing each week. The probability that both plant A and plant B are selected for testing in a week is $\\_\\_\\_\\_\\_\\_$.",
-    "final_answer": "\\frac{3}{10}",
-    "difficulty_bin": "0.8-0.9",
-    "llama8b_solve_rate": 0.859375,
-    "student_model": "Llama-3.1-8B-Instruct",
-    "no_hint_solve_rate": 0.6666666666666666,
-    "prompts": {
-      "socratic_question": {
-        "hint": "How many ways can you choose the remaining plant from the 3 unselected plants?",
-        "solve_rate": 0.5833333333333334,
-        "improvement": -0.08333333333333326
-      },
-      "direct_hint": {
-        "hint": "Think about the different combinations of plants that can be selected, and how many of those combinations include both A and B.",
-        "solve_rate": 0.8333333333333334,
-        "improvement": 0.16666666666666674
-      },
-      "step_suggestion": {
-        "hint": "Calculate the probability of selecting plant A first, and then plant B.",
-        "solve_rate": 0.25,
-        "improvement": -0.41666666666666663
-      }
-    },
-    "best_prompt": "direct_hint",
-    "worst_prompt": "step_suggestion",
-    "performance_range": 0.5833333333333334
-  },
-  {
-    "problem_index": 85,
-    "problem": "To strengthen environmental awareness, the Environmental Protection Bureau randomly selects 3 out of 5 local chemical plants (A, B, C, D, E) for wastewater compliance testing each week. The probability that both plant A and plant B are selected for testing in a week is $\\_\\_\\_\\_\\_\\_$.",
-    "final_answer": "\\frac{3}{10}",
-    "difficulty_bin": "0.8-0.9",
-    "llama8b_solve_rate": 0.859375,
+    "llama8b_solve_rate": 0.78125,
     "student_model": "gemma-2-9b-it",
     "no_hint_solve_rate": 0.4166666666666667,
     "prompts": {
       "socratic_question": {
-        "hint": "How many ways can you choose the remaining plant from the 3 unselected plants?",
-        "solve_rate": 0.5833333333333334,
-        "improvement": 0.16666666666666669
+        "hint": "What is the relationship between the time it took Chuck to ride into the country and the time it took him to ride back?",
+        "solve_rate": 0.4166666666666667,
+        "improvement": 0.0
       },
       "direct_hint": {
-        "hint": "Think about the different combinations of plants that can be selected, and how many of those combinations include both A and B.",
-        "solve_rate": 0.5,
-        "improvement": 0.08333333333333331
+        "hint": "If you let the distance to the country be 'd', then the time it took to ride to the country is d/x and the time it took to ride back is d/24.",
+        "solve_rate": 0.75,
+        "improvement": 0.3333333333333333
       },
       "step_suggestion": {
-        "hint": "Calculate the probability of selecting plant A first, and then plant B.",
-        "solve_rate": 0.0,
-        "improvement": -0.4166666666666667
+        "hint": "Calculate the distance of the return trip by multiplying the return time by the constant return speed.",
+        "solve_rate": 0.16666666666666666,
+        "improvement": -0.25
       }
     },
-    "best_prompt": "socratic_question",
+    "best_prompt": "direct_hint",
     "worst_prompt": "step_suggestion",
     "performance_range": 0.5833333333333334
   },
   {
-    "problem_index": 89,
-    "problem": "A research group is monitoring the air quality in a city, dividing $24$ cities into three groups: A, B, and C, with $4$, $12$, and $8$ cities in each group, respectively. If a stratified sampling method is used to select $6$ cities, then the number of cities to be selected from group B is _______.",
-    "final_answer": "3",
-    "difficulty_bin": "0.8-0.9",
-    "llama8b_solve_rate": 0.828125,
+    "problem_index": 93,
+    "problem": "Nell collects baseball cards. She had some cards while Jeff had 11 cards. She gave 276 of her cards to Jeff and now has 252 cards left. How many cards did Nell have initially?",
+    "final_answer": "528",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.921875,
     "student_model": "gemma-2-2b-it",
-    "no_hint_solve_rate": 0.75,
+    "no_hint_solve_rate": 0.16666666666666666,
     "prompts": {
       "socratic_question": {
-        "hint": "If you divide the remaining cities to be selected into the number of cities in group B, what fraction of the total number of cities in group B should be selected?",
-        "solve_rate": 0.16666666666666666,
-        "improvement": -0.5833333333333334
+        "hint": "Think about how many cards Jeff had after Nell gave him some of hers.",
+        "solve_rate": 0.5833333333333334,
+        "improvement": 0.41666666666666674
       },
       "direct_hint": {
-        "hint": "Divide the number of cities in group B by the total number of cities, and then multiply the result by the total number of cities to be selected.",
-        "solve_rate": 0.75,
-        "improvement": 0.0
+        "hint": "The equation representing the relationship between Nell's initial cards, the cards she gave to Jeff, and the cards she has now is x - 276 = 252.",
+        "solve_rate": 0.0,
+        "improvement": -0.16666666666666666
       },
       "step_suggestion": {
-        "hint": "Determine the proportion of cities in group B to the total number of cities.",
-        "solve_rate": 0.6666666666666666,
+        "hint": "Set up the equation N - 276 = 252.",
+        "solve_rate": 0.0,
+        "improvement": -0.16666666666666666
+      }
+    },
+    "best_prompt": "socratic_question",
+    "worst_prompt": "direct_hint",
+    "performance_range": 0.5833333333333334
+  },
+  {
+    "problem_index": 31,
+    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "final_answer": "100",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.4166666666666667,
+    "prompts": {
+      "socratic_question": {
+        "hint": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
+        "solve_rate": 0.8333333333333334,
+        "improvement": 0.4166666666666667
+      },
+      "direct_hint": {
+        "hint": "The diameter of a ball with radius $1/2$ is equal to 1, so divide each dimension of the box by 1.",
+        "solve_rate": 0.9166666666666666,
+        "improvement": 0.49999999999999994
+      },
+      "step_suggestion": {
+        "hint": "Calculate the area of the base of the box.",
+        "solve_rate": 0.3333333333333333,
         "improvement": -0.08333333333333337
       }
     },
     "best_prompt": "direct_hint",
-    "worst_prompt": "socratic_question",
-    "performance_range": 0.5833333333333334
-  },
-  {
-    "problem_index": 21,
-    "problem": "Given an equilateral triangle $ABC$ with side length $a$, calculate the value of $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} + \\overrightarrow{AC} \\cdot \\overrightarrow{BC}$. Express your answer as a single algebraic expression in terms of $a$.",
-    "final_answer": "a^2",
-    "difficulty_bin": "0.2-0.3",
-    "llama8b_solve_rate": 0.296875,
-    "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.75,
-    "prompts": {
-      "socratic_question": {
-        "hint": "What can you say about the angles of an equilateral triangle?",
-        "solve_rate": 1.0,
-        "improvement": 0.25
-      },
-      "direct_hint": {
-        "hint": "Recall that the dot product of two vectors $\\overrightarrow{u}$ and $\\overrightarrow{v}$ is given by $\\overrightarrow{u} \\cdot \\overrightarrow{v} = |\\overrightarrow{u}| |\\overrightarrow{v}| \\cos(\\theta)$, where $\\theta$ is the angle between the two vectors.",
-        "solve_rate": 1.0,
-        "improvement": 0.25
-      },
-      "step_suggestion": {
-        "hint": "Express the vectors $\\overrightarrow{AB}$, $\\overrightarrow{AC}$, and $\\overrightarrow{BC}$ in terms of the side length $a$.",
-        "solve_rate": 0.4166666666666667,
-        "improvement": -0.3333333333333333
-      }
-    },
-    "best_prompt": "socratic_question",
     "worst_prompt": "step_suggestion",
     "performance_range": 0.5833333333333333
   },
   {
-    "problem_index": 42,
-    "problem": "Roy bought a new battery-gasoline hybrid car. On a trip the car ran exclusively on its battery for the first 40 miles, then ran exclusively on gasoline for the rest of the trip, using gasoline at a rate of 0.02 gallons per mile. If the average mileage for the entire trip was 55 miles per gallon, what was the total length of the trip in miles? Express your answer as a whole number.",
-    "final_answer": "440",
-    "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.4375,
+    "problem_index": 74,
+    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
+    "final_answer": "6",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.734375,
     "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 1.0,
+    "no_hint_solve_rate": 0.5,
     "prompts": {
       "socratic_question": {
-        "hint": "If you know how much gasoline was used for the entire trip, what information would you need to find out how far the car traveled on gasoline?",
-        "solve_rate": 0.8333333333333334,
-        "improvement": -0.16666666666666663
+        "hint": "What is the relationship between the degree of the dividend, the quotient, and the divisor in polynomial division?",
+        "solve_rate": 0.6666666666666666,
+        "improvement": 0.16666666666666663
       },
       "direct_hint": {
-        "hint": "Multiply both sides of the equation by 55 to get rid of the fraction, and then distribute the 0.02 to simplify the equation.",
-        "solve_rate": 0.4166666666666667,
-        "improvement": -0.5833333333333333
+        "hint": "The degree of the remainder is irrelevant, but the degree of the dividend is equal to the degree of the quotient plus the degree of the divisor.",
+        "solve_rate": 0.9166666666666666,
+        "improvement": 0.41666666666666663
       },
       "step_suggestion": {
-        "hint": "Find the total amount of gasoline used for the entire trip and relate it to the average mileage.",
-        "solve_rate": 1.0,
-        "improvement": 0.0
+        "hint": "Consider the relationship between the degree of the dividend, the quotient, and the divisor.",
+        "solve_rate": 0.3333333333333333,
+        "improvement": -0.16666666666666669
+      }
+    },
+    "best_prompt": "direct_hint",
+    "worst_prompt": "step_suggestion",
+    "performance_range": 0.5833333333333333
+  },
+  {
+    "problem_index": 3,
+    "problem": "Given the quadratic function y = -x^2 + 2x + m^2, find the value of m if the maximum value of the function is 3. Express your answer in the form \u00b1\u221avalue.",
+    "final_answer": "\u00b1\u221a2",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.0,
+    "student_model": "gemma-2-9b-it",
+    "no_hint_solve_rate": 0.0,
+    "prompts": {
+      "socratic_question": {
+        "hint": "What is the formula for the x-coordinate of the vertex of a quadratic function in the form y = ax^2 + bx + c?",
+        "solve_rate": 0.16666666666666666,
+        "improvement": 0.16666666666666666
+      },
+      "direct_hint": {
+        "hint": "The maximum value of the function is given by plugging the x-coordinate of the vertex back into the function, so use x = 1 to find the value of m.",
+        "solve_rate": 0.08333333333333333,
+        "improvement": 0.08333333333333333
+      },
+      "step_suggestion": {
+        "hint": "Find the x-coordinate of the vertex of the function.",
+        "solve_rate": 0.5833333333333334,
+        "improvement": 0.5833333333333334
       }
     },
     "best_prompt": "step_suggestion",
     "worst_prompt": "direct_hint",
-    "performance_range": 0.5833333333333333
+    "performance_range": 0.5
   },
   {
-    "problem_index": 84,
-    "problem": "On an algebra test, there were $5x$ problems. Lucky Lacy missed $x$ of them. What percent of the problems did she get correct?",
-    "final_answer": "80",
-    "difficulty_bin": "0.8-0.9",
-    "llama8b_solve_rate": 0.875,
+    "problem_index": 97,
+    "problem": "The sum of two numbers is 20, and their difference is some value. The difference of their squares is 200. What is the difference between the two numbers?",
+    "final_answer": "10",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.96875,
     "student_model": "gemma-2-2b-it",
-    "no_hint_solve_rate": 0.75,
+    "no_hint_solve_rate": 0.16666666666666666,
     "prompts": {
       "socratic_question": {
-        "hint": "If she missed x problems out of 5x, how many did she get right?",
-        "solve_rate": 0.4166666666666667,
-        "improvement": -0.3333333333333333
+        "hint": "Can you factor the equation x^2 - y^2 = 200 to simplify the problem?",
+        "solve_rate": 0.6666666666666666,
+        "improvement": 0.5
       },
       "direct_hint": {
-        "hint": "To find the percentage of problems she got correct, you'll need to divide the number of problems she got correct by the total number of problems, and then multiply by 100.",
-        "solve_rate": 0.9166666666666666,
-        "improvement": 0.16666666666666663
+        "hint": "Divide both sides of the equation by 20 to isolate the term (x - y).",
+        "solve_rate": 0.25,
+        "improvement": 0.08333333333333334
       },
       "step_suggestion": {
-        "hint": "Calculate the number of problems Lacy got correct by subtracting the number of problems she missed from the total number of problems.",
-        "solve_rate": 1.0,
-        "improvement": 0.25
+        "hint": "Express the difference of squares using the formula (x - y)(x + y).",
+        "solve_rate": 0.75,
+        "improvement": 0.5833333333333334
       }
     },
     "best_prompt": "step_suggestion",
-    "worst_prompt": "socratic_question",
-    "performance_range": 0.5833333333333333
+    "worst_prompt": "direct_hint",
+    "performance_range": 0.5
   },
   {
-    "problem_index": 10,
-    "problem": "Given that the real numbers \\( x \\) and \\( y \\) satisfy the inequality \\(\\left(x+\\sqrt{x^{2}+1}\\right)\\left(y+\\sqrt{y^{2}+1}\\right) \\geqslant 1\\), find the minimum value of \\( x + y \\).",
-    "final_answer": "0",
-    "difficulty_bin": "0.1-0.2",
-    "llama8b_solve_rate": 0.140625,
+    "problem_index": 88,
+    "problem": "A 10 m long rectangular floor is to be covered with a square carpet with 4 m sides. 64 square meters of the floor are uncovered. What is the width of the floor?",
+    "final_answer": "8",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875,
     "student_model": "gemma-2-9b-it",
-    "no_hint_solve_rate": 0.08333333333333333,
+    "no_hint_solve_rate": 0.25,
     "prompts": {
       "socratic_question": {
-        "hint": "What happens when you expand the product on the left-hand side of the inequality?",
-        "solve_rate": 0.25,
-        "improvement": 0.16666666666666669
-      },
-      "direct_hint": {
-        "hint": "Think about when the given inequality will be an equality, and what that might tell us about the relationship between \\( x \\) and \\( y \\).",
-        "solve_rate": 0.75,
+        "hint": "What is the area of the uncovered part of the floor, and how can you use that to find the total area of the floor?",
+        "solve_rate": 0.9166666666666666,
         "improvement": 0.6666666666666666
       },
+      "direct_hint": {
+        "hint": "If the area of the uncovered part is 64 square meters, and the area of the square carpet is 16 square meters, then the area of the uncovered part is equal to the product of the length and width of the floor minus the area of the square carpet.",
+        "solve_rate": 0.4166666666666667,
+        "improvement": 0.16666666666666669
+      },
       "step_suggestion": {
-        "hint": "Expand the product on the left-hand side of the inequality.",
-        "solve_rate": 0.3333333333333333,
-        "improvement": 0.25
+        "hint": "Calculate the area of the square carpet and subtract it from the total area of the floor to find the area of the uncovered part.",
+        "solve_rate": 0.8333333333333334,
+        "improvement": 0.5833333333333334
       }
     },
-    "best_prompt": "direct_hint",
-    "worst_prompt": "socratic_question",
-    "performance_range": 0.5
+    "best_prompt": "socratic_question",
+    "worst_prompt": "direct_hint",
+    "performance_range": 0.49999999999999994
   }
 ]

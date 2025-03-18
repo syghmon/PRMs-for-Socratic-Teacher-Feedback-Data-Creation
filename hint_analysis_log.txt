@@ -1,0 +1,41 @@
+[Hint Analysis] Expecting result files with patterns: 
+  - results/answers_Llama-3.1-8B-Instruct_no_hint.json
+  - results/answers_Llama-3.1-8B-Instruct_socratic_question_with_hint.json
+  - results/answers_Llama-3.1-8B-Instruct_direct_hint_with_hint.json
+  - results/answers_Llama-3.1-8B-Instruct_step_suggestion_with_hint.json
+  - results/answers_gemma-2-2b-it_no_hint.json
+  - results/answers_gemma-2-2b-it_socratic_question_with_hint.json
+  - results/answers_gemma-2-2b-it_direct_hint_with_hint.json
+  - results/answers_gemma-2-2b-it_step_suggestion_with_hint.json
+  - results/answers_gemma-2-9b-it_no_hint.json
+  - results/answers_gemma-2-9b-it_socratic_question_with_hint.json
+  - results/answers_gemma-2-9b-it_direct_hint_with_hint.json
+  - results/answers_gemma-2-9b-it_step_suggestion_with_hint.json
+[Hint Analysis] Creating output directory: hint_analysis
+[Hint Analysis] Loading samples from data/samples.json
+[Hint Analysis] Loading results from results
+
+[Hint Analysis] Data Loading Summary:
+Problems with baseline data: 100
+Problems with hint data: 100
+Average hints per problem: 3.00
+[Hint Analysis] Loaded data for 100 problems
+[Hint Analysis] Found 300 unique hints across all problems
+[Hint Analysis] Evaluating hint effectiveness...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 102801.57it/s]
+Average improvement gap (smart - weak): -0.0950
+Max improvement gap: 0.7500
+Min improvement gap: -1.0833
+[Hint Analysis] Ranking hints...
+[Hint Analysis] Saved hint rankings to hint_analysis/hint_rankings.csv
+[Hint Analysis] Creating visualizations...
+  -> Saved scatterplot to hint_analysis/smart_vs_weak_improvement.png
+  -> Saved top hints plot to hint_analysis/top_hints_by_gap.png
+  -> Saved top hints details to hint_analysis/top_hints_by_gap.txt
+  -> Saved prompt comparison to hint_analysis/prompt_comparison.png
+  -> Saved model distributions to hint_analysis/model_improvement_distributions.png
+[Hint Analysis] Saving top hints...
+  -> Saved top hints by gap to hint_analysis/top_hints_by_gap.json
+  -> Saved top hints by smart to hint_analysis/top_hints_by_smart.json
+  -> Saved top hints by composite to hint_analysis/top_hints_by_composite.json
+[Hint Analysis] Done.
