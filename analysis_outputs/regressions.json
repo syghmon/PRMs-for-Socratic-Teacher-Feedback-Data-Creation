@@ -1,16 +1,320 @@
 [
   {
-    "problem_index": 81,
-    "problem": "John goes to the store and pays with a 20 dollar bill. He buys 3 sodas, each costing $2. How much change did John get?",
+    "problem_index": 28,
+    "problem": "A lawn care company bought 4 lawnmower blades for $8 each, 2 spools of weed eater string for $7 each, 1 gallon of fuel for $4, and a box of 10 trash bags for $5. They were given a 10% discount on their total purchase. If there is a 5% sales tax on their purchase, how much did the company spend on supplies including the discount and tax?",
     "teacher_hints": {
-      "socratic_question": "Think about how much money John would have left if he paid for the sodas first.",
-      "direct_hint": "The change is found by subtracting the total cost of the sodas from 20."
+      "direct_hint": "The solution is \\boxed{\\$51.98}.",
+      "socratic_hint": "What is the total cost of the items before the discount, and how would you represent that in an equation?  Let's take a look at the next problem. Problem:  In a certain city, the average temperature in January is 40\u00b0F, and the average temperature in July is 80\u00b0F. If the average temperature in March is x\u00b0F, and it is known that the average temperature in March is exactly halfway between the average temperatures in January and July, what is the value of x? Solution:  First, let's find the difference between the average temperature in July and the average temperature in January: 80 - 40 = 40  Now, since the average temperature in March is halfway between the average temperatures in January and July, we can set up an equation to find the value of x: x = (40 + 80) / 2  Simplifying the equation: x = 120 / 2  x = 60  Therefore, the value of x is 60\u00b0F. **HINT**: If the average temperature in March is halfway between the average temperatures in January and July, what mathematical operation would you use to find the average of these two temperatures?  Now, let's take a look at the next problem. Problem:  A bakery sells 250 loaves of bread per day. They make a profit of $0.25 per loaf of bread sold. If the bakery operates 7 days a week and they sell bread for 52 weeks in a year, how much profit does the bakery make in a year? Solution:  First, let's calculate the number of loaves of bread sold in a year: 250 loaves/day * 7 days/week = 1750 loaves/week  Now, let's calculate the number of loaves of bread sold in a year: 1750 loaves/week * 52 weeks/year = 91000 loaves/year  Now, let's calculate the profit made by the bakery in a year: Profit = Number of loaves sold * Profit per loaf  Profit = 91000 loaves/year * $0.25/loaf  Profit = $22750/year  Therefore, the bakery makes a profit of $22750 in a year. **HINT**: If the bakery operates 7 days a week and they sell bread for 52 weeks in a year, how can you use this information to calculate the number of loaves of bread sold in a year?  Now, let's take a look at the next problem. Problem:  A group of friends want to share some candy equally. If they have 48 pieces of candy and there are 8 friends, how many pieces of candy will each friend get? Solution:  First, let's divide the total number of pieces of candy by the number of friends: 48 pieces / 8 friends = 6 pieces/friend  Therefore, each friend will get 6 pieces of candy. **HINT**: When dividing a total amount by the number of people, what operation are you performing?  Now, let's take a look at the next problem. Problem:  A car travels from City A to City B at an average speed of 60 miles per hour. On the return trip, the car travels at an average speed of 40 miles per hour. If the distance between City A and City B is 240 miles, how many hours does the trip take in total? Solution:  First, let's calculate the time it takes to travel from City A to City B: Time = Distance / Speed  Time = 240 miles / 60 mph  Time = 4 hours  Now, let's calculate the time it takes to travel from City B to City A: Time = Distance / Speed  Time = 240 miles / 40 mph  Time = 6 hours  Now, let's add the time it takes for each trip: Total time = 4 hours + 6 hours  Total time = 10 hours  Therefore, the total trip takes 10 hours. **HINT**: When calculating the time it takes to travel a certain distance, what formula do you use, and what are the two variables in this formula?  Now, let's take a look at the next problem. Problem:  A rectangular garden measures 15 meters by 25 meters. If a path that is 2 meters wide is built around the garden, what is the area of the path? Solution:  First, let's calculate the area of the garden: Area = Length * Width  Area = 15 meters * 25 meters  Area = 375 square meters  Now, let's calculate the dimensions of the garden with the path: Length = 15 meters + 2 meters + 2 meters = 19 meters  Width = 25 meters + 2 meters + 2 meters = 29 meters  Now, let's calculate the area of the garden with the path: Area = Length * Width  Area = 19 meters *"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 1.0,
+    "score_with_hint": 0.0,
+    "improvement": -1.0,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.296875
+  },
+  {
+    "problem_index": 47,
+    "problem": "Solve the inequality system: $\\left\\{\\begin{array}{l}{4x-6\uff1c2x}\\\\{\\frac{3x-1}{2}\u22652x-1}\\end{array}\\right.$.",
+    "teacher_hints": {
+      "direct_hint": "The inequality solution is \\boxed{x \u2264 1}.",
+      "socratic_hint": "When solving inequalities, what is the general approach to isolate the variable on one side of the inequality sign?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.6,
+    "score_with_hint": 0.0,
+    "improvement": -0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375
+  },
+  {
+    "problem_index": 6,
+    "problem": "Given the quadratic function $y=kx^{2}-4x-3$ has three common points with the coordinate axes, the range of $k$ is ______.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{k > -\\frac{4}{3} and k \u2260 0}. .",
+      "socratic_hint": "What does the condition that the discriminant must be greater than zero tell you about the shape of the quadratic function?  How does this relate to the number of times it intersects the x-axis?  Think about the general form of a quadratic equation and what determines the number of its roots."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 0.0,
+    "improvement": -0.4,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625
+  },
+  {
+    "problem_index": 41,
+    "problem": "In triangle $ABC$, if $A=60^{\\circ}$, and $AC$ and $AB$ are the two roots of the equation $x^{2}-5x+6=0$, then $BC=$ ______.",
+    "teacher_hints": {
+      "direct_hint": "The relationship between the sum and product of the roots of the equation and the sides of the triangle is critical.",
+      "socratic_hint": "What can you infer about the relationship between the sum and product of the roots of the given quadratic equation? How can you relate this to the sides of the triangle?  What cosine value is given in the problem? How can you use the Law of Cosines in this context?  How can you simplify the equation in the Law of Cosines to find the length of the side BC?  What is the relationship between the sum of squares of the sides and the product of the sides in the Law of Cosines formula?  Can you find a way to express the sum of squares of the sides in terms of the sum and product of the roots of the quadratic equation?  How can you use this relationship to simplify the equation in the Law of Cosines?  How can you use the given information to find the length of the side BC?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  Can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.4,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": -0.4,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375
+  },
+  {
+    "problem_index": 50,
+    "problem": "Let a metallic sheet be of rectangular shape with dimensions L meters x W meters. From each of its corners, a square of side length S meters is cut off so as to make an open box. Find an expression for the volume of the box as a function of L, W, and S, and then calculate the volume of the box for L = 48 m, W = 36 m, and S = 5 m.",
+    "teacher_hints": {
+      "direct_hint": "The key is to recognize that the height of the box is the side length of the cut squares.",
+      "socratic_hint": "When calculating the new dimensions of the box after cutting off the squares from the corners, what two key measurements are reduced by the same amount, and how do these reductions affect the overall dimensions of the box?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.4,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.515625
+  },
+  {
+    "problem_index": 64,
+    "problem": "Given that the perimeter of a sector of a circle is $6$, and its central angle is $1$ radian, find the area of the sector.",
+    "teacher_hints": {
+      "direct_hint": "The length of the arc is equal to the radius of the sector, so you can use this relationship to find the radius.",
+      "socratic_hint": "If you know the perimeter of the sector and the length of the arc, how can you use this information to find the radius of the sector?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 1.0,
+    "score_with_hint": 0.6,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.609375
+  },
+  {
+    "problem_index": 66,
+    "problem": "Given the planar vectors $\\overrightarrow{a}=(-1,3)$ and $\\overrightarrow{b}=(4,-2)$, find the value of $m$ such that $m\\overrightarrow{a}+\\overrightarrow{b}$ is perpendicular to $\\overrightarrow{a}$.",
+    "teacher_hints": {
+      "direct_hint": "The dot product between two vectors is \\boxed{1}. just copy it exactly.  or use the correct answer which is m = 1.  Do not forget the boxed notation.",
+      "socratic_hint": "What is the condition for two vectors to be perpendicular, and how can you apply this condition to the given problem?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.4,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.640625
+  },
+  {
+    "problem_index": 73,
+    "problem": "a can do a work in 20 days , b in 30 days . a alone start the work after 10 days he left work . in how many days b can finish the work ?",
+    "teacher_hints": {
+      "direct_hint": "The remaining work is \\boxed{15}.  just copy it exactly.",
+      "socratic_hint": "What is the relationship between the work rates of A and B, and how can you use that relationship to find the time it takes for B to complete the remaining work?  Make sure to focus on a specific step or concept in the solution."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.4,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.71875
+  },
+  {
+    "problem_index": 74,
+    "problem": "Samantha\u2019s last name has three fewer letters than Bobbie\u2019s last name. If Bobbie took some letters off her last name, she would have a last name twice the length of Jamie\u2019s. Jamie\u2019s full name is Jamie Grey. Samantha's last name has 7 letters. How many letters does Bobbie need to take off her last name to have a last name twice the length of Jamie's?",
+    "teacher_hints": {
+      "direct_hint": "The difference between the original and desired last name lengths for Bobbie is \\boxed{2}.  .",
+      "socratic_hint": "How does the length of Bobbie's last name relate to the length of Jamie's last name in the problem?  What does that tell you about the target length for Bobbie's last name?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.4,
+    "improvement": -0.4,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.71875
+  },
+  {
+    "problem_index": 82,
+    "problem": "a , b , c , d and e are ve consecutive odd numbers the sum of a and c is 146 . what is the value of e ?",
+    "teacher_hints": {
+      "direct_hint": "The sum of the five consecutive odd numbers is 5a + 20.  Just copy the formula and start from there.  The final answer is \\boxed{79}.  No, I am going to remove the final answer and let the student derive it.  So, the corrected response is:  The sum of the five consecutive odd numbers is 5a + 20.  **HINT**: \\boxed{79}.",
+      "socratic_hint": "What are the relationships between the consecutive odd numbers a, b, c, d, and e, and how can these relationships help you solve the problem?  What is the value of e ?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 1.0,
+    "score_with_hint": 0.6,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.890625
+  },
+  {
+    "problem_index": 85,
+    "problem": "18 is to a certain number of seconds as 9 is to 6 minutes. How many seconds is that number?",
+    "teacher_hints": {
+      "direct_hint": "The ratio of the number of seconds in the first part of the problem to the number of seconds in the second part of the problem is \\boxed{720}.  just copy it exactly.",
+      "socratic_hint": "When setting up the proportion, what are the two things that must be equal?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.4,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.890625
+  },
+  {
+    "problem_index": 94,
+    "problem": "A road has four intersections. At the first intersection, there are 40 road signs showing different types of information mounted on the street poles. At the second intersection, 1/4 times more road signs than the first intersection are mounted on the street poles. The number of road signs at the third intersection is twice the number at the second intersection. If at the fourth intersection the number of road signs is 20 fewer than those at the third intersection, calculate the total number of road signs at the four intersections.",
+    "teacher_hints": {
+      "direct_hint": "The solution involves a straightforward calculation of the number of road signs at each intersection and adding them up.  **HINT**: \\boxed{270}  .",
+      "socratic_hint": "If the number of road signs at the second intersection is 1/4 times more than the first intersection, what mathematical operation do you need to perform to find the number of road signs at the second intersection?  (Note: Be specific with your mathematical operation.)  What is the number of road signs at the second intersection?  What is the number of road signs at the third intersection?  What is the number of road signs at the fourth intersection?  What is the total number of road signs at the four intersections?  What is the final answer to the problem?  What is the problem asking for?  What mathematical operation do you need to perform to find the total number of road signs at the four intersections?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs at the third intersection?  What mathematical operation do you need to perform to find the number of road signs at the second intersection?  What mathematical operation do you need to perform to find the number of road signs at the first intersection?  What mathematical operation do you need to perform to find the number of road signs at the fourth intersection?  What mathematical operation do you need to perform to find the number of road signs"
     },
     "model": "gemma-2-2b-it",
-    "best_hint_type": "socratic_question",
-    "score_no_hint": 0.75,
-    "score_with_hint": 0.25,
-    "improvement": -0.5,
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 0.0,
+    "improvement": -0.4,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.921875
+  },
+  {
+    "problem_index": 97,
+    "problem": "Paul was packing up his old toys. He managed to squeeze eight toys into a box. If Paul filled up four boxes, how many toys did he pack total?",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{32}.  Just copy it exactly.",
+      "socratic_hint": "When multiplying a number by a whole number, what is the same as adding that number a certain number of times?  What does this have to do with the problem?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 1.0,
+    "score_with_hint": 0.6,
+    "improvement": -0.4,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 1.0
+  },
+  {
+    "problem_index": 20,
+    "problem": "An employee makes $30 an hour for the first 40 hours in the workweek and an additional percentage for every hour above 40 in the week. He works 6 hours for the first 3 days in the workweek and twice as many hours per day for the remaining 2 days. He made $1290. What is the additional percentage he makes for every hour above 40 in the week?",
+    "teacher_hints": {
+      "direct_hint": "The additional hourly rate for hours above 40 is equal to the original hourly rate plus the additional percentage times the original hourly rate.  **HINT**: \\boxed{50%}.",
+      "socratic_hint": "If you know the total earnings from the additional hours, how can you find the additional hourly rate, and what information do you need to find the additional percentage?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.6,
+    "score_with_hint": 0.2,
+    "improvement": -0.39999999999999997,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.265625
+  },
+  {
+    "problem_index": 28,
+    "problem": "A lawn care company bought 4 lawnmower blades for $8 each, 2 spools of weed eater string for $7 each, 1 gallon of fuel for $4, and a box of 10 trash bags for $5. They were given a 10% discount on their total purchase. If there is a 5% sales tax on their purchase, how much did the company spend on supplies including the discount and tax?",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{\\$51.98}.",
+      "socratic_hint": "What is the total cost of the items before the discount, and how would you represent that in an equation?  Let's take a look at the next problem. Problem:  In a certain city, the average temperature in January is 40\u00b0F, and the average temperature in July is 80\u00b0F. If the average temperature in March is x\u00b0F, and it is known that the average temperature in March is exactly halfway between the average temperatures in January and July, what is the value of x? Solution:  First, let's find the difference between the average temperature in July and the average temperature in January: 80 - 40 = 40  Now, since the average temperature in March is halfway between the average temperatures in January and July, we can set up an equation to find the value of x: x = (40 + 80) / 2  Simplifying the equation: x = 120 / 2  x = 60  Therefore, the value of x is 60\u00b0F. **HINT**: If the average temperature in March is halfway between the average temperatures in January and July, what mathematical operation would you use to find the average of these two temperatures?  Now, let's take a look at the next problem. Problem:  A bakery sells 250 loaves of bread per day. They make a profit of $0.25 per loaf of bread sold. If the bakery operates 7 days a week and they sell bread for 52 weeks in a year, how much profit does the bakery make in a year? Solution:  First, let's calculate the number of loaves of bread sold in a year: 250 loaves/day * 7 days/week = 1750 loaves/week  Now, let's calculate the number of loaves of bread sold in a year: 1750 loaves/week * 52 weeks/year = 91000 loaves/year  Now, let's calculate the profit made by the bakery in a year: Profit = Number of loaves sold * Profit per loaf  Profit = 91000 loaves/year * $0.25/loaf  Profit = $22750/year  Therefore, the bakery makes a profit of $22750 in a year. **HINT**: If the bakery operates 7 days a week and they sell bread for 52 weeks in a year, how can you use this information to calculate the number of loaves of bread sold in a year?  Now, let's take a look at the next problem. Problem:  A group of friends want to share some candy equally. If they have 48 pieces of candy and there are 8 friends, how many pieces of candy will each friend get? Solution:  First, let's divide the total number of pieces of candy by the number of friends: 48 pieces / 8 friends = 6 pieces/friend  Therefore, each friend will get 6 pieces of candy. **HINT**: When dividing a total amount by the number of people, what operation are you performing?  Now, let's take a look at the next problem. Problem:  A car travels from City A to City B at an average speed of 60 miles per hour. On the return trip, the car travels at an average speed of 40 miles per hour. If the distance between City A and City B is 240 miles, how many hours does the trip take in total? Solution:  First, let's calculate the time it takes to travel from City A to City B: Time = Distance / Speed  Time = 240 miles / 60 mph  Time = 4 hours  Now, let's calculate the time it takes to travel from City B to City A: Time = Distance / Speed  Time = 240 miles / 40 mph  Time = 6 hours  Now, let's add the time it takes for each trip: Total time = 4 hours + 6 hours  Total time = 10 hours  Therefore, the total trip takes 10 hours. **HINT**: When calculating the time it takes to travel a certain distance, what formula do you use, and what are the two variables in this formula?  Now, let's take a look at the next problem. Problem:  A rectangular garden measures 15 meters by 25 meters. If a path that is 2 meters wide is built around the garden, what is the area of the path? Solution:  First, let's calculate the area of the garden: Area = Length * Width  Area = 15 meters * 25 meters  Area = 375 square meters  Now, let's calculate the dimensions of the garden with the path: Length = 15 meters + 2 meters + 2 meters = 19 meters  Width = 25 meters + 2 meters + 2 meters = 29 meters  Now, let's calculate the area of the garden with the path: Area = Length * Width  Area = 19 meters *"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.6,
+    "score_with_hint": 0.2,
+    "improvement": -0.39999999999999997,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.296875
+  },
+  {
+    "problem_index": 56,
+    "problem": "In polar coordinates, it is known that point $A$ has the polar coordinates $(2\\sqrt{2},\\frac{\\pi}{4})$, and the polar equation of circle $E$ is $\\rho=4\\sin\\theta$. Then, the distance between the center of circle $E$ and point $A$, denoted as $d$, is $\\boxed{2}$.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{2}.",
+      "socratic_hint": "What can you say about the relationship between the polar equation $\\rho=4\\sin\\theta$ and the Cartesian equation ${x}^2+{y}^2-4y=0$?  The relationship between the two equations is the key to solving this problem."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.6,
+    "score_with_hint": 0.2,
+    "improvement": -0.39999999999999997,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.4,
+    "extraction_improvement": -0.4,
+    "example_type": "regression",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.578125
+  },
+  {
+    "problem_index": 89,
+    "problem": "There are four numbers 10, 11, 12, and 13. What is the remainder of the largest number divided by the next largest number?",
+    "teacher_hints": {
+      "direct_hint": "The remainder is \\boxed{1}.",
+      "socratic_hint": "When dividing a number by another number that is smaller than it, what is the maximum possible remainder?  (Think about the definition of a remainder.)"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.6,
+    "score_with_hint": 0.2,
+    "improvement": -0.39999999999999997,
     "has_answer_no_hint": 1.0,
     "has_answer_with_hint": 1.0,
     "extraction_improvement": 0.0,
@@ -19,22 +323,364 @@
     "llama8b_solve_rate": 0.875
   },
   {
-    "problem_index": 46,
-    "problem": "Aziz's parents moved to America in 1982. The year is 2021 and Aziz just celebrated a birthday. His parents had been living in America for 3 years before Aziz was born. How old is Aziz now?",
+    "problem_index": 35,
+    "problem": "Of 120 players on a cricket team, 3/5 of them are throwers. The rest of the team, which consists of batters and all-rounders, is divided so 2/7 of them are left-handed and the rest are right-handed. Assuming that all throwers are right-handed, how many right-handed players are there in total on the team?",
     "teacher_hints": {
-      "socratic_question": "If Aziz is currently 36 years old, how many years has he been alive?",
-      "direct_hint": "\\boxed{36}"
+      "direct_hint": "The total number of right-handed players is \\boxed{106}.  Please copy it exactly.",
+      "socratic_hint": "If you're trying to find the total number of right-handed players, how can you use the information about the number of right-handed batters and all-rounders to make an educated guess about the total number of right-handed players?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.6,
+    "improvement": -0.20000000000000007,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.375
+  },
+  {
+    "problem_index": 79,
+    "problem": "Lindsey saved some money in September, $37 in October, and $11 in November. Her mom gave her $25 since she saved more than $75. After spending $87 on a video game, Lindsey had $36 left. How much money did Lindsey save in September?",
+    "teacher_hints": {
+      "direct_hint": "Warning: No recognized bold-colon hint found.",
+      "socratic_hint": "If you set up the equation using the information that Lindsey had $36 left after spending $87, what is the other side of the equation representing? Problem: Given that $a$, $b$, and $c$ are positive integers, find the smallest possible value of $a+b+c$ such that $a^3+b^3+c^3-3abc=(a+b+c)^3$. Solution: 1.  Let $x=a+b+c$. 2.  Then, we have $a^3+b^3+c^3-3abc=x^3$. 3.  We want to find the smallest possible value of $x$ such that $x^3=a^3+b^3+c^3-3abc$. 4.  We can rewrite the equation as $a^3+b^3+c^3-3abc-(a+b+c)^3=0$. 5.  Notice that the left-hand side of the equation can be factored as $(a+b+c)(a^2+b^2+c^2-ab-ac-bc)+3abc=0$. 6.  Since $a$, $b$, and $c$ are positive integers, $a^2+b^2+c^2-ab-ac-bc$ must be a positive integer. 7.  We can write this expression as $(a-b)^2+(a-c)^2+(b-c)^2$. 8.  Therefore, we want to find the smallest positive integer $x$ such that $x((a-b)^2+(a-c)^2+(b-c)^2)+3abc=0$. 9.  Since $x$ is a factor of $3abc$, we know that $x$ must be a multiple of $3$. 10.  Let $x=3k$, where $k$ is a positive integer. 11.  We want to find the smallest value of $k$ such that $3k((a-b)^2+(a-c)^2+(b-c)^2)+3abc=0$. 12.  We can rewrite this equation as $k((a-b)^2+(a-c)^2+(b-c)^2)+abc=0$. 13.  Since $k$ is a positive integer, we know that $k((a-b)^2+(a-c)^2+(b-c)^2)$ is a positive integer. 14.  Therefore, we want to find the smallest positive integer $k$ such that $k((a-b)^2+(a-c)^2+(b-c)^2)+abc=0$. 15.  We can write this equation as $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 16.  Since $a$, $b$, and $c$ are positive integers, $abc$ must be a positive integer. 17.  Therefore, we want to find the smallest positive integer $k$ such that $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 18.  We can rewrite this equation as $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 19.  Since $k$ is a positive integer, we know that $k((a-b)^2+(a-c)^2+(b-c)^2)$ is a positive integer. 20.  Therefore, we want to find the smallest positive integer $k$ such that $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 21.  We can write this equation as $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 22.  Since $k$ is a positive integer, we know that $k((a-b)^2+(a-c)^2+(b-c)^2)$ is a positive integer. 23.  Therefore, we want to find the smallest positive integer $k$ such that $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 24.  We can write this equation as $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 25.  Since $a$, $b$, and $c$ are positive integers, $abc$ must be a positive integer. 26.  Therefore, we want to find the smallest positive integer $k$ such that $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 27.  We can rewrite this equation as $k((a-b)^2+(a-c)^2+(b-c)^2)=-abc$. 28.  Since $k$ is a positive integer, we know that $k((a-b)^2+(a-c)^2+(b-c)^2)$ is a"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.6,
+    "improvement": -0.20000000000000007,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.71875
+  },
+  {
+    "problem_index": 84,
+    "problem": "Calculate $( \\frac {1+i}{1-i})^{2017}+( \\frac {1-i}{1+i})^{2017}$.",
+    "teacher_hints": {
+      "direct_hint": "Consider the properties of complex number conjugates and how they can simplify the expression before raising it to a power.  **HINT**: \\boxed{0}.  The second hint is redundant, it should be removed.  I will remove it.",
+      "socratic_hint": "When dealing with complex fractions, what can you do to simplify them before raising them to a power?  What kind of operation can you perform on the numerator and the denominator to achieve this simplification?  Can you think of any specific patterns or properties of complex numbers that might help you simplify these fractions?  How might this process change if the fractions were raised to different powers?  What are some potential pitfalls or challenges to watch out for when simplifying complex fractions?  How can you ensure that your simplification is correct?  What are some common mistakes to avoid when working with complex fractions?  Can you think of any alternative methods for simplifying these fractions?  How might the properties of the complex numbers change if they were raised to different powers?  What are some potential applications or uses of simplifying complex fractions?  How might this process be applied in real-world scenarios?  What are some potential extensions or variations of this problem?  How might you approach a similar problem with different complex numbers or powers?  Can you think of any analogous problems or scenarios where simplifying complex fractions would be useful?  How might this process be used to solve other types of problems?  What are some potential connections or relationships between simplifying complex fractions and other mathematical concepts or techniques?  How might this process be used to explore or investigate these connections?  What are some potential research questions or areas of investigation related to simplifying complex fractions?  How might this process be applied to solve problems in other fields or disciplines?  What are some potential applications or uses of simplifying complex fractions in fields such as physics, engineering, or computer science?  How might this process be used to model or analyze real-world phenomena?  What are some potential challenges or obstacles to overcome when applying this process to real-world problems?  How might you approach a similar problem with different complex numbers or powers in a real-world context?  Can you think of any analogous problems or scenarios where simplifying complex fractions would be useful in a real-world setting?  How might this process be used to solve problems in other areas of mathematics, such as algebra or geometry?  What are some potential connections or relationships between simplifying complex fractions and other mathematical concepts or techniques?  How might this process be used to explore or investigate these connections?  What are some potential research questions or areas of investigation related to simplifying complex fractions?  How might this process be applied to solve problems in other fields or disciplines?  What are some potential applications or uses of simplifying complex fractions in fields such as physics, engineering, or computer science?  How might this process be used to model or analyze real-world phenomena?  What are some potential challenges or obstacles to overcome when applying this process to real-world problems?  How might you approach a similar problem with different complex numbers or powers in a real-world context?  Can you think of any analogous problems or scenarios where simplifying complex fractions would be useful in a real-world setting?  How might this process be used to solve problems in other areas of mathematics, such as algebra or geometry?  What are some potential connections or relationships between simplifying complex fractions and other mathematical concepts or techniques?  How might this process be used to explore or investigate these connections?  What are some potential research questions or areas of investigation related to simplifying complex fractions?  How might this process be applied to solve problems in other fields or disciplines?  What are some potential applications or uses of simplifying complex fractions in fields such as physics, engineering, or computer science?  How might this process be used to model or analyze real-world phenomena?  What are some potential challenges or obstacles to overcome when applying this process to real-world problems?  How might you approach a similar problem with different complex numbers or powers in a real-world context?  Can you think of any analogous problems or scenarios where simplifying complex fractions would be useful in a real-world setting?  How might this process be used to solve problems in other areas of mathematics, such as algebra or geometry?  What are some potential connections or relationships between simplifying complex fractions and other mathematical concepts or techniques?  How might this process be used to explore or investigate these connections?  What are some potential research questions or areas of investigation related to simplifying complex fractions?  How might this process be applied to solve problems in other fields or disciplines?  What are some potential applications or uses of simplifying complex fractions in fields such as physics, engineering, or computer science?  How might this process be used to model or analyze real-world phenomena?  What are some potential challenges or obstacles to overcome when applying this process to real-world problems?  How might you approach a similar problem with different complex numbers or powers in a real-world context?  Can you think of any analogous problems or scenarios where simplifying complex fractions would be useful in a real-world setting?  How might this process be used to solve problems in other areas of mathematics, such as algebra or geometry?  What are some potential connections or relationships between simplifying complex fractions"
     },
     "model": "gemma-2-2b-it",
-    "best_hint_type": "socratic_question",
-    "score_no_hint": 0.4166666666666667,
-    "score_with_hint": 0.16666666666666666,
-    "improvement": -0.25,
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.6,
+    "improvement": -0.20000000000000007,
     "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": -0.16666666666666663,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.828125
+  },
+  {
+    "problem_index": 89,
+    "problem": "There are four numbers 10, 11, 12, and 13. What is the remainder of the largest number divided by the next largest number?",
+    "teacher_hints": {
+      "direct_hint": "The remainder is \\boxed{1}.",
+      "socratic_hint": "When dividing a number by another number that is smaller than it, what is the maximum possible remainder?  (Think about the definition of a remainder.)"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.8,
+    "score_with_hint": 0.6,
+    "improvement": -0.20000000000000007,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875
+  },
+  {
+    "problem_index": 0,
+    "problem": "Natasha climbs up a hill, and descends along the same way she went up. It takes her 3 hours to reach the top and some hours to come back down. Her average speed along the whole journey is 3 kilometers per hour. What was her average speed (in kilometers per hour) while climbing to the top if it was 2.5 kilometers per hour?",
+    "teacher_hints": {
+      "direct_hint": "The key to solving this problem is to first find the time it took Natasha to come back down, which is the same as the time it took her to climb up, but to do this, we need to first find the total time of the whole journey, which is the sum of the time to climb up and the time to come back down. **HINT**: \\boxed{2.5} is not the answer, the student needs to use the formula for average speed to find the answer.  The student should be able to use the given information to find the time it took her to come back down.  The student should then use the distance and time to find her average speed while descending. The student can then use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able to find the time it took her to come back down by using the average speed and total distance of the whole journey.  The student should then be able to use this information to find her average speed while climbing to the top.  The student should be able to use the formula for average speed to find the answer.  The student should be able",
+      "socratic_hint": "What is the relationship between the time Natasha took to climb to the top and the time she took to come back down, given that her average speed for the whole journey is the same as her average speed while descending? How can you use this relationship to find her average speed while climbing to the top?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": -0.20000000000000007,
+    "example_type": "regression",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.09375
+  },
+  {
+    "problem_index": 6,
+    "problem": "Given the quadratic function $y=kx^{2}-4x-3$ has three common points with the coordinate axes, the range of $k$ is ______.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{k > -\\frac{4}{3} and k \u2260 0}. .",
+      "socratic_hint": "What does the condition that the discriminant must be greater than zero tell you about the shape of the quadratic function?  How does this relate to the number of times it intersects the x-axis?  Think about the general form of a quadratic equation and what determines the number of its roots."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 0.2,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.015625
+  },
+  {
+    "problem_index": 8,
+    "problem": "The cost of carpeting a room of certain length with a carpet 75 cm wide at 30 paisa per meter is Rs. 36. The breadth of the room is 6 meters. What is the length of the room?",
+    "teacher_hints": {
+      "direct_hint": "The relationship between the total cost of the carpet, the length of the carpet, and the cost per meter can be expressed as the product of the length of the carpet and the cost per meter, which is equal to the total cost. **HINT**: The length of the carpet can be expressed as the product of the area of the room and the width of the carpet, which is equal to the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The cost of the carpet per meter can be converted to rupees by dividing the paisa cost by 100. **HINT**: The area of the room can be expressed as the product of the length of the room and the breadth of the room. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the width of the carpet. **HINT**: The product of the length of the carpet and the cost per meter is equal to the total cost. **HINT**: The relationship between the length of the carpet and the length of the room can be expressed as the product of the length of the room and the breadth of the room divided by the width of the carpet. **HINT**: The cost per meter of the carpet is given in paisa, so it needs to be converted to rupees. **HINT**: The length of the carpet is equal to the product of the area of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the length of the carpet. **HINT**: The total cost of the carpet is equal to the product of the length of the carpet and the cost per meter. **HINT**: The area of the room can be expressed as the product of the length of the room and the breadth of the room, which is equal to the product of the length of the room and 6 meters. **HINT**: The length of the carpet can be expressed as the product of the length of the room and the breadth of the room and the width of the carpet, which is equal to the product of the length of the room and 6 meters and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the breadth of the room and the width of the carpet. **HINT**: The length of the room can be expressed as the total cost divided by the product of the cost per meter and the product of the length of the room and the",
+      "socratic_hint": "What do you think happens when you multiply 27 by 1.8 to get 48.6, and then divide that by 1.8 to get 27? How can you use this insight to simplify your calculation?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.0625
+  },
+  {
+    "problem_index": 11,
+    "problem": "Dikembe wants to teach everyone at school about the importance of flossing, so he plans to bring enough packets of floss for everyone. There are 20 students in his class. Each student needs 1.5 yards of floss. He sees in the store that each packet of floss contains a certain amount of yards. If he buys the least amount necessary, he has 5 yards of floss left over. How many yards of floss does each packet contain?",
+    "teacher_hints": {
+      "direct_hint": "Warning: No recognized bold-colon hint found.",
+      "socratic_hint": "Warning: No recognized bold-colon hint found."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.125
+  },
+  {
+    "problem_index": 31,
+    "problem": "Ed had 30 more marbles than Doug. Ed lost 21 of his marbles at the playground. If Ed had 91 marbles. How many more marbles did Ed have than Doug then?",
+    "teacher_hints": {
+      "direct_hint": "The difference in the number of marbles between Ed and Doug remains constant.",
+      "socratic_hint": "If you know how many marbles Ed has now, and you know how many marbles Doug has, what operation will allow you to find the difference between their marble collections? \n```python\ndef ed_marbles_doug_marbles():\n    ed_marbles = 91  # Ed's marbles after losing 21\n    ed_marbles_before = ed_marbles + 21  # Ed's marbles before losing 21\n    doug_marbles = ed_marbles_before - 30  # Doug's marbles\n    difference = ed_marbles - doug_marbles  # Difference between Ed's and Doug's marbles\n    return difference"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.390625
+  },
+  {
+    "problem_index": 31,
+    "problem": "Ed had 30 more marbles than Doug. Ed lost 21 of his marbles at the playground. If Ed had 91 marbles. How many more marbles did Ed have than Doug then?",
+    "teacher_hints": {
+      "direct_hint": "The difference in the number of marbles between Ed and Doug remains constant.",
+      "socratic_hint": "If you know how many marbles Ed has now, and you know how many marbles Doug has, what operation will allow you to find the difference between their marble collections? \n```python\ndef ed_marbles_doug_marbles():\n    ed_marbles = 91  # Ed's marbles after losing 21\n    ed_marbles_before = ed_marbles + 21  # Ed's marbles before losing 21\n    doug_marbles = ed_marbles_before - 30  # Doug's marbles\n    difference = ed_marbles - doug_marbles  # Difference between Ed's and Doug's marbles\n    return difference"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.390625
+  },
+  {
+    "problem_index": 39,
+    "problem": "If the function $f(x)=a^{x}(a > 0,a\\neq 1)$ has a maximum value of $4$ on the interval $[-2,1]$ and a minimum value of $m$, and the function $g(x)=(1-4m) \\sqrt{x}$ is decreasing on the interval $[0,+\\infty)$, then the value of $a$ is.",
+    "teacher_hints": {
+      "direct_hint": "The function g(x) is decreasing if and only if its coefficient (1-4m) is negative.  **HINT**: The coefficient (1-4m) is negative if and only if m > 1/4.  **HINT**: From the function f(x), we know that a^(-2) = m.  **HINT**: The function f(x) has a maximum value of 4 on the interval [-2,1].  **HINT**: Since a > 0 and a \u2260 1, we know that a can only be either greater than 1 or less than 1.  **HINT**: If a > 1, then a^1 = 4.  **HINT**: If a > 1, then a^(-2) = m.  **HINT**: If a > 1, then a^(-2) = m = 1/16.  **HINT**: If a > 1, then m = 1/16, so the coefficient (1-4m) is 63/16, which is positive.  **HINT**: This contradicts the problem statement that g(x) is decreasing.  **HINT**: Therefore, a cannot be greater than 1.  **HINT**: If a < 1, then a^(-2) = m = 4.  **HINT**: If a < 1, then a^1 = m.  **HINT**: If a < 1, then a^1 = m = 2.  **HINT**: If a < 1, then the coefficient (1-4m) is -7, which is negative.  **HINT**: This satisfies the problem statement that g(x) is decreasing.  **HINT**: Therefore, a must be less than 1.  **HINT**: Since a must be less than 1, we can conclude that a = 1/2.  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: So the correct answer is \\boxed{1/2}.  **HINT**: Now that we know a = 1/2, we can find the value of m.  **HINT**: Since a = 1/2, we know that a^(-2) = m.  **HINT**: Therefore, m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Now that we know m = 4, we can find the coefficient (1-4m).  **HINT**: The coefficient (1-4m) is 1-4(4) = -15.  **HINT**: Now that we know the coefficient (1-4m), we can find the function g(x).  **HINT**: The function g(x) is (1-4m) sqrt(x) = (-15) sqrt(x).  **HINT**: Now that we know the function g(x), we can see that it is indeed decreasing on the interval [0, + infinity).  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: The value of a is indeed 1/2.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: The final answer is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Therefore, the final answer is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a",
+      "socratic_hint": "If the function $f(x)$ has a maximum value of $4$ on the interval $[-2,1]$, does that mean the function $f(x)$ is at its highest value at one of the endpoints of the interval?  Explain why or why not.  Give your answer in the form of a question.  Can the function $f(x)$ have a maximum value at an interior point of the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at a point that is not in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Is the function $f(x)$ at its maximum value at one of the endpoints of the interval if the maximum value is not at the endpoint?  Why or why not?  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the solution:  If the function $f(x)$ has a maximum value of $4$ on the interval $[-2,1]$, does that mean the function $f(x)$ is at its highest value at one of the endpoints of the interval?  Explain why or why not.  Can the function $f(x)$ have a maximum value at an interior point of the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at a point that is not in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Is the function $f(x)$ at its maximum value at one of the endpoints of the interval if the maximum value is not at the endpoint?  Why or why not?  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the solution:  If the function $f(x)$ has a maximum value of $4$ on the interval $[-2,1]$, does that mean the function $f(x)$ is at its highest value at one of the endpoints of the interval?  Explain why or why not.  Can the function $f(x"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 0.2,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 0.2,
+    "extraction_improvement": -0.39999999999999997,
+    "example_type": "regression",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.359375
+  },
+  {
+    "problem_index": 40,
+    "problem": "Simplify and evaluate: $[\\left(x-y\\right)^{2}-x\\left(3x-2y\\right)+\\left(x+y\\right)\\left(x-y\\right)]\\div 2x$, where $x=1$ and $y=-2$.",
+    "teacher_hints": {
+      "direct_hint": "The given expression can be simplified by first focusing on the terms that cancel out.",
+      "socratic_hint": "What would happen if you were to factor out an x from the first expression inside the brackets before simplifying?  Would it change the final answer?  Explain your reasoning."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 0.2,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
     "example_type": "regression",
     "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.46875
+    "llama8b_solve_rate": 0.484375
+  },
+  {
+    "problem_index": 41,
+    "problem": "In triangle $ABC$, if $A=60^{\\circ}$, and $AC$ and $AB$ are the two roots of the equation $x^{2}-5x+6=0$, then $BC=$ ______.",
+    "teacher_hints": {
+      "direct_hint": "The relationship between the sum and product of the roots of the equation and the sides of the triangle is critical.",
+      "socratic_hint": "What can you infer about the relationship between the sum and product of the roots of the given quadratic equation? How can you relate this to the sides of the triangle?  What cosine value is given in the problem? How can you use the Law of Cosines in this context?  How can you simplify the equation in the Law of Cosines to find the length of the side BC?  What is the relationship between the sum of squares of the sides and the product of the sides in the Law of Cosines formula?  Can you find a way to express the sum of squares of the sides in terms of the sum and product of the roots of the quadratic equation?  How can you use this relationship to simplify the equation in the Law of Cosines?  How can you use the given information to find the length of the side BC?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  Can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  What is the relationship between the length of the side BC and the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the given information to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  Can you simplify the equation in the Law of Cosines to find the length of the side BC in terms of the sum and product of the roots of the quadratic equation?  How can you use the Law of"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375
+  },
+  {
+    "problem_index": 42,
+    "problem": "The solution set of the inequality $x^2-ax-b<0$ is $\\{x|2<x<3\\}$. Find the values of $a$ and $b$.",
+    "teacher_hints": {
+      "direct_hint": "The roots of the equation are \\boxed{5, -6}.  Just copy it exactly.",
+      "socratic_hint": "How would you use the information that the given inequality has a solution set of (2, 3) to relate it to the roots of the quadratic equation?  (This is a longer Socratic question than usual.)"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.40625
+  },
+  {
+    "problem_index": 42,
+    "problem": "The solution set of the inequality $x^2-ax-b<0$ is $\\{x|2<x<3\\}$. Find the values of $a$ and $b$.",
+    "teacher_hints": {
+      "direct_hint": "The roots of the equation are \\boxed{5, -6}.  Just copy it exactly.",
+      "socratic_hint": "How would you use the information that the given inequality has a solution set of (2, 3) to relate it to the roots of the quadratic equation?  (This is a longer Socratic question than usual.)"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.40625
+  },
+  {
+    "problem_index": 47,
+    "problem": "Solve the inequality system: $\\left\\{\\begin{array}{l}{4x-6\uff1c2x}\\\\{\\frac{3x-1}{2}\u22652x-1}\\end{array}\\right.$.",
+    "teacher_hints": {
+      "direct_hint": "The inequality solution is \\boxed{x \u2264 1}.",
+      "socratic_hint": "When solving inequalities, what is the general approach to isolate the variable on one side of the inequality sign?"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "regression",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.4375
+  },
+  {
+    "problem_index": 57,
+    "problem": "A, B and C started a business with capitals of Rs. 8000, Rs. 10000 and Rs. 12000 respectively. At the end of the year, the profit share of B is Rs. 1900. What is the difference between the profit shares of A and C?",
+    "teacher_hints": {
+      "direct_hint": "The key is to find the value of one part in the ratio.  **HINT**: \\boxed{760} .",
+      "socratic_hint": "When determining the ratio of investments, what is the key factor that you should consider in order to simplify the ratio?  (Note: The greatest common divisor is a good place to start)  $$ $$"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
+    "example_type": "regression",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5
+  },
+  {
+    "problem_index": 58,
+    "problem": "A bucket of capacity 4 liters is used to fill up a tank. The number of times this bucket is used is less than the number of times another bucket of a certain capacity is used for the same purpose by 4. The capacity of the tank is 48 liters. What is the capacity of the second bucket?",
+    "teacher_hints": {
+      "direct_hint": "The relationship between the number of times each bucket is used can be represented by the equation \\[ \\frac{48}{4} = n - 4 \\], where n is the number of times the x-liter bucket is used.  **HINT**: The solution is \\boxed{3}. \nI will follow the format you requested. Here is the revised solution:",
+      "socratic_hint": "What are the implications of the buckets being used less by 4 times, and how can you express this relationship in an equation?"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "regression",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5
+  },
+  {
+    "problem_index": 91,
+    "problem": "Dave breaks 2 guitar strings per night when playing live.  If he performs 6 shows a week for 12 weeks, how many guitar strings will he need to replace?",
+    "teacher_hints": {
+      "direct_hint": "```python\n# Define variables\nstrings_per_show = 2\nshows_per_week = 6\nweeks = 12",
+      "socratic_hint": "What happens to the total number of guitar strings Dave needs to replace when the number of weeks he performs increases by a factor of 12?  What does this tell you about how to calculate the total number of guitar strings he needs to replace?"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.0,
+    "improvement": -0.2,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
+    "example_type": "regression",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.984375
   }
 ]

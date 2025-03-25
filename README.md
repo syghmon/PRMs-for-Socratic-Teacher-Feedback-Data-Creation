@@ -82,7 +82,82 @@ Effective teaching should guide students without directly providing solutions, a
 - Kumar Shridhar (shkumar@ethz.ch)  
 - Shehzaad Dhuliawala (sdhuliawala@ethz.ch)
 
+## Configuration Files
 
+The inference script uses two main configuration files:
+
+### 1. `config.json`
+
+This file contains model and prompt configurations for teacher and student models:
+
+```json
+{
+    "teacher_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "teacher_prompts": [
+        {
+            "name": "direct_hint",
+            "prompt": "Please provide the final answer...",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 1028
+        },
+        {
+            "name": "socratic_hint",
+            "prompt": "Examine the problem and create a Socratic hint...",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 1028
+        }
+    ],
+    "num_samples": 12,
+    "student_models": [
+        {
+            "model_name": "google/gemma-2-2b-it",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 1028
+        }
+    ]
+}
+```
+
+### 2. `inference_config.json`
+
+This file provides an alternative way to specify command-line arguments:
+
+```json
+{
+  "input": "data/joined_samples.json",
+  "output": "results/answers.json",
+  "config": "scripts/config.json",
+  "use_judge": false,
+  "log_level": "INFO",
+  "debug": false
+}
+```
+
+The script will automatically look for this file at `scripts/inference_config.json`, or you can specify a different location with `--config_json`.
+
+## Output Format
+
+The inference script saves results in JSON format with the following structure:
+
+```json
+[
+  {
+    "problem": "Find the derivative of f(x) = x^2...",
+    "final_answer": "2x",
+    "responses": ["Step 1: ... \\boxed{2x}"],
+    "extraction_success": [true],
+    "correctness": [true],
+    "teacher_hint": "Think about the power rule..."
+  }
+]
+```
+
+The `extraction_success` array indicates whether a boxed expression was found in each response, which is used by the analysis script to measure formatting compliance without re-parsing the responses.
+
+## Running Manually
 
 ```bash
 python analysis.py --samples data/samples.json --results_dir results --output_dir analysis_outputs --model_tags "SmolLM2-135M-Instruct,SmolLM2-360M-Instruct,SmolLM2-1.7B-Instruct" --bins "0-10%,10-20%,20-30%,30-40%,40-50%,50-60%,60-70%,70-80%,80-90%,90-100%"

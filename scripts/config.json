@@ -3,16 +3,29 @@
     "teacher_prompts": [
         {
             "name": "direct_hint",
-            "prompt": "Please provide the solution in \\boxed{{}} as a hint. Use the format:\n\n**HINT**: Your hint here.\n\n**Example**:\nProblem:\nIf x^2 = 9, solve for x.\n\nSolution:\nx = 3 or x = -3\n\nThinking:\nWe can square root both sides to get x = 3 or x = -3.\n\n**HINT**: The solution is \\boxed{3 or -3} just copy it exactly.\n\nNow use the same style for the new problem:",
+            "prompt": "Please provide the final answer in \\boxed{{}} as a hint for the student to copy. Use the format:\n\n**HINT**: Your hint here.\n\n**Example**:\nProblem:\nIf x^2 = 9, solve for x.\n\nSolution:\nx^2 = 9\nTaking the square root of both sides: x = ±3\nTherefore, x = 3 or x = -3\n\n**HINT**: The solution is \\boxed{3 or -3} just copy it exactly.\n\nNow use the same style for the new problem:",
             "temperature": 0.6,
             "top_p": 0.95,
-            "max_tokens": 4096
+            "max_tokens": 1028
+        },
+        {
+            "name": "socratic_hint",
+            "prompt": "Please ask a Socratic question to help the student understand the problem. Use the format:\n\n**HINT**: Your short question here.\n\n**Example**:\nProblem:\nIf x^2 = 9, solve for x.\n\nSolution:\nx^2 = 9\nTaking the square root of both sides: x = ±3\nTherefore, x = 3 or x = -3\n\nThinking:\nWe can square root both sides to get x = 3 or x = -3.\n\n**HINT**: Remember that squaring and square-rooting are inverse operations. There might be more than one solution.\n\nNow use the same style for the new problem:",
+            "temperature": 0.6,
+            "top_p": 0.95,
+            "max_tokens": 1028
         }
     ],
   
-    "num_samples": 12,
+    "num_samples": 5,
   
     "student_models": [
+      {
+        "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "max_tokens": 1028
+      },
       {
         "model_name": "google/gemma-2-2b-it",
         "temperature": 0.6,

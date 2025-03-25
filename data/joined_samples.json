@@ -1,0 +1,1302 @@
+[
+  {
+    "problem": "Natasha climbs up a hill, and descends along the same way she went up. It takes her 3 hours to reach the top and some hours to come back down. Her average speed along the whole journey is 3 kilometers per hour. What was her average speed (in kilometers per hour) while climbing to the top if it was 2.5 kilometers per hour?",
+    "answer": "3.75",
+    "solution": "Let's denote the distance to the top of the hill as \\( D \\) kilometers. Since Natasha's average speed while climbing to the top is 2.5 kilometers per hour, we can calculate the time it took her to reach the top using the formula:\n\n\\[ \\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}} \\]\n\nGiven that it took her 3 hours to reach the top, we can write:\n\n\\[ 3 = \\frac{D}{2.5} \\]\n\nFrom this, we can solve for \\( D \\):\n\n\\[ D = 3 \\times 2.5 \\]\n\\[ D = 7.5 \\text{ kilometers} \\]\n\nNow, we know the total distance of the journey (up and down the hill) is \\( 2D \\), which is:\n\n\\[ 2D = 2 \\times 7.5 \\]\n\\[ 2D = 15 \\text{ kilometers} \\]\n\nLet's denote the time it took her to come back down as \\( T \\) hours. Her average speed for the whole journey is 3 kilometers per hour, and the total time for the whole journey is \\( 3 + T \\) hours. Using the average speed formula:\n\n\\[ \\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}} \\]\n\nWe can write:\n\n\\[ 3 = \\frac{15}{3 + T} \\]\n\nNow we solve for \\( T \\):\n\n\\[ 3 + T = \\frac{15}{3} \\]\n\\[ 3 + T = 5 \\]\n\\[ T = 5 - 3 \\]\n\\[ T = 2 \\text{ hours} \\]\n\nNow we have the time it took her to come back down, which is 2 hours. To find her average speed while descending, we use the distance she covered while descending, which is the same as the distance going up, \\( D = 7.5 \\) kilometers, and the time \\( T = 2 \\) hours:\n\n\\[ \\text{Average Speed (descending)} = \\frac{D}{T} \\]\n\\[ \\text{Average Speed (descending)} = \\frac{7.5}{2} \\]\n\\[ \\text{Average Speed (descending)} = 3.75 \\text{ kilometers per hour} \\]\n\nSo, Natasha's average speed while descending was $\\boxed{3.75}$  kilometers per hour.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.09375,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 88285,
+    "numina_index": 587192
+  },
+  {
+    "problem": "Determine the length of the shortest chord passing through the focus F of the ellipse $\\frac {x^2}{16} + \\frac {y^2}{9} = 1$.",
+    "answer": "\\frac{9}{2}",
+    "solution": "From the given ellipse equation $\\frac {x^2}{16} + \\frac {y^2}{9} = 1$, we can find the ellipse's foci by calculating $c = \\sqrt{a^2 - b^2}$ where $a$ and $b$ are the semi-major and semi-minor axes, respectively. In this case, we have $a = 4$ and $b = 3$, so\n\\[ c = \\sqrt{16 - 9} = \\sqrt{7}. \\]\n\nFor an ellipse, the shortest chord through a focus is perpendicular to the major axis. Here, the major axis is along the x-axis, so the shortest chord through focus F is vertical.\n\nNow, let's substitute $x = \\sqrt{7}$ into the ellipse equation to find the corresponding y-values for the endpoints of this chord:\n\\[ \\frac{(\\sqrt{7})^2}{16} + \\frac{y^2}{9} = 1 \\implies \\frac{7}{16} + \\frac{y^2}{9} = 1. \\]\nSubtracting $\\frac{7}{16}$ from both sides, we get\n\\[ \\frac{y^2}{9} = 1 - \\frac{7}{16} = \\frac{9}{16}. \\]\nMultiplying both sides by 9, we have\n\\[ y^2 = \\frac{9}{16} \\times 9 = \\frac{81}{16}. \\]\nTaking the square root gives us\n\\[ y = \\pm \\frac{9}{4}. \\]\nSince we are looking for the length of the chord, we take the positive difference between the two y-values (which are equal and opposite), so the shortest chord length is\n\\[ 2 \\times \\frac{9}{4} = \\frac{9}{2}. \\]\nThus, the length of the shortest chord passing through the focus F is $\\boxed{\\frac{9}{2}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Circles"
+    ],
+    "llama8b_solve_rate": 0.046875,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 7798,
+    "numina_index": 310789
+  },
+  {
+    "problem": "Natural numbers are placed in an infinite grid. Such that the number in each cell is equal to the number of its adjacent cells having the same number. Find the most distinct numbers this infinite grid can have.\n\n(Two cells of the grid are adjacent if they have a common vertex)",
+    "answer": "5",
+    "solution": "1. **Understanding the Problem:**\n   - We are given an infinite grid where each cell contains a natural number.\n   - The number in each cell is equal to the number of its adjacent cells (including diagonals) that have the same number.\n   - We need to find the maximum number of distinct numbers that can be placed in this grid.\n\n2. **Defining Adjacent Cells:**\n   - Two cells are adjacent if they share a common vertex. This means each cell has up to 8 neighbors.\n\n3. **Initial Observations:**\n   - If a cell contains the number \\(a\\), then exactly \\(a\\) of its 8 neighbors must also contain the number \\(a\\).\n   - This implies \\(a \\leq 8\\).\n\n4. **Claim 1:**\n   - If \\(a \\in \\mathcal{S}\\) and \\(|\\mathcal{S}| \\geq 2\\), then \\(a \\in \\{1, 2, 3, 4, 5, 6\\}\\).\n   - **Proof:**\n     - If \\(a = 8\\), then all 8 neighbors must also be 8, leading to the entire grid being filled with 8, contradicting \\(|\\mathcal{S}| \\geq 2\\).\n     - If \\(a = 7\\), then exactly one neighbor is not 7. This leads to a contradiction as explained in the solution.\n\n5. **Claim 2:**\n   - \\(|\\mathcal{S}| < 6\\).\n   - **Proof:**\n     - Suppose \\(|\\mathcal{S}| = 6\\). This means numbers 1 to 6 are used.\n     - Consider cells with numbers 5 and 6. By the Manhattan distance argument, there must be a contradiction in the arrangement of these cells, as shown in the solution.\n\n6. **Claim 3:**\n   - \\(|\\mathcal{S}| \\leq 5\\) and equality can hold.\n   - **Proof:**\n     - From Claims 1 and 2, we have \\(|\\mathcal{S}| \\leq 5\\).\n     - Construct a grid using numbers \\(\\{1, 2, 3, 4, 5\\}\\) that satisfies the given condition.\n     - The provided grid construction shows that it is possible to have 5 distinct numbers in the grid.\n\n7. **Conclusion:**\n   - The maximum number of distinct numbers that can be placed in the grid is 5.\n\nThe final answer is \\(\\boxed{5}\\)",
+    "source": "aops_forum",
+    "domain": [
+      "Mathematics -> Discrete Mathematics -> Combinatorics"
+    ],
+    "llama8b_solve_rate": 0.078125,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 181359,
+    "numina_index": 221643
+  },
+  {
+    "problem": "Mark spent 220 dollars to fix his car. It needed two parts that cost 20 dollars each, labor cost .5 dollars a minute for the first two hours, after which the labor cost has a 10% discount. The mechanic also took a 30-minute break during which he was not paid. How many hours did the mechanic work, not including the break and considering the discount rate on labor cost?",
+    "answer": "4.44",
+    "solution": "First, let's calculate the total cost of the parts:\n\n2 parts * $20 each = $40\n\nNow, let's subtract the cost of the parts from the total amount Mark spent to find out how much was spent on labor:\n\n$220 total - $40 parts = $180 labor cost\n\nThe labor cost is $0.5 per minute for the first two hours. Since there are 60 minutes in an hour, the cost for the first two hours is:\n\n2 hours * 60 minutes/hour * $0.5/minute = $60\n\nNow, let's see if the $180 labor cost is covered by the first two hours of work at the regular rate:\n\nIf $180 is less than or equal to $60, then the mechanic worked only within the first two hours at the regular rate. However, since $180 is greater than $60, we know that the mechanic worked more than two hours and the additional hours are subject to a 10% discount.\n\nLet's calculate the discounted rate for labor after the first two hours:\n\n$0.5/minute * (1 - 10%) = $0.5/minute * 0.9 = $0.45/minute\n\nNow, let's find out how much labor cost is left after the first two hours:\n\n$180 labor cost - $60 for the first two hours = $120 remaining for discounted labor\n\nNow, let's calculate how many minutes of work this remaining $120 covers at the discounted rate:\n\n$120 / $0.45/minute = 266.67 minutes\n\nSince the mechanic took a 30-minute break, which is not paid, we need to add this time to the total minutes worked:\n\n266.67 minutes + 30 minutes = 296.67 minutes\n\nNow, let's convert the total minutes worked into hours:\n\n296.67 minutes / 60 minutes/hour = 4.94 hours\n\nSince we are asked for the number of hours worked not including the break and considering the discount rate, we will only consider the 266.67 minutes of actual work at the discounted rate, which is:\n\n266.67 minutes / 60 minutes/hour = 4.44 hours\n\nTherefore, the mechanic worked approximately $\\boxed{4.44}$  hours, not including the break and considering the discount rate on labor cost.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.015625,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 118018,
+    "numina_index": 641481
+  },
+  {
+    "problem": "Given the universal set $U=\\mathbb{R}$, set $A=\\{x||x|\\geqslant 1\\}$, and set $B=\\{x|x^{2}-2x-3 > 0\\}$, find $(\u2201_{U}A)\u2229(\u2201_{U}B)$.",
+    "answer": "(C_{U}A)\u2229(C_{U}B)=\\{x|-1 < x < 1\\}",
+    "solution": "From the given information, we have:\n\n$A=\\{x||x|\\geqslant 1\\}=\\{x|x\\geqslant 1 \\text{ or } x\\leqslant -1\\}$,\n\n$B=\\{x|x^{2}-2x-3 > 0\\}=\\{x|(x+1)(x-3) > 0\\}=\\{x|x  3\\}$.\n\nSince the universal set $U=\\mathbb{R}$,\n\n$\\therefore C_{U}A=\\{x|-1 < x < 1\\}$,\n\n$C_{U}B=\\{x|-1\\leqslant x\\leqslant 3\\}$,\n\n$\\therefore (C_{U}A)\u2229(C_{U}B)=\\{x|-1 < x < 1\\}$.\n\nHence, the answer is $\\boxed{(C_{U}A)\u2229(C_{U}B)=\\{x|-1 < x < 1\\}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Set Theory -> Operations on Sets"
+    ],
+    "llama8b_solve_rate": 0.046875,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 28273,
+    "numina_index": 394237
+  },
+  {
+    "problem": "Given $({m-2})x+{y^{{m^2}-3}}=10$ is a system of two linear equations, find the value of $m$.",
+    "answer": "-2",
+    "solution": "Given that $({m-2})x+{y^{{m^2}-3}}=10$ is a system of two linear equations, we need to find the value of $m$. For the equation to be linear, the powers of $x$ and $y$ must be $1$. Therefore, we analyze the conditions for $m$ as follows:\n\n1. The power of $y$, which is $m^2 - 3$, must equal $1$ for the equation to be linear in terms of $y$. Hence, we set $m^2 - 3 = 1$.\n2. Additionally, the coefficient of $x$, which is $m-2$, must not be zero to ensure that $x$ is present in the equation. Therefore, $m - 2 \\neq 0$.\n\nSolving the first condition:\n\\begin{align*}\nm^2 - 3 &= 1 \\\\\nm^2 &= 4 \\\\\nm &= \\pm 2\n\\end{align*}\n\nConsidering the second condition, $m - 2 \\neq 0$, we find that $m = 2$ would violate this condition since it would make the coefficient of $x$ equal to zero. Therefore, the only solution that satisfies both conditions is $m = -2$.\n\nThus, the value of $m$ that makes the given system of equations linear is $\\boxed{-2}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.078125,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 24505,
+    "numina_index": 378427
+  },
+  {
+    "problem": "Given the quadratic function $y=kx^{2}-4x-3$ has three common points with the coordinate axes, the range of $k$ is ______.",
+    "answer": "k > -\\frac{4}{3} \\text{ and } k \\neq 0",
+    "solution": "To solve the problem, we start by understanding that a quadratic function $y=kx^{2}-4x-3$ intersects the coordinate axes at points where either $x=0$ or $y=0$. For the function to have three common points with the coordinate axes, it must intersect the $x$-axis at two distinct points and the $y$-axis at one point. The intersection with the $y$-axis occurs when $x=0$, which is always guaranteed. For the function to intersect the $x$-axis at two distinct points, the discriminant $\\Delta$ of the quadratic equation $kx^{2}-4x-3=0$ must be greater than $0$.\n\nThe discriminant $\\Delta$ of a quadratic equation $ax^{2}+bx+c=0$ is given by $\\Delta=b^{2}-4ac$. Applying this to our function, we have:\n\\[\n\\Delta = (-4)^{2} - 4 \\cdot k \\cdot (-3).\n\\]\n\nSolving for $\\Delta > 0$ gives us:\n\\[\n16 + 12k > 0.\n\\]\n\nSimplifying this inequality:\n\\[\n12k > -16,\n\\]\n\\[\nk > -\\frac{4}{3}.\n\\]\n\nHowever, since the quadratic function must not be a linear function (which would be the case if $k=0$), we also have the condition that $k \\neq 0$. Combining these conditions, we find that the range of $k$ for which the quadratic function $y=kx^{2}-4x-3$ has three common points with the coordinate axes is:\n\\[\nk > -\\frac{4}{3} \\text{ and } k \\neq 0.\n\\]\n\nTherefore, the final answer is:\n\\[\n\\boxed{k > -\\frac{4}{3} \\text{ and } k \\neq 0}.\n\\]",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Algebra -> Equations and Inequalities"
+    ],
+    "llama8b_solve_rate": 0.015625,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 21681,
+    "numina_index": 366737
+  },
+  {
+    "problem": "Given $xyz\\neq 0$, then the value of $\\frac{|x|}{x}+\\frac{y}{|y|}+\\frac{|z|}{z}$ is ____.",
+    "answer": "\\pm 1 \\text{ or } \\pm 3",
+    "solution": "Given $xyz \\neq 0$, we know that none of $x$, $y$, or $z$ can be equal to $0$. This is crucial because it means each variable has a definite positive or negative sign. Let's analyze the given expression step by step:\n\n$$\\frac{|x|}{x} + \\frac{y}{|y|} + \\frac{|z|}{z}$$\n\nWe'll consider the possible sign combinations of $x$, $y$, and $z$:\n\n1. **All Positive ($x > 0$, $y > 0$, $z > 0$):**\n   - For $x > 0$, $\\frac{|x|}{x} = \\frac{x}{x} = 1$.\n   - For $y > 0$, $\\frac{y}{|y|} = \\frac{y}{y} = 1$.\n   - For $z > 0$, $\\frac{|z|}{z} = \\frac{z}{z} = 1$.\n   - Therefore, the expression equals $1 + 1 + 1 = 3$.\n\n2. **All Negative ($x  0$, $y > 0$, and $z  0$, $y < 0$, and $z < 0$.\n   - Then, $\\frac{|x|}{x} = 1$, $\\frac{y}{|y|} = -1$, and $\\frac{|z|}{z} = -1$.\n   - Therefore, the expression equals $1 - 1 - 1 = -1$.\n   - This result will also be the same for any combination of one positive and two negatives due to symmetry.\n\nGiven these four scenarios, we can conclude that the value of the original expression can be $\\pm 1$ or $\\pm 3$. Therefore, the final answer is encapsulated as:\n\n$$\\boxed{\\pm 1 \\text{ or } \\pm 3}$$",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Other"
+    ],
+    "llama8b_solve_rate": 0.09375,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 11389,
+    "numina_index": 325100
+  },
+  {
+    "problem": "The cost of carpeting a room of certain length with a carpet 75 cm wide at 30 paisa per meter is Rs. 36. The breadth of the room is 6 meters. What is the length of the room?",
+    "answer": "15",
+    "solution": "Let's denote the length of the room as L meters.\n\nThe cost of carpeting the room is Rs. 36, and the cost of the carpet is 30 paisa per meter. Since 1 rupee is equal to 100 paisa, the cost of the carpet per meter in rupees is 30/100 = Rs. 0.30 per meter.\n\nThe carpet is 75 cm wide, which is equivalent to 0.75 meters (since 1 meter = 100 cm).\n\nThe area of the carpet required to cover the room is the length of the room (L meters) multiplied by the breadth of the room (6 meters):\nArea = L * 6\n\nThe length of the carpet required to cover this area, given its width is 0.75 meters, can be found by dividing the area by the width of the carpet:\nLength of carpet = Area / Width of carpet\nLength of carpet = (L * 6) / 0.75\n\nThe total cost of the carpet is the length of the carpet multiplied by the cost per meter:\nTotal cost = Length of carpet * Cost per meter\n36 = [(L * 6) / 0.75] * 0.30\n\nNow, let's solve for L:\n36 = (L * 6 * 0.30) / 0.75\n36 = (L * 1.8) / 0.75\n36 * 0.75 = L * 1.8\n27 = L * 1.8\nL = 27 / 1.8\nL = 15\n\nTherefore, the length of the room is $\\boxed{15}$  meters.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.0625,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 116491,
+    "numina_index": 638393
+  },
+  {
+    "problem": "Given that the point $P(a, b)$ is symmetric to the line $l$ with its symmetric point being $P'(b + 1, a - 1)$, find the equation of the circle $C'$ which is symmetric to the circle $C: x^2 + y^2 - 6x - 2y = 0$ with respect to the line $l$.",
+    "answer": "(x - 2)^2 + (y - 2)^2 = 10",
+    "solution": "First, we rewrite the equation of circle $C$ into its standard form. The given equation is $x^2 + y^2 - 6x - 2y = 0$. Completing the square for both $x$ and $y$ terms, we get:\n\n$$\n(x^2 - 6x) + (y^2 - 2y) = 0\n$$\n\n$$\n(x^2 - 6x + 9) + (y^2 - 2y + 1) = 9 + 1\n$$\n\n$$\n(x - 3)^2 + (y - 1)^2 = 10\n$$\n\nThis equation represents a circle with center $(3, 1)$ and radius $\\sqrt{10}$. Since the symmetric point $P'(b + 1, a - 1)$ is obtained by swapping $a$ and $b$ and then adding/subtracting $1$, the transformation rule for symmetry about line $l$ can be understood as swapping $x$ and $y$ coordinates and then adding/subtracting $1$ accordingly.\n\nApplying this rule to the center $(3, 1)$ of circle $C$, we get the center of the symmetric circle $C'$ as $(2, 2)$. Therefore, the equation of circle $C'$, maintaining the same radius $\\sqrt{10}$, is:\n\n$$\n\\boxed{(x - 2)^2 + (y - 2)^2 = 10}\n$$",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Other"
+    ],
+    "llama8b_solve_rate": 0.078125,
+    "difficulty_bin": "0-0.1",
+    "bigmath_index": 6707,
+    "numina_index": 306637
+  },
+  {
+    "problem": "Matt gets a $1,300 commission on a big sale. This commission alone raises his average commission by $150. If Matt's new average commission is a certain amount, and he has made 6 sales, what is his new average commission?",
+    "answer": "$550$",
+    "solution": "Let's denote Matt's new average commission as \\( A \\).\n\nBefore the big sale that earned him a $1,300 commission, Matt had made 5 sales (since the big sale is his 6th). Let's denote his average commission before the big sale as \\( A - 150 \\) (since we know the $1,300 commission raised his average by $150).\n\nThe total commission from the first 5 sales would be \\( 5 \\times (A - 150) \\).\n\nAfter the big sale, his total commission from all 6 sales would be \\( 5 \\times (A - 150) + 1,300 \\).\n\nWe also know that his new average commission after the 6th sale is \\( A \\), so the total commission from all 6 sales would also be \\( 6 \\times A \\).\n\nSetting these two expressions for the total commission equal to each other gives us:\n\n\\[ 5 \\times (A - 150) + 1,300 = 6 \\times A \\]\n\nExpanding the left side of the equation:\n\n\\[ 5A - 750 + 1,300 = 6A \\]\n\nCombining like terms:\n\n\\[ 5A + 550 = 6A \\]\n\nSubtracting \\( 5A \\) from both sides:\n\n\\[ 550 = A \\]\n\nSo, Matt's new average commission after the 6th sale is $\\boxed{\\$550}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.125,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 136632,
+    "numina_index": 679493
+  },
+  {
+    "problem": "Dikembe wants to teach everyone at school about the importance of flossing, so he plans to bring enough packets of floss for everyone. There are 20 students in his class. Each student needs 1.5 yards of floss. He sees in the store that each packet of floss contains a certain amount of yards. If he buys the least amount necessary, he has 5 yards of floss left over. How many yards of floss does each packet contain?",
+    "answer": "35",
+    "solution": "First, let's calculate the total amount of floss Dikembe needs for his class. There are 20 students, and each student needs 1.5 yards of floss. \n\nTotal floss needed = 20 students * 1.5 yards/student = 30 yards\n\nDikembe has 5 yards of floss left over after buying the least amount necessary, so the total floss he bought is:\n\nTotal floss bought = Total floss needed + Leftover floss\nTotal floss bought = 30 yards + 5 yards = 35 yards\n\nSince Dikembe bought the least amount necessary and ended up with 5 yards left over, the packets of floss must contain more than 30 yards but less than or equal to 35 yards. \n\nTo find out how many yards each packet contains, we need to find a number that, when multiplied by a whole number, gives us a result that is more than 30 but less than or equal to 35. Since he has 5 yards left over, the total floss he bought must be a multiple of the packet size.\n\nThe only whole number that, when multiplied by another whole number, gives us a number in this range is $\\boxed{35}$  itself (since 35 is the next multiple after 30). Therefore, each packet of floss must contain 35 yards.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.125,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 99809,
+    "numina_index": 607173
+  },
+  {
+    "problem": "Given the expansion of $(x^{2}-a)(x+ \\frac {1}{x})^{10}$, if the coefficient of $x^{6}$ is $30$, find the value of $a$.",
+    "answer": "2",
+    "solution": "The general term formula for the expansion of $(x+ \\frac {1}{x})^{10}$ is:\n$$ T_{r+1} = C_{10}^{r}x^{10-r}\\left( \\frac {1}{x}\\right)^{r} = C_{10}^{r}x^{10-2r}. $$\nWe need to find the terms that would contribute to the coefficient of $x^{6}$. For the power of $x$ to be $6$ after multiplying by $x^2$ in $(x^2-a)(x+ \\frac {1}{x})^{10}$, we must have $10-2r = 4$ or $10-2r = 6$.\n\nSolving $10-2r = 4$, we get $r = 3$.\nSolving $10-2r = 6$, we get $r = 2$.\n\nThe coefficient of $x^6$ in the expansion without the $x^2-a$ factor is hence the sum of the coefficients from the terms where $r=2$ and $r=3$, which is $ C_{10}^{3} + C_{10}^{2}$.\n\nHowever, since the term $-ax^6$ is also present after multiplying by $(x^2-a)$, the total coefficient of $x^6$ is:\n$$ C_{10}^{3} - a \\cdot C_{10}^{2} = 30. $$\n\nWe can calculate $C_{10}^{3} = \\frac{10!}{3!(10-3)!} = 120$ and $C_{10}^{2} = \\frac{10!}{2!(10-2)!} = 45$.\n\nLet's solve for $a$:\n$$ 120 - a \\cdot 45 = 30.$$\nSubtracting $120$ from both sides, we get:\n$$ -a \\cdot 45 = -90.$$\nDividing by $-45$, we find:\n$$ a = 2. $$\n\nTherefore, the value of $a$ is $\\boxed{2}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Algebraic Expressions -> Other"
+    ],
+    "llama8b_solve_rate": 0.1875,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 11197,
+    "numina_index": 324356
+  },
+  {
+    "problem": "John is a dedicated volunteer and is involved in many community service tasks at the local shelter. From January to March, he volunteers at the shelter twice a month for 3 hours at a time. Starting from April to June, he starts volunteering once a week, but only for 2 hours at a time, at the pet adoption events. However, in July and August, he volunteers every Saturday and Sunday for 4 hours each day for the summer community service program. \nIn September and October, John volunteers once a week, on Thursdays for 3 hours each time, at the shelter. Meanwhile, in November, due to his busy schedule, he can only volunteer for two Saturdays for a total of 6 hours. Finally, in December, due to holiday closures, he only volunteers for three Fridays for a total of 6 hours. However, John also volunteers on some bonus days throughout the year as follows: on the third Saturday of every month excluding May and June for 4 hours each, plus he joins the annual charity run event in June which requires him to volunteer for 8 hours. How many hours does he volunteer for that year?",
+    "answer": "190",
+    "solution": "Let's calculate the total hours John volunteers each month and then sum them up for the year.\n\nJanuary to March: Twice a month for 3 hours each time.\n- 3 hours x 2 times/month x 3 months = 18 hours\n\nApril to June: Once a week for 2 hours each time.\n- 2 hours x 4 weeks/month x 3 months = 24 hours\n\nJuly and August: Every Saturday and Sunday for 4 hours each day.\n- 4 hours x 2 days/week x 4 weeks/month x 2 months = 64 hours\n\nSeptember and October: Once a week on Thursdays for 3 hours each time.\n- 3 hours x 4 weeks/month x 2 months = 24 hours\n\nNovember: Two Saturdays for a total of 6 hours.\n- 6 hours for the month\n\nDecember: Three Fridays for a total of 6 hours.\n- 6 hours for the month\n\nBonus days: Third Saturday of every month excluding May and June for 4 hours each.\n- 4 hours x 10 months = 40 hours\n\nAnnual charity run event in June: 8 hours for the event.\n\nNow, let's add all these hours up:\n18 (Jan-Mar) + 24 (Apr-Jun) + 64 (Jul-Aug) + 24 (Sep-Oct) + 6 (Nov) + 6 (Dec) + 40 (Bonus days) + 8 (Charity run) = 190 hours\n\nJohn volunteers for a total of $\\boxed{190}$  hours for the year.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.109375,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 113138,
+    "numina_index": 631843
+  },
+  {
+    "problem": "Let the complex number $z=\\cos\\theta-\\sin\\theta+ \\sqrt{2}+i(\\cos\\theta+\\sin\\theta)$. For what value of $\\theta$ does $|z|$ attain its maximum value, and what is this maximum value?",
+    "answer": "2\\sqrt{2}",
+    "solution": "To solve, we find $|z|$ as follows:\n$$|z|= \\sqrt{(\\cos\\theta-\\sin\\theta+ \\sqrt{2})^{2}+(\\cos\\theta+\\sin\\theta)^{2}}$$\n$$= \\sqrt{4+2\\sqrt{2}(\\cos\\theta-\\sin\\theta)}$$\n$$= \\sqrt{4+4\\cos(\\theta+ \\frac{\\pi}{4})}$$.\n\nWhen $\\cos(\\theta+ \\frac{\\pi}{4})=1$, i.e., $\\theta=2k\\pi- \\frac{\\pi}{4}$ ($k\\in\\mathbb{Z}$), $|z|$ attains its maximum value, which is $2\\sqrt{2}$.\n\nTherefore, the maximum value of $|z|$ is $\\boxed{2\\sqrt{2}}$ when $\\theta=2k\\pi- \\frac{\\pi}{4}$ ($k\\in\\mathbb{Z}$).",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Complex Numbers"
+    ],
+    "llama8b_solve_rate": 0.125,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 62981,
+    "numina_index": 546517
+  },
+  {
+    "problem": "The domain of the function $f \\left(x\\right)=\\frac{1}{x+1}+\\ln x$ is ____.",
+    "answer": "\\{x | x > 0\\}",
+    "solution": "To determine the domain of the function $f(x) = \\frac{1}{x+1} + \\ln x$, we need to ensure that both the fraction and the logarithm are defined. This leads to two conditions:\n\n1. The denominator of the fraction cannot be zero, which means $x + 1 \\neq 0$. Simplifying this inequality, we find $x \\neq -1$.\n\n2. The argument of the logarithm must be greater than zero, which means $x > 0$.\n\nCombining these two conditions, we see that the only requirement that needs to be satisfied for both parts of the function to be defined is $x > 0$. This is because while $x \\neq -1$ is a valid condition, it is automatically satisfied by any $x > 0$.\n\nTherefore, the domain of the function is all $x$ such that $x > 0$. In set notation, this is expressed as $\\boxed{\\{x | x > 0\\}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Other"
+    ],
+    "llama8b_solve_rate": 0.15625,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 2189,
+    "numina_index": 288698
+  },
+  {
+    "problem": "Solve the inequality $x + |2x + 3| \\geqslant 2$.",
+    "answer": "x \\in (-\\infty, -5] \\cup \\left[-\\frac{1}{3}, \\infty\\right)",
+    "solution": "To solve the given inequality $x + |2x + 3| \\geqslant 2$, we need to consider the definition of the absolute value function, which breaks into two cases based on the sign of the expression within the absolute value.\n\nCase 1: If $2x+3 \\geq 0$, which means $x \\geq -\\frac{3}{2}$, the inequality simplifies to:\n\\[ x + (2x + 3) \\geqslant 2 \\]\n\\[ 3x + 3 \\geqslant 2 \\]\n\\[ 3x \\geqslant -1 \\]\n\\[ x \\geqslant -\\frac{1}{3} \\]\n\nCase 2: If $2x+3 < 0$, which means $x < -\\frac{3}{2}$, we have to reverse the inequality sign when we take away the absolute value, so the inequality becomes:\n\\[ x - (2x + 3) \\geqslant 2 \\]\n\\[ -x - 3 \\geqslant 2 \\]\n\\[ -x \\geqslant 5 \\]\n\\[ x \\leqslant -5 \\]\n\nCombining the solutions from both cases, we take the union of the intervals $[-\\frac{1}{3}, \\infty)$ and $(-\\infty, -5]$. Since $-5 < -\\frac{1}{3}$, the two intervals do not overlap, and the complete solution to the inequality is the union of these two ranges.\n\nTherefore, the solution set is $x \\geqslant -\\frac{1}{3}$ or $x \\leqslant -5$, which we can write as\n\\[ \\boxed{x \\in (-\\infty, -5] \\cup \\left[-\\frac{1}{3}, \\infty\\right)}. \\]",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.1875,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 1940,
+    "numina_index": 287821
+  },
+  {
+    "problem": "The sum of three positive numbers that form an arithmetic sequence is 15, and these three numbers, when increased by 2, 5, and 13 respectively, form a geometric sequence. Find these three positive numbers.",
+    "answer": "3, 5, 7",
+    "solution": "Let's denote the three positive numbers that form an arithmetic sequence as $a-d$, $a$, and $a+d$.\n\nAccording to the problem, we have $a-d + a + a+d = 15$, which solves to $a = 5$.\n\nTherefore, the three numbers in the sequence $\\{b_n\\}$ are $7-d$, $10$, and $18+d$ respectively.\n\nAccording to the problem, we have $(7-d)(18+d) = 100$, which solves to $d = 2$ or $d = -13$ (discard this solution).\n\nTherefore, the three positive numbers are $\\boxed{3, 5, 7}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Other"
+    ],
+    "llama8b_solve_rate": 0.125,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 12319,
+    "numina_index": 328815
+  },
+  {
+    "problem": "Given the complex number $z= \\frac{\\sqrt{3}+i}{(1-\\sqrt{3}i)^{2}}$, find the magnitude of $\\frac{1}{z}$.",
+    "answer": "2",
+    "solution": "Given $z= \\frac{\\sqrt{3}+i}{(1-\\sqrt{3}i)^{2}}$, we shall simplify $z$ by multiplying both the numerator and the denominator by the conjugate of the denominator:\n\n1. Calculate the conjugate of the denominator and square it:\n\\[\n(1 - \\sqrt{3}i)^2 = 1 - 2\\sqrt{3}i + 3(-i)^2 = 1 - 2\\sqrt{3}i - 3 = -2 - 2\\sqrt{3}i\n\\]\n\n2. Multiply the numerator and the denominator by the conjugate of the denominator:\n\\[\nz = \\frac{\\sqrt{3}+i}{-2 - 2\\sqrt{3}i} \\cdot \\frac{-2 + 2\\sqrt{3}i}{-2 + 2\\sqrt{3}i}\n\\]\n\n3. Expand the numerator and denominator:\n\\[\nz = \\frac{(-2\\sqrt{3} - 2i) + (2\\sqrt{3}^2 + 2\\sqrt{3}i)}{(-2)^2 - (2\\sqrt{3}i)^2}\n\\]\n\n4. Simplify the fraction:\n\\[\nz = \\frac{-2\\sqrt{3} - 2i + 6 + 2\\sqrt{3}i}{4 - 4 \\cdot 3i^2} = \\frac{4\\sqrt{3}i}{16} = -\\frac{\\sqrt{3}}{4} + \\frac{1}{4}i\n\\]\n\nNow to find $\\frac{1}{z}$, we multiply both numerator and denominator by the conjugate of the simplified z:\n\n1. The conjugate of $z$ is $-\\frac{\\sqrt{3}}{4} - \\frac{1}{4}i$. Hence,\n\\[\n\\frac{1}{z} = \\frac{4}{-\\sqrt{3} + i} \\cdot \\frac{-\\sqrt{3} - i}{-\\sqrt{3} - i}\n\\]\n\n2. Simplify:\n\\[\n\\frac{1}{z} = \\frac{-4\\sqrt{3} - 4i}{3 + 1} = -\\sqrt{3} - i\n\\]\n\n3. To find the magnitude $|\\frac{1}{z}|$, we use the modulus formula for a complex number $a+bi$:\n\\[\n|a+bi| = \\sqrt{a^2+b^2}\n\\]\n\n4. Applying this to $\\frac{1}{z}$:\n\\[\n\\left|-\\sqrt{3} - i\\right| = \\sqrt{(-\\sqrt{3})^2+(-1)^2} = \\sqrt{3+1} = \\sqrt{4} = 2\n\\]\n\nTherefore, the magnitude of $|\\frac{1}{z}|$ is $\\boxed{2}$, which corresponds to option D.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Intermediate Algebra -> Complex Numbers"
+    ],
+    "llama8b_solve_rate": 0.109375,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 31305,
+    "numina_index": 407045
+  },
+  {
+    "problem": "Determine if removing the zeros from 7.0800 will change the value of the decimal.",
+    "answer": "\\times",
+    "solution": "**Solution**: Removing the zeros from 7.0800 results in 7.8. Since 7.0800 $\\neq$ 7.8, removing the zeros from 7.0800 does change the value of the decimal. Therefore, the statement that the value does not change is incorrect.\n\nHence, the answer is: $\\boxed{\\times}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Other -> Other"
+    ],
+    "llama8b_solve_rate": 0.140625,
+    "difficulty_bin": "0.1-0.2",
+    "bigmath_index": 33561,
+    "numina_index": 416529
+  },
+  {
+    "problem": "An employee makes $30 an hour for the first 40 hours in the workweek and an additional percentage for every hour above 40 in the week. He works 6 hours for the first 3 days in the workweek and twice as many hours per day for the remaining 2 days. He made $1290. What is the additional percentage he makes for every hour above 40 in the week?",
+    "answer": "50\\%",
+    "solution": "First, let's calculate the total number of hours the employee worked in the week.\n\nFor the first 3 days, he worked 6 hours each day, so that's:\n3 days * 6 hours/day = 18 hours\n\nFor the remaining 2 days, he worked twice as many hours per day as the first 3 days, so that's:\n2 days * (2 * 6 hours/day) = 2 days * 12 hours/day = 24 hours\n\nNow, let's add the hours from the first 3 days to the hours from the remaining 2 days to get the total hours worked in the week:\n18 hours (first 3 days) + 24 hours (remaining 2 days) = 42 hours\n\nThe employee worked 42 hours in total. The first 40 hours are paid at the regular rate of $30 per hour. The remaining 2 hours are paid at an additional percentage rate.\n\nLet's calculate the total earnings for the first 40 hours:\n40 hours * $30/hour = $1200\n\nThe employee made a total of $1290, so the earnings from the additional 2 hours are:\n$1290 (total earnings) - $1200 (earnings for first 40 hours) = $90\n\nNow, let's find out how much he makes per hour for those additional 2 hours:\n$90 / 2 hours = $45/hour\n\nThe additional hourly rate for hours above 40 is $45. To find the additional percentage, we need to compare this to the original hourly rate of $30.\n\nThe difference between the additional hourly rate and the original hourly rate is:\n$45 (additional hourly rate) - $30 (original hourly rate) = $15\n\nTo find the additional percentage, we divide the difference by the original hourly rate and multiply by 100 to get the percentage:\n($15 / $30) * 100 = 0.5 * 100 = 50%\n\nThe additional percentage the employee makes for every hour above 40 in the week is $\\boxed{50\\%}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.265625,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 110282,
+    "numina_index": 626481
+  },
+  {
+    "problem": "Phil has a coin collection he enjoys adding to. He began with 250 international coins his grandparents gave him. Over the next three years, he managed to triple this number. After those initial years, in the fourth year, he started collecting 5 coins each week. During the fifth year, he collected 2 coins every second day. In the sixth year, he found a rare coin each day. On the seventh year, however, Phil suffered a tragedy when he lost a third of his collection during his move to a new city. How many coins did he have left after losing some?",
+    "answer": "1160",
+    "solution": "Let's calculate the number of coins Phil had each year before the loss in the seventh year.\n\nStarting with 250 coins, after three years, he tripled this number:\n250 coins * 3 = 750 coins\n\nIn the fourth year, he collected 5 coins each week. There are 52 weeks in a year, so:\n5 coins/week * 52 weeks/year = 260 coins in the fourth year\n\nAdding that to the previous total:\n750 coins + 260 coins = 1010 coins\n\nIn the fifth year, he collected 2 coins every second day. There are 365 days in a year, so half of that is:\n365 days/year / 2 = 182.5\n\nSince he can't collect half a coin, we'll round down to 182 days when he collected coins:\n2 coins/day * 182 days = 364 coins in the fifth year\n\nAdding that to the previous total:\n1010 coins + 364 coins = 1374 coins\n\nIn the sixth year, he found a rare coin each day:\n1 coin/day * 365 days/year = 365 coins in the sixth year\n\nAdding that to the previous total:\n1374 coins + 365 coins = 1739 coins\n\nIn the seventh year, he lost a third of his collection:\n1739 coins / 3 \u2248 579.67\n\nSince he can't lose a fraction of a coin, we'll round down to 579 coins lost.\n\nSubtracting the lost coins from his collection:\n1739 coins - 579 coins = 1160 coins\n\nSo, after losing some of his collection, Phil had $\\boxed{1160}$  coins left.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.28125,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 137062,
+    "numina_index": 680392
+  },
+  {
+    "problem": "Given that $\u03b1 \\in \\left( \\frac {\\pi}{2}, \\pi \\right)$, $ \\sin(-\\alpha - \\pi) = \\frac{\\sqrt{5}}{5} $, find $ \\sin\\left(\\alpha - \\frac{3}{2}\\pi\\right) $.",
+    "answer": "-\\frac{2\\sqrt{5}}{5}",
+    "solution": "Since $\\alpha$ is within the interval $\\left(\\frac{\\pi}{2}, \\pi\\right)$, we have:\n$$ \\sin(-\\alpha - \\pi) = -\\sin(\\pi + \\alpha) $$\nThis is due to the property that $\\sin(-x) = -\\sin(x)$ and the sine function is $\\pi$-periodic. Therefore, we can simplify the given equation to:\n$$ -\\sin(\\pi + \\alpha) = \\frac{\\sqrt{5}}{5} $$\nThis can also be written as:\n$$ \\sin(\\alpha) = -\\frac{\\sqrt{5}}{5} $$\nsince $\\sin(x + \\pi) = -\\sin(x)$.\n\nTo find $ \\sin\\left(\\alpha - \\frac{3}{2}\\pi\\right) $, we apply the angle subtraction formula for sine:\n$$ \\sin\\left(\\alpha - \\frac{3}{2}\\pi\\right) = -\\sin\\left(\\frac{3}{2}\\pi - \\alpha\\right) $$\nThis expression can be rewritten as the cosine of \u03b1 because of the co-function identity that $\\sin(\\frac{\\pi}{2} - x) = \\cos(x)$:\n$$ -\\sin\\left(\\frac{3}{2}\\pi - \\alpha\\right) = -\\cos(\\alpha) $$\nSince $\u03b1$ is in the second quadrant (given $\\frac{\\pi}{2} < \u03b1 < \\pi$), $\\cos(\u03b1)$ will be negative. However, we are interested in the absolute value in order to find the principal root:\n$$ -\\cos(\u03b1) = -\\sqrt{1 - \\sin^2(\u03b1)} $$\nSubstituting the earlier value of $\\sin(\\alpha)$:\n$$ -\\sqrt{1 - \\left(-\\frac{\\sqrt{5}}{5}\\right)^2} = -\\sqrt{1 - \\frac{5}{25}} = -\\sqrt{1 - \\frac{1}{5}} = -\\sqrt{\\frac{4}{5}} $$\nThis simplifies to:\n$$ -\\sqrt{\\frac{4}{5}} = -\\frac{2}{\\sqrt{5}} = -\\frac{2\\sqrt{5}}{5} $$\n\nTherefore, $ \\sin\\left(\\alpha - \\frac{3}{2}\\pi\\right) = \\boxed{-\\frac{2\\sqrt{5}}{5}} $.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Trigonometry -> Trigonometric Functions"
+    ],
+    "llama8b_solve_rate": 0.265625,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 2750,
+    "numina_index": 290998
+  },
+  {
+    "problem": "A train 110 m long running at a certain speed takes 12.099 seconds to cross a bridge 132 m in length. What is the speed of the train in kmph?",
+    "answer": "72",
+    "solution": "To calculate the speed of the train, we first need to determine the total distance covered by the train while crossing the bridge. This distance is the sum of the length of the train and the length of the bridge.\n\nTotal distance covered = Length of the train + Length of the bridge\nTotal distance covered = 110 m + 132 m\nTotal distance covered = 242 m\n\nThe train takes 12.099 seconds to cover this distance. To find the speed in meters per second (m/s), we use the formula:\n\nSpeed = Distance / Time\n\nSpeed = 242 m / 12.099 s\nSpeed \u2248 20 m/s\n\nTo convert this speed to kilometers per hour (km/h), we use the conversion factor that 1 m/s is equivalent to 3.6 km/h.\n\nSpeed in km/h = Speed in m/s \u00d7 3.6\nSpeed in km/h \u2248 20 m/s \u00d7 3.6\nSpeed in km/h \u2248 72 km/h\n\nTherefore, the speed of the train is approximately $\\boxed{72}$  km/h.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.203125,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 125664,
+    "numina_index": 656773
+  },
+  {
+    "problem": "In the geometric sequence $\\{a_n\\}$, if $a_2 + a_4 = 2$, then the value of $a_1a_3 + 2a_2a_4 + a_3a_5$ is ____.",
+    "answer": "4",
+    "solution": "Since $\\{a_n\\}$ is a geometric sequence, we have:\n- $a_1a_3 = a_2^2$\n- $a_3a_5 = a_4^2$\n\nTherefore, $a_1a_3 + 2a_2a_4 + a_3a_5 = (a_2 + a_4)^2 = 2^2 = 4$.\n\nHence, the answer is $\\boxed{4}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Sequences and Series"
+    ],
+    "llama8b_solve_rate": 0.28125,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 35707,
+    "numina_index": 425686
+  },
+  {
+    "problem": "The lifespan of a hamster is 6 years less than that of a bat. The lifespan of a frog is some multiple of the lifespan of a hamster. Altogether, the lifespan of the animals is 30 years. If the lifespan of the bat is 10 years, what is the ratio of the lifespan of a frog to that of a hamster?",
+    "answer": "4:1",
+    "solution": "Let's denote the lifespan of the bat as B, the lifespan of the hamster as H, and the lifespan of the frog as F.\n\nAccording to the information given:\n\nB = 10 years (lifespan of the bat)\n\nH = B - 6 years (since the hamster's lifespan is 6 years less than that of the bat)\nH = 10 - 6\nH = 4 years (lifespan of the hamster)\n\nThe total lifespan of all three animals is given as 30 years:\nB + H + F = 30\n\nWe already know B and H, so we can substitute those values in:\n10 + 4 + F = 30\n\nNow, let's solve for F:\nF = 30 - (B + H)\nF = 30 - (10 + 4)\nF = 30 - 14\nF = 16 years (lifespan of the frog)\n\nNow, we need to find the ratio of the lifespan of the frog to that of the hamster:\nRatio (Frog:Hamster) = F : H\nRatio (Frog:Hamster) = 16 : 4\n\nTo simplify the ratio, we divide both sides by the GCD (Greatest Common Divisor) of 16 and 4, which is 4:\nRatio (Frog:Hamster) = (16 \u00f7 4) : (4 \u00f7 4)\nRatio (Frog:Hamster) = 4 : 1\n\nTherefore, the ratio of the lifespan of a frog to that of a hamster is $\\boxed{4:1}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.234375,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 121399,
+    "numina_index": 648181
+  },
+  {
+    "problem": "Mark has two pets, a hare that runs a certain speed and a turtle that crawls 1 foot/second. If they're going to run a 20-foot race, and the turtle needs an 18-second head start to finish in a tie, how fast does the hare run in feet/second?",
+    "answer": "10",
+    "solution": "Let's denote the speed of the hare as \\( v \\) feet/second.\n\nThe turtle crawls at a speed of 1 foot/second and gets an 18-second head start. In those 18 seconds, the turtle will cover a distance of \\( 18 \\times 1 = 18 \\) feet.\n\nSince the race is 20 feet long, the turtle will have 2 feet left to cover when the hare starts running. The hare will cover these 20 feet in the same time it takes the turtle to cover the remaining 2 feet.\n\nThe turtle's speed is 1 foot/second, so it will take the turtle 2 seconds to cover the remaining 2 feet.\n\nSince the hare covers the entire 20 feet in the same 2 seconds, the hare's speed \\( v \\) is \\( \\frac{20 \\text{ feet}}{2 \\text{ seconds}} = 10 \\text{ feet/second} \\).\n\nTherefore, the hare runs at a speed of $\\boxed{10}$  feet/second.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.265625,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 85295,
+    "numina_index": 582145
+  },
+  {
+    "problem": "Given an arithmetic sequence ${a_n}$ that satisfies $a_1 + a_3 + a_5 + a_7 + a_9 = 10$ and $a_8^2 - a_2^2 = 36$, find the value of $a_{11}$.",
+    "answer": "11",
+    "solution": "Let's denote the common difference of the arithmetic sequence ${a_n}$ as $d$. According to the given condition, $a_1 + a_3 + a_5 + a_7 + a_9 = 10$.\n\nSince the sequence is arithmetic, we can express each term in terms of the first term $a_1$ and the common difference $d$:\n\n\\[\n\\begin{aligned}\na_3 &= a_1 + 2d, \\\\\na_5 &= a_1 + 4d, \\\\\na_7 &= a_1 + 6d, \\\\\na_9 &= a_1 + 8d.\n\\end{aligned}\n\\]\n\nAdding these up:\n\n\\[\n\\begin{aligned}\na_1 + (a_1 + 2d) + (a_1 + 4d) + (a_1 + 6d) + (a_1 + 8d) &= 10, \\\\\n5a_1 + 20d &= 10, \\\\\n5a_5 &= 10.\n\\end{aligned}\n\\]\n\nFrom the last equation, we can deduce that $a_5 = 2$. Therefore, we have:\n\n\\[\na_1 + 4d = 2 \\tag{1}\n\\]\n\nFor the second condition, $a_8^2 - a_2^2 = 36$, expressing $a_8$ and $a_2$ in terms of $a_1$ and $d$ gives:\n\n\\[\n\\begin{aligned}\na_2 &= a_1 + d, \\\\\na_8 &= a_1 + 7d. \\\\\n\\end{aligned}\n\\]\n\nAs both terms are from an arithmetic sequence, their difference in terms of the common difference $d$ is an integer multiple:\n\n\\[\n(a_1 + 7d)^2 - (a_1 + d)^2 = 36,\n\\]\n\nExpanding these squares and simplifying gives us:\n\n\\[\na_1^2 + 14a_1d + 49d^2 - a_1^2 - 2a_1d - d^2 = 36,\n\\]\n\nThis further simplifies to:\n\n\\[\n12a_1d + 48d^2 = 36 \\tag{2}\n\\]\n\nSince $2a_5 = 2(a_1 + 4d) = 4$, and $a_5 = 2$:\n\n\\[\n2a_1 + 8d = 4,\n\\]\n\nIsolating $a_1$ gives us:\n\n\\[\na_1 = 2 - 4d \\tag{3}\n\\]\n\nSubstituting our equation for $a_1$ from (3) into equation (2) gives us:\n\n\\[\n12(2 - 4d)d + 48d^2 = 36,\n\\]\n\n\\[\n24d - 48d^2 + 48d^2 = 36,\n\\]\n\n\\[\nd = \\frac{36}{24} = \\frac{3}{2}.\n\\]\n\nNow we can find $a_1$ using equation (1):\n\n\\[\na_1 + 4\\left(\\frac{3}{2}\\right) = 2,\n\\]\n\n\\[\na_1 + 6 = 2,\n\\]\n\n\\[\na_1 = -4.\n\\]\n\nUsing the common difference $d$ and the first term $a_1$, we can find $a_{11}$:\n\n\\[\na_{11} = a_1 + 10d = -4 + 10 \\times \\frac{3}{2} = -4 + 15 = \\boxed{11}.\n\\]",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Sequences and Series"
+    ],
+    "llama8b_solve_rate": 0.203125,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 39953,
+    "numina_index": 444208
+  },
+  {
+    "problem": "A lawn care company bought 4 lawnmower blades for $8 each, 2 spools of weed eater string for $7 each, 1 gallon of fuel for $4, and a box of 10 trash bags for $5. They were given a 10% discount on their total purchase. If there is a 5% sales tax on their purchase, how much did the company spend on supplies including the discount and tax?",
+    "answer": "$51.98",
+    "solution": "First, let's calculate the total cost of the items before the discount:\n\nCost of lawnmower blades = 4 blades * $8/blade = $32\nCost of weed eater string = 2 spools * $7/spool = $14\nCost of fuel = $4\nCost of trash bags = $5\n\nTotal cost before discount = $32 + $14 + $4 + $5 = $55\n\nNow, let's apply the 10% discount:\n\nDiscount amount = 10% of $55 = 0.10 * $55 = $5.50\n\nTotal cost after discount = $55 - $5.50 = $49.50\n\nFinally, let's calculate the sales tax and add it to the total cost after discount:\n\nSales tax = 5% of $49.50 = 0.05 * $49.50 = $2.475\n\nSince sales tax is usually rounded to the nearest cent, the sales tax would be $2.48.\n\nTotal cost including discount and tax = $49.50 + $2.48 = $51.98\n\nTherefore, the lawn care company spent $\\boxed{\\$51.98}$  on supplies including the discount and tax.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.296875,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 93966,
+    "numina_index": 596847
+  },
+  {
+    "problem": "Dheo paid his grocery bill of 285 pesos with 20-peso bills and 5-peso coins. He paid some bills and coins all in all. He had 11 of each kind. How many total bills and coins did he use?",
+    "answer": "22",
+    "solution": "Dheo used 11 20-peso bills and 11 5-peso coins.\n\nTo find the total number of bills and coins he used, we simply add the number of bills to the number of coins:\n\nTotal bills and coins = Number of 20-peso bills + Number of 5-peso coins\nTotal bills and coins = 11 + 11\nTotal bills and coins = 22\n\nDheo used a total of $\\boxed{22}$  bills and coins.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.234375,
+    "difficulty_bin": "0.2-0.3",
+    "bigmath_index": 133357,
+    "numina_index": 672591
+  },
+  {
+    "problem": "The product of the first $n$ terms of a geometric sequence $\\{a_n\\}$ is $T_n$, and $2a_3 = a_4^2$. Find $T_9$.",
+    "answer": "512",
+    "solution": "By the properties of a geometric sequence, we have $2a_3 = a_4^2 = a_3a_5$,  \nwhich gives $a_5 = 2$. Let the common ratio of the geometric sequence $\\{a_n\\}$ be $q$,  \nthus $T_9 = a_1a_2a_3\u2026a_9 = a_1^9q^{1+2+3+\u2026+8} = a_1^9q^{\\frac{8(1+8)}{2}}$  \n$= a_1^9q^{36} = (a_1 \\cdot q^4)^9 = a_5^9 = 2^9 = 512$  \nTherefore, the answer is $\\boxed{512}$.  \nFrom the problem statement and the properties of a geometric sequence, we find $a_5 = 2$, and $T_9 = a_5^9$. Substituting the values, we get the result.  \nThis problem tests the properties of a geometric sequence, identifying $a_5$ as the key to solving the problem, making it a basic question.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Sequences and Series -> Geometric Sequences"
+    ],
+    "llama8b_solve_rate": 0.359375,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 38599,
+    "numina_index": 438095
+  },
+  {
+    "problem": "Ed had 30 more marbles than Doug. Ed lost 21 of his marbles at the playground. If Ed had 91 marbles. How many more marbles did Ed have than Doug then?",
+    "answer": "9",
+    "solution": "If Ed had 91 marbles after losing 21, then before losing them, he had 91 + 21 = 112 marbles.\n\nSince Ed originally had 30 more marbles than Doug, we can find out how many marbles Doug had by subtracting 30 from the number of marbles Ed had before losing any.\n\nSo, Doug had 112 - 30 = 82 marbles.\n\nNow, after Ed lost 21 marbles, he has 91 marbles. To find out how many more marbles Ed has than Doug now, we subtract the number of marbles Doug has from the number of marbles Ed has:\n\n91 (Ed's marbles) - 82 (Doug's marbles) = 9 more marbles.\n\nSo, Ed has $\\boxed{9}$  more marbles than Doug now.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.390625,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 126166,
+    "numina_index": 657777
+  },
+  {
+    "problem": "In his garden, Grandpa had counted some small tomatoes before going on vacation. When he came back from vacation, he counted 100 times more tomatoes. 3564 tomatoes grew in his absence. How many tomatoes did Grandpa count before going on vacation?",
+    "answer": "36",
+    "solution": "If Grandpa counted 100 times more tomatoes after coming back from vacation, we can find the original number of tomatoes he counted before going on vacation by dividing the number of tomatoes he found after vacation by 100.\n\nSo, if he found 3564 tomatoes after vacation, we divide that number by 100 to find the original count:\n\n3564 tomatoes / 100 = 35.64 tomatoes\n\nSince you can't have a fraction of a tomato in this context, we can round the number to the nearest whole tomato. Therefore, Grandpa counted $\\boxed{36}$  tomatoes before going on vacation.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.328125,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 136817,
+    "numina_index": 679903
+  },
+  {
+    "problem": " $6$  people each have a hat.  If they shuffle their hats and redistribute them, what is the probability that exactly one person gets their own hat back?",
+    "answer": "\\frac{11}{30}",
+    "solution": "1. **Fix one person with their own hat**: Let's denote the people as \\( P_1, P_2, P_3, P_4, P_5, P_6 \\) and their corresponding hats as \\( H_1, H_2, H_3, H_4, H_5, H_6 \\). Assume \\( P_1 \\) gets \\( H_1 \\).\n\n2. **Derangement of the remaining hats**: We need to find the number of ways to distribute the remaining 5 hats such that none of the remaining 5 people get their own hat. This is known as the derangement of 5 items, denoted as \\( D_5 \\).\n\n3. **Calculate the derangement \\( D_5 \\)**: The formula for the derangement of \\( n \\) items is given by:\n   \\[\n   D_n = n! \\sum_{k=0}^{n} \\frac{(-1)^k}{k!}\n   \\]\n   For \\( n = 5 \\):\n   \\[\n   D_5 = 5! \\left( \\frac{(-1)^0}{0!} + \\frac{(-1)^1}{1!} + \\frac{(-1)^2}{2!} + \\frac{(-1)^3}{3!} + \\frac{(-1)^4}{4!} + \\frac{(-1)^5}{5!} \\right)\n   \\]\n   \\[\n   D_5 = 120 \\left( 1 - 1 + \\frac{1}{2} - \\frac{1}{6} + \\frac{1}{24} - \\frac{1}{120} \\right)\n   \\]\n   \\[\n   D_5 = 120 \\left( 1 - 1 + 0.5 - 0.1667 + 0.0417 - 0.0083 \\right)\n   \\]\n   \\[\n   D_5 = 120 \\left( 0.3667 \\right) = 44\n   \\]\n\n4. **Total number of ways to distribute hats**: The total number of ways to distribute 6 hats to 6 people is \\( 6! \\):\n   \\[\n   6! = 720\n   \\]\n\n5. **Probability calculation**: The probability that exactly one person gets their own hat is the number of favorable outcomes divided by the total number of outcomes. Since any one of the 6 people can be the one who gets their own hat, we multiply the derangement by 6:\n   \\[\n   \\text{Probability} = \\frac{6 \\cdot D_5}{6!} = \\frac{6 \\cdot 44}{720} = \\frac{264}{720} = \\frac{11}{30}\n   \\]\n\nThe final answer is \\( \\boxed{ \\frac{11}{30} } \\)",
+    "source": "aops_forum",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Probability -> Other"
+    ],
+    "llama8b_solve_rate": 0.328125,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 185847,
+    "numina_index": 262118
+  },
+  {
+    "problem": "Chris is trying to sell his car for $5200 and has gotten two price offers. One buyer offered to pay the full price if Chris would pay for the car maintenance inspection, which cost a tenth of Chris\u2019s asking price. The other buyer agreed to pay the price if Chris replaced the headlights for a certain amount and the tires for three times as much. The difference between the amounts Chris will earn from the two offers is $200. How much does it cost to replace the headlights?",
+    "answer": "$180",
+    "solution": "Let's break down the problem step by step.\n\nFirst, we know that the car maintenance inspection costs a tenth of Chris's asking price. Since Chris is asking for $5200, the cost of the car maintenance inspection is:\n\n\\( \\frac{1}{10} \\times 5200 = 520 \\)\n\nSo, if Chris accepts the first buyer's offer, he will pay $520 for the inspection and sell the car for $5200, effectively earning:\n\n\\( 5200 - 520 = 4680 \\)\n\nNow, let's consider the second buyer's offer. Let the cost to replace the headlights be \\( H \\) and the cost to replace the tires be \\( 3H \\) (since it's three times as much). The total cost for Chris to replace both would be:\n\n\\( H + 3H = 4H \\)\n\nThe second buyer will pay the full price of $5200, but Chris has to subtract the cost of replacing the headlights and tires:\n\n\\( 5200 - 4H \\)\n\nWe are told that the difference between the amounts Chris will earn from the two offers is $200. So, if we subtract the earnings from the second offer from the earnings of the first offer, we get:\n\n\\( 4680 - (5200 - 4H) = 200 \\)\n\nNow, let's solve for \\( H \\):\n\n\\( 4680 - 5200 + 4H = 200 \\)\n\n\\( -520 + 4H = 200 \\)\n\n\\( 4H = 200 + 520 \\)\n\n\\( 4H = 720 \\)\n\n\\( H = \\frac{720}{4} \\)\n\n\\( H = 180 \\)\n\nTherefore, the cost to replace the headlights is $\\boxed{\\$180}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.34375,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 117767,
+    "numina_index": 641004
+  },
+  {
+    "problem": "Of 120 players on a cricket team, 3/5 of them are throwers. The rest of the team, which consists of batters and all-rounders, is divided so 2/7 of them are left-handed and the rest are right-handed. Assuming that all throwers are right-handed, how many right-handed players are there in total on the team?",
+    "answer": "106",
+    "solution": "First, let's find out how many players are throwers. Since 3/5 of the players are throwers, we can calculate this number as follows:\n\nNumber of throwers = (3/5) * 120 players = 72 players\n\nNow, we know that the rest of the team consists of batters and all-rounders. The number of these players is the total number of players minus the number of throwers:\n\nNumber of batters and all-rounders = Total players - Number of throwers\nNumber of batters and all-rounders = 120 players - 72 players = 48 players\n\nOut of these 48 players, 2/7 are left-handed. Let's find out how many that is:\n\nNumber of left-handed players = (2/7) * 48 players = 13.714... \u2248 14 players (since we can't have a fraction of a player, we'll round to the nearest whole number)\n\nThe rest of the batters and all-rounders are right-handed. So, the number of right-handed batters and all-rounders is:\n\nNumber of right-handed batters and all-rounders = Number of batters and all-rounders - Number of left-handed players\nNumber of right-handed batters and all-rounders = 48 players - 14 players = 34 players\n\nNow, we add the number of right-handed throwers to the number of right-handed batters and all-rounders to get the total number of right-handed players:\n\nTotal number of right-handed players = Number of throwers (all right-handed) + Number of right-handed batters and all-rounders\nTotal number of right-handed players = 72 players + 34 players = 106 players\n\nTherefore, there are $\\boxed{106}$  right-handed players in total on the team.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.375,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 125650,
+    "numina_index": 656752
+  },
+  {
+    "problem": "A positive integer, when increased by 100, becomes a perfect square, and when increased by 168, it becomes another perfect square. Find this number.",
+    "answer": "156",
+    "solution": "Let's denote this number as $m$. Then, we have:\n\n1. $100 + m = 10^2 + 20n + n^2$, which simplifies to $m = 20n + n^2$.\n2. $168 + m = 10^2 + 68 + m = 10^2 + 68 + n^2 + 20n = 10^2 + 20x + x^2$; hence, $68 + n^2 + 20n = 20x + x^2$.\n3. Rearranging the equation gives $x^2 - n^2 + 20(x - n) = 68$.\n4. Factoring, we get $(x - n)(x + n) + 20(x - n) = 68$.\n5. Further simplification leads to $(x - n)(x + n + 20) = 68$.\n\nSince $m$ is a positive integer, $x$ must be greater than $n$. Therefore, we can factor 68 into several products: $1 \\times 68$, $2 \\times 34$, and $4 \\times 17$. Clearly, $(x + n + 20)$ must be greater than 20, so we exclude the products after $4 \\times 17$, leaving us with only the first two sets of factors. Solving for $x - n = 1$ and $x + n + 20 = 68$ as well as $x - n = 2$ and $x + n + 20 = 34$, we find:\n\n- The first set of equations gives $x = 24.5$ (not a positive integer, hence excluded).\n- The second set of equations gives $x = 8$ and $n = 6$, which when substituted back into $m = 20n + n^2$ gives $m = 156$.\n\nTherefore, the answer is $\\boxed{156}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.375,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 21945,
+    "numina_index": 367734
+  },
+  {
+    "problem": "The banker's discount of a certain sum of money is Rs. 36 and the true discount on the same sum for the same time is some amount. The sum due is Rs. 180. What is the true discount on the sum?",
+    "answer": "30",
+    "solution": "To find the true discount on the sum, we need to understand the relationship between the Banker's Discount (BD), True Discount (TD), and the Present Value (PV) or the sum due.\n\nThe Banker's Discount is the simple interest on the face value (FV) of a bill for the unexpired time, while the True Discount is the simple interest on the present value (PV) for the same time. The sum due is the amount that needs to be paid at the end of the time period, which is also the face value of the bill.\n\nThe relationship between Banker's Discount, True Discount, and Present Value is given by the formula:\n\nBD = TD + (TD * BD) / PV\n\nGiven:\nBD = Rs. 36\nPV (sum due) = Rs. 180\n\nWe need to find TD.\n\nRearranging the formula to solve for TD, we get:\n\nTD = BD / (1 + (BD / PV))\n\nSubstituting the given values:\n\nTD = 36 / (1 + (36 / 180))\n\nCalculating the denominator first:\n\n36 / 180 = 0.2\n\nNow, adding 1 to 0.2:\n\n1 + 0.2 = 1.2\n\nFinally, dividing 36 by 1.2:\n\nTD = 36 / 1.2\nTD = 30\n\nTherefore, the true discount on the sum is Rs. $\\boxed{30}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.3125,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 106700,
+    "numina_index": 619719
+  },
+  {
+    "problem": "Compare the size of $2^{100}$ and $3^{75}$.",
+    "answer": "2^{100} < 3^{75}",
+    "solution": "Let's start by transforming each expression:\n\n$2^{100} = (2^4)^{25} = 16^{25}$,\n\n$3^{75} = (3^3)^{25} = 27^{25}$.\n\nSince $16 < 27$,\n\nTherefore, $2^{100} < 3^{75}$. \n\nSo, the final answer is $\\boxed{2^{100} < 3^{75}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Other"
+    ],
+    "llama8b_solve_rate": 0.390625,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 58511,
+    "numina_index": 526580
+  },
+  {
+    "problem": "If the function $f(x)=a^{x}(a > 0,a\\neq 1)$ has a maximum value of $4$ on the interval $[-2,1]$ and a minimum value of $m$, and the function $g(x)=(1-4m) \\sqrt{x}$ is decreasing on the interval $[0,+\\infty)$, then the value of $a$ is.",
+    "answer": "\\dfrac{1}{2}",
+    "solution": "**Analysis**\n\nAccording to the properties of the exponential function, it is necessary to discuss the cases $a > 1$ and $0  1$, we have $a^{1}=4$, $a^{-2}=m$,  \nIn this case, $a=4$, $m= \\dfrac{1}{16}$, and then $g(x)= \\dfrac{3}{4} \\sqrt{x}$ is an increasing function, which is inconsistent with the problem statement;  \nIf $0 < a < 1$, then $a^{-2}=4$, $a^{1}=m$, hence $a= \\dfrac{1}{2}$, $m=2$, and $g(x)=-7 \\sqrt{x}$ is a decreasing function on $[0,+\\infty)$, which meets the requirements of the problem.  \nTherefore, the answer is $\\boxed{\\dfrac{1}{2}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Calculus -> Other"
+    ],
+    "llama8b_solve_rate": 0.359375,
+    "difficulty_bin": "0.3-0.4",
+    "bigmath_index": 47434,
+    "numina_index": 477011
+  },
+  {
+    "problem": "Simplify and evaluate: $[\\left(x-y\\right)^{2}-x\\left(3x-2y\\right)+\\left(x+y\\right)\\left(x-y\\right)]\\div 2x$, where $x=1$ and $y=-2$.",
+    "answer": "-\\frac{1}{2}",
+    "solution": "To simplify and evaluate the given expression $[\\left(x-y\\right)^{2}-x\\left(3x-2y\\right)+\\left(x+y\\right)\\left(x-y\\right)]\\div 2x$ with $x=1$ and $y=-2$, we follow these steps:\n\n1. Expand and simplify the expression inside the brackets:\n\\begin{align*}\n&= [x^{2}-2xy+y^{2}-3x^{2}+2xy+x^{2}-y^{2}]\\div 2x \\\\\n&= [x^{2}-2xy+y^{2}-3x^{2}+2xy+x^{2}-y^{2}]\\div 2x \\\\\n&= (-x^{2})\\div 2x\n\\end{align*}\n\n2. Simplify the expression further:\n\\begin{align*}\n&= -\\frac{x^{2}}{2x} \\\\\n&= -\\frac{1}{2}x\n\\end{align*}\n\n3. Substitute $x=1$ and $y=-2$ into the simplified expression:\n\\begin{align*}\n&= -\\frac{1}{2}(1) \\\\\n&= -\\frac{1}{2}\n\\end{align*}\n\nTherefore, the original expression evaluates to $\\boxed{-\\frac{1}{2}}$ when $x=1$ and $y=-2$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Algebraic Expressions"
+    ],
+    "llama8b_solve_rate": 0.484375,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 40483,
+    "numina_index": 446467
+  },
+  {
+    "problem": "In triangle $ABC$, if $A=60^{\\circ}$, and $AC$ and $AB$ are the two roots of the equation $x^{2}-5x+6=0$, then $BC=$ ______.",
+    "answer": "\\sqrt{7}",
+    "solution": "Since $AC$ and $AB$ are the two roots of the equation $x^{2}-5x+6=0$,  \nwe have $AC+AB=5$ and $AC \\cdot AB=6$.  \nBy the Law of Cosines, we get $BC^{2}=AC^{2}+AB^{2}-2AC \\cdot AB \\cos A=AC^{2}+AB^{2}-AC \\cdot AB=(AC+AB)^{2}-3AC \\cdot AB=25-18=7$,  \nthus $BC= \\sqrt{7}$.  \nTherefore, the answer is: $\\boxed{\\sqrt{7}}$.  \nThis problem involves using Vieta's formulas to express $AC+AB=5$ and $AC \\cdot AB=6$, and then applying the Law of Cosines to establish a relationship. By transforming it using the formula for a perfect square and substituting the respective values, we can calculate the length of $BC$.  \nThis question tests the Law of Cosines and Vieta's formulas. Mastering the Law of Cosines is key to solving this problem.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Other"
+    ],
+    "llama8b_solve_rate": 0.4375,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 22309,
+    "numina_index": 369332
+  },
+  {
+    "problem": "The solution set of the inequality $x^2-ax-b<0$ is $\\{x|2<x<3\\}$. Find the values of $a$ and $b$.",
+    "answer": "a=5, b=-6",
+    "solution": "Given that the solution set of the inequality $x^2-ax-b<0$ is $\\{x|2<x<3\\}$,  \nit means that 3 and 2 are the roots of the equation $x^2-ax-b=0$,  \nTherefore, $3+2=a$ and $3 \\times 2 = -b$  \nThus, $a=5$ and $b=-6$  \nSo, the answer is: $\\boxed{a=5, b=-6}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.40625,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 31449,
+    "numina_index": 407646
+  },
+  {
+    "problem": "A group of 8 girls went to a spa for nail polishing. Each girl got all the fingers of a certain number of limbs polished. The spa staff polished a total of 40 fingers. How many limbs were polished per girl?",
+    "answer": "1",
+    "solution": "Let's denote the number of limbs polished per girl as L. Since each girl has 5 fingers on each limb, the total number of fingers polished per girl would be 5L. \n\nGiven that there are 8 girls, the total number of fingers polished for all girls would be 8 * 5L. \n\nWe are told that the spa staff polished a total of 40 fingers, so we can set up the equation:\n\n8 * 5L = 40\n\nNow, we can solve for L:\n\n40L = 40\nL = 40 / (8 * 5)\nL = 40 / 40\nL = 1\n\nSo, each girl got all the fingers of $\\boxed{1}$  limb polished.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.421875,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 120861,
+    "numina_index": 647127
+  },
+  {
+    "problem": "Find the equation of the line that passes through point A $(-\\sqrt{3}, 3)$ and has a slope angle half of that of the line $\\sqrt{3}x + y + 1 = 0$.",
+    "answer": "\\sqrt{3}x - y + 6 = 0",
+    "solution": "Given the line $\\sqrt{3}x + y + 1 = 0$, we can rearrange it to $y = -\\sqrt{3}x - 1$. Let's denote the slope angle as $\\theta$.\n\nThus, the slope $k = -\\sqrt{3}$, which implies $\\tan\\theta = -\\sqrt{3}$.\n\nTherefore, $\\theta = 120^\\circ$.\n\nThe slope angle of the line we are looking for is half of that, which is $60^\\circ$.\n\nThe slope of this line is $\\sqrt{3}$.\n\nTherefore, the equation of the line we are looking for is: $y - 3 = \\sqrt{3}(x + \\sqrt{3})$,\n\nwhich simplifies to $\\sqrt{3}x - y + 6 = 0$.\n\nHence, the answer is: $\\boxed{\\sqrt{3}x - y + 6 = 0}$.\n\nThis problem involves understanding the relationship between slope and angle of inclination, and using the point-slope form of a line equation. It is a basic question that tests these concepts.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.453125,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 49307,
+    "numina_index": 485278
+  },
+  {
+    "problem": "Two dice are thrown. If at least one of the dice shows a 4 or a 5, the trial is considered successful. What is the expected number of successful trials, X, in 10 trials?",
+    "answer": "\\frac{50}{9}",
+    "solution": "This problem involves finding the expected value of a discrete random variable. When two dice are thrown, the total number of possible outcomes is $6 \\times 6 = 36$. A successful trial occurs when at least one of the dice shows a 4 or a 5. The outcomes that result in a successful trial are:\n$(1,4)$, $(4,1)$, $(4,2)$, $(2,4)$, $(4,3)$, $(3,4)$, $(4,4)$, $(4,5)$, $(5,4)$, $(4,6)$, $(6,4)$, $(5,1)$, $(1,5)$, $(5,2)$, $(2,5)$, $(5,3)$, $(3,5)$, $(5,5)$, $(5,6)$, $(6,5)$. There are a total of $20$ successful outcomes.\n\nTherefore, the probability of success in each trial is $P = \\frac{20}{36} = \\frac{5}{9}$.\n\nIn 10 trials, the number of successful trials, X, follows a binomial distribution, represented as $X \\sim B(10, \\frac{5}{9})$.\n\nHence, the expected number of successful trials, X, in 10 trials is $E(X) = 10 \\times \\frac{5}{9} = \\boxed{\\frac{50}{9}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability"
+    ],
+    "llama8b_solve_rate": 0.484375,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 14559,
+    "numina_index": 337898
+  },
+  {
+    "problem": "In $\\triangle ABC$, the sides opposite to angles $A$, $B$, and $C$ are denoted as $a$, $b$, and $c$ respectively. Given that $A=75^{\\circ}$, $B=45^{\\circ}$, and $c=3 \\sqrt {6}$, find the value of $b$.",
+    "answer": "6",
+    "solution": "First, since $A=75^{\\circ}$ and $B=45^{\\circ}$, we have:\n$$C=180^{\\circ}-75^{\\circ}-45^{\\circ}=60^{\\circ}.$$\nBy the Law of Sines, we have:\n$$\\frac{c}{\\sin C}= \\frac{b}{\\sin B},$$\nwhich gives us:\n$$\\frac{3 \\sqrt {6}}{\\sin 60 ^{\\circ} }= \\frac{b}{\\sin 45 ^\\circ }.$$\nFrom this, we can find:\n$$b=6.$$\nTherefore, the answer is $\\boxed{6}$.\n\nThis problem tests the application of the Law of Sines and the internal angle sum theorem of triangles, focusing on computational skills. It is considered a basic question.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Triangles"
+    ],
+    "llama8b_solve_rate": 0.46875,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 13133,
+    "numina_index": 332215
+  },
+  {
+    "problem": "Solve the inequality system: $\\left\\{\\begin{array}{l}{4x-6\uff1c2x}\\\\{\\frac{3x-1}{2}\u22652x-1}\\end{array}\\right.$.",
+    "answer": "x \\leq 1",
+    "solution": "To solve the given system of inequalities, we proceed as follows:\n\n1. For the first inequality $4x - 6 < 2x$, we solve for $x$:\n\\begin{align*}\n4x - 6 &< 2x \\\\\n4x - 2x &< 6 \\\\\n2x &< 6 \\\\\nx &< 3\n\\end{align*}\n\n2. For the second inequality $\\frac{3x-1}{2} \\geq 2x - 1$, we solve for $x$:\n\\begin{align*}\n\\frac{3x-1}{2} &\\geq 2x - 1 \\\\\n3x - 1 &\\geq 4x - 2 \\\\\n-1 + 2 &\\geq 4x - 3x \\\\\n1 &\\geq x \\\\\nx &\\leq 1\n\\end{align*}\n\nCombining the results from both inequalities, we find that the solution set is determined by the second inequality, since it provides the more restrictive condition on $x$.\n\nTherefore, the solution set of the original inequality system is $\\boxed{x \\leq 1}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.4375,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 56129,
+    "numina_index": 516040
+  },
+  {
+    "problem": "Simplify first, then evaluate: $\\frac{a-1}{a}\u00f7(a-\\frac{1}{a})$, where $a=2022$.",
+    "answer": "\\frac{1}{2023}",
+    "solution": "To simplify and then evaluate the expression $\\frac{a-1}{a}\u00f7(a-\\frac{1}{a})$ given $a=2022$, we follow these steps:\n\n1. Rewrite the division as multiplication by the reciprocal:\n$$\\frac{a-1}{a}\u00f7(a-\\frac{1}{a}) = \\frac{a-1}{a} \\cdot \\frac{a}{a^2-1}$$\n\n2. Notice that $a^2-1$ can be factored as $(a+1)(a-1)$, so we rewrite the expression:\n$$= \\frac{a-1}{a} \\cdot \\frac{a}{(a+1)(a-1)}$$\n\n3. Simplify the expression by canceling out $(a-1)$ in the numerator and denominator:\n$$= \\frac{1}{a+1}$$\n\n4. Substitute $a=2022$ into the simplified expression:\n$$= \\frac{1}{2022+1} = \\frac{1}{2023}$$\n\nTherefore, the simplified and evaluated expression is $\\boxed{\\frac{1}{2023}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Algebraic Expressions"
+    ],
+    "llama8b_solve_rate": 0.421875,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 13710,
+    "numina_index": 334462
+  },
+  {
+    "problem": "A class has 60 students, and each student is assigned a random number from 1 to 60. If we use systematic sampling to draw a sample of size 5 (equidistant sampling), and it is known that students with numbers 4, a, 28, b, and 52 are in the sample, then $a+b=$ ______.",
+    "answer": "56",
+    "solution": "Given that the sample size is 5, we can calculate the sampling interval, which is the consistent distance between selected samples, as follows:\n$$\\text{Sampling interval} = \\frac{\\text{Total number of students}}{\\text{Sample size}} = \\frac{60}{5} = 12.$$\n\nSince students with numbers 4, a, 28, b, and 52 are in the sample and the sample is equidistant, we deduce the pattern of interval between the given numbers.\n\nStarting with number 4, to maintain the sampling interval of 12, the next student number in the sample (a) will be:\n$$a = 4 + 12 = 16.$$\n\nWe can verify this by checking the interval to the next given number:\n$$28 - a = 28 - 16 = 12,$$\nwhich is indeed the sampling interval.\n\nFor number b, we proceed similarly but starting from number 28 to maintain the interval of 12:\n$$b = 28 + 12 = 40.$$\n\nFinally, to check the position of number 52 in the sequence, we calculate:\n$$52 - b = 52 - 40 = 12,$$\nwhich again confirms the sampling interval of 12.\n\nSince we now have the values of a and b, we can find the sum:\n$$a + b = 16 + 40 = \\boxed{56}.$$",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability"
+    ],
+    "llama8b_solve_rate": 0.484375,
+    "difficulty_bin": "0.4-0.5",
+    "bigmath_index": 52827,
+    "numina_index": 501112
+  },
+  {
+    "problem": "Let a metallic sheet be of rectangular shape with dimensions L meters x W meters. From each of its corners, a square of side length S meters is cut off so as to make an open box. Find an expression for the volume of the box as a function of L, W, and S, and then calculate the volume of the box for L = 48 m, W = 36 m, and S = 5 m.",
+    "answer": "4940",
+    "solution": "To create the open box, we cut off a square of side length S from each corner of the metallic sheet. This means that the length and width of the box will be reduced by 2S (since we cut off S from both sides of the length and width).\n\nThe new dimensions of the box will be:\n- Length: L - 2S\n- Width: W - 2S\n- Height: S (since the sides of the cut squares will fold up to become the height of the box)\n\nThe volume of the box (V) can be calculated using the formula for the volume of a rectangular prism, which is length \u00d7 width \u00d7 height. So the expression for the volume of the box as a function of L, W, and S is:\n\nV = (L - 2S) * (W - 2S) * S\n\nNow, let's calculate the volume of the box for L = 48 m, W = 36 m, and S = 5 m:\n\nV = (48 - 2*5) * (36 - 2*5) * 5\nV = (48 - 10) * (36 - 10) * 5\nV = 38 * 26 * 5\nV = 988 * 5\nV = 4940 m\u00b3\n\nSo the volume of the box is $\\boxed{4940}$  cubic meters.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.515625,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 95891,
+    "numina_index": 600225
+  },
+  {
+    "problem": "It will cost $60 to rent a sailboat and $80 per hour to rent a ski boat. Ken rented a sailboat while Aldrich rented a ski boat. It cost Aldrich $120 more to rent the ski boat than Ken to rent a sailboat for a certain number of hours a day in two days. How many hours per day did they rent the boats?",
+    "answer": "1.5",
+    "solution": "Let's denote the number of hours per day that Aldrich rented the ski boat as \\( h \\).\n\nThe cost for Ken to rent a sailboat for a day is a flat rate of $60, regardless of the number of hours he used it.\n\nThe cost for Aldrich to rent a ski boat for a day is $80 per hour, so for \\( h \\) hours, it would be \\( 80h \\).\n\nSince Aldrich's total cost for renting the ski boat was $120 more than Ken's cost for renting the sailboat, we can set up the following equation for one day:\n\n\\[ 80h = 60 + 120 \\]\n\nSolving for \\( h \\):\n\n\\[ 80h = 180 \\]\n\\[ h = \\frac{180}{80} \\]\n\\[ h = \\frac{9}{4} \\]\n\\[ h = 2.25 \\]\n\nHowever, since it's unlikely that Aldrich rented the boat for a fraction of an hour, we should consider that the problem states the cost difference is for two days. Therefore, we should multiply the cost of the sailboat rental by 2 to account for both days:\n\n\\[ 2 \\times 60 = 120 \\]\n\nNow, the equation for the total cost difference over two days is:\n\n\\[ 80h \\times 2 = 120 + 120 \\]\n\nSolving for \\( h \\):\n\n\\[ 160h = 240 \\]\n\\[ h = \\frac{240}{160} \\]\n\\[ h = \\frac{3}{2} \\]\n\\[ h = 1.5 \\]\n\nSo, Aldrich rented the ski boat for $\\boxed{1.5}$  hours per day.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.546875,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 74162,
+    "numina_index": 564528
+  },
+  {
+    "problem": "The solution set of the inequality $|2x-5| \\leqslant 7$ is _______.",
+    "answer": "\\{x|-1 \\leqslant x \\leqslant 6\\}",
+    "solution": "**Analysis**\n\nThis question examines the method of solving absolute value inequalities, which is a basic problem.\n\n**Solution**\n\nGiven the inequality $|2x-5| \\leqslant 7$,\n\nWe have $-7 \\leqslant 2x-5 \\leqslant 7$,\n\nWhich leads to $-1 \\leqslant x \\leqslant 6$,\n\nTherefore, the solution set of the original inequality is $\\{x|-1 \\leqslant x \\leqslant 6\\}$.\n\nHence, the answer is $\\boxed{\\{x|-1 \\leqslant x \\leqslant 6\\}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Equations and Inequalities -> Other"
+    ],
+    "llama8b_solve_rate": 0.5625,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 11498,
+    "numina_index": 325556
+  },
+  {
+    "problem": "In a range of numbers, there is 1 integer n that is a prime number. The range starts at 200. What is the ending point of the range if it's known that the range is 200 < n < 220?",
+    "answer": "211",
+    "solution": "To find the prime number n in the range 200 < n < 220, we need to check each integer within that range to see if it is prime.\n\nThe integers between 200 and 220 are: 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219.\n\nNow, we can eliminate even numbers (other than 2, which is not in our range) and numbers ending in 5, as they are not prime:\n\n201, 203, 205, 207, 209, 211, 213, 215, 217, 219.\n\nFrom the remaining numbers, we can see that 201, 203, 207, 209, 213, 215, and 219 are divisible by 3, so they are not prime.\n\nThis leaves us with 211 and 217. However, 217 is divisible by 7 (7 * 31 = 217), so it is not prime.\n\nTherefore, the only prime number in the range 200 < n < 220 is 211.\n\nThe ending point of the range is just before 220, so the range is 200 < n < 220, with n = $\\boxed{211}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Number Theory -> Prime Numbers"
+    ],
+    "llama8b_solve_rate": 0.53125,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 127424,
+    "numina_index": 660376
+  },
+  {
+    "problem": "Select 4 students from 10 students, including A and B, to participate in a charity event, with the requirement that at least one of A and B must participate. How many different selection methods are there?",
+    "answer": "140",
+    "solution": "When both A and B participate, there are $C_{8}^{2} = 28$ ways to choose the remaining 2 students.\n\nWhen only one of A and B participates, there are $C_{8}^{3} \\cdot C_{2}^{1} = 112$ ways to choose the other 3 students.\n\nTherefore, the total number of different selection methods is $28 + 112 = \\boxed{140}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Probability -> Counting Methods -> Combinations"
+    ],
+    "llama8b_solve_rate": 0.5,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 34322,
+    "numina_index": 419790
+  },
+  {
+    "problem": "A chemistry student needs to make a solution that is 70% water and 30% hydrochloric acid. The student's current mixture of 300 mL is 60% water and a certain percentage of hydrochloric acid. The student must add 100 mL of water to achieve his desired solution. What percentage of hydrochloric acid is in the current mixture?",
+    "answer": "40\\%",
+    "solution": "Let's start by calculating the amount of water and hydrochloric acid in the current mixture.\n\nThe current mixture is 60% water, so the amount of water in the current 300 mL mixture is:\n60% of 300 mL = 0.60 * 300 mL = 180 mL\n\nSince the mixture is made up of water and hydrochloric acid, the remaining 40% must be hydrochloric acid. So the amount of hydrochloric acid in the current 300 mL mixture is:\n40% of 300 mL = 0.40 * 300 mL = 120 mL\n\nNow, the student adds 100 mL of water to the mixture, making the total volume of the mixture 400 mL (300 mL original mixture + 100 mL added water).\n\nThe new amount of water in the mixture is:\n180 mL (original water) + 100 mL (added water) = 280 mL\n\nThe amount of hydrochloric acid remains the same since we are only adding water:\n120 mL (original hydrochloric acid)\n\nNow we need to find the new percentages of water and hydrochloric acid in the 400 mL mixture.\n\nThe percentage of water in the new mixture is:\n(280 mL water / 400 mL total mixture) * 100% = 70%\n\nThe percentage of hydrochloric acid in the new mixture is:\n(120 mL hydrochloric acid / 400 mL total mixture) * 100% = 30%\n\nThis confirms that the new mixture is 70% water and 30% hydrochloric acid, as desired.\n\nTherefore, the percentage of hydrochloric acid in the current mixture before adding the 100 mL of water is $\\boxed{40\\%}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.578125,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 105370,
+    "numina_index": 617263
+  },
+  {
+    "problem": "In polar coordinates, it is known that point $A$ has the polar coordinates $(2\\sqrt{2},\\frac{\\pi}{4})$, and the polar equation of circle $E$ is $\\rho=4\\sin\\theta$. Then, the distance between the center of circle $E$ and point $A$, denoted as $d$, is $\\boxed{2}$.",
+    "answer": "2",
+    "solution": "**Analysis**\n\nThis question examines the conversion between polar coordinates and Cartesian coordinates. It involves converting the polar coordinates of $A$ into Cartesian coordinates, converting the polar equation of circle $E$ into a Cartesian equation, and then using the distance formula between two points to solve the problem.\n\n**Solution**\n\nSince the polar coordinates of $A$ are $(2\\sqrt{2}, \\frac{\\pi}{4})$,\n\nBy using $x=\\rho\\cos\\theta, y=\\rho\\sin\\theta$, we get that the Cartesian coordinates of $A$ are $(2,2)$,\n\nGiven the polar equation of circle $E$ is $\\rho=4\\sin\\theta$, we have ${\\rho}^2=4\\rho\\sin\\theta$,\n\nThus, the Cartesian equation of circle $E$ is ${x}^2+{y}^2-4y=0$,\n\nTherefore, the center of the circle is $(0,2)$,\n\nThe distance between the center and point $A$ is $2$.\n\nHence, the answer is $\\boxed{2}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Other"
+    ],
+    "llama8b_solve_rate": 0.578125,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 21532,
+    "numina_index": 366108
+  },
+  {
+    "problem": "A, B and C started a business with capitals of Rs. 8000, Rs. 10000 and Rs. 12000 respectively. At the end of the year, the profit share of B is Rs. 1900. What is the difference between the profit shares of A and C?",
+    "answer": "760",
+    "solution": "To find the difference between the profit shares of A and C, we first need to determine the ratio of their investments.\n\nA's investment: Rs. 8000\nB's investment: Rs. 10000\nC's investment: Rs. 12000\n\nThe ratio of their investments is:\nA:B:C = 8000:10000:12000\n\nWe can simplify this ratio by dividing each term by the greatest common divisor of the three amounts, which is 2000 in this case:\nA:B:C = 8000/2000 : 10000/2000 : 12000/2000\nA:B:C = 4:5:6\n\nNow, we know that B's profit share is Rs. 1900, which corresponds to 5 parts in the ratio. To find the value of one part, we divide B's profit by 5:\nValue of one part = 1900 / 5 = Rs. 380\n\nNow we can find the profit shares of A and C:\nA's profit share = 4 parts = 4 * 380 = Rs. 1520\nC's profit share = 6 parts = 6 * 380 = Rs. 2280\n\nThe difference between the profit shares of A and C is:\nDifference = C's profit share - A's profit share\nDifference = 2280 - 1520 = Rs. 760\n\nTherefore, the difference between the profit shares of A and C is Rs. $\\boxed{760}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.5,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 82482,
+    "numina_index": 577537
+  },
+  {
+    "problem": "A bucket of capacity 4 liters is used to fill up a tank. The number of times this bucket is used is less than the number of times another bucket of a certain capacity is used for the same purpose by 4. The capacity of the tank is 48 liters. What is the capacity of the second bucket?",
+    "answer": "3",
+    "solution": "Let's denote the capacity of the second bucket as \\( x \\) liters.\n\nSince the 4-liter bucket is used less than the \\( x \\)-liter bucket by 4 times, we can set up the following equation to represent the number of times each bucket is used to fill the 48-liter tank:\n\nFor the 4-liter bucket:\n\\[ \\frac{48}{4} = 12 \\] times\n\nFor the \\( x \\)-liter bucket, let's denote the number of times it is used as \\( n \\). Then we have:\n\\[ n = \\frac{48}{x} \\]\n\nSince the 4-liter bucket is used 4 times less than the \\( x \\)-liter bucket, we can write:\n\\[ 12 = n - 4 \\]\n\nSubstituting \\( n \\) from the second equation into the first, we get:\n\\[ 12 = \\frac{48}{x} - 4 \\]\n\nNow, let's solve for \\( x \\):\n\\[ 12 + 4 = \\frac{48}{x} \\]\n\\[ 16 = \\frac{48}{x} \\]\n\nCross-multiplying to solve for \\( x \\), we get:\n\\[ 16x = 48 \\]\n\\[ x = \\frac{48}{16} \\]\n\\[ x = 3 \\]\n\nTherefore, the capacity of the second bucket is $\\boxed{3}$  liters.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.5,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 100773,
+    "numina_index": 608919
+  },
+  {
+    "problem": "Given that the sum of all coefficients in the expansion of $(3 \\sqrt[3]{x}+ \\frac{1}{x})^{n}$ is $P$, and the sum of all binomial coefficients is $S$. If $P+S=272$, find the value of $n$.",
+    "answer": "4",
+    "solution": "According to the problem, we have $4^{n}+2^{n}=272$,\n\n$\\therefore (2^{n}-16)(2^{n}+17)=0$,\n\n$\\therefore 2^{n}=16$,\n\n$\\therefore n=4$.\n\nThus, the answer is: $\\boxed{4}$.\n\nThis solution uses the method of substitution and the binomial coefficient sum formula to find $P$ and $S$, and then sets up an equation to solve for $n$. This problem primarily tests the method of finding the sum of coefficients in a binomial expansion using substitution, and the binomial coefficient sum formula, which is quite basic.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Algebraic Expressions"
+    ],
+    "llama8b_solve_rate": 0.5625,
+    "difficulty_bin": "0.5-0.6",
+    "bigmath_index": 54250,
+    "numina_index": 507367
+  },
+  {
+    "problem": "Given that the radius of circle $\\odot O$ is $5$, and point $P$ is not inside circle $\\odot O$, then the range of $OP$ is ______.",
+    "answer": "OP \\geqslant 5",
+    "solution": "Given that the radius of circle $\\odot O$ is $5$, and point $P$ is not inside circle $\\odot O$, we want to find the range of the distance $OP$ from point $O$ to point $P$.\n\nSince the radius of $\\odot O$ is $5$, any point on or outside the boundary of the circle must be at least $5$ units away from the center $O$. This is because the shortest distance from a point outside a circle to the center of the circle is the radius of the circle, which in this case is $5$.\n\nTherefore, if point $P$ is not inside $\\odot O$, the distance $OP$ must be greater than or equal to the radius of the circle. Mathematically, this is represented as:\n\\[ OP \\geqslant 5 \\]\n\nThus, the range of $OP$ is:\n\\[ \\boxed{OP \\geqslant 5} \\]",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Circles"
+    ],
+    "llama8b_solve_rate": 0.671875,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 21727,
+    "numina_index": 366904
+  },
+  {
+    "problem": "Given the function $f(x) = x^3 + (a-2)x^2 + ax - 1$, if the derivative of the function $y = f(x)$, denoted as $f'(x)$, is an even function, then the equation of the tangent line to the function $y = f(x)$ at the point $(1, f(1))$ is: $\\_\\_\\_\\_\\_\\_$.",
+    "answer": "5x - y - 3 = 0",
+    "solution": "The derivative of the function $f(x) = x^3 + (a-2)x^2 + ax - 1$ is $f'(x) = 3x^2 + 2(a-2)x + a$.\n\nGiven that the derivative $f'(x)$ is an even function, we can deduce that $a = 2$.\n\nThus, the function becomes $f(x) = x^3 + 2x - 1$, with its derivative being $f'(x) = 3x^2 + 2$.\n\nThe slope of the tangent line at the point $(1, f(1))$ is therefore $5$.\n\nThe point of tangency is $(1, 2)$, so the equation of the tangent line to the function $y = f(x)$ at the point $(1, f(1))$ is $y - 2 = 5(x - 1)$, which simplifies to $\\boxed{5x - y - 3 = 0}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "llama8b_solve_rate": 0.671875,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 13566,
+    "numina_index": 333844
+  },
+  {
+    "problem": "find the sum the difference between the compound and s . i . on a certain sum of money for 2 years at 10 % per annum is rs . 18 of money ?",
+    "answer": "1800",
+    "solution": "To find the sum of money, we need to calculate the difference between the compound interest (CI) and the simple interest (SI) for 2 years at 10% per annum, which is given as Rs. 18.\n\nLet's denote the principal amount (the sum of money) as P.\n\nThe formula for simple interest (SI) is:\nSI = P * R * T / 100\nwhere R is the rate of interest per annum, and T is the time in years.\n\nFor compound interest (CI), the formula is:\nCI = P * (1 + R/100)^T - P\n\nGiven that R = 10% and T = 2 years, let's calculate the SI and CI.\n\nSI = P * 10 * 2 / 100\nSI = P * 20 / 100\nSI = P * 0.2\n\nFor CI, we have:\nCI = P * (1 + 10/100)^2 - P\nCI = P * (1 + 0.1)^2 - P\nCI = P * (1.1)^2 - P\nCI = P * 1.21 - P\nCI = P * 0.21\n\nThe difference between CI and SI is given as Rs. 18:\nCI - SI = P * 0.21 - P * 0.2\n0.21P - 0.2P = 18\n0.01P = 18\n\nNow, we solve for P:\nP = 18 / 0.01\nP = 1800\n\nTherefore, the sum of money (the principal amount) is Rs. $\\boxed{1800}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.609375,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 70729,
+    "numina_index": 559401
+  },
+  {
+    "problem": "Keith picked 47 pears, and Mike picked some pears from the pear tree. Keith gave away 46 pears. Keith and Mike are left with 13 pears. How many pears did Mike pick?",
+    "answer": "12",
+    "solution": "Keith originally picked 47 pears and gave away 46, so he is left with 47 - 46 = 1 pear.\n\nTogether, Keith and Mike have 13 pears after Keith gave away his pears. Since Keith has 1 pear, we can find out how many pears Mike has by subtracting the number of pears Keith has from the total number of pears they have together.\n\nSo, Mike has 13 - 1 = $\\boxed{12}$  pears.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.640625,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 87372,
+    "numina_index": 585649
+  },
+  {
+    "problem": "Given that the perimeter of a sector of a circle is $6$, and its central angle is $1$ radian, find the area of the sector.",
+    "answer": "2",
+    "solution": "Since the central angle of the sector is $1$ radian,\nThe length of the arc $l=r$,\nThus the perimeter of the sector $C=l+2r=3r=6$,\nSo $r=l=2$.\nThe area of the sector $S= \\frac {1}{2}rl= \\frac {1}{2} \\times 2 \\times 2 = \\boxed{2}$.\n\nThe solution is obtained by using the formulas for the perimeter and area of a sector. The key to solving this problem is to find the length of the arc and the radius of the sector using the given conditions. This is a relatively basic problem that primarily tests the understanding of the sector area formula and the arc length formula.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Circles"
+    ],
+    "llama8b_solve_rate": 0.609375,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 24972,
+    "numina_index": 380417
+  },
+  {
+    "problem": "rectangular tile each of size 25 cm by 16 cm must be laid horizontally on a rectangular floor of size 180 cm by 120 cm , such that the tiles do not overlap and they are placed with edges jutting against each other on all edges . a tile can be placed in any orientation so long as its edges are parallel to the edges of floor . no tile should overshoot any edge of the floor . the maximum number of tiles that can be accommodated on the floor is :",
+    "answer": "49",
+    "solution": "To maximize the number of tiles that can be accommodated on the floor, we need to determine the orientation that allows for the most efficient use of space. We have two options for placing the tiles: with the 25 cm side parallel to the 180 cm side of the floor, or with the 16 cm side parallel to the 180 cm side of the floor. We will calculate the number of tiles that can fit for both orientations and then choose the one that allows for the maximum number of tiles.\n\nOption 1: 25 cm side parallel to the 180 cm side of the floor\n- Along the 180 cm side, we can fit \\( \\frac{180}{25} = 7.2 \\) tiles. Since we cannot have a fraction of a tile, we can fit 7 tiles.\n- Along the 120 cm side, we can fit \\( \\frac{120}{16} = 7.5 \\) tiles. Again, we cannot have a fraction of a tile, so we can fit 7 tiles.\n- The total number of tiles for this orientation is \\( 7 \\times 7 = 49 \\) tiles.\n\nOption 2: 16 cm side parallel to the 180 cm side of the floor\n- Along the 180 cm side, we can fit \\( \\frac{180}{16} = 11.25 \\) tiles. We can fit 11 tiles.\n- Along the 120 cm side, we can fit \\( \\frac{120}{25} = 4.8 \\) tiles. We can fit 4 tiles.\n- The total number of tiles for this orientation is \\( 11 \\times 4 = 44 \\) tiles.\n\nComparing the two options, we see that Option 1 allows us to fit more tiles on the floor. Therefore, the maximum number of tiles that can be accommodated on the floor is $\\boxed{49}$  tiles.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.609375,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 72128,
+    "numina_index": 561436
+  },
+  {
+    "problem": "Given the planar vectors $\\overrightarrow{a}=(-1,3)$ and $\\overrightarrow{b}=(4,-2)$, find the value of $m$ such that $m\\overrightarrow{a}+\\overrightarrow{b}$ is perpendicular to $\\overrightarrow{a}$.",
+    "answer": "1",
+    "solution": "We have the planar vectors $\\overrightarrow{a}=(-1,3)$ and $\\overrightarrow{b}=(4,-2)$. We want to find the value of $m$ such that $m\\overrightarrow{a}+\\overrightarrow{b}$ is perpendicular to $\\overrightarrow{a}$.\n\nFirst, let's compute $m\\overrightarrow{a}+\\overrightarrow{b}$:\n$$m\\overrightarrow{a}+\\overrightarrow{b} = m(-1, 3) + (4, -2) = (4-m, -2+3m).$$\n\nTwo vectors are perpendicular if and only if their dot product is zero. Therefore, we have:\n$$(m\\overrightarrow{a}+\\overrightarrow{b}) \\cdot \\overrightarrow{a} = 0,$$\nwhich implies\n$$(4-m, -2+3m) \\cdot (-1, 3) = 0.$$\nExpanding the dot product, we obtain:\n$$(-4+m) + 3(-2 + 3m) = 0.$$\nSimplifying and solving for $m$, we get:\n$$-4 + m - 6 + 9m = 0,$$\n$$10m = 10,$$\n$$m = \\boxed{1}.$$",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Linear Algebra -> Vectors"
+    ],
+    "llama8b_solve_rate": 0.640625,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 31143,
+    "numina_index": 406339
+  },
+  {
+    "problem": "What is the smallest number which when increased by 3 is divisible by 18, some number, 25, and 21? The answer is 3153.",
+    "answer": "3153",
+    "solution": "To find the smallest number that meets the given conditions, we need to find the least common multiple (LCM) of the divisors (18, 25, and 21) and then subtract 3 from it.\n\nFirst, let's find the LCM of 18, 25, and 21.\n\n18 can be factored into prime factors as 2 * 3^2.\n25 can be factored into prime factors as 5^2.\n21 can be factored into prime factors as 3 * 7.\n\nThe LCM of these numbers will be the product of the highest powers of all prime factors present in the numbers:\n\nLCM = 2 * 3^2 * 5^2 * 7\nLCM = 2 * 9 * 25 * 7\nLCM = 18 * 175\nLCM = 3150\n\nNow, we need to find the smallest number which, when increased by 3, is divisible by the LCM. Since we already have the LCM, we just add 3 to it:\n\nSmallest number + 3 = 3150 + 3\nSmallest number = 3153\n\nTherefore, the smallest number which when increased by 3 is divisible by 18, 25, and 21 is $\\boxed{3153}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Number Theory -> Other"
+    ],
+    "llama8b_solve_rate": 0.65625,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 111571,
+    "numina_index": 628863
+  },
+  {
+    "problem": "There are 84 leaves. There are 139 ladybugs on each leaf. In all, how many ladybugs are there?",
+    "answer": "11,676",
+    "solution": "To find the total number of ladybugs, you need to multiply the number of leaves by the number of ladybugs on each leaf.\n\nTotal number of ladybugs = Number of leaves \u00d7 Number of ladybugs on each leaf\nTotal number of ladybugs = 84 \u00d7 139\n\nNow, let's do the multiplication:\n\nTotal number of ladybugs = 11676\n\nSo, there are $\\boxed{11,676}$  ladybugs in all.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.640625,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 84072,
+    "numina_index": 580126
+  },
+  {
+    "problem": "If some spiders make 5 webs in 5 days, and 1 spider takes 10 days to make 1 web, how many spiders are there?",
+    "answer": "10",
+    "solution": "Let's break down the information given:\n\n1. Some spiders make 5 webs in 5 days.\n2. 1 spider takes 10 days to make 1 web.\n\nFrom the second point, we can deduce that in 5 days, 1 spider would make 0.5 webs (since it takes 10 days to make 1 web).\n\nNow, if some spiders together make 5 webs in 5 days, and we know that 1 spider would make 0.5 webs in 5 days, we can calculate the number of spiders by dividing the total number of webs made by the number of webs one spider can make in that time period.\n\nNumber of spiders = Total webs made / Webs made by one spider in the same time\nNumber of spiders = 5 webs / 0.5 webs per spider\nNumber of spiders = 10 spiders\n\nSo, there are $\\boxed{10}$  spiders.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.671875,
+    "difficulty_bin": "0.6-0.7",
+    "bigmath_index": 132089,
+    "numina_index": 670016
+  },
+  {
+    "problem": "In a maths test, students were asked to find a certain fraction of a number. One of the students by mistake found 5 / 6 th of that number and his answer was 300 more than the correct answer. The number was 576. What was the fraction students were asked to find?",
+    "answer": "5/16",
+    "solution": "Let's denote the correct fraction that the students were asked to find as x. The student mistakenly found 5/6 of the number instead of x of the number.\n\nThe number given is 576.\n\nAccording to the problem, the student's incorrect answer (which is 5/6 of 576) is 300 more than the correct answer (which is x of 576).\n\nSo, we can set up the equation:\n\n(5/6) * 576 = (x * 576) + 300\n\nNow, let's solve for x:\n\n(5/6) * 576 = (x * 576) + 300\n480 = 576x + 300\n480 - 300 = 576x\n180 = 576x\n\nNow, divide both sides by 576 to solve for x:\n\nx = 180 / 576\n\nSimplify the fraction by dividing both the numerator and the denominator by their greatest common divisor, which is 36:\n\nx = (180 / 36) / (576 / 36)\nx = 5 / 16\n\nSo, the fraction that the students were asked to find is $\\boxed{5/16}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.71875,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 132346,
+    "numina_index": 670548
+  },
+  {
+    "problem": "Jill and her brother Jack are going apple picking.  Jill's basket can hold twice as much as Jack's basket when both are full.  Jack's basket is full when it has 12 apples, but currently space for 4 more.  How many times could Jack's current number of apples fit into Jill's basket?",
+    "answer": "3",
+    "solution": "First, let's determine how many apples Jack currently has in his basket. If his basket is full at 12 apples and there's space for 4 more, that means he currently has 12 - 4 = 8 apples.\n\nNext, let's find out the full capacity of Jill's basket. Since Jill's basket can hold twice as much as Jack's when full, and Jack's full basket holds 12 apples, Jill's basket can hold 2 * 12 = 24 apples when full.\n\nNow, to find out how many times Jack's current number of apples (8) could fit into Jill's basket (24), we divide the capacity of Jill's basket by the number of apples Jack currently has:\n\n24 (Jill's basket capacity) / 8 (Jack's current number of apples) = 3\n\nSo, Jack's current number of apples could fit into Jill's basket $\\boxed{3}$  times.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.796875,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 82167,
+    "numina_index": 577026
+  },
+  {
+    "problem": "Determine the period of the function $y=\\sin x \\cos x$.",
+    "answer": "\\pi",
+    "solution": "First, we use the double angle formula to simplify the given function:\n$$y=\\sin x \\cos x = \\frac{1}{2}\\sin 2x$$\nNow, we know that the period of the sine function $\\sin(ax)$ is given by $T=\\frac{2\\pi}{|a|}$. In our case, $a=2$. Therefore, the period of the function is:\n$$T=\\frac{2\\pi}{2}=\\pi$$\nSo, the period of the function $y=\\sin x \\cos x$ is $\\boxed{\\pi}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Precalculus -> Trigonometric Functions"
+    ],
+    "llama8b_solve_rate": 0.765625,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 39440,
+    "numina_index": 441936
+  },
+  {
+    "problem": "a can do a work in 20 days , b in 30 days . a alone start the work after 10 days he left work . in how many days b can finish the work ?",
+    "answer": "15",
+    "solution": "Let's calculate the amount of work A does in the 10 days before he leaves.\n\nSince A can complete the work in 20 days, A's work rate is \\( \\frac{1}{20} \\) of the work per day.\n\nIn 10 days, A would complete \\( 10 \\times \\frac{1}{20} = \\frac{10}{20} = \\frac{1}{2} \\) of the work.\n\nThis means that half of the work is left for B to complete.\n\nSince B can complete the work in 30 days, B's work rate is \\( \\frac{1}{30} \\) of the work per day.\n\nTo finish the remaining half of the work, B would take \\( \\frac{1/2}{1/30} \\) days.\n\nLet's calculate that:\n\n\\( \\frac{1/2}{1/30} = \\frac{1}{2} \\times \\frac{30}{1} = 15 \\) days.\n\nSo, B will take $\\boxed{15}$  days to finish the remaining work after A leaves.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.71875,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 83114,
+    "numina_index": 578583
+  },
+  {
+    "problem": "Samantha\u2019s last name has three fewer letters than Bobbie\u2019s last name. If Bobbie took some letters off her last name, she would have a last name twice the length of Jamie\u2019s. Jamie\u2019s full name is Jamie Grey. Samantha's last name has 7 letters. How many letters does Bobbie need to take off her last name to have a last name twice the length of Jamie's?",
+    "answer": "2",
+    "solution": "Samantha's last name has 7 letters. Since Samantha's last name has three fewer letters than Bobbie's last name, Bobbie's last name must have 7 + 3 = 10 letters.\n\nJamie's last name, Grey, has 4 letters. To have a last name twice the length of Jamie's, Bobbie would need a last name that is 4 * 2 = 8 letters long.\n\nSince Bobbie's last name is originally 10 letters long, she would need to take off 10 - 8 = $\\boxed{2}$  letters to have a last name twice the length of Jamie's.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.71875,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 80490,
+    "numina_index": 574363
+  },
+  {
+    "problem": "Given vectors $\\overrightarrow{i}=(1,0)$, $\\overrightarrow{j}=(0,1)$. If the vector $\\overrightarrow{i}+\\lambda\\overrightarrow{j}$ is perpendicular to $\\lambda\\overrightarrow{i}+\\overrightarrow{j}$, then the real number $\\lambda=$_______.",
+    "answer": "0",
+    "solution": "**Analysis**\n\nBased on the problem, we first find the coordinates of $\\overrightarrow{i}+\\lambda\\overrightarrow{j}$ and $\\lambda\\overrightarrow{i}+\\overrightarrow{j}$, then use the fact that $\\overrightarrow{i}+\\lambda\\overrightarrow{j}$ is perpendicular to $\\lambda\\overrightarrow{i}+\\overrightarrow{j}$ to find $\\lambda$.  \nThis question mainly tests the property of the dot product of vectors in terms of coordinates, and it is a basic problem.\n\n**Solution**\n\nFrom the problem, we have $\\overrightarrow{i}+\\lambda\\overrightarrow{j}=(1,\\lambda)$ and $\\lambda\\overrightarrow{i}+\\overrightarrow{j}=(\\lambda,1)$.\n\nSince $\\overrightarrow{i}+\\lambda\\overrightarrow{j}$ is perpendicular to $\\lambda\\overrightarrow{i}+\\overrightarrow{j}$,  \nwe have $(\\overrightarrow{i}+\\lambda\\overrightarrow{j})\\cdot (\\lambda\\overrightarrow{i}+\\overrightarrow{j})=2\\lambda=0$,  \nthus $\\lambda=0$.  \nTherefore, the answer is $\\boxed{0}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Linear Algebra -> Vectors"
+    ],
+    "llama8b_solve_rate": 0.703125,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 50508,
+    "numina_index": 490705
+  },
+  {
+    "problem": "A zebra chases a tiger 5 hours after the tiger runs. The zebra takes some hours to reach the tiger. The average speed of the zebra is 55 kmph, and the average speed of the tiger is 30 kmph. How many hours does it take for the zebra to reach the tiger?",
+    "answer": "6",
+    "solution": "Let's denote the time it takes for the zebra to catch up to the tiger as \\( t \\) hours.\n\nIn the 5 hours head start, the tiger would have covered a distance of \\( 30 \\text{ kmph} \\times 5 \\text{ hours} = 150 \\text{ km} \\).\n\nNow, when the zebra starts chasing the tiger, both animals are moving, so we need to consider their relative speed to determine how quickly the zebra is closing the gap. The relative speed is the difference in their speeds, which is \\( 55 \\text{ kmph} - 30 \\text{ kmph} = 25 \\text{ kmph} \\).\n\nThe zebra needs to cover the initial 150 km gap at a relative speed of 25 kmph. The time it takes for the zebra to catch up to the tiger can be calculated using the formula:\n\n\\[ \\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}} \\]\n\nSo, the time \\( t \\) it takes for the zebra to catch up is:\n\n\\[ t = \\frac{150 \\text{ km}}{25 \\text{ kmph}} \\]\n\n\\[ t = 6 \\text{ hours} \\]\n\nTherefore, it takes the zebra $\\boxed{6}$  hours to reach the tiger.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.765625,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 138797,
+    "numina_index": 683968
+  },
+  {
+    "problem": "A cistern can be filled by a tap in some hours while it can be emptied by another tap in 9 hours. If both the taps are opened simultaneously, the cistern gets filled in 4.5 hours. How many hours does it take for the first tap to fill the cistern?",
+    "answer": "3",
+    "solution": "Let's denote the time it takes for the first tap to fill the cistern as \\( T \\) hours. \n\nThe rate at which the first tap fills the cistern is \\( \\frac{1}{T} \\) of the cistern per hour.\n\nThe rate at which the second tap empties the cistern is \\( \\frac{1}{9} \\) of the cistern per hour.\n\nWhen both taps are opened simultaneously, the net rate at which the cistern gets filled is \\( \\frac{1}{T} - \\frac{1}{9} \\) of the cistern per hour.\n\nAccording to the given information, when both taps are opened simultaneously, the cistern gets filled in 4.5 hours. Therefore, the net rate is \\( \\frac{1}{4.5} \\) of the cistern per hour.\n\nWe can set up the equation:\n\n\\[ \\frac{1}{T} - \\frac{1}{9} = \\frac{1}{4.5} \\]\n\nTo solve for \\( T \\), we first find a common denominator for the fractions, which is \\( 9T \\):\n\n\\[ \\frac{9}{9T} - \\frac{T}{9T} = \\frac{2}{9T} \\]\n\n\\[ 9 - T = 2T \\]\n\n\\[ 9 = 3T \\]\n\n\\[ T = \\frac{9}{3} \\]\n\n\\[ T = 3 \\]\n\nSo, it takes $\\boxed{3}$  hours for the first tap to fill the cistern.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.75,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 64281,
+    "numina_index": 550256
+  },
+  {
+    "problem": "Kyle bikes for 2 hours to work every day. Ten times the time he takes to travel to work and back is the same as the cost of buying a pack of snacks (in dollars). Ryan wants to spend $2000 on snacks. How many packs of snacks can he buy?",
+    "answer": "50",
+    "solution": "If Kyle bikes for 2 hours to work every day, then the time he takes to travel to work and back is 2 hours * 2 = 4 hours.\n\nTen times the time he takes to travel to work and back is the same as the cost of buying a pack of snacks. Therefore, the cost of a pack of snacks is 10 * 4 hours = $40.\n\nIf Ryan wants to spend $2000 on snacks, the number of packs of snacks he can buy is $2000 / $40 per pack = $\\boxed{50}$  packs of snacks.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.796875,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 144845,
+    "numina_index": 696862
+  },
+  {
+    "problem": "Lindsey saved some money in September, $37 in October, and $11 in November. Her mom gave her $25 since she saved more than $75. After spending $87 on a video game, Lindsey had $36 left. How much money did Lindsey save in September?",
+    "answer": "$50",
+    "solution": "Let's call the amount Lindsey saved in September \"S\".\n\nIn October, she saved $37, and in November, she saved $11. So, the total amount saved from September to November is S + $37 + $11.\n\nHer mom gave her an additional $25 because she saved more than $75. So now, the total amount she has is S + $37 + $11 + $25.\n\nWe know that after spending $87 on a video game, Lindsey had $36 left. So, before buying the video game, she had $36 + $87.\n\nLet's set up the equation:\n\nS + $37 + $11 + $25 = $36 + $87\n\nNow, let's solve for S:\n\nS + $73 = $123\n\nS = $123 - $73\n\nS = $50\n\nLindsey saved $\\boxed{\\$50}$  in September.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.71875,
+    "difficulty_bin": "0.7-0.8",
+    "bigmath_index": 141362,
+    "numina_index": 689402
+  },
+  {
+    "problem": "A contractor undertook to do a certain piece of work in 5 days. He employed a certain number of men, but 8 of them being absent from the very first day, the rest could finish the work in 15 days. The number of men originally employed were:",
+    "answer": "12",
+    "solution": "Let's denote the original number of men the contractor planned to employ as \\( M \\).\n\nThe work done by one man in one day is the unit of work we'll consider. If the contractor's plan was to finish the work in 5 days with \\( M \\) men, then the total amount of work to be done can be represented as \\( M \\times 5 \\) man-days.\n\nHowever, since 8 men were absent, the actual number of men working was \\( M - 8 \\). These men finished the work in 15 days, so the total amount of work done by them is \\( (M - 8) \\times 15 \\) man-days.\n\nSince the amount of work does not change regardless of the number of men or days, we can set these two expressions equal to each other:\n\n\\[ M \\times 5 = (M - 8) \\times 15 \\]\n\nNow, we can solve for \\( M \\):\n\n\\[ 5M = 15M - 120 \\]\n\nBringing all terms involving \\( M \\) to one side and constants to the other side, we get:\n\n\\[ 15M - 5M = 120 \\]\n\n\\[ 10M = 120 \\]\n\nDividing both sides by 10, we find:\n\n\\[ M = \\frac{120}{10} \\]\n\n\\[ M = 12 \\]\n\nSo, the original number of men employed was $\\boxed{12}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.875,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 117819,
+    "numina_index": 641102
+  },
+  {
+    "problem": "Given that the major axis of an ellipse is $8$ and its eccentricity is $\\frac{3}{4}$, the standard equation of this ellipse is __________.",
+    "answer": "\\frac{x^{2}}{16}+ \\frac{y^{2}}{7}=1 \\text{ or } \\frac{x^{2}}{7}+ \\frac{y^{2}}{16}=1",
+    "solution": "From the given information, we know that $2a=8$, thus $a=4$.\n\nAlso, since $e= \\frac{c}{a}= \\frac{3}{4}$, we have $c=3$.\n\nTherefore, $b^{2}=a^{2}-c^{2}=16-9=7$.\n\nWhen the foci of the ellipse are on the $x$-axis, the equation of the ellipse is $\\frac{x^{2}}{16}+ \\frac{y^{2}}{7}=1$;\n\nWhen the foci of the ellipse are on the $y$-axis, the equation of the ellipse is $\\frac{x^{2}}{7}+ \\frac{y^{2}}{16}=1$.\n\nHence, the answer is: $\\frac{x^{2}}{16}+ \\frac{y^{2}}{7}=1$ or $\\frac{x^{2}}{7}+ \\frac{y^{2}}{16}=1$.\n\nBy combining the given information with the definition of an ellipse, we can derive the standard equation of the ellipse.\n\nThis question examines the basic properties of an ellipse and the method of deriving the equation of an ellipse, making it a foundational problem.\n\nThus, the standard equation of this ellipse is $\\boxed{\\frac{x^{2}}{16}+ \\frac{y^{2}}{7}=1 \\text{ or } \\frac{x^{2}}{7}+ \\frac{y^{2}}{16}=1}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Plane Geometry -> Other"
+    ],
+    "llama8b_solve_rate": 0.875,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 15396,
+    "numina_index": 341281
+  },
+  {
+    "problem": "a , b , c , d and e are ve consecutive odd numbers the sum of a and c is 146 . what is the value of e ?",
+    "answer": "79",
+    "solution": "Let's denote the five consecutive odd numbers as follows:\n\na = a (the first odd number)\nb = a + 2 (the second odd number, which is 2 more than the first)\nc = a + 4 (the third odd number, which is 4 more than the first)\nd = a + 6 (the fourth odd number, which is 6 more than the first)\ne = a + 8 (the fifth odd number, which is 8 more than the first)\n\nAccording to the problem, the sum of a and c is 146:\n\na + c = 146\n\nSubstitute c with a + 4:\n\na + (a + 4) = 146\n2a + 4 = 146\n2a = 146 - 4\n2a = 142\na = 142 / 2\na = 71\n\nNow that we have the value of a, we can find the value of e:\n\ne = a + 8\ne = 71 + 8\ne = 79\n\nTherefore, the value of e, which is the fifth consecutive odd number, is $\\boxed{79}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Algebra -> Prealgebra -> Simple Equations"
+    ],
+    "llama8b_solve_rate": 0.890625,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 112042,
+    "numina_index": 629716
+  },
+  {
+    "problem": "A class of 30 students is completing an art project. They are assigned to separate groups and will need to take markers from the 22 boxes of markers. The first group has 10 students who will have 2 markers each, the second group has 15 students who will have 4 markers each, and the last group takes the remaining markers and divides them equally. If each student in the last group receives 6 markers, how many markers are in each box?",
+    "answer": "5",
+    "solution": "Let's calculate the total number of markers used by the first two groups:\n\nThe first group has 10 students with 2 markers each, so they use:\n10 students * 2 markers/student = 20 markers\n\nThe second group has 15 students with 4 markers each, so they use:\n15 students * 4 markers/student = 60 markers\n\nNow, let's calculate the total number of markers used by the first two groups:\n20 markers (first group) + 60 markers (second group) = 80 markers\n\nThe last group has the remaining 5 students (since 30 - 10 - 15 = 5), and each student in the last group receives 6 markers. So, the last group uses:\n5 students * 6 markers/student = 30 markers\n\nNow, let's calculate the total number of markers used by all groups:\n80 markers (first two groups) + 30 markers (last group) = 110 markers\n\nSince there are 22 boxes of markers and a total of 110 markers used, we can find the number of markers in each box by dividing the total number of markers by the number of boxes:\n110 markers / 22 boxes = 5 markers/box\n\nTherefore, each box contains $\\boxed{5}$  markers.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.8125,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 115914,
+    "numina_index": 637262
+  },
+  {
+    "problem": "Calculate $( \\frac {1+i}{1-i})^{2017}+( \\frac {1-i}{1+i})^{2017}$.",
+    "answer": "0",
+    "solution": "Since $(1+i)$ and $(1-i)$ are complex numbers, we can simplify the fractions before raising them to the power of $2017$:\n\nFirst, consider $\\frac {1+i}{1-i}$. We can multiply the numerator and the denominator by the conjugate of the denominator:\n$$\\frac {1+i}{1-i} = \\frac {(1+i)(1+i)}{(1-i)(1+i)} = \\frac {1+2i+i^2}{1-i^2} = \\frac {1+2i-1}{1+1} = \\frac{2i}{2} = i.$$\n\nSimilarly, for $\\frac {1-i}{1+i}$, we multiply the numerator and denominator by the conjugate of the denominator:\n$$\\frac {1-i}{1+i} = \\frac {(1-i)(1-i)}{(1+i)(1-i)} = \\frac {1-2i+i^2}{1-i^2} = \\frac {1-2i-1}{1+1} = \\frac {-2i}{2} = -i.$$\n\nNow, we raise both fractions to the power of $2017$:\n\n$(\\frac {1+i}{1-i})^{2017} = i^{2017} = (i^{4})^{504} \\cdot i = 1^{504} \\cdot i = i,$\nsince $i^{4} = 1$ and $1$ raised to any power is still $1$.\n\nSimilarly,\n\n$(\\frac {1-i}{1+i})^{2017} = (-i)^{2017} = ((-i)^{4})^{504} \\cdot (-i) = 1^{504} \\cdot (-i) = -i.$\n\nAdding them together,\n$$i + (-i) = i - i = 0.$$\n\nHence, the final result is $\\boxed{0}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Intermediate Algebra -> Complex Numbers"
+    ],
+    "llama8b_solve_rate": 0.828125,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 37711,
+    "numina_index": 434217
+  },
+  {
+    "problem": "18 is to a certain number of seconds as 9 is to 6 minutes. How many seconds is that number?",
+    "answer": "720",
+    "solution": "First, we need to convert 6 minutes into seconds. Since there are 60 seconds in a minute, we multiply 6 minutes by 60 seconds per minute:\n\n6 minutes * 60 seconds/minute = 360 seconds\n\nNow we have the ratio:\n\n18 : X seconds = 9 : 360 seconds\n\nTo find X, we can set up a proportion:\n\n18 / X = 9 / 360\n\nCross-multiply to solve for X:\n\n18 * 360 = 9 * X\n\n6480 = 9X\n\nNow, divide both sides by 9 to solve for X:\n\nX = 6480 / 9\n\nX = 720 seconds\n\nSo, the certain number is $\\boxed{720}$  seconds.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.890625,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 100353,
+    "numina_index": 608171
+  },
+  {
+    "problem": "Brian likes to read books. He read one book that had 20 chapters, two books that had 15 chapters each, and one book with a certain number of chapters. The last book had half the chapters of the three previous books put together. Brian read 75 chapters of books. What is the ratio of the chapters in the last book to the chapters in the three previous books combined?",
+    "answer": "1:2",
+    "solution": "Let's first calculate the total number of chapters in the three previous books that Brian read:\n\n1 book with 20 chapters = 20 chapters\n2 books with 15 chapters each = 2 * 15 = 30 chapters\n\nSo, the total number of chapters in the three previous books is:\n20 chapters + 30 chapters = 50 chapters\n\nNow, we know that the last book had half the chapters of the three previous books put together. Therefore, the last book had:\n50 chapters / 2 = 25 chapters\n\nBrian read a total of 75 chapters, which includes the chapters from the last book. So, the chapters from the three previous books would be:\n75 chapters - 25 chapters (from the last book) = 50 chapters\n\nThe ratio of the chapters in the last book to the chapters in the three previous books combined is:\n25 chapters (last book) : 50 chapters (three previous books)\n\nTo simplify the ratio, we divide both numbers by the greatest common divisor, which is 25 in this case:\n25/25 : 50/25 = 1 : 2\n\nTherefore, the ratio of the chapters in the last book to the chapters in the three previous books combined is $\\boxed{1:2}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.875,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 129966,
+    "numina_index": 665649
+  },
+  {
+    "problem": "Given $a+b=3$ and $ab=-1$, find the value of $2a+2b-3ab$.",
+    "answer": "9",
+    "solution": "Given $a+b=3$ and $ab=-1$, we want to find the value of $2a+2b-3ab$. Let's break it down step by step:\n\n1. We start with the expression $2a+2b-3ab$.\n2. We know that $a+b=3$, so we can substitute $a+b$ with $3$ in our expression. This gives us $2(a+b)-3ab$.\n3. Substituting $a+b$ with $3$ and $ab$ with $-1$, we get $2 \\times 3 - 3 \\times (-1)$.\n4. Performing the multiplication, we have $6 + 3$.\n5. Adding these together, we get $9$.\n\nTherefore, the value of $2a+2b-3ab$ is $\\boxed{9}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Algebra -> Algebraic Expressions"
+    ],
+    "llama8b_solve_rate": 0.8125,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 53708,
+    "numina_index": 504946
+  },
+  {
+    "problem": "There are $4$ people standing in a row. If person A and B must stand next to each other, then there are a total of \\_\\_\\_\\_\\_\\_ different arrangements.",
+    "answer": "12",
+    "solution": "When dealing with the constraint that two specific individuals must be adjacent, we can use the 'bundling method'. We treat person A and B as a single unit and consider the other 2 individuals as two separate units. This way, we have a total of 3 units to arrange. \n\nFirst, consider the bundle of person A and B. Within this bundle, A and B can arrange themselves in $2!$ ways since they can either stand as AB or BA.\n\nNext, we take the bundle and the other 2 individuals as 3 separate units. These units can be arranged in $3!$ ways.\n\nThe total number of different arrangements where A and B are adjacent is the product of these two permutations:\n\n$$\n\\text{Total arrangements} = 2! \\times 3! = 2 \\times 6 = 12.\n$$\n\nTherefore, when A and B are adjacent, there are $\\boxed{12}$ different arrangements.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Probability -> Counting Methods -> Permutations"
+    ],
+    "llama8b_solve_rate": 0.84375,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 35942,
+    "numina_index": 426716
+  },
+  {
+    "problem": "There are four numbers 10, 11, 12, and 13. What is the remainder of the largest number divided by the next largest number?",
+    "answer": "1",
+    "solution": "The largest number is 13 and the next largest number is 12. \n\nWhen you divide 13 by 12, you get 1 with a remainder of 1.\n\nSo, the remainder of the largest number divided by the next largest number is $\\boxed{1}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Arithmetic -> Divisions"
+    ],
+    "llama8b_solve_rate": 0.875,
+    "difficulty_bin": "0.8-0.9",
+    "bigmath_index": 89409,
+    "numina_index": 589020
+  },
+  {
+    "problem": "In four years, Peter will be twice as old as Harriet. Peter's age is currently half of his mother's age. Harriet is 13 years old now. How old is Peter's mother?",
+    "answer": "60",
+    "solution": "Let's denote Peter's current age as P and his mother's current age as M.\n\nAccording to the information given:\n\n1) In four years, Peter will be twice as old as Harriet. So, we can write the equation:\nP + 4 = 2 * (Harriet's age in four years)\nSince Harriet is currently 13 years old, in four years, she will be 13 + 4 = 17 years old. So the equation becomes:\nP + 4 = 2 * 17\nP + 4 = 34\nP = 34 - 4\nP = 30\n\nSo, Peter is currently 30 years old.\n\n2) Peter's age is currently half of his mother's age. So we can write the equation:\nP = M / 2\n\nSince we've found that P is 30, we can substitute that into the equation to find M:\n30 = M / 2\nM = 30 * 2\nM = 60\n\nTherefore, Peter's mother is currently $\\boxed{60}$  years old.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.953125,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 100887,
+    "numina_index": 609106
+  },
+  {
+    "problem": "Dave breaks 2 guitar strings per night when playing live.  If he performs 6 shows a week for 12 weeks, how many guitar strings will he need to replace?",
+    "answer": "144",
+    "solution": "Dave breaks 2 guitar strings per night. If he performs 6 shows a week, then in one week he will break 2 * 6 = 12 guitar strings.\n\nIf he performs for 12 weeks, then he will need to replace 12 * 12 = $\\boxed{144}$  guitar strings in total.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.984375,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 82447,
+    "numina_index": 577486
+  },
+  {
+    "problem": "For dessert, Jane's mom prepared 12.0 pieces of bite-size cinnamon swirls. If Jane and 2 other people ate an equal number of pieces of cinnamon swirls, how many pieces did Jane eat?",
+    "answer": "4.0",
+    "solution": "Jane's mom prepared 12.0 pieces of bite-size cinnamon swirls, and these were to be shared equally among Jane and 2 other people, making a total of 3 people.\n\nTo find out how many pieces Jane ate, we divide the total number of pieces by the number of people:\n\n12.0 pieces \u00f7 3 people = 4.0 pieces per person\n\nTherefore, Jane ate $\\boxed{4.0}$  pieces of the cinnamon swirls.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.9375,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 146463,
+    "numina_index": 700432
+  },
+  {
+    "problem": "The length of a rectangle is 3 times its width. The width of the rectangle is some inches, and the rectangle's area is 48 square inches. What is the width of the rectangle?",
+    "answer": "4",
+    "solution": "Let's denote the width of the rectangle as \\( w \\) inches. According to the problem, the length of the rectangle is 3 times the width, so the length is \\( 3w \\) inches.\n\nThe area of a rectangle is given by the formula:\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the area of the rectangle is 48 square inches, we can set up the equation:\n\\[ 48 = 3w \\times w \\]\n\nSimplifying the equation, we get:\n\\[ 48 = 3w^2 \\]\n\nTo find the width, we need to solve for \\( w \\). Dividing both sides of the equation by 3, we get:\n\\[ w^2 = \\frac{48}{3} \\]\n\\[ w^2 = 16 \\]\n\nTaking the square root of both sides to solve for \\( w \\), we get:\n\\[ w = \\sqrt{16} \\]\n\\[ w = 4 \\]\n\nTherefore, the width of the rectangle is $\\boxed{4}$  inches.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Algebra -> Prealgebra -> Simple Equations"
+    ],
+    "llama8b_solve_rate": 1.0,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 131898,
+    "numina_index": 669632
+  },
+  {
+    "problem": "A road has four intersections. At the first intersection, there are 40 road signs showing different types of information mounted on the street poles. At the second intersection, 1/4 times more road signs than the first intersection are mounted on the street poles. The number of road signs at the third intersection is twice the number at the second intersection. If at the fourth intersection the number of road signs is 20 fewer than those at the third intersection, calculate the total number of road signs at the four intersections.",
+    "answer": "270",
+    "solution": "Let's calculate the number of road signs at each intersection step by step.\n\nFirst intersection: 40 road signs\n\nSecond intersection: \n1/4 times more than the first intersection means we add 1/4 of 40 to the original 40.\n1/4 of 40 is 40/4 = 10\nSo, the second intersection has 40 + 10 = 50 road signs.\n\nThird intersection:\nTwice the number at the second intersection means we multiply the number of signs at the second intersection by 2.\nSo, the third intersection has 50 * 2 = 100 road signs.\n\nFourth intersection:\n20 fewer than those at the third intersection means we subtract 20 from the number of signs at the third intersection.\nSo, the fourth intersection has 100 - 20 = 80 road signs.\n\nNow, let's add up the road signs from all four intersections to get the total number:\nTotal = 40 (first intersection) + 50 (second intersection) + 100 (third intersection) + 80 (fourth intersection)\nTotal = 40 + 50 + 100 + 80\nTotal = 270 road signs\n\nTherefore, the total number of road signs at the four intersections is $\\boxed{270}$ .",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.921875,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 73981,
+    "numina_index": 564247
+  },
+  {
+    "problem": "Megan is delivering meals on wheels. Out of her 30 clients, 7 need vegan meals, 8 need kosher meals, and three people need meals that are both vegan and kosher. How many meals does Megan deliver that are neither kosher nor vegan?",
+    "answer": "18",
+    "solution": "To find out how many meals are neither kosher nor vegan, we need to subtract the number of vegan meals, kosher meals, and the meals that are both from the total number of clients.\n\nFirst, let's find out how many clients need meals that are either vegan or kosher or both. We know that 7 need vegan meals and 8 need kosher meals, but since 3 of these clients need meals that are both vegan and kosher, we have to be careful not to double-count them.\n\nSo, we have 7 vegan meals + 8 kosher meals - 3 meals that are both vegan and kosher = 7 + 8 - 3 = 12 clients who need either vegan or kosher meals.\n\nNow, we subtract this number from the total number of clients to find out how many need meals that are neither vegan nor kosher:\n\n30 total clients - 12 clients who need vegan or kosher meals = 18 clients who need meals that are neither vegan nor kosher.\n\nTherefore, Megan delivers $\\boxed{18}$  meals that are neither kosher nor vegan.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Other"
+    ],
+    "llama8b_solve_rate": 0.984375,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 91560,
+    "numina_index": 592660
+  },
+  {
+    "problem": "In the three-dimensional coordinate system O-xyz, let M(0, 1, 2) and N(-1, 2, 1). Calculate the distance between points M and N, $|MN|$.",
+    "answer": "\\sqrt{3}",
+    "solution": "Given the points M(0, 1, 2) and N(-1, 2, 1), the distance between M and N, denoted by $|MN|$, is found using the distance formula in three-dimensional space:\n\n$$\n|MN|= \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}\n$$\n\nSubstituting the coordinates of M and N gives:\n\n$$\n|MN|= \\sqrt{(-1 - 0)^2 + (2 - 1)^2 + (1 - 2)^2}\n$$\n\nSimplify the terms inside the square root:\n\n$$\n|MN|= \\sqrt{(-1)^2 + (1)^2 + (-1)^2}\n$$\n\nCalculate the squares:\n\n$$\n|MN|= \\sqrt{1 + 1 + 1}\n$$\n\nThe sum inside the square root is 3:\n\n$$\n|MN|= \\sqrt{3}\n$$\n\nSo, the distance between points M and N is $\\boxed{\\sqrt{3}}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Geometry -> Solid Geometry -> 3D Shapes"
+    ],
+    "llama8b_solve_rate": 0.984375,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 21968,
+    "numina_index": 367841
+  },
+  {
+    "problem": "Paul was packing up his old toys. He managed to squeeze eight toys into a box. If Paul filled up four boxes, how many toys did he pack total?",
+    "answer": "32",
+    "solution": "If Paul packed eight toys into each box and he filled up four boxes, then the total number of toys he packed would be:\n\n8 toys/box * 4 boxes = 32 toys\n\nSo, Paul packed a total of $\\boxed{32}$  toys.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 1.0,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 75552,
+    "numina_index": 566604
+  },
+  {
+    "problem": "According to work needs, now we need to select 3 teachers to form a teaching team from 4 female teachers and 5 male teachers. The requirement is that the team must include both male and female teachers. How many different team formation plans are there? (Answer with a number)",
+    "answer": "70",
+    "solution": "This problem is a classification counting problem.  \nSince we need to select 3 teachers to form a teaching team from 4 female teachers and 5 male teachers, and the team must include both male and female teachers,  \nthere are two scenarios: one male with two females, and one female with two males.  \nWhen there is one male teacher and two female teachers, there are $C_5^1C_4^2=30$ ways.  \nWhen there are two male teachers and one female teacher, there are $C_5^2C_4^1=40$ ways.  \nAccording to the principle of classification counting, there are a total of $30+40=70$ possible outcomes.  \nTherefore, the answer is $\\boxed{70}$.",
+    "source": "cn_k12",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Probability -> Combinations"
+    ],
+    "llama8b_solve_rate": 0.9375,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 12221,
+    "numina_index": 328392
+  },
+  {
+    "problem": "Find the number of moles of (NH4)2SO4 formed on combining 4 moles of NH3 and 2 moles of H2SO4",
+    "answer": "2",
+    "solution": "The reaction between ammonia (NH3) and sulfuric acid (H2SO4) to form ammonium sulfate ((NH4)2SO4) can be represented by the following balanced chemical equation:\n\n2 NH3 + H2SO4 \u2192 (NH4)2SO4\n\nFrom the balanced equation, we can see that 2 moles of NH3 react with 1 mole of H2SO4 to produce 1 mole of (NH4)2SO4.\n\nGiven that we have 4 moles of NH3 and 2 moles of H2SO4, we need to determine which one is the limiting reactant, as it will determine the amount of (NH4)2SO4 produced.\n\nFor NH3:\nAccording to the stoichiometry of the reaction, 2 moles of NH3 are required to produce 1 mole of (NH4)2SO4. Therefore, 4 moles of NH3 would theoretically produce:\n(4 moles NH3) * (1 mole (NH4)2SO4 / 2 moles NH3) = 2 moles of (NH4)2SO4\n\nFor H2SO4:\nAccording to the stoichiometry of the reaction, 1 mole of H2SO4 is required to produce 1 mole of (NH4)2SO4. Therefore, 2 moles of H2SO4 would theoretically produce:\n(2 moles H2SO4) * (1 mole (NH4)2SO4 / 1 mole H2SO4) = 2 moles of (NH4)2SO4\n\nSince both NH3 and H2SO4 can produce 2 moles of (NH4)2SO4, neither is the limiting reactant in this case. Therefore, the number of moles of (NH4)2SO4 formed when combining 4 moles of NH3 and 2 moles of H2SO4 is $\\boxed{2}$  moles.",
+    "source": "orca_math",
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Math Word Problems"
+    ],
+    "llama8b_solve_rate": 0.90625,
+    "difficulty_bin": "0.9-1",
+    "bigmath_index": 90095,
+    "numina_index": 590176
+  }
+]

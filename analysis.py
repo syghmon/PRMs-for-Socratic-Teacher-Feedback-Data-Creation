@@ -2,7 +2,7 @@
 """
 analysis.py
 
-Collects the JSON outputs from inference.py for multiple student models (with and without hints),
+Collects the JSON outputs from inference.py for student models (with and without hints),
 plus the original samples.json, and generates:
 
 1. Bin-based combined solve rates (showing improvement from hints for different models)
@@ -10,18 +10,14 @@ plus the original samples.json, and generates:
 3. Answer extraction success rates (checking if models produce boxed answers)
 
 Usage:
-  python analysis.py --samples data/samples.json \
+  python analysis.py --samples data/joined_samples.json \
                      --results_dir results \
-                     --output_dir analysis_outputs \
-                     --model_tags "ModelA,ModelB,ModelC" \
-                     --bins "0-10%,10-20%,20-30%,30-40%,40-50%,50-60%,60-70%,70-80%,80-90%,90-100%"
+                     --output_dir analysis_outputs
 
 Where:
   --samples/-s     : Path to original input problems (contains final_answer, difficulty_bin, llama8b_solve_rate).
   --results_dir/-r : Directory where the *_no_hint.json and *_with_hint.json are located.
   --output_dir/-o  : Directory to save the plots and interesting examples.
-  --model_tags/-m  : Comma-separated list of model tags (matching what you used in inference).
-  --bins/-b        : Comma-separated list of difficulty bin labels in ascending order.
 """
 import argparse
 import os
@@ -31,7 +27,7 @@ import re
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import warnings
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Set, Tuple
 import matplotlib.colors as mc
 import colorsys
 
@@ -255,6 +251,12 @@ def get_solve_rate(entry):
     """
     correctness = entry.get("correctness", [])
     if not correctness:
+        # DEBUG - Print entry keys if no correctness found
+        print(f"    DEBUG - No correctness in entry with keys: {list(entry.keys())}")
+        # Look for other possible fields like correct_answer or similar
+        for key in entry.keys():
+            if 'correct' in key.lower():
+                print(f"    DEBUG - Found potential correctness field: {key} = {entry[key]}")
         return 0.0
     
     # Ensure correctness values are booleans
@@ -350,53 +352,36 @@ class Analysis:
                  samples_file: str,
                  results_dir: str,
                  output_dir: str,
-                 model_tags: list,
-                 bin_labels: list,
-                 hint_types: list = None,
-                 show_combined_hints: bool = False,
                  debug_extraction: bool = False):
         self.samples_file = samples_file
         self.results_dir = results_dir
         self.output_dir = output_dir
-        self.model_tags = model_tags
-        self.bin_labels = bin_labels
-        self.hint_types = hint_types or ["socratic_question", "direct_hint", "step_suggestion"]
-        self.show_combined_hints = show_combined_hints
         self.debug_extraction = debug_extraction
+        
+        # Discover model tags and hint types from filenames
+        self.model_tags, self.hint_types = discover_models_and_hints(results_dir)
+        
+        # Hardcoded bin labels in increments of 10%
+        self.bin_labels = [
+            "0-10%", "10-20%", "20-30%", "30-40%", "40-50%", 
+            "50-60%", "60-70%", "70-80%", "80-90%", "90-100%"
+        ]
         
         # Define debug variables
         self.debug_problems = list(range(5)) if debug_extraction else []
         
         # Data structure to hold per-problem info
-        # all_results[i] = {
-        #    "problem": ...
-        #    "final_answer": ...
-        #    "difficulty_bin": ...
-        #    "llama8b_solve_rate": ...
-        #    "teacher_hints": {hint_type: hint_text, ...}
-        #    "models": {
-        #       model_tag: {
-        #          "no_hint": <float solve rate>,
-        #          "hint_types": {
-        #             "socratic_question": <float solve rate>,
-        #             "direct_hint": <float solve rate>,
-        #             ...
-        #          },
-        #          "has_answer_no_hint": <float extraction rate>,
-        #          "has_answer_hint_types": {
-        #             "socratic_question": <float extraction rate>,
-        #             ...
-        #          }
-        #       },
-        #       ...
-        #    }
-        # }
         self.all_results = {}
 
     def run(self):
         """High-level workflow."""
         print(f"[Analysis] Creating output directory: {self.output_dir}")
         os.makedirs(self.output_dir, exist_ok=True)
+        
+        # Print detected models and hint types
+        print(f"[Analysis] Processing {len(self.model_tags)} models: {', '.join(self.model_tags)}")
+        print(f"[Analysis] Processing {len(self.hint_types)} hint types: {', '.join(self.hint_types)}")
+        print(f"[Analysis] Using bin labels: {', '.join(self.bin_labels)}")
         
         self.load_samples()
         if not self.all_results:
@@ -475,16 +460,24 @@ class Analysis:
                     sr = get_solve_rate(entry)
                     self.all_results[i]["models"][tag]["no_hint"] = sr
                     
-                    # Check answer extraction rate
-                    has_answer_count = 0
-                    responses = entry.get("responses", [])
+                    # Use extraction_success flags if available, otherwise recompute
+                    extraction_flags = entry.get("extraction_success", [])
                     
-                    for response in responses:
-                        if has_formatted_answer(response):
-                            has_answer_count += 1
+                    if extraction_flags:
+                        # Use pre-computed extraction success flags
+                        extraction_rate = sum(extraction_flags) / len(extraction_flags) if extraction_flags else 0.0
+                    else:
+                        # Fallback to computing extraction success here
+                        has_answer_count = 0
+                        responses = entry.get("responses", [])
+                        
+                        for response in responses:
+                            if has_formatted_answer(response):
+                                has_answer_count += 1
+                        
+                        responses_count = len(responses)
+                        extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
                     
-                    responses_count = len(responses)
-                    extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
                     self.all_results[i]["models"][tag]["has_answer_no_hint"] = extraction_rate
             
             # Process each hint type separately
@@ -494,6 +487,22 @@ class Analysis:
                     hint_data = load_json_data(hint_file)
                     if hint_data:
                         print(f"  - Loaded {len(hint_data)} entries for hint type: {hint_type}")
+                        
+                        # DEBUG: Print a few entries
+                        if len(hint_data) > 0:
+                            first_entry = hint_data[0]
+                            correctness = first_entry.get("correctness", [])
+                            print(f"    DEBUG - First entry correctness: {correctness}")
+                            print(f"    DEBUG - Entry keys: {list(first_entry.keys())}")
+                            
+                            # DEBUG: Check if the first few entries have correctness
+                            for i in range(min(3, len(hint_data))):
+                                entry = hint_data[i]
+                                correctness = entry.get("correctness", [])
+                                sr = get_solve_rate(entry)
+                                print(f"    DEBUG - Entry {i} correctness: {correctness}")
+                                print(f"    DEBUG - Entry {i} solve rate: {sr}")
+                                print(f"    DEBUG - Entry {i} problem: {entry.get('problem', '')[:50]}...")
                         
                         # Track processed problems to avoid duplicates
                         processed_problems = set()
@@ -526,16 +535,24 @@ class Analysis:
                             sr = get_solve_rate(entry)
                             self.all_results[i]["models"][tag]["hint_types"][hint_type] = sr
                             
-                            # Check answer extraction rate
-                            has_answer_count = 0
-                            responses = entry.get("responses", [])
+                            # Use extraction_success flags if available, otherwise recompute
+                            extraction_flags = entry.get("extraction_success", [])
                             
-                            for response in responses:
-                                if has_formatted_answer(response):
-                                    has_answer_count += 1
+                            if extraction_flags:
+                                # Use pre-computed extraction success flags
+                                extraction_rate = sum(extraction_flags) / len(extraction_flags) if extraction_flags else 0.0
+                            else:
+                                # Fallback to computing extraction success here
+                                has_answer_count = 0
+                                responses = entry.get("responses", [])
+                                
+                                for response in responses:
+                                    if has_formatted_answer(response):
+                                        has_answer_count += 1
+                                
+                                responses_count = len(responses)
+                                extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
                             
-                            responses_count = len(responses)
-                            extraction_rate = has_answer_count / responses_count if responses_count > 0 else 0.0
                             self.all_results[i]["models"][tag]["has_answer_hint_types"][hint_type] = extraction_rate
                             
                             # Store the teacher hint text
@@ -1200,31 +1217,100 @@ class Analysis:
     def print_extraction_summary(self):
         """Print a summary of answer extraction success rates for debugging."""
         print("\n[Analysis] Answer Extraction Rate Summary:")
-        print(f"{'Model':<20} {'No Hint':>15} {'With Hint':>15} {'Diff':>10}")
-        print("-" * 65)
+        print(f"{'Model':<20} {'No Hint':>15} {'With Hint (Best)':>20} {'Diff':>10}")
+        print("-" * 70)
         
         for tag in self.model_tags:
             no_hint_total = 0
             no_hint_success = 0
-            with_hint_total = 0
-            with_hint_success = 0
+            
+            # For each hint type, track totals separately
+            hint_totals = {hint_type: 0 for hint_type in self.hint_types}
+            hint_success = {hint_type: 0 for hint_type in self.hint_types}
             
             for i in self.all_results:
                 if tag in self.all_results[i]["models"]:
-                    no_hint_rate = self.all_results[i]["models"][tag]["has_answer_no_hint"]
-                    with_hint_rate = self.all_results[i]["models"][tag]["has_answer_with_hint"]
+                    model_info = self.all_results[i]["models"][tag]
                     
-                    no_hint_total += 1
-                    no_hint_success += no_hint_rate
+                    # No hint data
+                    if "has_answer_no_hint" in model_info:
+                        no_hint_total += 1
+                        no_hint_success += model_info["has_answer_no_hint"]
                     
-                    with_hint_total += 1
-                    with_hint_success += with_hint_rate
+                    # With hint data for each hint type
+                    for hint_type in self.hint_types:
+                        if hint_type in model_info["has_answer_hint_types"]:
+                            hint_totals[hint_type] += 1
+                            hint_success[hint_type] += model_info["has_answer_hint_types"][hint_type]
             
+            # Calculate averages
             no_hint_avg = no_hint_success / no_hint_total if no_hint_total > 0 else 0.0
-            with_hint_avg = with_hint_success / with_hint_total if with_hint_total > 0 else 0.0
-            diff = with_hint_avg - no_hint_avg
             
-            print(f"{tag:<20} {no_hint_avg:>15.2%} {with_hint_avg:>15.2%} {diff:>+10.2%}")
+            # Find the best hint type for this model
+            best_hint_type = None
+            best_hint_avg = 0.0
+            
+            for hint_type in self.hint_types:
+                if hint_totals[hint_type] > 0:
+                    avg = hint_success[hint_type] / hint_totals[hint_type]
+                    if avg > best_hint_avg:
+                        best_hint_avg = avg
+                        best_hint_type = hint_type
+            
+            # Calculate improvement
+            diff = best_hint_avg - no_hint_avg
+            best_hint_label = f"{best_hint_avg:.2%} ({best_hint_type})" if best_hint_type else "N/A"
+            
+            print(f"{tag:<20} {no_hint_avg:>15.2%} {best_hint_label:>20} {diff:>+10.2%}")
+
+##############################################################################
+# File Discovery Functions
+##############################################################################
+
+def discover_models_and_hints(results_dir: str) -> Tuple[List[str], List[str]]:
+    """
+    Scan the results directory to automatically discover models and hint types.
+    
+    Args:
+        results_dir (str): Directory containing result JSON files
+        
+    Returns:
+        Tuple[List[str], List[str]]: Lists of model tags and hint types
+    """
+    model_tags = set()
+    hint_types = set()
+    
+    # Get all JSON files in the directory
+    json_files = [f for f in os.listdir(results_dir) if f.endswith('.json')]
+    
+    for filename in json_files:
+        # Expected format: answers_MODEL_no_hint.json or answers_MODEL_HINT_TYPE_with_hint.json
+        if filename.startswith("answers_") and filename.endswith(".json"):
+            parts = filename.split('_')
+            
+            if len(parts) >= 3:
+                # Extract model name (second part)
+                model_tag = parts[1]
+                model_tags.add(model_tag)
+                
+                # Check what kind of file this is
+                if "no_hint" in filename:
+                    # This is a no-hint file
+                    pass
+                elif "with_hint" in filename and len(parts) >= 5:
+                    # This is a with-hint file. The hint type might be composed of multiple parts.
+                    # We need everything between the model name and "with_hint"
+                    # Format: answers_MODEL_HINT_TYPE_with_hint.json
+                    
+                    # Find where "with_hint" begins
+                    for i in range(2, len(parts)):
+                        if parts[i] == "with":
+                            # Extract hint type as everything between model and "with"
+                            hint_type = "_".join(parts[2:i])
+                            hint_types.add(hint_type)
+                            break
+    
+    return sorted(list(model_tags)), sorted(list(hint_types))
 
 ##############################################################################
 # Command-Line Interface
@@ -1239,23 +1325,12 @@ def parse_args():
                         help="Directory where the *_no_hint.json and *_with_hint.json are located.")
     parser.add_argument("--output_dir", "-o", type=str, default="analysis_outputs",
                         help="Directory to save the plots and interesting examples.")
-    parser.add_argument("--model_tags", "-m", type=str, required=True,
-                        help="Comma-separated list of model tags (matching what you used in inference).")
-    parser.add_argument("--bins", "-b", type=str, default="0-10%,10-20%,20-30%,30-40%,40-50%,50-60%,60-70%,70-80%,80-90%,90-100%",
-                        help="Comma-separated list of difficulty bin labels in ascending order.")
-    parser.add_argument("--hint_types", "-ht", type=str, default="socratic_question,direct_hint,step_suggestion",
-                        help="Comma-separated list of hint types to analyze separately.")
-    parser.add_argument("--show_combined_hints", action="store_true",
-                        help="Also show a combined 'with hint' curve (best of all hint types).")
     parser.add_argument("--debug-extraction", "-d", action="store_true",
                         help="Enable detailed debugging for answer extraction issues.")
     return parser.parse_args()
 
 def main():
     args = parse_args()
-    model_tags = [x.strip() for x in args.model_tags.split(",")]
-    bin_labels = [x.strip() for x in args.bins.split(",")]
-    hint_types = [x.strip() for x in args.hint_types.split(",")] if args.hint_types else None
     
     # Check if results directory exists
     if not os.path.exists(args.results_dir):
@@ -1269,22 +1344,19 @@ def main():
         print(f"[Error] Samples file '{args.samples}' does not exist.")
         sys.exit(1)
     
-    # Print expected file pattern
-    print(f"[Analysis] Expecting result files with patterns: ")
-    for tag in model_tags:
-        print(f"  - {args.results_dir}/answers_{tag}_no_hint.json")
-        hint_types_to_show = hint_types or ["socratic_question", "direct_hint", "step_suggestion"]
-        for hint_type in hint_types_to_show:
-            print(f"  - {args.results_dir}/answers_{tag}_{hint_type}_with_hint.json")
+    # Discover models and hint types from result filenames
+    model_tags, hint_types = discover_models_and_hints(args.results_dir)
+    if not model_tags:
+        print(f"[Error] No model result files found in '{args.results_dir}'.")
+        sys.exit(1)
+    
+    print(f"[Analysis] Discovered {len(model_tags)} models: {', '.join(model_tags)}")
+    print(f"[Analysis] Discovered {len(hint_types)} hint types: {', '.join(hint_types)}")
 
     analysis = Analysis(
         samples_file=args.samples,
         results_dir=args.results_dir,
         output_dir=args.output_dir,
-        model_tags=model_tags,
-        bin_labels=bin_labels,
-        hint_types=hint_types,
-        show_combined_hints=args.show_combined_hints,
         debug_extraction=args.debug_extraction
     )
     analysis.run()

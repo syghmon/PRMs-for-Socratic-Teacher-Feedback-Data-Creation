@@ -1,12 +1,50 @@
 [
   {
-    "problem_index": 41,
-    "problem": "In triangle $\\triangle ABC$, given that $a=4$, $b=3$, and $c=2$, the smallest angle of $\\triangle ABC$ is represented by which inverse trigonometric function?",
+    "problem_index": 2,
+    "problem": "Natural numbers are placed in an infinite grid. Such that the number in each cell is equal to the number of its adjacent cells having the same number. Find the most distinct numbers this infinite grid can have.\n\n(Two cells of the grid are adjacent if they have a common vertex)",
     "teacher_hints": {
-      "socratic_question": "Which trigonometric function involves the ratio of the shortest side to the hypotenuse?",
-      "direct_hint": "The solution is \\boxed{\\arccos \\left( \\frac{7}{8} \\right)} just copy it exactly."
+      "direct_hint": "The solution is \\boxed{5} just copy it exactly.  Please follow the given format to provide a hint for the student to make progress in solving the problem.",
+      "socratic_hint": "If you place a number in the grid, how does it influence the arrangement of its adjacent cells? What does this tell you about the potential number of distinct numbers in the grid?"
     },
     "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.078125
+  },
+  {
+    "problem_index": 2,
+    "problem": "Natural numbers are placed in an infinite grid. Such that the number in each cell is equal to the number of its adjacent cells having the same number. Find the most distinct numbers this infinite grid can have.\n\n(Two cells of the grid are adjacent if they have a common vertex)",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{5} just copy it exactly.  Please follow the given format to provide a hint for the student to make progress in solving the problem.",
+      "socratic_hint": "If you place a number in the grid, how does it influence the arrangement of its adjacent cells? What does this tell you about the potential number of distinct numbers in the grid?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.078125
+  },
+  {
+    "problem_index": 19,
+    "problem": "Determine if removing the zeros from 7.0800 will change the value of the decimal.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{\\times} just copy it exactly.",
+      "socratic_hint": "When examining a decimal with trailing zeros, what is the significance of the digits before the decimal point in determining whether removing zeros will change the value?"
+    },
+    "model": "gemma-2-9b-it",
     "best_hint_type": "direct_hint",
     "score_no_hint": 0.0,
     "score_with_hint": 1.0,
@@ -15,40 +53,78 @@
     "has_answer_with_hint": 1.0,
     "extraction_improvement": 0.0,
     "example_type": "improvement",
-    "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.484375
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.140625
   },
   {
-    "problem_index": 4,
-    "problem": "Given a triangle $\\triangle ABC$ with $BC=3$, $AC=4$, $AB=5$, let $P$ be any point on its sides. The minimum value of $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ is $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_(.\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_)$.",
+    "problem_index": 37,
+    "problem": "The banker's discount of a certain sum of money is Rs. 36 and the true discount on the same sum for the same time is some amount. The sum due is Rs. 180. What is the true discount on the sum?",
     "teacher_hints": {
-      "socratic_question": "What is the relationship between the sides of a triangle and the vectors formed by its vertices?",
-      "direct_hint": "The solution is \\boxed{\\frac{25}{64}} just copy it exactly."
-    },
-    "model": "gemma-2-2b-it",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.9166666666666666,
-    "improvement": 0.9166666666666666,
-    "has_answer_no_hint": 0.4166666666666667,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": 0.49999999999999994,
-    "example_type": "improvement",
-    "difficulty_bin": "0-0.1",
-    "llama8b_solve_rate": 0.015625
-  },
-  {
-    "problem_index": 65,
-    "problem": "In the school election, Eliot got some votes, Shaun got 5 times as many votes as Randy, and Randy got 16 votes. Eliot got 160 votes. What is the ratio of the number of votes Eliot got to the number of votes Shaun got?",
-    "teacher_hints": {
-      "socratic_question": "Think about the relationship between the number of votes Randy and Eliot got.",
-      "direct_hint": "The ratio of Eliot's votes to Shaun's votes is \\boxed{2:1}."
+      "direct_hint": "The key concept here is understanding the relationship between Banker's Discount, True Discount, and Present Value.  **HINT**: The formula BD = TD + (TD * BD) / PV is the critical step in solving this problem. **HINT**: The critical step in solving this problem is finding the relationship between TD and PV. **HINT**: The relationship between TD and PV is given by the formula TD = BD / (1 + (BD / PV)). **HINT**: The critical step in solving this problem is to calculate the denominator first. **HINT**: The critical step in solving this problem is to substitute the given values into the formula. **HINT**: The critical step in solving this problem is to find the value of TD using the given values. **HINT**: The key concept here is to understand that the Banker's Discount is the simple interest on the face value of a bill for the unexpired time. **HINT**: The key concept here is that the sum due is the amount that needs to be paid at the end of the time period, which is also the face value of the bill. **HINT**: The key concept here is that the formula BD = TD + (TD * BD) / PV is the relationship between Banker's Discount, True Discount, and Present Value. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is the relationship between True Discount and Present Value. **HINT**: The key concept here is that the Banker's Discount is the interest on the sum due for the unexpired time. **HINT**: The key concept here is that the sum due is the amount that needs to be paid at the end of the time period. **HINT**: The key concept here is that the formula BD = TD + (TD * BD) / PV is the critical step in solving this problem. **HINT**: The key concept here is that the relationship between Banker's Discount and True Discount is given by the formula BD = TD + (TD * BD) / PV. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is used to find the True Discount. **HINT**: The key concept here is that the Banker's Discount is the interest on the sum due for the unexpired time, and the True Discount is the interest on the present value for the same time. **HINT**: The key concept here is that the sum due is the amount that needs to be paid at the end of the time period. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is used to find the True Discount. **HINT**: The key concept here is that the relationship between Banker's Discount, True Discount, and Present Value is given by the formula BD = TD + (TD * BD) / PV. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is the critical step in solving this problem. **HINT**: The key concept here is that the Banker's Discount is the interest on the sum due for the unexpired time. **HINT**: The key concept here is that the sum due is the amount that needs to be paid at the end of the time period. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is used to find the True Discount. **HINT**: The key concept here is that the Banker's Discount is the interest on the sum due for the unexpired time, and the True Discount is the interest on the present value for the same time. **HINT**: The key concept here is that the sum due is the amount that needs to be paid at the end of the time period. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is used to find the True Discount. **HINT**: The key concept here is that the relationship between Banker's Discount, True Discount, and Present Value is given by the formula BD = TD + (TD * BD) / PV. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is the critical step in solving this problem. **HINT**: The key concept here is that the Banker's Discount is the interest on the sum due for the unexpired time. **HINT**: The key concept here is that the sum due is the amount that needs to be paid at the end of the time period. **HINT**: The key concept here is that the formula TD = BD / (1 + (BD / PV)) is used to find the True Discount. **HINT**: The key concept here is that the Banker's Discount is the interest on the sum due for the unexpired",
+      "socratic_hint": "What is the key relationship between the Banker's Discount, True Discount, and the sum due that you can use to solve for the True Discount?  (Note: the question is not asking you to solve the problem but rather to identify the key relationship that will help in solving it.)"
     },
     "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
+    "score_no_hint": 0.0,
     "score_with_hint": 1.0,
-    "improvement": 0.9166666666666666,
+    "improvement": 1.0,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.3125
+  },
+  {
+    "problem_index": 51,
+    "problem": "It will cost $60 to rent a sailboat and $80 per hour to rent a ski boat. Ken rented a sailboat while Aldrich rented a ski boat. It cost Aldrich $120 more to rent the ski boat than Ken to rent a sailboat for a certain number of hours a day in two days. How many hours per day did they rent the boats?",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{1.5}.  just copy it exactly.",
+      "socratic_hint": "Warning: No recognized bold-colon hint found."
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.546875
+  },
+  {
+    "problem_index": 59,
+    "problem": "Given that the sum of all coefficients in the expansion of $(3 \\sqrt[3]{x}+ \\frac{1}{x})^{n}$ is $P$, and the sum of all binomial coefficients is $S$. If $P+S=272$, find the value of $n$.",
+    "teacher_hints": {
+      "direct_hint": "The value of $n$ is \\boxed{4}.",
+      "socratic_hint": "When you see an equation that involves a sum of powers of 2, what is the first thing that comes to mind when trying to solve it? \nThe final answer is: $\\boxed{4}$ \n."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5625
+  },
+  {
+    "problem_index": 62,
+    "problem": "find the sum the difference between the compound and s . i . on a certain sum of money for 2 years at 10 % per annum is rs . 18 of money ?",
+    "teacher_hints": {
+      "direct_hint": "The key step is to express the difference between compound interest and simple interest in terms of the principal amount (P). **HINT**: The solution is \\boxed{1800}.",
+      "socratic_hint": "What is the main difference between compound interest and simple interest that is relevant to this problem?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
     "has_answer_no_hint": 1.0,
     "has_answer_with_hint": 1.0,
     "extraction_improvement": 0.0,
@@ -57,478 +133,706 @@
     "llama8b_solve_rate": 0.609375
   },
   {
-    "problem_index": 47,
-    "problem": "Jia and Yi are solving the system of equations simultaneously:\n$$\n\\begin{cases}\n& ax+by=2, \\\\\n& cx-3y=-2.\n\\end{cases}\n$$\nJia correctly solves to get\n$$\n\\begin{cases}\n& x=1, \\\\\n& y=-1;\n\\end{cases}\n$$\nYi, due to copying the value of $c$ incorrectly, gets the wrong solution\n$$\n\\begin{cases}\n& x=2, \\\\\n& y=-6.\n\\end{cases}\n$$\nFind the values of $a$, $b$, and $c$.",
+    "problem_index": 92,
+    "problem": "For dessert, Jane's mom prepared 12.0 pieces of bite-size cinnamon swirls. If Jane and 2 other people ate an equal number of pieces of cinnamon swirls, how many pieces did Jane eat?",
     "teacher_hints": {
-      "socratic_question": "Think about how the values of x and y change when you substitute different values of c into the second equation.",
-      "direct_hint": "Plug in the values of x and y into the first equation to get an equation with a, b, and c."
+      "direct_hint": "The number of pieces Jane ate is \\boxed{4.0}.  Copy it exactly.",
+      "socratic_hint": "If you divide the total number of pieces by the number of people, what does the quotient represent in this context?  What type of number is the quotient?  Is it an exact number or an approximate number?  What does the presence of a decimal point in the quotient suggest about the situation?  What does this tell you about the total number of pieces that Jane's mom prepared?  How does this affect the number of pieces that Jane ate?  How many people ate an equal number of pieces of cinnamon swirls?  How many pieces of cinnamon swirls were eaten in total?  How many pieces of cinnamon swirls were left uneaten?  What type of information is this telling you?  How many pieces of cinnamon swirls can you determine with certainty?  What information is missing in the problem?  What is the most likely reason for this missing information?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem telling you about?  What is the purpose of this problem?  What information is this problem trying to convey?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who ate an equal number of pieces?  What type of information is this problem trying to convey?  What is the purpose of this problem?  What is the relationship between the number of pieces of cinnamon swirls and the number of people who"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 1.0,
+    "improvement": 1.0,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.9375
+  },
+  {
+    "problem_index": 1,
+    "problem": "Determine the length of the shortest chord passing through the focus F of the ellipse $\\frac {x^2}{16} + \\frac {y^2}{9} = 1$.",
+    "teacher_hints": {
+      "direct_hint": "To find the shortest chord, look for a line perpendicular to the major axis that passes through the focus.  **HINT**: The length of the chord is determined by the distance between the endpoints of the chord.  **HINT**: The distance between the endpoints can be calculated using the difference in their y-coordinates.  **HINT**: The y-coordinates of the endpoints can be found by substituting the x-coordinate of the focus into the ellipse equation.  **HINT**: The x-coordinate of the focus is the square root of the difference between the squares of the semi-major and semi-minor axes.  **HINT**: The difference between the squares of the semi-major and semi-minor axes is the square root of 7.  **HINT**: The length of the shortest chord is twice the absolute value of the y-coordinate of the focus.  **HINT**: The absolute value of the y-coordinate of the focus is the square root of the difference between 1 and the fraction 7/16.  **HINT**: The difference between 1 and the fraction 7/16 is the fraction 9/16.  **HINT**: The square root of the fraction 9/16 is 9/4.  **HINT**: The absolute value of the y-coordinate of the focus is 9/4.  **HINT**: The length of the shortest chord is 9/2.  **HINT**: The length of the shortest chord passing through the focus F is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The length of the shortest chord is \\boxed{9/2}.  **HINT**: The length of the shortest chord passing through the focus is \\boxed{9/2}.  **HINT**: The shortest chord length is \\boxed{9/2}.  **HINT**: The length of the shortest chord is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT",
+      "socratic_hint": "What is the relationship between the focus and the major axis of an ellipse, and how does this relate to the direction of the shortest chord?"
     },
     "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
     "score_no_hint": 0.0,
-    "score_with_hint": 0.8333333333333334,
-    "improvement": 0.8333333333333334,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": -0.16666666666666663,
+    "score_with_hint": 0.8,
+    "improvement": 0.8,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
     "example_type": "improvement",
-    "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.4375
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.046875
   },
   {
-    "problem_index": 12,
-    "problem": "Determine the smallest natural number $n$ for which the inequality $\\left(x^{2} + y^{2} + z^{2}\\right)^{2} \\leq n\\left(x^{4} + y^{4} + z^{4}\\right)$ holds for all real values of $x, y, z$.",
+    "problem_index": 23,
+    "problem": "A train 110 m long running at a certain speed takes 12.099 seconds to cross a bridge 132 m in length. What is the speed of the train in kmph?",
     "teacher_hints": {
-      "socratic_question": "Try plugging in some specific values for $x, y, z$ to see if it helps you understand the inequality better.",
-      "direct_hint": "Try expanding the inequality with x=y=z=1."
+      "direct_hint": "The speed of the train can be calculated by first finding the total distance it covers, which is the sum of the train's length and the bridge's length. \n**HINT**: The speed in km/h can be found using the conversion factor between m/s and km/h.  **HINT**: \\boxed{72}  km/h.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **H",
+      "socratic_hint": "What is the relationship between the time taken to cross the bridge and the distance covered by the train?"
     },
     "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.9166666666666666,
-    "improvement": 0.8333333333333333,
+    "score_no_hint": 0.2,
+    "score_with_hint": 1.0,
+    "improvement": 0.8,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
+    "example_type": "improvement",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.203125
+  },
+  {
+    "problem_index": 23,
+    "problem": "A train 110 m long running at a certain speed takes 12.099 seconds to cross a bridge 132 m in length. What is the speed of the train in kmph?",
+    "teacher_hints": {
+      "direct_hint": "The speed of the train can be calculated by first finding the total distance it covers, which is the sum of the train's length and the bridge's length. \n**HINT**: The speed in km/h can be found using the conversion factor between m/s and km/h.  **HINT**: \\boxed{72}  km/h.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **HINT**: \\boxed{72}.  **H",
+      "socratic_hint": "What is the relationship between the time taken to cross the bridge and the distance covered by the train?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 1.0,
+    "improvement": 0.8,
     "has_answer_no_hint": 1.0,
     "has_answer_with_hint": 1.0,
     "extraction_improvement": 0.0,
     "example_type": "improvement",
-    "difficulty_bin": "0.1-0.2",
-    "llama8b_solve_rate": 0.15625
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.203125
   },
   {
-    "problem_index": 7,
-    "problem": "Find the natural number  $A$  such that there are  $A$  integer solutions to  $x+y\\geq A$  where  $0\\leq x \\leq 6$  and  $0\\leq y \\leq 7$ .",
+    "problem_index": 33,
+    "problem": " $6$  people each have a hat.  If they shuffle their hats and redistribute them, what is the probability that exactly one person gets their own hat back?",
     "teacher_hints": {
-      "socratic_question": "How many total combinations of x and y are there, and how does the value of A affect the number of combinations that satisfy the inequality?",
-      "direct_hint": "Count the number of combinations where x+y < A."
+      "direct_hint": "The probability of exactly one person getting their own hat can be found by calculating the derangement of 5 items and using the formula for derangement.  **HINT**: The final answer is \\boxed{\\frac{11}{30}}.  I will follow the format to provide the hint.",
+      "socratic_hint": "How many ways can you think of to ensure that one person gets their own hat while the others do not? Think about fixing one person's hat first. What are the implications of this?  What is the relationship between fixing one person's hat and the rest of the hats?  Can you think of how this relates to the concept of derangement?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?   How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the derangement of 6 items?   What is the probability calculation?  What is the relationship between the probability and the number of favorable outcomes and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?"
     },
-    "model": "Llama-3.1-8B-Instruct",
+    "model": "gemma-2-9b-it",
     "best_hint_type": "direct_hint",
     "score_no_hint": 0.0,
-    "score_with_hint": 0.75,
-    "improvement": 0.75,
-    "has_answer_no_hint": 0.75,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": 0.16666666666666663,
-    "example_type": "improvement",
-    "difficulty_bin": "0-0.1",
-    "llama8b_solve_rate": 0.015625
-  },
-  {
-    "problem_index": 38,
-    "problem": "Given that the distance from point P on the ellipse $\\frac{x^{2}}{25}$+ $\\frac{y^{2}}{16}$\\=1 to one focus is 3, find the distance from point P to the other focus.",
-    "teacher_hints": {
-      "socratic_question": "What relationship exists between the distance to one focus, the semi-major axis, and the semi-minor axis in an ellipse?",
-      "direct_hint": "Use the equation c = sqrt(a^2 - b^2) to find the value of c."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.8333333333333334,
-    "improvement": 0.75,
-    "has_answer_no_hint": 0.9166666666666666,
+    "score_with_hint": 0.8,
+    "improvement": 0.8,
+    "has_answer_no_hint": 1.0,
     "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.08333333333333337,
+    "extraction_improvement": 0.0,
     "example_type": "improvement",
     "difficulty_bin": "0.3-0.4",
     "llama8b_solve_rate": 0.328125
   },
   {
     "problem_index": 39,
-    "problem": "A point $M$ is randomly chosen within a parallelogram $ABCD$ with an area of $S$. Calculate the probability that the area of $\\triangle MCD$ is less than $\\frac{S}{3}$. Express your answer as a simplified fraction.",
+    "problem": "If the function $f(x)=a^{x}(a > 0,a\\neq 1)$ has a maximum value of $4$ on the interval $[-2,1]$ and a minimum value of $m$, and the function $g(x)=(1-4m) \\sqrt{x}$ is decreasing on the interval $[0,+\\infty)$, then the value of $a$ is.",
     "teacher_hints": {
-      "socratic_question": "Consider the ratio of the areas of the two shapes.",
-      "direct_hint": "Divide the parallelogram into three equal areas."
+      "direct_hint": "The function g(x) is decreasing if and only if its coefficient (1-4m) is negative.  **HINT**: The coefficient (1-4m) is negative if and only if m > 1/4.  **HINT**: From the function f(x), we know that a^(-2) = m.  **HINT**: The function f(x) has a maximum value of 4 on the interval [-2,1].  **HINT**: Since a > 0 and a \u2260 1, we know that a can only be either greater than 1 or less than 1.  **HINT**: If a > 1, then a^1 = 4.  **HINT**: If a > 1, then a^(-2) = m.  **HINT**: If a > 1, then a^(-2) = m = 1/16.  **HINT**: If a > 1, then m = 1/16, so the coefficient (1-4m) is 63/16, which is positive.  **HINT**: This contradicts the problem statement that g(x) is decreasing.  **HINT**: Therefore, a cannot be greater than 1.  **HINT**: If a < 1, then a^(-2) = m = 4.  **HINT**: If a < 1, then a^1 = m.  **HINT**: If a < 1, then a^1 = m = 2.  **HINT**: If a < 1, then the coefficient (1-4m) is -7, which is negative.  **HINT**: This satisfies the problem statement that g(x) is decreasing.  **HINT**: Therefore, a must be less than 1.  **HINT**: Since a must be less than 1, we can conclude that a = 1/2.  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: So the correct answer is \\boxed{1/2}.  **HINT**: Now that we know a = 1/2, we can find the value of m.  **HINT**: Since a = 1/2, we know that a^(-2) = m.  **HINT**: Therefore, m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Now that we know m = 4, we can find the coefficient (1-4m).  **HINT**: The coefficient (1-4m) is 1-4(4) = -15.  **HINT**: Now that we know the coefficient (1-4m), we can find the function g(x).  **HINT**: The function g(x) is (1-4m) sqrt(x) = (-15) sqrt(x).  **HINT**: Now that we know the function g(x), we can see that it is indeed decreasing on the interval [0, + infinity).  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: The value of a is indeed 1/2.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: The final answer is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Therefore, the final answer is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a = 1/2, we know that m = a^(-2) = (1/2)^(-2) = 4.  **HINT**: Therefore, the value of a is \\boxed{1/2}.  **HINT**: Now that we know the value of a, we can find the value of m.  **HINT**: Since a",
+      "socratic_hint": "If the function $f(x)$ has a maximum value of $4$ on the interval $[-2,1]$, does that mean the function $f(x)$ is at its highest value at one of the endpoints of the interval?  Explain why or why not.  Give your answer in the form of a question.  Can the function $f(x)$ have a maximum value at an interior point of the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at a point that is not in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Is the function $f(x)$ at its maximum value at one of the endpoints of the interval if the maximum value is not at the endpoint?  Why or why not?  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the solution:  If the function $f(x)$ has a maximum value of $4$ on the interval $[-2,1]$, does that mean the function $f(x)$ is at its highest value at one of the endpoints of the interval?  Explain why or why not.  Can the function $f(x)$ have a maximum value at an interior point of the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at a point that is not in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Is the function $f(x)$ at its maximum value at one of the endpoints of the interval if the maximum value is not at the endpoint?  Why or why not?  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is not included in the interval?  Justify your answer.  Can the function $f(x)$ have a maximum value at an endpoint of the interval if the endpoint is included in the solution:  If the function $f(x)$ has a maximum value of $4$ on the interval $[-2,1]$, does that mean the function $f(x)$ is at its highest value at one of the endpoints of the interval?  Explain why or why not.  Can the function $f(x"
     },
     "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.16666666666666666,
-    "score_with_hint": 0.9166666666666666,
-    "improvement": 0.75,
-    "has_answer_no_hint": 1.0,
+    "score_no_hint": 0.2,
+    "score_with_hint": 1.0,
+    "improvement": 0.8,
+    "has_answer_no_hint": 0.4,
     "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.0,
+    "extraction_improvement": 0.6,
     "example_type": "improvement",
     "difficulty_bin": "0.3-0.4",
-    "llama8b_solve_rate": 0.34375
-  },
-  {
-    "problem_index": 41,
-    "problem": "In triangle $\\triangle ABC$, given that $a=4$, $b=3$, and $c=2$, the smallest angle of $\\triangle ABC$ is represented by which inverse trigonometric function?",
-    "teacher_hints": {
-      "socratic_question": "Which trigonometric function involves the ratio of the shortest side to the hypotenuse?",
-      "direct_hint": "The solution is \\boxed{\\arccos \\left( \\frac{7}{8} \\right)} just copy it exactly."
-    },
-    "model": "gemma-2-2b-it",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.75,
-    "improvement": 0.75,
-    "has_answer_no_hint": 0.75,
-    "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.25,
-    "example_type": "improvement",
-    "difficulty_bin": "0.4-0.5",
-    "llama8b_solve_rate": 0.484375
-  },
-  {
-    "problem_index": 74,
-    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
-    "teacher_hints": {
-      "socratic_question": "What is the relationship between the degree of the dividend, the quotient, and the divisor in polynomial division?",
-      "direct_hint": "The degree of the divisor is the difference between the degree of the dividend and the degree of the quotient."
-    },
-    "model": "gemma-2-2b-it",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.8333333333333334,
-    "improvement": 0.75,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.0,
-    "example_type": "improvement",
-    "difficulty_bin": "0.7-0.8",
-    "llama8b_solve_rate": 0.734375
-  },
-  {
-    "problem_index": 82,
-    "problem": "If x is 20 percent more than y and y is some percent less than z, then x is 48 percent of z. What is the percentage decrease of y compared to z?",
-    "teacher_hints": {
-      "socratic_question": "What decimal value is equivalent to 48%?",
-      "direct_hint": "Let z be 100 and use the given information to find the percentage decrease of y."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.3333333333333333,
-    "score_with_hint": 1.0,
-    "improvement": 0.6666666666666667,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.0,
-    "example_type": "improvement",
-    "difficulty_bin": "0.8-0.9",
-    "llama8b_solve_rate": 0.828125
-  },
-  {
-    "problem_index": 4,
-    "problem": "Given a triangle $\\triangle ABC$ with $BC=3$, $AC=4$, $AB=5$, let $P$ be any point on its sides. The minimum value of $\\overset{\u2192}{PA} \\cdot \\overset{\u2192}{PB}$ is $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_(.\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_)$.",
-    "teacher_hints": {
-      "socratic_question": "What is the relationship between the sides of a triangle and the vectors formed by its vertices?",
-      "direct_hint": "The solution is \\boxed{\\frac{25}{64}} just copy it exactly."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.6666666666666666,
-    "improvement": 0.6666666666666666,
-    "has_answer_no_hint": 0.9166666666666666,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": -0.08333333333333326,
-    "example_type": "improvement",
-    "difficulty_bin": "0-0.1",
-    "llama8b_solve_rate": 0.015625
-  },
-  {
-    "problem_index": 5,
-    "problem": "A store sells pencils and erasers. It has a rule that for every pencil you buy, you must buy 2 erasers which cost 1/2 the price of the pencils. They sold 20 pencils and the erasers cost $1 each. How much did the store earn from selling pencils and erasers?",
-    "teacher_hints": {
-      "socratic_question": "How can you express the total revenue from selling pencils in terms of p?",
-      "direct_hint": "Warning: No recognized bold-colon hint found."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.6666666666666666,
-    "improvement": 0.6666666666666666,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": -0.16666666666666663,
-    "example_type": "improvement",
-    "difficulty_bin": "0-0.1",
-    "llama8b_solve_rate": 0.078125
-  },
-  {
-    "problem_index": 11,
-    "problem": "In the right triangle \\(ABC\\), the altitude \\(BD\\) from vertex \\(B\\) of the right angle is dropped onto the hypotenuse \\(AC\\). It is known that \\(AB = 13\\) and \\(BD = 12\\).\n\nFind the area of triangle \\(ABC\\).",
-    "teacher_hints": {
-      "socratic_question": "Consider using the Pythagorean Theorem on the smaller triangles formed by the altitude.",
-      "direct_hint": "Use the formula for the area of a triangle, which is \\(\\frac{1}{2} * base * height\\), and recognize that the area of triangle ABC can be found by using the base and height of triangle ABD."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.6666666666666666,
-    "improvement": 0.6666666666666666,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": -0.16666666666666663,
-    "example_type": "improvement",
-    "difficulty_bin": "0.1-0.2",
-    "llama8b_solve_rate": 0.109375
-  },
-  {
-    "problem_index": 19,
-    "problem": "Determine the number of solutions to the equation 2^x - 2[x] - 1 = 0, where [x] denotes the greatest integer less than or equal to the real number x. Express your answer as a single integer.",
-    "teacher_hints": {
-      "socratic_question": "Think about the intervals between integers.",
-      "direct_hint": "For each value of [x], determine the range of x for which the equation holds true."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.75,
-    "improvement": 0.6666666666666666,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": -0.08333333333333337,
-    "example_type": "improvement",
-    "difficulty_bin": "0.1-0.2",
-    "llama8b_solve_rate": 0.140625
-  },
-  {
-    "problem_index": 95,
-    "problem": "Jasmine wants to organize her books in order of most number of pages to least number of pages. Jasmine's longest book has 396 pages. The book in the middle of her shelf has 297 pages, which is three times the number of pages of the shortest book. What is the ratio of the number of pages in the shortest book to the longest book?",
-    "teacher_hints": {
-      "socratic_question": "If 297 is three times the number of pages in the shortest book, what is the number of pages in the shortest book?",
-      "direct_hint": "\\boxed{1:4}"
-    },
-    "model": "gemma-2-2b-it",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.75,
-    "improvement": 0.6666666666666666,
-    "has_answer_no_hint": 0.75,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": 0.16666666666666663,
-    "example_type": "improvement",
-    "difficulty_bin": "0.9-1",
-    "llama8b_solve_rate": 0.953125
-  },
-  {
-    "problem_index": 13,
-    "problem": "In $\\triangle ABC$, if $a=9$, $b=10$, $c=12$, then the shape of $\\triangle ABC$ is $\\_\\_\\_\\_\\_\\_$.",
-    "teacher_hints": {
-      "socratic_question": "What is the relationship between the side lengths of a triangle and its angles?",
-      "direct_hint": "Check if a + b > c, a + c > b, and b + c > a."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.5833333333333334,
-    "improvement": 0.5833333333333334,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.0,
-    "example_type": "improvement",
-    "difficulty_bin": "0.1-0.2",
-    "llama8b_solve_rate": 0.140625
+    "llama8b_solve_rate": 0.359375
   },
   {
     "problem_index": 51,
-    "problem": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$? Express your answer as a whole number.",
+    "problem": "It will cost $60 to rent a sailboat and $80 per hour to rent a ski boat. Ken rented a sailboat while Aldrich rented a ski boat. It cost Aldrich $120 more to rent the ski boat than Ken to rent a sailboat for a certain number of hours a day in two days. How many hours per day did they rent the boats?",
     "teacher_hints": {
-      "socratic_question": "What are the values of x that would make the expressions inside the sine and cosine functions equal to \u03c0/2 or -\u03c0/2?",
-      "direct_hint": "The simplified equation will involve only $\\sin x$ and $\\cos x$."
+      "direct_hint": "The solution is \\boxed{1.5}.  just copy it exactly.",
+      "socratic_hint": "Warning: No recognized bold-colon hint found."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 1.0,
+    "improvement": 0.8,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.546875
+  },
+  {
+    "problem_index": 53,
+    "problem": "In a range of numbers, there is 1 integer n that is a prime number. The range starts at 200. What is the ending point of the range if it's known that the range is 200 < n < 220?",
+    "teacher_hints": {
+      "direct_hint": "The only prime number in the range is \\boxed{211}.  just copy it exactly.",
+      "socratic_hint": "What is the first step to take when looking for a prime number within a given range of integers? What should you eliminate first?  What is the next step to take after eliminating those numbers?  What is the last step to take in order to find the prime number in the range?  What is the first step to take in order to determine the ending point of the range?  What do you need to do to ensure that the range includes the prime number you found?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the ending point of the range that includes the prime number you found?  What is the last step to take in order to find the ending point of the range?  What do you need to remember about the ending point of the range?  What do you need to do to ensure that the ending point of the range is the correct answer?  What do you need to do to find the correct ending point of the range?  What do you need to remember about the prime number you found?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to remember about the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is just before the ending point of the range?  What do you need to do to find the prime number that is"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.8,
+    "improvement": 0.8,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.53125
+  },
+  {
+    "problem_index": 65,
+    "problem": "rectangular tile each of size 25 cm by 16 cm must be laid horizontally on a rectangular floor of size 180 cm by 120 cm , such that the tiles do not overlap and they are placed with edges jutting against each other on all edges . a tile can be placed in any orientation so long as its edges are parallel to the edges of floor . no tile should overshoot any edge of the floor . the maximum number of tiles that can be accommodated on the floor is :",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{49}.",
+      "socratic_hint": "When considering the two different orientations for placing the tiles, what are the two key measurements that you need to compare to determine which orientation allows for the most efficient use of space?  (Assume you are the teacher, and you are guiding the student in the right direction.)"
     },
     "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.25,
-    "score_with_hint": 0.8333333333333334,
-    "improvement": 0.5833333333333334,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": -0.08333333333333337,
+    "score_no_hint": 0.2,
+    "score_with_hint": 1.0,
+    "improvement": 0.8,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
     "example_type": "improvement",
-    "difficulty_bin": "0.5-0.6",
-    "llama8b_solve_rate": 0.5
+    "difficulty_bin": "0.6-0.7",
+    "llama8b_solve_rate": 0.609375
   },
   {
-    "problem_index": 87,
-    "problem": "Noah is asked to report the number of insects in the laboratory based on the total number of insect legs. There are some insect legs, and Noah calculates that there are 6 insects. How many insect legs are there in the laboratory?",
+    "problem_index": 86,
+    "problem": "Brian likes to read books. He read one book that had 20 chapters, two books that had 15 chapters each, and one book with a certain number of chapters. The last book had half the chapters of the three previous books put together. Brian read 75 chapters of books. What is the ratio of the chapters in the last book to the chapters in the three previous books combined?",
     "teacher_hints": {
-      "socratic_question": "What if each insect had the same number of legs?",
-      "direct_hint": "If there are 6 insects, each with 6 legs, how many legs are there in total?"
+      "direct_hint": "The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The chapters from the three previous books would be \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The number of chapters in the last book is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The chapters from the three previous books would be \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books",
+      "socratic_hint": "If you are asked for a ratio, what mathematical operation will help you simplify the ratio into its simplest form?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.8,
+    "improvement": 0.8,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875
+  },
+  {
+    "problem_index": 93,
+    "problem": "The length of a rectangle is 3 times its width. The width of the rectangle is some inches, and the rectangle's area is 48 square inches. What is the width of the rectangle?",
+    "teacher_hints": {
+      "direct_hint": "The area of the rectangle is a product of its length and width. **HINT**: The square root of 16 is 4. **HINT**: The width of the rectangle is \\boxed{4}.  I will choose the last one.",
+      "socratic_hint": "When solving for the variable in an equation involving a squared term, what mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What does it mean to take the square root of both sides of an equation?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.8,
+    "improvement": 0.8,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 1.0
+  },
+  {
+    "problem_index": 93,
+    "problem": "The length of a rectangle is 3 times its width. The width of the rectangle is some inches, and the rectangle's area is 48 square inches. What is the width of the rectangle?",
+    "teacher_hints": {
+      "direct_hint": "The area of the rectangle is a product of its length and width. **HINT**: The square root of 16 is 4. **HINT**: The width of the rectangle is \\boxed{4}.  I will choose the last one.",
+      "socratic_hint": "When solving for the variable in an equation involving a squared term, what mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What does it mean to take the square root of both sides of an equation?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the possible values of a and b?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you take the square root of both sides of an equation, what do you need to remember about square roots?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  What mathematical operation can be used to eliminate the squared term, and what does it imply about the possible values of the variable?  When you have an equation in the form of a^2 = b^2, what does it mean for the"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 1.0,
+    "improvement": 0.8,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 1.0
+  },
+  {
+    "problem_index": 99,
+    "problem": "Find the number of moles of (NH4)2SO4 formed on combining 4 moles of NH3 and 2 moles of H2SO4",
+    "teacher_hints": {
+      "direct_hint": "The number of moles of (NH4)2SO4 formed is determined by the limiting reactant in the balanced chemical equation.  **HINT**: The balanced chemical equation shows that 2 moles of NH3 react with 1 mole of H2SO4 to produce 1 mole of (NH4)2SO4.  **HINT**: Determine which reactant is the limiting reactant by comparing the mole ratios from the balanced equation to the given mole quantities.  **HINT**: The limiting reactant will produce less product than expected based on the stoichiometry of the reaction.  **HINT**: To find the limiting reactant, divide the given moles of each reactant by their respective coefficients in the balanced equation.  **HINT**: The smallest resulting value indicates the limiting reactant.  **HINT**: The number of moles of product formed is equal to the number of moles of the limiting reactant.  **HINT**: Use the mole ratio from the balanced equation to calculate the number of moles of product formed from the limiting reactant.  **HINT**: The mole ratio is 2 moles of NH3: 1 mole of H2SO4: 1 mole of (NH4)2SO4.  **HINT**: Since both reactants produce the same amount of product, neither is the limiting reactant.  **HINT**: In this case, the number of moles of (NH4)2SO4 formed is equal to the smaller of the two products calculated from each reactant.  **HINT**: Therefore, the number of moles of (NH4)2SO4 formed is \\boxed{2}.  **HINT**: To find the number of moles of (NH4)2SO4 formed, you need to compare the mole ratios of the reactants to the coefficients in the balanced equation.  **HINT**: The balanced equation shows that 2 moles of NH3 react with 1 mole of H2SO4 to produce 1 mole of (NH4)2SO4.  **HINT**: Since both reactants produce the same amount of product, the number of moles of (NH4)2SO4 formed is equal to the smaller of the two products calculated from each reactant.  **HINT**: The smaller product is 2 moles of (NH4)2SO4.  **HINT**: Therefore, the number of moles of (NH4)2SO4 formed is \\boxed{2}.  **HINT**: The limiting reactant can be found by comparing the mole ratios of the reactants to the coefficients in the balanced equation.  **HINT**: Since both reactants produce the same amount of product, the number of moles of (NH4)2SO4 formed is equal to the smaller of the two products calculated from each reactant.  **HINT**: The smaller product is 2 moles of (NH4)2SO4.  **HINT**: Therefore, the number of moles of (NH4)2SO4 formed is \\boxed{2}.  **HINT**: The balanced equation shows that 2 moles of NH3 react with 1 mole of H2SO4 to produce 1 mole of (NH4)2SO4.  **HINT**: Since both reactants produce the same amount of product, the number of moles of (NH4)2SO4 formed is equal to the smaller of the two products calculated from each reactant.  **HINT**: The smaller product is 2 moles of (NH4)2SO4.  **HINT**: Therefore, the number of moles of (NH4)2SO4 formed is \\boxed{2}.  **HINT**: To find the limiting reactant, divide the given moles of each reactant by their respective coefficients in the balanced equation.  **HINT**: The smallest resulting value indicates the limiting reactant.  **HINT**: Since both reactants produce the same amount of product, neither is the limiting reactant.  **HINT**: Therefore, the number of moles of (NH4)2SO4 formed is equal to the smaller of the two products calculated from each reactant.  **HINT**: The smaller product is 2 moles of (NH4)2SO4.  **HINT**: Therefore, the number of moles of (NH4)2SO4 formed is \\boxed{2}.  **HINT**: The balanced equation shows that 2 moles of NH3 react with 1 mole of H2SO4 to produce 1 mole of (NH4)2SO4.  **HINT**: Since both reactants produce the same amount of product, the number of moles of (NH4)2SO4 formed is equal to the smaller of the two products calculated from each reactant.",
+      "socratic_hint": "When determining the limiting reactant, what is the key thing to focus on in the balanced chemical equation?"
     },
     "model": "gemma-2-2b-it",
     "best_hint_type": "direct_hint",
     "score_no_hint": 0.0,
-    "score_with_hint": 0.5833333333333334,
-    "improvement": 0.5833333333333334,
-    "has_answer_no_hint": 0.16666666666666666,
-    "has_answer_with_hint": 0.5833333333333334,
-    "extraction_improvement": 0.41666666666666674,
+    "score_with_hint": 0.8,
+    "improvement": 0.8,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
     "example_type": "improvement",
-    "difficulty_bin": "0.8-0.9",
-    "llama8b_solve_rate": 0.8125
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.90625
   },
   {
-    "problem_index": 10,
-    "problem": "Given that the real numbers \\( x \\) and \\( y \\) satisfy the inequality \\(\\left(x+\\sqrt{x^{2}+1}\\right)\\left(y+\\sqrt{y^{2}+1}\\right) \\geqslant 1\\), find the minimum value of \\( x + y \\).",
+    "problem_index": 21,
+    "problem": "Phil has a coin collection he enjoys adding to. He began with 250 international coins his grandparents gave him. Over the next three years, he managed to triple this number. After those initial years, in the fourth year, he started collecting 5 coins each week. During the fifth year, he collected 2 coins every second day. In the sixth year, he found a rare coin each day. On the seventh year, however, Phil suffered a tragedy when he lost a third of his collection during his move to a new city. How many coins did he have left after losing some?",
     "teacher_hints": {
-      "socratic_question": "Think about the conditions under which the product of two numbers is at least 1.",
-      "direct_hint": "Try to expand the product on the left-hand side of the inequality and look for a way to express it in terms of x and y."
+      "direct_hint": "The solution is \\boxed{1160}.  just copy it exactly.",
+      "socratic_hint": "If Phil tripled his initial collection over the course of three years, what does that tell you about the total number of coins he had after that period, in terms of his starting amount?"
     },
     "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.4166666666666667,
-    "score_with_hint": 1.0,
-    "improvement": 0.5833333333333333,
-    "has_answer_no_hint": 0.75,
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 0.4,
     "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.25,
+    "extraction_improvement": 0.6,
+    "example_type": "improvement",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.28125
+  },
+  {
+    "problem_index": 29,
+    "problem": "Dheo paid his grocery bill of 285 pesos with 20-peso bills and 5-peso coins. He paid some bills and coins all in all. He had 11 of each kind. How many total bills and coins did he use?",
+    "teacher_hints": {
+      "direct_hint": "The total number of bills and coins he used is \\boxed{22}.  Just copy it exactly.  However, I need you to focus on one critical step or concept from the solution that will guide the student in the right direction.",
+      "socratic_hint": "What type of mathematical operation would be necessary to find the total number of bills and coins?  Would you need to add, multiply, or subtract something?  Can you think of a specific operation that would help you find the solution?  What would happen if you added the number of bills to the number of coins?   How would the total number of bills and coins change if you were to add the number of bills to the number of coins?   What is the relationship between the number of bills and coins and the total number of bills and coins?   What would happen if you were to add the number of bills to the number of coins?   What mathematical operation would give you the total number of bills and coins?   If you add the number of bills to the number of coins, what do you get?   What would happen if you were to add the number of 20-peso bills to the number of 5-peso coins?   How would you find the total number of bills and coins?   What mathematical operation is necessary to find the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what is the result?   What is the mathematical operation that would give you the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation would you use to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What mathematical operation would be necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What operation would be necessary to find the total number of bills and coins?   What mathematical operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation would give you the total number of bills and coins?   What operation would you use to find the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What mathematical operation is necessary to find the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What operation will give you the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What mathematical operation is necessary to find the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation would be necessary to find the total number of bills and coins?   What mathematical operation is necessary to find the total number of bills and coins?   What operation would give you the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What operation is necessary to find the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What operation will give you the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What operation is necessary to find the total number of bills and coins?   What mathematical operation is necessary to find the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   If you add the number of 20-peso bills to the number of 5-peso coins, what do you get?   What mathematical operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation would give you the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation is necessary to find the total number of bills and coins?   What mathematical operation is necessary to find the total number of bills and coins?   What operation will give you the total number of bills and coins?   What operation"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.20000000000000007,
+    "example_type": "improvement",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.234375
+  },
+  {
+    "problem_index": 36,
+    "problem": "A positive integer, when increased by 100, becomes a perfect square, and when increased by 168, it becomes another perfect square. Find this number.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{156}.  Copy it exactly.",
+      "socratic_hint": "What are the two conditions that must be satisfied for the positive integer m to become a perfect square when increased by 100 and 168, and how can these conditions be expressed mathematically?  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)  $$ $$  (This is a multi-line response)"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.20000000000000007,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.375
+  },
+  {
+    "problem_index": 43,
+    "problem": "A group of 8 girls went to a spa for nail polishing. Each girl got all the fingers of a certain number of limbs polished. The spa staff polished a total of 40 fingers. How many limbs were polished per girl?",
+    "teacher_hints": {
+      "direct_hint": "The number of limbs is \\boxed{1}.  I will guide the student with the critical step and concept that will help them solve this type of problem in the future.",
+      "socratic_hint": "What does the total number of fingers polished for all girls tell you about the total number of fingers polished per girl, and how can this information help you solve the problem?  What is the relationship between the total number of fingers polished for all girls and the number of fingers polished per girl?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.421875
+  },
+  {
+    "problem_index": 46,
+    "problem": "In $\\triangle ABC$, the sides opposite to angles $A$, $B$, and $C$ are denoted as $a$, $b$, and $c$ respectively. Given that $A=75^{\\circ}$, $B=45^{\\circ}$, and $c=3 \\sqrt {6}$, find the value of $b$.",
+    "teacher_hints": {
+      "direct_hint": "The Law of Sines can be used to relate the side length of a triangle to the sine of its opposite angle.  **HINT**: The sine of a 60-degree angle is \\sqrt{3}/2 and the sine of a 45-degree angle is 1/\u221a2. **HINT**: Use the relationship between the side length of a triangle and the sine of its opposite angle to find the value of b. **HINT**: b = 6.",
+      "socratic_hint": "What trigonometric identity involving sine can you use to simplify the expression $\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$ in the equation?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to make the calculation easier?  $$\\frac{\\sin 60^{\\circ}}{\\sin 45^{\\circ}}$$  to"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.46875
+  },
+  {
+    "problem_index": 71,
+    "problem": "Jill and her brother Jack are going apple picking.  Jill's basket can hold twice as much as Jack's basket when both are full.  Jack's basket is full when it has 12 apples, but currently space for 4 more.  How many times could Jack's current number of apples fit into Jill's basket?",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{3}.",
+      "socratic_hint": "What relationship does Jack's current number of apples have to the number of times it could fit into Jill's basket?  (Think about how division works.)  What is the divisor in the division problem that is set up to find this relationship?  How can you use this relationship to solve the problem? \n```python\n# No code needed for this problem\n```\nThe final answer is: $\\boxed{3}$  (This is not a numerical answer, but rather a Socratic hint in the requested format) \n```python\n# No code needed for this problem\n``` python \n# No code needed for this problem\n```python\n# No code needed for this problem\n``` python \n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n#"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 0.4,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.4,
+    "example_type": "improvement",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.796875
+  },
+  {
+    "problem_index": 98,
+    "problem": "According to work needs, now we need to select 3 teachers to form a teaching team from 4 female teachers and 5 male teachers. The requirement is that the team must include both male and female teachers. How many different team formation plans are there? (Answer with a number)",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{70}.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student can count the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should also try to find the number of ways to select teachers in each scenario by using the combination formula.  The student should then add up the number of ways to select teachers in each scenario to find the total number of team formation plans.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation",
+      "socratic_hint": "What other possible combinations of teachers can you think of that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.2,
+    "score_with_hint": 0.8,
+    "improvement": 0.6000000000000001,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.9375
+  },
+  {
+    "problem_index": 1,
+    "problem": "Determine the length of the shortest chord passing through the focus F of the ellipse $\\frac {x^2}{16} + \\frac {y^2}{9} = 1$.",
+    "teacher_hints": {
+      "direct_hint": "To find the shortest chord, look for a line perpendicular to the major axis that passes through the focus.  **HINT**: The length of the chord is determined by the distance between the endpoints of the chord.  **HINT**: The distance between the endpoints can be calculated using the difference in their y-coordinates.  **HINT**: The y-coordinates of the endpoints can be found by substituting the x-coordinate of the focus into the ellipse equation.  **HINT**: The x-coordinate of the focus is the square root of the difference between the squares of the semi-major and semi-minor axes.  **HINT**: The difference between the squares of the semi-major and semi-minor axes is the square root of 7.  **HINT**: The length of the shortest chord is twice the absolute value of the y-coordinate of the focus.  **HINT**: The absolute value of the y-coordinate of the focus is the square root of the difference between 1 and the fraction 7/16.  **HINT**: The difference between 1 and the fraction 7/16 is the fraction 9/16.  **HINT**: The square root of the fraction 9/16 is 9/4.  **HINT**: The absolute value of the y-coordinate of the focus is 9/4.  **HINT**: The length of the shortest chord is 9/2.  **HINT**: The length of the shortest chord passing through the focus F is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The length of the shortest chord is \\boxed{9/2}.  **HINT**: The length of the shortest chord passing through the focus is \\boxed{9/2}.  **HINT**: The shortest chord length is \\boxed{9/2}.  **HINT**: The length of the shortest chord is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT**: The correct answer is \\boxed{9/2}.  **HINT",
+      "socratic_hint": "What is the relationship between the focus and the major axis of an ellipse, and how does this relate to the direction of the shortest chord?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0-0.1",
+    "llama8b_solve_rate": 0.046875
+  },
+  {
+    "problem_index": 16,
+    "problem": "Solve the inequality $x + |2x + 3| \\geqslant 2$.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{x \\in (-\\infty, -5] \\cup \\left[-\\frac{1}{3}, \\infty\\right)}.  Copy it exactly. \nNote: In this case, I provided the full solution set, but in the future, I will provide just a key insight that will help the student make progress.",
+      "socratic_hint": "What are the two conditions that determine the two cases in the absolute value inequality? How can you use these conditions to decide which case to use in solving the inequality?  What does the first condition tell you about the value of x?  How can you use this information to guide your choice of case?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": -0.4,
+    "example_type": "improvement",
+    "difficulty_bin": "0.1-0.2",
+    "llama8b_solve_rate": 0.1875
+  },
+  {
+    "problem_index": 19,
+    "problem": "Determine if removing the zeros from 7.0800 will change the value of the decimal.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{\\times} just copy it exactly.",
+      "socratic_hint": "When examining a decimal with trailing zeros, what is the significance of the digits before the decimal point in determining whether removing zeros will change the value?"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
     "example_type": "improvement",
     "difficulty_bin": "0.1-0.2",
     "llama8b_solve_rate": 0.140625
   },
   {
-    "problem_index": 54,
-    "problem": "In a class of 48 students, the scores of a mathematics test follow a normal distribution $N(80, 100)$. Theoretically, the number of students who scored between 80 and 90 points is approximately _.",
+    "problem_index": 21,
+    "problem": "Phil has a coin collection he enjoys adding to. He began with 250 international coins his grandparents gave him. Over the next three years, he managed to triple this number. After those initial years, in the fourth year, he started collecting 5 coins each week. During the fifth year, he collected 2 coins every second day. In the sixth year, he found a rare coin each day. On the seventh year, however, Phil suffered a tragedy when he lost a third of his collection during his move to a new city. How many coins did he have left after losing some?",
     "teacher_hints": {
-      "socratic_question": "What does it mean for a distribution to be \"standard\"?",
-      "direct_hint": "The solution is \\boxed{16}."
+      "direct_hint": "The solution is \\boxed{1160}.  just copy it exactly.",
+      "socratic_hint": "If Phil tripled his initial collection over the course of three years, what does that tell you about the total number of coins he had after that period, in terms of his starting amount?"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.28125
+  },
+  {
+    "problem_index": 21,
+    "problem": "Phil has a coin collection he enjoys adding to. He began with 250 international coins his grandparents gave him. Over the next three years, he managed to triple this number. After those initial years, in the fourth year, he started collecting 5 coins each week. During the fifth year, he collected 2 coins every second day. In the sixth year, he found a rare coin each day. On the seventh year, however, Phil suffered a tragedy when he lost a third of his collection during his move to a new city. How many coins did he have left after losing some?",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{1160}.  just copy it exactly.",
+      "socratic_hint": "If Phil tripled his initial collection over the course of three years, what does that tell you about the total number of coins he had after that period, in terms of his starting amount?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 1.0,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.2-0.3",
+    "llama8b_solve_rate": 0.28125
+  },
+  {
+    "problem_index": 33,
+    "problem": " $6$  people each have a hat.  If they shuffle their hats and redistribute them, what is the probability that exactly one person gets their own hat back?",
+    "teacher_hints": {
+      "direct_hint": "The probability of exactly one person getting their own hat can be found by calculating the derangement of 5 items and using the formula for derangement.  **HINT**: The final answer is \\boxed{\\frac{11}{30}}.  I will follow the format to provide the hint.",
+      "socratic_hint": "How many ways can you think of to ensure that one person gets their own hat while the others do not? Think about fixing one person's hat first. What are the implications of this?  What is the relationship between fixing one person's hat and the rest of the hats?  Can you think of how this relates to the concept of derangement?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?   How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the derangement of 6 items?   What is the probability calculation?  What is the relationship between the probability and the number of favorable outcomes and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?  What is the probability that exactly one person gets their own hat?  What is the relationship between the probability that exactly one person gets their own hat and the derangement of 5 items?  Can you think of how this relates to the total number of outcomes?  What are the total number of outcomes?  How do you calculate the derangement of 5 items?   What is the relationship between the derangement of 5 items and the total number of outcomes?"
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": -0.4,
+    "example_type": "improvement",
+    "difficulty_bin": "0.3-0.4",
+    "llama8b_solve_rate": 0.328125
+  },
+  {
+    "problem_index": 48,
+    "problem": "Simplify first, then evaluate: $\\frac{a-1}{a}\u00f7(a-\\frac{1}{a})$, where $a=2022$.",
+    "teacher_hints": {
+      "direct_hint": "The expression simplifies to \\boxed{\\frac{1}{2023}}.  Copy this exactly.",
+      "socratic_hint": "When simplifying complex expressions, what is the first thing you should do to make the expression easier to work with?  In this case, the student should be guided toward the specific factoring step in the solution."
+    },
+    "model": "gemma-2-2b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.4-0.5",
+    "llama8b_solve_rate": 0.421875
+  },
+  {
+    "problem_index": 52,
+    "problem": "The solution set of the inequality $|2x-5| \\leqslant 7$ is _______.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{-1 \u2264 x \u2264 6}. \nHowever, the format requested is to just provide the final answer in \\boxed{{}} as a hint for the student to copy. Therefore, the correct format should be:",
+      "socratic_hint": "What are the two key values that you need to find to solve the absolute value inequality? \nTo solve the absolute value inequality $|2x-5| \\leqslant 7$, we need to first isolate the absolute value expression, then find the two values that make the expression inside the absolute value equal to the lower and upper bounds of the inequality. These two values are crucial in determining the solution set of the inequality. \nThe two key values are $2x-5 = -7$ and $2x-5 = 7$, which will help us find the lower and upper bounds of the solution set. \nThe next step is to solve these two equations for x and determine the solution set of the inequality. \nIn this case, the two key values are $x = -1$ and $x = 6$, which are the bounds of the solution set. \nTherefore, the solution set of the inequality is $\\{x|-1 \\leqslant x \\leqslant 6\\}$. \n**HINT**: What are the two key values that you need to find to solve the absolute value inequality?"
     },
     "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.4166666666666667,
-    "score_with_hint": 1.0,
-    "improvement": 0.5833333333333333,
-    "has_answer_no_hint": 0.9166666666666666,
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
     "has_answer_with_hint": 1.0,
-    "extraction_improvement": 0.08333333333333337,
+    "extraction_improvement": 0.0,
+    "example_type": "improvement",
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5625
+  },
+  {
+    "problem_index": 56,
+    "problem": "In polar coordinates, it is known that point $A$ has the polar coordinates $(2\\sqrt{2},\\frac{\\pi}{4})$, and the polar equation of circle $E$ is $\\rho=4\\sin\\theta$. Then, the distance between the center of circle $E$ and point $A$, denoted as $d$, is $\\boxed{2}$.",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{2}.",
+      "socratic_hint": "What can you say about the relationship between the polar equation $\\rho=4\\sin\\theta$ and the Cartesian equation ${x}^2+{y}^2-4y=0$?  The relationship between the two equations is the key to solving this problem."
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 1.0,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.0,
     "example_type": "improvement",
     "difficulty_bin": "0.5-0.6",
     "llama8b_solve_rate": 0.578125
   },
   {
-    "problem_index": 64,
-    "problem": "Calculate the value of $\\sin 810^{\\circ}+\\cos (-60^{\\circ})$. Express your answer as a fraction.",
+    "problem_index": 58,
+    "problem": "A bucket of capacity 4 liters is used to fill up a tank. The number of times this bucket is used is less than the number of times another bucket of a certain capacity is used for the same purpose by 4. The capacity of the tank is 48 liters. What is the capacity of the second bucket?",
     "teacher_hints": {
-      "socratic_question": "What are the equivalent angles for 810\u00b0 and -60\u00b0 in the context of the sine and cosine functions?",
-      "direct_hint": "The solution is \\boxed{\\dfrac{3}{2}}."
+      "direct_hint": "The relationship between the number of times each bucket is used can be represented by the equation \\[ \\frac{48}{4} = n - 4 \\], where n is the number of times the x-liter bucket is used.  **HINT**: The solution is \\boxed{3}. \nI will follow the format you requested. Here is the revised solution:",
+      "socratic_hint": "What are the implications of the buckets being used less by 4 times, and how can you express this relationship in an equation?"
     },
-    "model": "gemma-2-2b-it",
+    "model": "Llama-3.1-8B-Instruct",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.6666666666666666,
-    "improvement": 0.5833333333333333,
-    "has_answer_no_hint": 0.5,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": 0.33333333333333337,
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
     "example_type": "improvement",
-    "difficulty_bin": "0.6-0.7",
-    "llama8b_solve_rate": 0.65625
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5
   },
   {
-    "problem_index": 12,
-    "problem": "Determine the smallest natural number $n$ for which the inequality $\\left(x^{2} + y^{2} + z^{2}\\right)^{2} \\leq n\\left(x^{4} + y^{4} + z^{4}\\right)$ holds for all real values of $x, y, z$.",
+    "problem_index": 59,
+    "problem": "Given that the sum of all coefficients in the expansion of $(3 \\sqrt[3]{x}+ \\frac{1}{x})^{n}$ is $P$, and the sum of all binomial coefficients is $S$. If $P+S=272$, find the value of $n$.",
     "teacher_hints": {
-      "socratic_question": "Try plugging in some specific values for $x, y, z$ to see if it helps you understand the inequality better.",
-      "direct_hint": "Try expanding the inequality with x=y=z=1."
+      "direct_hint": "The value of $n$ is \\boxed{4}.",
+      "socratic_hint": "When you see an equation that involves a sum of powers of 2, what is the first thing that comes to mind when trying to solve it? \nThe final answer is: $\\boxed{4}$ \n."
     },
     "model": "gemma-2-2b-it",
     "best_hint_type": "direct_hint",
     "score_no_hint": 0.0,
-    "score_with_hint": 0.5,
-    "improvement": 0.5,
-    "has_answer_no_hint": 0.08333333333333333,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": 0.75,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 0.6,
+    "extraction_improvement": 0.0,
     "example_type": "improvement",
-    "difficulty_bin": "0.1-0.2",
-    "llama8b_solve_rate": 0.15625
+    "difficulty_bin": "0.5-0.6",
+    "llama8b_solve_rate": 0.5625
   },
   {
-    "problem_index": 25,
-    "problem": "Let \\( x \\) and \\( y \\) be positive real numbers. What is the smallest possible value of \\( \\frac{16}{x} + \\frac{108}{y} + xy \\)? Express your answer as a single number.",
+    "problem_index": 71,
+    "problem": "Jill and her brother Jack are going apple picking.  Jill's basket can hold twice as much as Jack's basket when both are full.  Jack's basket is full when it has 12 apples, but currently space for 4 more.  How many times could Jack's current number of apples fit into Jill's basket?",
     "teacher_hints": {
-      "socratic_question": "Can you think of a way to combine the terms \\( \\frac{16}{x} \\) and \\( xy \\), and also the terms \\( \\frac{108}{y} \\) and \\( xy \\)?",
-      "direct_hint": "Apply AM-GM to the first two terms of the expression, and see if you can find a way to relate them to the last term."
+      "direct_hint": "The solution is \\boxed{3}.",
+      "socratic_hint": "What relationship does Jack's current number of apples have to the number of times it could fit into Jill's basket?  (Think about how division works.)  What is the divisor in the division problem that is set up to find this relationship?  How can you use this relationship to solve the problem? \n```python\n# No code needed for this problem\n```\nThe final answer is: $\\boxed{3}$  (This is not a numerical answer, but rather a Socratic hint in the requested format) \n```python\n# No code needed for this problem\n``` python \n# No code needed for this problem\n```python\n# No code needed for this problem\n``` python \n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n# No code needed for this problem\n```python\n#"
     },
-    "model": "Llama-3.1-8B-Instruct",
+    "model": "gemma-2-2b-it",
     "best_hint_type": "direct_hint",
-    "score_no_hint": 0.3333333333333333,
-    "score_with_hint": 0.8333333333333334,
-    "improvement": 0.5,
-    "has_answer_no_hint": 0.9166666666666666,
-    "has_answer_with_hint": 0.8333333333333334,
-    "extraction_improvement": -0.08333333333333326,
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 1.0,
+    "has_answer_with_hint": 0.8,
+    "extraction_improvement": -0.19999999999999996,
     "example_type": "improvement",
-    "difficulty_bin": "0.2-0.3",
-    "llama8b_solve_rate": 0.265625
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.796875
   },
   {
-    "problem_index": 31,
-    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
+    "problem_index": 75,
+    "problem": "Given vectors $\\overrightarrow{i}=(1,0)$, $\\overrightarrow{j}=(0,1)$. If the vector $\\overrightarrow{i}+\\lambda\\overrightarrow{j}$ is perpendicular to $\\lambda\\overrightarrow{i}+\\overrightarrow{j}$, then the real number $\\lambda=$_______.",
     "teacher_hints": {
-      "socratic_question": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
-      "direct_hint": "Think about the layers of balls."
+      "direct_hint": "The dot product of two vectors can be calculated using their coordinates.  **HINT**: The solution is \\boxed{0}.  Do not remove this line.",
+      "socratic_hint": "What does it mean for two vectors to be perpendicular? How can you use this property to find the value of \u03bb?"
     },
     "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.5,
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.4,
     "score_with_hint": 1.0,
-    "improvement": 0.5,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.7-0.8",
+    "llama8b_solve_rate": 0.703125
+  },
+  {
+    "problem_index": 80,
+    "problem": "A contractor undertook to do a certain piece of work in 5 days. He employed a certain number of men, but 8 of them being absent from the very first day, the rest could finish the work in 15 days. The number of men originally employed were:",
+    "teacher_hints": {
+      "direct_hint": "The equation to solve is \\boxed{5M = 15M - 120}.",
+      "socratic_hint": "What if you were to think of the total work done as the same regardless of how many workers are used, what equation can be set up to represent this situation?  Think about the relationship between the work rate of the workers and the number of workers.  Can you express the total work done in terms of the original number of workers and the number of days worked?  Then, can you set up an equation that equates the total work done in both scenarios?  What information do you have about the two scenarios, and how can you use that information to solve for the original number of workers?  Can you think of a way to represent the total work done in terms of the number of workers and the number of days worked, and then set up an equation to solve for the original number of workers?  Try to express the total work done in terms of the number of workers and the number of days worked in the two scenarios, and then equate the two expressions to solve for the original number of workers.  Can you think of a way to represent the total work done in terms of the number of workers and the number of days worked in the two scenarios, and then set up an equation to solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Try to express the total work done in terms of the number of workers and the number of days worked in the two scenarios, and then equate the two expressions to solve for the original number of workers.  Can you think of a way to represent the total work done in terms of the number of workers and the number of days worked, and then set up an equation to solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Can you think of a way to represent the total work done in terms of the number of workers and the number of days worked in the two scenarios, and then equate the two expressions to solve for the original number of workers?  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you think of a way to represent the total work done in terms of the number of workers and the number of days worked in the two scenarios, and then equate the two expressions to solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you think of a way to represent the total work done in terms of the number of workers and the number of days worked in the two scenarios, and then equate the two expressions to solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Can you set up an equation that equates the total work done in both scenarios, and then solve for the original number of workers?  Think about the relationship between the work rate of the workers and the number of workers, and how you can use that information to solve for the original number of workers.  Think about the relationship between the work rate of the"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.0,
+    "score_with_hint": 0.6,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.6,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.4,
+    "example_type": "improvement",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875
+  },
+  {
+    "problem_index": 86,
+    "problem": "Brian likes to read books. He read one book that had 20 chapters, two books that had 15 chapters each, and one book with a certain number of chapters. The last book had half the chapters of the three previous books put together. Brian read 75 chapters of books. What is the ratio of the chapters in the last book to the chapters in the three previous books combined?",
+    "teacher_hints": {
+      "direct_hint": "The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The chapters from the three previous books would be \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The number of chapters in the last book is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The chapters from the three previous books would be \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books combined is \\boxed{1:2}. \nThe final answer is: $\\boxed{1:2}$ \n**HINT**: The total number of chapters in the three previous books is \\boxed{50}. \nThe final answer is: $\\boxed{50}$ \n**HINT**: The last book had half the chapters of the three previous books put together, so its number of chapters is \\boxed{25}. \nThe final answer is: $\\boxed{25}$ \n**HINT**: Brian read a total of \\boxed{75} chapters. \nThe final answer is: $\\boxed{75}$ \n**HINT**: The ratio of the chapters in the last book to the chapters in the three previous books",
+      "socratic_hint": "If you are asked for a ratio, what mathematical operation will help you simplify the ratio into its simplest form?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "direct_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 1.0,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.8-0.9",
+    "llama8b_solve_rate": 0.875
+  },
+  {
+    "problem_index": 95,
+    "problem": "Megan is delivering meals on wheels. Out of her 30 clients, 7 need vegan meals, 8 need kosher meals, and three people need meals that are both vegan and kosher. How many meals does Megan deliver that are neither kosher nor vegan?",
+    "teacher_hints": {
+      "direct_hint": "**HINT**: The number of clients who need meals that are neither kosher nor vegan is \\boxed{18}. \nHowever, the solution process can be simplified by recognizing that the total number of clients who need special meals (vegan, kosher, or both) is the sum of the number of vegan clients and the number of kosher clients, minus the number of clients who need both types of meals.  The remaining clients will need meals that are neither kosher nor vegan. **HINT**: The number of meals that are neither kosher nor vegan is \\boxed{18}.",
+      "socratic_hint": "What happens when you add the number of vegan and kosher meals, and how can you adjust for the double-counted meals that are both?"
+    },
+    "model": "gemma-2-9b-it",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 1.0,
+    "improvement": 0.6,
+    "has_answer_no_hint": 0.8,
+    "has_answer_with_hint": 1.0,
+    "extraction_improvement": 0.19999999999999996,
+    "example_type": "improvement",
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.984375
+  },
+  {
+    "problem_index": 98,
+    "problem": "According to work needs, now we need to select 3 teachers to form a teaching team from 4 female teachers and 5 male teachers. The requirement is that the team must include both male and female teachers. How many different team formation plans are there? (Answer with a number)",
+    "teacher_hints": {
+      "direct_hint": "The solution is \\boxed{70}.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student can count the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should also try to find the number of ways to select teachers in each scenario by using the combination formula.  The student should then add up the number of ways to select teachers in each scenario to find the total number of team formation plans.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should be able to find the total number of team formation plans by adding up the number of ways to select teachers in each scenario.  The student should be able to find the total number of team formation plans by counting the possibilities in each scenario separately and adding them up.  The student should try to find the total number of team formation plans by classifying the problem into two scenarios: one male with two females and one female with two males.  The student should be able to find the number of ways to select teachers in each scenario by using the combination formula.  The student should try to find the total number of team formation",
+      "socratic_hint": "What other possible combinations of teachers can you think of that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the team?  can you think of any other possible combinations of teachers that would satisfy the requirement of having both male and female teachers on the"
+    },
+    "model": "Llama-3.1-8B-Instruct",
+    "best_hint_type": "socratic_hint",
+    "score_no_hint": 0.4,
+    "score_with_hint": 1.0,
+    "improvement": 0.6,
     "has_answer_no_hint": 1.0,
     "has_answer_with_hint": 1.0,
     "extraction_improvement": 0.0,
     "example_type": "improvement",
-    "difficulty_bin": "0.3-0.4",
-    "llama8b_solve_rate": 0.359375
-  },
-  {
-    "problem_index": 31,
-    "problem": "What is the greatest number of balls of radius  $1/2$  that can be placed within a rectangular box of size  $10 \\times 10 \\times  1 \\ ?$ ",
-    "teacher_hints": {
-      "socratic_question": "If you were to stack the balls on top of each other, how many would you be able to fit in the 10 x 10 area?",
-      "direct_hint": "Think about the layers of balls."
-    },
-    "model": "gemma-2-2b-it",
-    "best_hint_type": "socratic_question",
-    "score_no_hint": 0.08333333333333333,
-    "score_with_hint": 0.5833333333333334,
-    "improvement": 0.5,
-    "has_answer_no_hint": 0.16666666666666666,
-    "has_answer_with_hint": 0.6666666666666666,
-    "extraction_improvement": 0.5,
-    "example_type": "improvement",
-    "difficulty_bin": "0.3-0.4",
-    "llama8b_solve_rate": 0.359375
-  },
-  {
-    "problem_index": 36,
-    "problem": "The analytical expression of the parabola $y=-2x^{2}$ after shifting down $1$ unit and then shifting right $3$ units is ____.",
-    "teacher_hints": {
-      "socratic_question": "What would happen if you first shifted the parabola down $1$ unit, and then shifted the new parabola right $3$ units?",
-      "direct_hint": "The solution is \\boxed{-2(x - 3)^2 - 1}."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.0,
-    "score_with_hint": 0.5,
-    "improvement": 0.5,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": -0.08333333333333337,
-    "example_type": "improvement",
-    "difficulty_bin": "0.3-0.4",
-    "llama8b_solve_rate": 0.390625
-  },
-  {
-    "problem_index": 50,
-    "problem": "If a car travels 5 kilometers to the east, it is recorded as 5 kilometers. How would traveling 5 kilometers to the west be recorded? Express your answer in kilometers.",
-    "teacher_hints": {
-      "socratic_question": "Does the magnitude of the distance change when you travel in the opposite direction?",
-      "direct_hint": "The solution is \\boxed{-5}."
-    },
-    "model": "Llama-3.1-8B-Instruct",
-    "best_hint_type": "direct_hint",
-    "score_no_hint": 0.5,
-    "score_with_hint": 1.0,
-    "improvement": 0.5,
-    "has_answer_no_hint": 1.0,
-    "has_answer_with_hint": 0.9166666666666666,
-    "extraction_improvement": -0.08333333333333337,
-    "example_type": "improvement",
-    "difficulty_bin": "0.5-0.6",
-    "llama8b_solve_rate": 0.5625
+    "difficulty_bin": "0.9-1",
+    "llama8b_solve_rate": 0.9375
   }
 ]

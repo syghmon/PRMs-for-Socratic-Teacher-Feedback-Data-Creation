@@ -1,0 +1,8 @@
+{
+  "input": "data/joined_samples.json",
+  "output": "results_solutionsteps/answers.json",
+  "config": "scripts/config.json",
+  "use_judge": false,
+  "log_level": "DEBUG",
+  "debug": false
+} 

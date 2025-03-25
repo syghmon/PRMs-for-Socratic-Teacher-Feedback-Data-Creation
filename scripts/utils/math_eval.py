@@ -99,6 +99,7 @@ def parse_student_answer_answer_colon(response_text: str) -> (str, bool):
 def get_answer_expr(answer: str) -> str:
     """
     Extracts the mathematical expression from the answer.
+    Only uses boxed expressions as the primary extraction method.
 
     Args:
         answer (str): The answer string.
@@ -106,17 +107,16 @@ def get_answer_expr(answer: str) -> str:
     Returns:
         str: Extracted expression.
     """
-    # First try to extract from "Answer:" format
-    #extracted, failed = parse_student_answer_answer_colon(answer)
-    #if not failed:
-    #    return extracted
-        
+    # Try to extract from boxed expression
     try:
         extracted = remove_boxed(last_boxed_only_string(answer))
-        return extracted
+        if extracted:
+            return extracted
     except Exception:
-        # Fall back to last line if no boxed expression found
-        return answer.split("\n")[-1]
+        pass  # Fall through to fallback
+        
+    # Fall back to last line if no boxed expression found
+    return answer.split("\n")[-1]
 
 def remove_right_units(string: str) -> str:
     """
@@ -588,6 +588,7 @@ Respond with only "Yes" or "No" (without quotes). Do not include a rationale.
     def get_answer_expr(answer: str) -> str:
         """
         Extracts the mathematical expression from the answer.
+        Only uses boxed expressions as the primary extraction method.
 
         Args:
             answer (str): The answer string.
@@ -595,18 +596,16 @@ Respond with only "Yes" or "No" (without quotes). Do not include a rationale.
         Returns:
             str: Extracted expression.
         """
-        # First try to extract from "Answer:" format
-        extracted, failed = parse_student_answer_answer_colon(answer)
-        if not failed:
-            return extracted
-            
-        # Fall back to boxed extraction if "Answer:" format not found
+        # Try to extract from boxed expression
         try:
             extracted = MathEvaluator.remove_boxed(MathEvaluator.last_boxed_only_string(answer))
-            return extracted
+            if extracted:
+                return extracted
         except Exception:
-            # Fall back to last line if no boxed expression found
-            return answer.split("\n")[-1]
+            pass  # Fall through to fallback
+            
+        # Fall back to last line if no boxed expression found
+        return answer.split("\n")[-1]
 
     @staticmethod
     def extract_boxed_expressions(string: str) -> List[str]:
